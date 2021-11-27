@@ -10,9 +10,8 @@ on:
     # 每天伦敦时间2点执行，对应北京时间10点
 jobs:
   build:
-    # 指定一下任务运行的系统环境
     runs-on: ubuntu-latest
-
+    # 指定一下任务运行的系统环境
  
     steps:
     - name: checkout actions
@@ -22,8 +21,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.6
-    
-    # run: 后面添加你自己要执行的命令，如果有多条命令，用|换行。如果只有一行命令，可以直接写作run: 后面
+
     - name: Update proxy lists
       run: |
         python main.py
