@@ -8,3 +8,4 @@ print(utc_time)#utc时间，伦敦时间
 
 with open('clash.yml','w+') as f:
     f.writelines('{}'.format(now_time))
+print('1')
