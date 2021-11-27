@@ -7,12 +7,9 @@ on:
     branches: [ master ]
   schedule:
     - cron: "0 2 * * *"
-    # 每天伦敦时间2点执行，对应北京时间10点
 jobs:
   build:
-    runs-on: ubuntu-latest
-    # 指定一下任务运行的系统环境
- 
+    runs-on: ubuntu-latest 
     steps:
     - name: checkout actions
     - uses: actions/checkout@v2
