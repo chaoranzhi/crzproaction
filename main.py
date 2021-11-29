@@ -1,4 +1,4 @@
-from ruamel_yaml import YAML
+from ruamel.yaml import YAML
 yaml=YAML(typ="safe", pure=True)
 
 import requests
