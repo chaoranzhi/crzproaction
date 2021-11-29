@@ -1,4 +1,5 @@
 from ruamel.yaml import YAML
+# from ruamel.yaml import YAML #居然有的是ruamel.yaml包，真是坑了
 yaml=YAML(typ="safe", pure=True)
 
 import requests
@@ -40,19 +41,35 @@ dirs = './subscribe'
 if not os.path.exists(dirs):
     os.makedirs(dirs)
 
+
 ## 访问所有的url链接，下载成yaml文件
-def request_url_download_yaml():
+def request_url_extract_proxies_lst():
+    proxies_lst=[]
     urls=[url0,url1,url2,url3,url4,url5,url6,url7,]
     for i,url in enumerate(urls):
-        print('requesting {} url:{}'.format(i,url))
+        print('requesting url:{}\n'.format(i))
         try:
             resp=requests.get(url).text
-            with open(yaml_folder+'/{}.yml'.format(i),'w+',encoding='utf-8') as f:
-                f.write(resp)
-            print('success {} url {} '.format(i,url))
-        except Exception as e:
-            print('failed {} url {} , exception {}'.format(i,url, e))
+            print('success {} url\n'.format(i,url))
+            try:
+                proxies_yml=yaml.load(resp)
+                proxies_yml_lst=proxies_yml.get('proxies',[])
+                # dict.get(key, None),不要加上key和default，否则会报错，TypeError: get() takes no keyword arguments
+                # 
+                ## yaml列表节点前增加日期和url标识
+                for j in proxies_yml_lst:
+                    j['name']=daystring+'_'+str(i)+'_'+str(j['name'])
+                ## 拼接节点列表
+                proxies_lst=proxies_lst+proxies_yml_lst 
+                
+            except Exception as e:
+                print('warning, reading url{} raise exception {}\n'.format(i,e))
 
+        except Exception as e:
+            print('failed url{} , exception {}\n'.format(i, e))
+
+    print('拼接后节点列表长度{}'.format(len(proxies_lst)))
+    return proxies_lst
 
 
 ## 读取yaml文件夹，进行节点列表拼接
@@ -83,9 +100,9 @@ def read_yaml_concat_proxies_list():
 
     print('拼接后节点列表长度{}'.format(len(proxies_lst)))
     # print(proxies_lst)
-    ## 保存节点列表
-    with open('proxies_lst.yml', 'w+',encoding='utf-8') as fn:
-        yaml.dump({'proxies':proxies_lst}, fn)
+    # ## 保存节点列表
+    # with open('proxies_lst.yml', 'w+',encoding='utf-8') as fn:
+    #     yaml.dump({'proxies':proxies_lst}, fn)
     return proxies_lst
 
 # # 读取样例生成新的文件 
@@ -101,12 +118,12 @@ def read_yaml_concat_proxies_list():
 
 
 # 读取样例生成新的文件 
-def gen_clash():
-    # 读取节点列表 
-    with open('proxies_lst.yml',encoding='utf-8') as f:
-        proxies_yml=yaml.load(f)
-        # print(proxies_yml.get('proxies',[]))
-        proxies_lst=proxies_yml.get('proxies',[])
+def gen_clash(proxies_lst):
+    # # 读取节点列表 
+    # with open('proxies_lst.yml',encoding='utf-8') as f:
+    #     proxies_yml=yaml.load(f)
+    #     # print(proxies_yml.get('proxies',[]))
+    #     proxies_lst=proxies_yml.get('proxies',[])
 
     # 抽取节点列表名字
     proxies_lst_name=[i['name'] for i in proxies_lst]
@@ -153,8 +170,9 @@ def gen_clash():
         print('新的clash文件生成成功!!!!')
 
 if __name__ == '__main__':
-
+    proxies_lst=request_url_extract_proxies_lst()
+    # print(proxies_lst)
     # request_url_download_yaml()
-    proxies_lst=read_yaml_concat_proxies_list()
-    gen_clash()
+    # proxies_lst=read_yaml_concat_proxies_list()
+    gen_clash(proxies_lst)
     pass
