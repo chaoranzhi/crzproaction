@@ -17,7 +17,7 @@ url0='https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fgitee.co
 # github freefq转换 
 url1='https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true'
 # github_skywolf
-url2='https://raw.githubusercontent.com/skywolf627/VmessActions/main/subscribe/clash.yml'
+url2='https://raw.githubusercontent.com/skywolf627/ProxiesActions/main/subscribe/vmess.txt'
 # telegram_ssrsub 
 url3='https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml'
 # github_clash-freenode 
