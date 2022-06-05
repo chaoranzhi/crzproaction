@@ -6,21 +6,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1
-  network: ws
-  port: 80
-  server: hk1.ningmengshui.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f4832f7-a51b-4049-9060-0422c3223e76
-  ws-opts:
-    headers: {Host: hk1.ningmengshui.xyz}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 2
+  name: 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
   network: ws
   port: 80
   server: hkv2.xxnmsl.com
@@ -32,17 +18,65 @@ proxies:
   ws-opts:
     headers: {Host: tms.dingtalk.com}
     path: /
-- {cipher: chacha20-ietf-poly1305, name: 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, password: a501c82c72d790b8,
+- alterId: 0
+  cipher: auto
+  name: 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 2
+  network: ws
+  port: 80
+  server: hk1.ningmengshui.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8f4832f7-a51b-4049-9060-0422c3223e76
+  ws-opts:
+    headers: {Host: hk1.ningmengshui.xyz}
+    path: /
+- {name: 0605_1_🇯🇵 github.com/freefq - 日本  3, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e,
+  port: 443, server: 527hk5.fans8.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 4, password: a501c82c72d790b8,
   port: 8474, server: b5d28a9.sd.gladns.com, type: ss, udp: true}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 4, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc,
-  port: 443, server: tj-us01.yiyodns.xyz, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0605_1_🇯🇵 github.com/freefq - 日本  5, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e,
-  port: 443, server: hk64.fans8.xyz, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 6, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc,
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
+  port: 443, server: shs.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国  6, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
+  port: 443, server: xjp.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0605_1_🇫🇷 github.com/freefq - 法国  7, password: uOaNBB7dlKXH,
+  port: 443, server: 155.133.130.93, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0605_1_🇨🇳 github.com/freefq - 上海市徐汇区联通漕河泾数据中心 8
+  network: ws
+  port: 28325
+  server: mc.xiaohouzi.club
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c900facf-7e5d-3caf-a49e-c4bb1996ca95
+  ws-opts:
+    headers: {Host: mc.xiaohouzi.club}
+    path: /v2ray
+- alterId: 1
+  cipher: auto
+  name: 0605_1_github.com/freefq - 广东省珠海市电信 9
+  network: ws
+  port: 38701
+  server: in-sg-1.onebox6.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers: {Host: www.ivpnpro.net}
+    path: /hls/cctv5phd.m3u8
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 10, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc,
   port: 443, server: tj-us02.yiyodns.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, password: 7dafe71e-2be6-302f-bdfc-e6319a3299bc,
+  port: 443, server: tj-us01.yiyodns.xyz, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 64
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12
   network: ws
   port: 443
   server: app.ssfree.ru
@@ -54,39 +88,14 @@ proxies:
   ws-opts:
     headers: {Host: app.ssfree.ru}
     path: /getweather
-- {cipher: aes-256-cfb, name: 0605_1_🇷🇺 github.com/freefq - 俄罗斯  8, password: vDS9G2p,
+- {cipher: aes-256-cfb, name: 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, password: vDS9G2p,
   port: 21247, server: 185.4.65.6, type: ss, udp: true}
-- alterId: 2
-  cipher: auto
-  name: 0605_1_🇨🇦 github.com/freefq - 加拿大  9
-  network: ws
-  port: 80
-  server: 527hk1.fans8.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
-  ws-opts:
-    headers: {Host: 527hk1.fans8.xyz}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
-  network: ws
-  port: 443
-  server: 1chuan.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: fa8f90e0-2fae-4b05-df7a-ea325bc517d8
-  ws-opts:
-    headers: {Host: 1chuan.top}
-    path: /evo
+- {alterId: 0, cipher: auto, name: 0605_1_🇯🇵 github.com/freefq - 日本  14, port: 31613,
+  server: 146.56.174.187, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 35137513-8f0a-4f74-84f8-ef9f5a8f85a6}
 - alterId: 64
   cipher: auto
-  name: 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11
+  name: 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15
   network: ws
   port: 443
   server: 54.37.192.112
@@ -98,43 +107,56 @@ proxies:
   ws-opts:
     headers: {Host: 54.37.192.112}
     path: /path/120208301422
-- {name: 0605_1_🇸🇪 github.com/freefq - 瑞典  12, password: 3yFq7NCP53mVfpXJz3, port: 443,
-  server: au2-4.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国  13, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
-  port: 443, server: xjp.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0605_1_🇯🇵 github.com/freefq - 日本  16, password: 9c289eb1-59b1-49ff-9c80-9a3c879c654e,
+  port: 443, server: hk64.fans8.xyz, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国  14
+  name: 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17
   network: ws
-  port: 31961
-  server: bai-piao-wang-zhe-iplc6.98848.xyz
+  port: 80
+  server: 20.210.247.122
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 94311e71-9125-4bd1-faa2-515a8667c486
+  uuid: df8278e6-1526-47cb-9f49-fbef8c001c64
   ws-opts:
-    headers: {Host: bai-piao-wang-zhe-iplc6.98848.xyz}
-    path: /youtubt@白嫖王者
-- alterId: 0
+    headers: {Host: tms.dingtalk.com}
+    path: /
+- alterId: 2
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国  15
+  name: 0605_1_🇨🇦 github.com/freefq - 加拿大  18
   network: ws
-  port: 23140
-  server: 138.2.52.84
+  port: 80
+  server: 331tw.fans8.xyz
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: e03f030e-87a6-4282-9656-461732cc3b1f
-  ws-opts: {path: /}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 16, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
-  port: 443, server: azhk.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
-  port: 443, server: shs.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-opts:
+    headers: {Host: 331tw.fans8.xyz}
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 0605_1_🇨🇦 github.com/freefq - 加拿大  19
+  network: ws
+  port: 80
+  server: 527hk1.fans8.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-opts:
+    headers: {Host: 527hk1.fans8.xyz}
+    path: /
+- {alterId: 0, cipher: auto, name: 0605_1_github.com/freefq - 欧盟  20, port: 36109,
+  server: 45.12.110.8, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: d7729364-2135-4af5-aa4f-e1f565a5c23e}
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18
+  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21
   network: ws
   port: 443
   server: oz.moonfree.top
@@ -148,7 +170,26 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+  name: 0605_1_🇨🇳 github.com/freefq - 浙江省杭州市网易云BGP数据中心 22
+  network: ws
+  port: 443
+  server: node1.binghe.ga
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 43391e07-41bc-4874-8507-b3657685fbc3
+  ws-opts:
+    headers: {Host: 205154df9a6740b3a.spbohk.com}
+    path: /b3657685fbc3
+- {alterId: 0, cipher: auto, name: 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, port: 12005,
+  server: bgpv2.ktyjsq.com, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6}
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 24, password: 7b561e94-42f3-4f92-979c-4cf97c328025,
+  port: 443, server: azhk.ziqiyun.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25
   network: ws
   port: 443
   server: oz.moonfree.top
@@ -162,53 +203,53 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 20
+  name: 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26
   network: ws
-  port: 39043
-  server: 180.215.196.10
+  port: 443
+  server: v2ray3.bonds.id
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7
-  ws-opts: {path: /}
+  uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f
+  ws-opts:
+    headers: {Host: v2ray3.bonds.id}
+    path: /howdy
+- {alterId: 0, cipher: auto, name: 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 27,
+  port: 31221, server: 172.104.206.42, skip-cert-verify: false, tls: true, type: vmess,
+  udp: true, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33}
+- alterId: 1
+  cipher: auto
+  name: 0605_1_🇬🇧 github.com/freefq - 英国  28
+  network: ws
+  port: 13302
+  server: cm01.db-link.in
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672
+  ws-opts:
+    headers: {Host: cm01.db-link.in}
+    path: /db
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇬🇷 github.com/freefq - 希腊  21
+  name: 0605_1_🇺🇸 github.com/freefq - 美国  29
   network: ws
-  port: 80
-  server: chunchuan-02.aikala.shop
+  port: 23140
+  server: 138.2.52.84
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: a9743604-42d9-44ad-b9b7-1175add3c491
-  ws-opts:
-    headers: {Host: '%7B%22Host%22:%22chunchuan-02.aikala.shop%22%7D'}
-    path: /
-- {alterId: 0, cipher: auto, name: 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, port: 12005,
-  server: bgpv2.ktyjsq.com, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6}
+  uuid: e03f030e-87a6-4282-9656-461732cc3b1f
+  ws-opts: {path: /}
+- {name: 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, password: 5d07c2f7-830b-4e29-aeb1-67cd98293ec6,
+  port: 34568, server: gy01.20220512.cyou, skip-cert-verify: false, type: trojan,
+  udp: true}
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房 23
-  network: ws
-  port: 443
-  server: xr-5.herokuapp.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1
-  ws-opts:
-    headers: {Host: xr-5.herokuapp.com}
-    path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess
-- {alterId: 0, cipher: auto, name: 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24,
-  port: 31221, server: 172.104.206.42, skip-cert-verify: false, tls: true, type: vmess,
-  udp: true, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33}
-- alterId: 0
-  cipher: auto
-  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 25
+  name: 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 31
   network: ws
   port: 443
   server: 172.64.147.71
@@ -221,58 +262,55 @@ proxies:
   ws-opts:
     headers: {Host: 612.wweblog.pw}
     path: /xxX2
-- {name: 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, password: 5d07c2f7-830b-4e29-aeb1-67cd98293ec6,
-  port: 34568, server: gy01.20220512.cyou, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 2
-  cipher: auto
-  name: 0605_1_🇨🇦 github.com/freefq - 加拿大  27
-  network: ws
-  port: 80
-  server: 331tw.fans8.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
-  ws-opts:
-    headers: {Host: 331tw.fans8.xyz}
-    path: /
 - alterId: 0
   cipher: auto
-  name: 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28
+  name: 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32
   network: ws
   port: 443
-  server: v2ray3.bonds.id
+  server: xr-5.herokuapp.com
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 014291fb-3808-4ae8-9303-e1f40d58bb4f
+  uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1
   ws-opts:
-    headers: {Host: v2ray3.bonds.id}
-    path: /howdy
-- {name: 0605_1_🇮🇳 github.com/freefq - 印度  29, password: pA52tFTlGZ, port: 59195,
-  server: 2.tiantang.cf, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 1
+    headers: {Host: xr-5.herokuapp.com}
+    path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess
+- alterId: 0
   cipher: auto
-  name: 0605_1_🇬🇧 github.com/freefq - 英国  30
+  name: 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33
   network: ws
-  port: 13302
-  server: cm01.db-link.in
+  port: 39043
+  server: 180.215.196.10
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672
+  uuid: 1b2f44e4-a810-48a8-b620-a4567b46c9b7
+  ws-opts: {path: /}
+- {name: 0605_1_🇮🇳 github.com/freefq - 印度  34, password: pA52tFTlGZ, port: 59195,
+  server: 2.tiantang.cf, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0605_1_🇸🇪 github.com/freefq - 瑞典  35, password: 3yFq7NCP53mVfpXJz3, port: 443,
+  server: au2-2.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0605_1_🇺🇸 github.com/freefq - 美国  36, password: f39bd244-f5fe-415c-8b98-a1e5250bf178,
+  port: 443, server: fhcarm2.gaox.ml, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37
+  network: ws
+  port: 1256
+  server: v20.emovpn.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1680a93a-c342-49d6-9e01-9c043ca0557d
   ws-opts:
-    headers: {Host: cm01.db-link.in}
-    path: /db
-- {alterId: 0, cipher: auto, name: 0605_1_github.com/freefq - 亚太地区  31, port: 31244,
+    headers: {Host: v20.emovpn.xyz}
+    path: /
+- {alterId: 0, cipher: auto, name: 0605_1_github.com/freefq - 亚太地区  38, port: 31244,
   server: 103.172.116.87, skip-cert-verify: false, tls: true, type: vmess, udp: true,
   uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33}
-- {name: 0605_1_🇺🇸 github.com/freefq - 美国  32, password: f39bd244-f5fe-415c-8b98-a1e5250bf178,
-  port: 443, server: fhcarm2.gaox.ml, skip-cert-verify: false, type: trojan, udp: true}
 - {cipher: aes-256-gcm, name: 0605_3_公益机场:https://bit.ly/3BPeo5G, password: RexnBgU7EV5ADxG,
   port: 7002, server: 149.202.82.172, type: ss, udp: true}
 - {cipher: aes-128-gcm, name: 0605_3_付费推荐:dlj.tf/ssrsub__01, password: bzUdYJ4JzjGfIwhG,
@@ -2195,27 +2233,31 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 0605_1_🇷🇺 github.com/freefq
-      - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq
-      - 瑞典  12, 0605_1_🇺🇸 github.com/freefq - 美国  13, 0605_1_🇺🇸 github.com/freefq
-      - 美国  14, 0605_1_🇺🇸 github.com/freefq - 美国  15, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰
-      github.com/freefq - 香港BGP.NET数据中心 20, 0605_1_🇬🇷 github.com/freefq - 希腊  21,
-    0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      23, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦
-      github.com/freefq - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28,
-    0605_1_🇮🇳 github.com/freefq - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq
-      - 亚太地区  31, 0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G,
-    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
-    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
-    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
-      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 0605_1_🇭🇰
+      github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3, 0605_1_🇨🇳
+      github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, 0605_1_🇺🇸
+      github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7, 0605_1_🇨🇳 github.com/freefq
+      - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信 9, 0605_1_🇺🇸 github.com/freefq
+      - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq
+      - 日本  14, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq
+      - 日本  16, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  18, 0605_1_🇨🇦 github.com/freefq - 加拿大  19, 0605_1_github.com/freefq -
+      欧盟  20, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq
+      - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸
+      github.com/freefq - 美国Microsoft数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq
+      - 美国Linode数据中心 27, 0605_1_🇬🇧 github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq
+      - 美国  29, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32,
+    0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq -
+      印度  34, 0605_1_🇸🇪 github.com/freefq - 瑞典  35, 0605_1_🇺🇸 github.com/freefq -
+      美国  36, 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37, 0605_1_github.com/freefq
+      - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
+    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
+    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
+    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
+      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -2365,27 +2407,31 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸 github.com/freefq -
-      美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 0605_1_🇷🇺 github.com/freefq
-      - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq
-      - 瑞典  12, 0605_1_🇺🇸 github.com/freefq - 美国  13, 0605_1_🇺🇸 github.com/freefq
-      - 美国  14, 0605_1_🇺🇸 github.com/freefq - 美国  15, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰
-      github.com/freefq - 香港BGP.NET数据中心 20, 0605_1_🇬🇷 github.com/freefq - 希腊  21,
-    0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      23, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦
-      github.com/freefq - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28,
-    0605_1_🇮🇳 github.com/freefq - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq
-      - 亚太地区  31, 0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G,
-    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
-    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
-    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
-      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 0605_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3, 0605_1_🇨🇳 github.com/freefq
+      - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, 0605_1_🇺🇸 github.com/freefq
+      - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7, 0605_1_🇨🇳 github.com/freefq -
+      上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信 9, 0605_1_🇺🇸 github.com/freefq
+      - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq
+      - 日本  14, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq
+      - 日本  16, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  18, 0605_1_🇨🇦 github.com/freefq - 加拿大  19, 0605_1_github.com/freefq -
+      欧盟  20, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq
+      - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸
+      github.com/freefq - 美国Microsoft数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq
+      - 美国Linode数据中心 27, 0605_1_🇬🇧 github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq
+      - 美国  29, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32,
+    0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq -
+      印度  34, 0605_1_🇸🇪 github.com/freefq - 瑞典  35, 0605_1_🇺🇸 github.com/freefq -
+      美国  36, 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37, 0605_1_github.com/freefq
+      - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
+    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
+    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
+    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
+      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -2535,28 +2581,31 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云
-      3, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5,
-    0605_1_🇺🇸 github.com/freefq - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      7, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9,
-    0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq -
-      法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq - 瑞典  12, 0605_1_🇺🇸 github.com/freefq
-      - 美国  13, 0605_1_🇺🇸 github.com/freefq - 美国  14, 0605_1_🇺🇸 github.com/freefq
-      - 美国  15, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq
-      - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心
-      20, 0605_1_🇬🇷 github.com/freefq - 希腊  21, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动
-      22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房 23, 0605_1_🇺🇸
-      github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦 github.com/freefq
-      - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28, 0605_1_🇮🇳 github.com/freefq
-      - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq - 亚太地区  31,
-    0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
-    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
-    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
-    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
-      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      1, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3,
+    0605_1_🇨🇳 github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia
+      5, 0605_1_🇺🇸 github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7,
+    0605_1_🇨🇳 github.com/freefq - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信
+      9, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP
+      11, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq
+      - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq - 日本  14, 0605_1_🇫🇷 github.com/freefq
+      - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq - 日本  16, 0605_1_🇺🇸 github.com/freefq
+      - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq - 加拿大  18, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  19, 0605_1_github.com/freefq - 欧盟  20, 0605_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳
+      github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 0605_1_🇸🇬 github.com/freefq
+      - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 27, 0605_1_🇬🇧
+      github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq - 美国  29, 0605_1_🇭🇰
+      github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32, 0605_1_🇭🇰 github.com/freefq
+      - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq - 印度  34, 0605_1_🇸🇪 github.com/freefq
+      - 瑞典  35, 0605_1_🇺🇸 github.com/freefq - 美国  36, 0605_1_🇺🇸 github.com/freefq
+      - 美国Amazon数据中心 37, 0605_1_github.com/freefq - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G,
+    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
+    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
+    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
+      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -2711,28 +2760,31 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云
-      3, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5,
-    0605_1_🇺🇸 github.com/freefq - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      7, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9,
-    0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq -
-      法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq - 瑞典  12, 0605_1_🇺🇸 github.com/freefq
-      - 美国  13, 0605_1_🇺🇸 github.com/freefq - 美国  14, 0605_1_🇺🇸 github.com/freefq
-      - 美国  15, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq
-      - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心
-      20, 0605_1_🇬🇷 github.com/freefq - 希腊  21, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动
-      22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房 23, 0605_1_🇺🇸
-      github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦 github.com/freefq
-      - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28, 0605_1_🇮🇳 github.com/freefq
-      - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq - 亚太地区  31,
-    0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
-    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
-    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
-    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
-      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      1, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3,
+    0605_1_🇨🇳 github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia
+      5, 0605_1_🇺🇸 github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7,
+    0605_1_🇨🇳 github.com/freefq - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信
+      9, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP
+      11, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq
+      - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq - 日本  14, 0605_1_🇫🇷 github.com/freefq
+      - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq - 日本  16, 0605_1_🇺🇸 github.com/freefq
+      - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq - 加拿大  18, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  19, 0605_1_github.com/freefq - 欧盟  20, 0605_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳
+      github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 0605_1_🇸🇬 github.com/freefq
+      - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 27, 0605_1_🇬🇧
+      github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq - 美国  29, 0605_1_🇭🇰
+      github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32, 0605_1_🇭🇰 github.com/freefq
+      - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq - 印度  34, 0605_1_🇸🇪 github.com/freefq
+      - 瑞典  35, 0605_1_🇺🇸 github.com/freefq - 美国  36, 0605_1_🇺🇸 github.com/freefq
+      - 美国Amazon数据中心 37, 0605_1_github.com/freefq - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G,
+    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
+    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
+    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
+      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -2881,27 +2933,31 @@ proxy-groups:
       48, 0605_7_韩国(欢迎订阅Youtube破解资源君)]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 0605_1_🇷🇺 github.com/freefq
-      - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq
-      - 瑞典  12, 0605_1_🇺🇸 github.com/freefq - 美国  13, 0605_1_🇺🇸 github.com/freefq
-      - 美国  14, 0605_1_🇺🇸 github.com/freefq - 美国  15, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰
-      github.com/freefq - 香港BGP.NET数据中心 20, 0605_1_🇬🇷 github.com/freefq - 希腊  21,
-    0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      23, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦
-      github.com/freefq - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28,
-    0605_1_🇮🇳 github.com/freefq - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq
-      - 亚太地区  31, 0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G,
-    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
-    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
-    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
-      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🎯 全球直连, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 0605_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3, 0605_1_🇨🇳 github.com/freefq
+      - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, 0605_1_🇺🇸 github.com/freefq
+      - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7, 0605_1_🇨🇳 github.com/freefq -
+      上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信 9, 0605_1_🇺🇸 github.com/freefq
+      - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq
+      - 日本  14, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq
+      - 日本  16, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  18, 0605_1_🇨🇦 github.com/freefq - 加拿大  19, 0605_1_github.com/freefq -
+      欧盟  20, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq
+      - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸
+      github.com/freefq - 美国Microsoft数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq
+      - 美国Linode数据中心 27, 0605_1_🇬🇧 github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq
+      - 美国  29, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32,
+    0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq -
+      印度  34, 0605_1_🇸🇪 github.com/freefq - 瑞典  35, 0605_1_🇺🇸 github.com/freefq -
+      美国  36, 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37, 0605_1_github.com/freefq
+      - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
+    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
+    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
+    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
+      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -3050,27 +3106,31 @@ proxy-groups:
       48, 0605_7_韩国(欢迎订阅Youtube破解资源君)]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 0605_1_🇷🇺 github.com/freefq
-      - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq
-      - 瑞典  12, 0605_1_🇺🇸 github.com/freefq - 美国  13, 0605_1_🇺🇸 github.com/freefq
-      - 美国  14, 0605_1_🇺🇸 github.com/freefq - 美国  15, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰
-      github.com/freefq - 香港BGP.NET数据中心 20, 0605_1_🇬🇷 github.com/freefq - 希腊  21,
-    0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      23, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦
-      github.com/freefq - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28,
-    0605_1_🇮🇳 github.com/freefq - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq
-      - 亚太地区  31, 0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G,
-    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
-    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
-    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
-      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🎯 全球直连, 🔰 节点选择, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 0605_1_🇭🇰
+      github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3, 0605_1_🇨🇳
+      github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, 0605_1_🇺🇸
+      github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7, 0605_1_🇨🇳 github.com/freefq
+      - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信 9, 0605_1_🇺🇸 github.com/freefq
+      - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq
+      - 日本  14, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq
+      - 日本  16, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  18, 0605_1_🇨🇦 github.com/freefq - 加拿大  19, 0605_1_github.com/freefq -
+      欧盟  20, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq
+      - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸
+      github.com/freefq - 美国Microsoft数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq
+      - 美国Linode数据中心 27, 0605_1_🇬🇧 github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq
+      - 美国  29, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32,
+    0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq -
+      印度  34, 0605_1_🇸🇪 github.com/freefq - 瑞典  35, 0605_1_🇺🇸 github.com/freefq -
+      美国  36, 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37, 0605_1_github.com/freefq
+      - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
+    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
+    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
+    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
+      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -3219,27 +3279,31 @@ proxy-groups:
       48, 0605_7_韩国(欢迎订阅Youtube破解资源君)]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云 3, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5, 0605_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 0605_1_🇷🇺 github.com/freefq
-      - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq
-      - 瑞典  12, 0605_1_🇺🇸 github.com/freefq - 美国  13, 0605_1_🇺🇸 github.com/freefq
-      - 美国  14, 0605_1_🇺🇸 github.com/freefq - 美国  15, 0605_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰
-      github.com/freefq - 香港BGP.NET数据中心 20, 0605_1_🇬🇷 github.com/freefq - 希腊  21,
-    0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房
-      23, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦
-      github.com/freefq - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28,
-    0605_1_🇮🇳 github.com/freefq - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq
-      - 亚太地区  31, 0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G,
-    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
-    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
-    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
-      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🔰 节点选择, 🎯 全球直连, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 0605_1_🇭🇰
+      github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3, 0605_1_🇨🇳
+      github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia 5, 0605_1_🇺🇸
+      github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7, 0605_1_🇨🇳 github.com/freefq
+      - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信 9, 0605_1_🇺🇸 github.com/freefq
+      - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 11, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq
+      - 日本  14, 0605_1_🇫🇷 github.com/freefq - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq
+      - 日本  16, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  18, 0605_1_🇨🇦 github.com/freefq - 加拿大  19, 0605_1_github.com/freefq -
+      欧盟  20, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq
+      - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸
+      github.com/freefq - 美国Microsoft数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq
+      - 美国Linode数据中心 27, 0605_1_🇬🇧 github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq
+      - 美国  29, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32,
+    0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq -
+      印度  34, 0605_1_🇸🇪 github.com/freefq - 瑞典  35, 0605_1_🇺🇸 github.com/freefq -
+      美国  36, 0605_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 37, 0605_1_github.com/freefq
+      - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
+    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
+    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
+    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
+      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -3388,28 +3452,31 @@ proxy-groups:
       48, 0605_7_韩国(欢迎订阅Youtube破解资源君)]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云
-      3, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5,
-    0605_1_🇺🇸 github.com/freefq - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      7, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9,
-    0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq -
-      法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq - 瑞典  12, 0605_1_🇺🇸 github.com/freefq
-      - 美国  13, 0605_1_🇺🇸 github.com/freefq - 美国  14, 0605_1_🇺🇸 github.com/freefq
-      - 美国  15, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq
-      - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心
-      20, 0605_1_🇬🇷 github.com/freefq - 希腊  21, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动
-      22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房 23, 0605_1_🇺🇸
-      github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦 github.com/freefq
-      - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28, 0605_1_🇮🇳 github.com/freefq
-      - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq - 亚太地区  31,
-    0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
-    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
-    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
-    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
-      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      1, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3,
+    0605_1_🇨🇳 github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia
+      5, 0605_1_🇺🇸 github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7,
+    0605_1_🇨🇳 github.com/freefq - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信
+      9, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP
+      11, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq
+      - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq - 日本  14, 0605_1_🇫🇷 github.com/freefq
+      - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq - 日本  16, 0605_1_🇺🇸 github.com/freefq
+      - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq - 加拿大  18, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  19, 0605_1_github.com/freefq - 欧盟  20, 0605_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳
+      github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 0605_1_🇸🇬 github.com/freefq
+      - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 27, 0605_1_🇬🇧
+      github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq - 美国  29, 0605_1_🇭🇰
+      github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32, 0605_1_🇭🇰 github.com/freefq
+      - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq - 印度  34, 0605_1_🇸🇪 github.com/freefq
+      - 瑞典  35, 0605_1_🇺🇸 github.com/freefq - 美国  36, 0605_1_🇺🇸 github.com/freefq
+      - 美国Amazon数据中心 37, 0605_1_github.com/freefq - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G,
+    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
+    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
+    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
+      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
@@ -3564,28 +3631,31 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 1, 0605_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0605_1_🇨🇳 github.com/freefq - 上海市阿里云
-      3, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 4, 0605_1_🇯🇵 github.com/freefq - 日本  5,
-    0605_1_🇺🇸 github.com/freefq - 美国惠普HP 6, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      7, 0605_1_🇷🇺 github.com/freefq - 俄罗斯  8, 0605_1_🇨🇦 github.com/freefq - 加拿大  9,
-    0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 0605_1_🇫🇷 github.com/freefq -
-      法国OVH数据中心 11, 0605_1_🇸🇪 github.com/freefq - 瑞典  12, 0605_1_🇺🇸 github.com/freefq
-      - 美国  13, 0605_1_🇺🇸 github.com/freefq - 美国  14, 0605_1_🇺🇸 github.com/freefq
-      - 美国  15, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 16, 0605_1_🇺🇸 github.com/freefq
-      - 美国Nokia 17, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0605_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 19, 0605_1_🇭🇰 github.com/freefq - 香港BGP.NET数据中心
-      20, 0605_1_🇬🇷 github.com/freefq - 希腊  21, 0605_1_🇨🇳 github.com/freefq - 广东省广州市移动
-      22, 0605_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市AWS有限公司EC2云服务器8号云机房 23, 0605_1_🇺🇸
-      github.com/freefq - 美国Linode数据中心 24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      25, 0605_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 26, 0605_1_🇨🇦 github.com/freefq
-      - 加拿大  27, 0605_1_🇸🇬 github.com/freefq - 新加坡Linode数据中心 28, 0605_1_🇮🇳 github.com/freefq
-      - 印度  29, 0605_1_🇬🇧 github.com/freefq - 英国  30, 0605_1_github.com/freefq - 亚太地区  31,
-    0605_1_🇺🇸 github.com/freefq - 美国  32, 0605_3_公益机场:https://bit.ly/3BPeo5G, 0605_3_付费推荐:dlj.tf/ssrsub__01,
-    0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03, 0605_3_付费推荐:dlj.tf/ssrsub__04,
-    0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06, 0605_3_付费推荐:dlj.tf/ssrsub__07,
-    0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G 2, 0605_3_🇷🇺
-      @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      1, 0605_1_🇭🇰 github.com/freefq - 香港特别行政区 2, 0605_1_🇯🇵 github.com/freefq - 日本  3,
+    0605_1_🇨🇳 github.com/freefq - 上海市阿里云 4, 0605_1_🇺🇸 github.com/freefq - 美国Nokia
+      5, 0605_1_🇺🇸 github.com/freefq - 美国  6, 0605_1_🇫🇷 github.com/freefq - 法国  7,
+    0605_1_🇨🇳 github.com/freefq - 上海市徐汇区联通漕河泾数据中心 8, 0605_1_github.com/freefq - 广东省珠海市电信
+      9, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP 10, 0605_1_🇺🇸 github.com/freefq - 美国惠普HP
+      11, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0605_1_🇷🇺 github.com/freefq
+      - 俄罗斯  13, 0605_1_🇯🇵 github.com/freefq - 日本  14, 0605_1_🇫🇷 github.com/freefq
+      - 法国OVH数据中心 15, 0605_1_🇯🇵 github.com/freefq - 日本  16, 0605_1_🇺🇸 github.com/freefq
+      - 美国Microsoft数据中心 17, 0605_1_🇨🇦 github.com/freefq - 加拿大  18, 0605_1_🇨🇦 github.com/freefq
+      - 加拿大  19, 0605_1_github.com/freefq - 欧盟  20, 0605_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 0605_1_🇨🇳 github.com/freefq - 浙江省杭州市网易云BGP数据中心 22, 0605_1_🇨🇳
+      github.com/freefq - 广东省广州市移动 23, 0605_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
+      24, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 0605_1_🇸🇬 github.com/freefq
+      - 新加坡Linode数据中心 26, 0605_1_🇺🇸 github.com/freefq - 美国Linode数据中心 27, 0605_1_🇬🇧
+      github.com/freefq - 英国  28, 0605_1_🇺🇸 github.com/freefq - 美国  29, 0605_1_🇭🇰
+      github.com/freefq - 香港Amazon数据中心 30, 0605_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      31, 0605_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 32, 0605_1_🇭🇰 github.com/freefq
+      - 香港BGP.NET数据中心 33, 0605_1_🇮🇳 github.com/freefq - 印度  34, 0605_1_🇸🇪 github.com/freefq
+      - 瑞典  35, 0605_1_🇺🇸 github.com/freefq - 美国  36, 0605_1_🇺🇸 github.com/freefq
+      - 美国Amazon数据中心 37, 0605_1_github.com/freefq - 亚太地区  38, 0605_3_公益机场:https://bit.ly/3BPeo5G,
+    0605_3_付费推荐:dlj.tf/ssrsub__01, 0605_3_付费推荐:dlj.tf/ssrsub__02, 0605_3_付费推荐:dlj.tf/ssrsub__03,
+    0605_3_付费推荐:dlj.tf/ssrsub__04, 0605_3_付费推荐:dlj.tf/ssrsub__05, 0605_3_付费推荐:dlj.tf/ssrsub__06,
+    0605_3_付费推荐:dlj.tf/ssrsub__07, 0605_3_付费推荐:dlj.tf/ssrsub__08, 0605_3_公益机场:https://bit.ly/3BPeo5G
+      2, 0605_3_🇷🇺 @SSRSUB-俄罗斯V01-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V02-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V03-付费推荐:dlj.tf/ssrsub, 0605_3_🇷🇺 @SSRSUB-俄罗斯V04-付费推荐:dlj.tf/ssrsub,
     0605_3_🇷🇺 @SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub, 0605_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
     0605_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0605_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
