@@ -4,12 +4,42 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {alterId: 0, cipher: auto, name: 0831_1_🇺🇸 github.com/freefq - 美国  1, port: 26923,
-  server: 143.198.0.211, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: e8e1b9a5-2ba6-4847-9dd8-92f1d8019ebf}
+- {name: 0831_1_🇯🇵 github.com/freefq - 日本  1, password: 5b9e5277-9b8e-4402-a6d2-fd3001e273dd,
+  port: 80, server: 830hk01.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0831_1_🇺🇸 github.com/freefq - 美国Nokia 2
+  network: ws
+  port: 443
+  server: jgwus.jgwaad.tk
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb
+  ws-opts:
+    headers: {Host: YouTube-aweikeji}
+    path: /cctv13/hd.m3u8
+- alterId: 0
+  cipher: auto
+  name: 0831_1_github.com/freefq - 广东省佛山市移动 3
+  network: ws
+  port: 38401
+  server: in-us-1.onebox6.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
+  ws-opts:
+    headers: {Host: '%7B%22Host%22:%22in-us-1.onebox6.org%22%7D'}
+    path: /hls/cctv5phd.m3u8
+- {alterId: 0, cipher: auto, name: 0831_1_🇺🇸 github.com/freefq - 北美地区  4, port: 36195,
+  server: 23.227.194.145, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: fae6eae5-a5b5-41ba-b660-dc067340048f}
 - alterId: 2
   cipher: auto
-  name: 0831_1_🇯🇵 github.com/freefq - 日本  2
+  name: 0831_1_🇯🇵 github.com/freefq - 日本  5
   network: ws
   port: 443
   server: 825hk02.fx6688.top
@@ -23,21 +53,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国  3
-  network: ws
-  port: 443
-  server: do2.hgdbk.ga
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
-  ws-opts:
-    headers: {Host: do2.hgdbk.ga}
-    path: /cctv13/hd.m3u8
-- alterId: 0
-  cipher: auto
-  name: 0831_1_github.com/freefq - 广东省佛山市移动 4
+  name: 0831_1_github.com/freefq - 广东省佛山市移动 6
   network: ws
   port: 38201
   server: ingress-i1.onebox6.org
@@ -49,28 +65,25 @@ proxies:
   ws-opts:
     headers: {Host: ingress-i1.onebox6.org}
     path: /hls/cctv5phd.m3u8
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国  5
+  name: 0831_1_🇯🇵 github.com/freefq - 日本  7
   network: ws
   port: 443
-  server: do1.hgdbk.ga
+  server: 825hk01.fx6688.top
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 1b41d609-0d07-4dfd-b985-3cd08812dd5f
+  uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts:
-    headers: {Host: '%7B%22Host%22:%22do1.hgdbk.ga%22%7D'}
-    path: /cctv13/hd.m3u8
-- {alterId: 0, cipher: auto, name: 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 6,
-  port: 42424, server: 139.180.140.20, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d}
-- {cipher: aes-256-gcm, name: 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, password: bBEXIq,
-  port: 31905, server: i1.go001.buzz, type: ss, udp: true}
+    headers: {Host: 825hk01.fx6688.top}
+    path: /
+- {cipher: aes-256-gcm, name: 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 8, password: PCnnH6SQSnfoS27,
+  port: 8090, server: 38.75.136.34, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
+  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
   network: ws
   port: 443
   server: cf.naixii.top
@@ -82,43 +95,41 @@ proxies:
   ws-opts:
     headers: {Host: bvm.naixii.top}
     path: /qvFvfAfHvz
-- {cipher: aes-256-cfb, name: 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, password: GA9KzeEgvfxNrgmM,
-  port: 9019, server: 185.126.116.123, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国  10
-  network: ws
-  port: 443
-  server: do1.hgdbk.ga
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2ed609d0-7467-471b-94a9-34a734ccc40a
-  ws-opts:
-    headers: {Host: do1.hgdbk.ga}
-    path: /
-- {cipher: aes-256-gcm, name: 0831_1_github.com/freefq - 乌克兰  11, password: KixLvKzwjekG00rm,
-  port: 5500, server: 193.108.118.30, type: ss, udp: true}
-- {cipher: aes-256-cfb, name: 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, password: EXN3S3eQpjE7EJu8,
-  port: 9027, server: 185.126.116.123, type: ss, udp: true}
+- {name: 0831_1_🇨🇦 github.com/freefq - 加拿大  10, password: 5b9e5277-9b8e-4402-a6d2-fd3001e273dd,
+  port: 443, server: 823tw.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
 - {cipher: aes-256-cfb, name: 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心
-    13, password: p9z5BVADH2YFs3MN, port: 9040, server: 213.183.59.211, type: ss,
+    11, password: BNmAXXxAHYpTRdzu, port: 9020, server: 213.183.59.211, type: ss,
   udp: true}
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 14
+  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   network: ws
   port: 443
-  server: cs.hgdbk.ga
+  server: arm.ptuu.gq
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9821b817-5cb0-4af3-a3e3-7c137850935d
+  ws-opts:
+    headers: {Host: arm.ptuu.gq}
+    path: /123
+- {cipher: aes-256-gcm, name: 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 13, password: bBEXIq,
+  port: 31905, server: i1.go001.buzz, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14
+  network: ws
+  port: 888
+  server: 147.139.7.71
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 1b41d609-0d07-4dfd-b985-3cd08812dd5f
+  uuid: 08d6729d-830e-4341-df76-62d3d12e75e8
   ws-opts:
-    headers: {Host: cs.hgdbk.ga}
-    path: /cctv13/hd.m3u8
+    headers: {Host: 147.139.7.71}
+    path: /
 - alterId: 0
   cipher: auto
   name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15
@@ -133,23 +144,9 @@ proxies:
   ws-opts:
     headers: {Host: awssg3.sharecentre.xyz}
     path: /
-- alterId: 2
-  cipher: auto
-  name: 0831_1_🇯🇵 github.com/freefq - 日本  16
-  network: ws
-  port: 443
-  server: 825hk01.fx6688.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
-  ws-opts:
-    headers: {Host: 825hk01.fx6688.top}
-    path: /
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17
+  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16
   network: ws
   port: 80
   server: 172.67.199.34
@@ -161,14 +158,19 @@ proxies:
   ws-opts:
     headers: {Host: sanggoro6.nextvpn.cc}
     path: /vpnneo
-- {cipher: aes-256-gcm, name: 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, password: KixLvKzwjekG00rm,
-  port: 8080, server: 38.75.136.34, type: ss, udp: true}
+- {cipher: aes-256-gcm, name: 0831_1_github.com/freefq - 乌克兰  17, password: KixLvKzwjekG00rm,
+  port: 5500, server: 193.108.118.30, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0831_1_🇮🇷 github.com/freefq - 伊朗  18, port: 54242,
+  server: nnv.chitacdn.xyz, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: f2393d82-94c4-4b12-8267-293a7500e487}
+- {cipher: chacha20-ietf-poly1305, name: 0831_1_🇯🇵 github.com/freefq - 日本东京M247网络
+    19, password: G!yBwPWH3Vao, port: 809, server: 193.38.139.204, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
+  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20
   network: ws
-  port: 443
-  server: cs.hgdbk.ga
+  port: 1007
+  server: zz.jgwaad.tk
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -177,29 +179,40 @@ proxies:
   ws-opts:
     headers: {Host: YouTube-aweikeji}
     path: /
-- {alterId: 0, cipher: auto, name: 0831_1_github.com/freefq - 乌克兰  20, port: 31372,
-  server: 5.181.132.234, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: c40b4d06-7684-4c09-d8d9-8de7186b293a}
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 21
   network: ws
-  port: 443
-  server: jixu2.qiqis.ml
+  port: 1007
+  server: zz.jgwaad.tk
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 8ff3321a-63c5-48a5-a469-f334789102ff
+  uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64
   ws-opts:
-    headers: {Host: jixu2.qiqis.ml}
-    path: /
-- {alterId: 0, cipher: auto, name: 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, port: 80,
-  server: 129.154.61.32, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 93c8fd94-17de-4730-8977-d55e304e9a85}
+    headers: {Host: YouTube-aweikeji}
+    path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国RF Engineering 23
+  name: 0831_1_🇺🇸 github.com/freefq - 美国RF Engineering 22
+  network: ws
+  port: 80
+  server: 141.193.213.21
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0
+  ws-opts:
+    headers: {Host: sanggoro6.nextvpn.cc}
+    path: /vpnneo
+- {alterId: 0, cipher: auto, name: 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23,
+  port: 42424, server: 139.180.140.20, skip-cert-verify: false, tls: false, type: vmess,
+  udp: true, uuid: a3d12a2a-d6b3-4248-bb5d-0c5759f9606d}
+- alterId: 0
+  cipher: auto
+  name: 0831_1_🇺🇸 github.com/freefq - 美国RF Engineering 24
   network: ws
   port: 80
   server: access.zoominfo.com
@@ -213,100 +226,41 @@ proxies:
     path: /vpnneo
 - alterId: 0
   cipher: auto
-  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24
+  name: 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25
   network: ws
-  port: 1007
-  server: zz.jgwaad.tk
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64
-  ws-opts:
-    headers: {Host: YouTube-aweikeji}
-    path: /cctv13/hd.m3u8
-- {alterId: 0, cipher: auto, name: 0831_1_github.com/freefq - 广东省移动 25, port: 11926,
-  server: aliyun.install03.vnupgcn.cn, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 0253b574-8020-3186-a647-0267295ac9bb}
-- alterId: 0
-  cipher: auto
-  name: 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26
-  network: ws
-  port: 10188
-  server: tw-tpe-hq-v2.node.inforun.work
+  port: 443
+  server: 103.209.101.179
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: b46e5bfe-739c-4026-91fd-686209ce6d85
-  ws-opts:
-    headers: {Host: tw-tpe-hq-v2.node.inforun.work}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27
-  network: ws
-  port: 443
-  server: cs.hgdbk.ga
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f724115-8ca2-4aa4-b8cc-eb72d9b6b1ef
-  ws-opts:
-    headers: {Host: cs.hgdbk.ga}
-    path: /
-- {alterId: 0, cipher: auto, name: 0831_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 28,
+  uuid: a7f881d0-5767-4b46-c1a8-5f65dab50eda
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 0831_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 26,
   port: 9015, server: aliyun.moble.vnupgcn.cn, skip-cert-verify: false, tls: false,
   type: vmess, udp: true, uuid: 0253b574-8020-3186-a647-0267295ac9bb}
-- {name: 0831_1_🇬🇧 github.com/freefq - 英国  29, password: gMVN7PbEX2, port: 23868,
-  server: rbobosz.tk, skip-cert-verify: false, type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 0831_1_🇮🇷 github.com/freefq - 伊朗  30, port: 54242,
-  server: nnv.chitacdn.xyz, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: f2393d82-94c4-4b12-8267-293a7500e487}
-- {alterId: 0, cipher: auto, name: 0831_1_github.com/freefq - 广东省移动 31, port: 11927,
-  server: aliyun.install01.vnupgcn.cn, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 0253b574-8020-3186-a647-0267295ac9bb}
-- {alterId: 0, cipher: auto, name: 0831_1_🇺🇸 github.com/freefq - 北美地区  32, port: 36195,
-  server: 23.227.194.145, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: fae6eae5-a5b5-41ba-b660-dc067340048f}
-- alterId: 0
+- {alterId: 0, cipher: auto, name: 0831_1_🇺🇸 github.com/freefq - 美国  27, port: 24298,
+  server: 45.136.70.19, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 7324d2bf-e241-4ede-b490-753dc26b1b8c}
+- {alterId: 0, cipher: auto, name: 0831_1_github.com/freefq - 乌克兰  28, port: 31372,
+  server: 5.181.132.234, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: c40b4d06-7684-4c09-d8d9-8de7186b293a}
+- alterId: 2
   cipher: auto
-  name: 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33
+  name: 0831_1_🇺🇸 github.com/freefq - 美国  29
   network: ws
   port: 443
-  server: powerservice.com
+  server: 161.129.34.102
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
   ws-opts:
-    headers: {Host: uk2.v2rayserv.com}
+    headers: {Host: 161.129.34.102}
     path: /
-- {alterId: 0, cipher: auto, name: 0831_1_🇦🇺 github.com/freefq - 澳大利亚  34, port: 26282,
-  server: 129.154.57.134, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: cabbdf5d-3cca-4605-ba1c-c89a7d5b4c07}
-- {alterId: 0, cipher: auto, name: 0831_1_🇯🇵 github.com/freefq - 日本  35, port: 37121,
-  server: m4.40010010.xyz, skip-cert-verify: false, tls: true, type: vmess, udp: true,
-  uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5}
-- {name: 0831_1_🇭🇰 github.com/freefq - 香港ADCDATA数据中心 36, password: 62b78c9b-16cb-4ee6-824b-a4f856cf18f3,
-  port: 443, server: tr04.kaochangonline.online, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
-  network: ws
-  port: 1007
-  server: zz.jgwaad.tk
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb
-  ws-opts:
-    headers: {Host: YouTube-aweikeji}
-    path: /
+- {name: 0831_1_🇬🇧 github.com/freefq - 英国  30, password: gMVN7PbEX2, port: 23868,
+  server: rbobosz.tk, skip-cert-verify: false, type: trojan, udp: true}
 - {cipher: aes-256-gcm, name: '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
   password: TEzjfAYq2IjtuoS, port: 6697, server: 141.164.39.146, type: ss}
 - alterId: 0
@@ -1534,26 +1488,23 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 0253b574-8020-3186-a647-0267295ac9bb}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵 github.com/freefq
-      - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq - 广东省佛山市移动
-      4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心
-      6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq - 美国  10,
-    0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, 0831_1_🇳🇱
-      github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸 github.com/freefq
+      - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸 github.com/freefq
+      - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq - 广东省佛山市移动
+      6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司
+      8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦 github.com/freefq
+      - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 11, 0831_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动
+      13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1684,26 +1635,23 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵 github.com/freefq - 日本  2,
-    0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq - 广东省佛山市移动 4, 0831_1_🇺🇸
-      github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 6, 0831_1_🇨🇳
-      github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq - 美国  10,
-    0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, 0831_1_🇳🇱
-      github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸 github.com/freefq - 美国Nokia
+      2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸 github.com/freefq - 北美地区  4,
+    0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq - 广东省佛山市移动 6, 0831_1_🇯🇵
+      github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 8,
+    0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦 github.com/freefq
+      - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 11, 0831_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动
+      13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1834,26 +1782,23 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵
-      github.com/freefq - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq
-      - 广东省佛山市移动 4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡Choopa数据中心 6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq
-      - 美国  10, 0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq -
-      罗马尼亚  12, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬
-      github.com/freefq - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸
+      github.com/freefq - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸
+      github.com/freefq - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq
+      - 广东省佛山市移动 6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq
+      - 美国华盛顿Cogent通信公司 8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦
+      github.com/freefq - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心
+      11, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1989,26 +1934,23 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵
-      github.com/freefq - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq
-      - 广东省佛山市移动 4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡Choopa数据中心 6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq
-      - 美国  10, 0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq -
-      罗马尼亚  12, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬
-      github.com/freefq - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸
+      github.com/freefq - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸
+      github.com/freefq - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq
+      - 广东省佛山市移动 6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq
+      - 美国华盛顿Cogent通信公司 8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦
+      github.com/freefq - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心
+      11, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2138,26 +2080,23 @@ proxy-groups:
       9, 0831_7_亚洲(油管:破解资源君2.0) 12]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵 github.com/freefq
-      - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq - 广东省佛山市移动
-      4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心
-      6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq - 美国  10,
-    0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, 0831_1_🇳🇱
-      github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸 github.com/freefq
+      - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸 github.com/freefq
+      - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq - 广东省佛山市移动
+      6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司
+      8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦 github.com/freefq
+      - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 11, 0831_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动
+      13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2287,26 +2226,23 @@ proxy-groups:
       9, 0831_7_亚洲(油管:破解资源君2.0) 12]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵 github.com/freefq
-      - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq - 广东省佛山市移动
-      4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心
-      6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq - 美国  10,
-    0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, 0831_1_🇳🇱
-      github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 🔰 节点选择, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸 github.com/freefq
+      - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸 github.com/freefq
+      - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq - 广东省佛山市移动
+      6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司
+      8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦 github.com/freefq
+      - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 11, 0831_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动
+      13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2436,26 +2372,23 @@ proxy-groups:
       9, 0831_7_亚洲(油管:破解资源君2.0) 12]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵 github.com/freefq
-      - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq - 广东省佛山市移动
-      4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心
-      6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq - 美国  10,
-    0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  12, 0831_1_🇳🇱
-      github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸 github.com/freefq
+      - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸 github.com/freefq
+      - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq - 广东省佛山市移动
+      6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司
+      8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦 github.com/freefq
+      - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 11, 0831_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动
+      13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2585,26 +2518,23 @@ proxy-groups:
       9, 0831_7_亚洲(油管:破解资源君2.0) 12]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵
-      github.com/freefq - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq
-      - 广东省佛山市移动 4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡Choopa数据中心 6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq
-      - 美国  10, 0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq -
-      罗马尼亚  12, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬
-      github.com/freefq - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸
+      github.com/freefq - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸
+      github.com/freefq - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq
+      - 广东省佛山市移动 6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq
+      - 美国华盛顿Cogent通信公司 8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦
+      github.com/freefq - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心
+      11, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2740,26 +2670,23 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0831_1_🇺🇸 github.com/freefq - 美国  1, 0831_1_🇯🇵
-      github.com/freefq - 日本  2, 0831_1_🇺🇸 github.com/freefq - 美国  3, 0831_1_github.com/freefq
-      - 广东省佛山市移动 4, 0831_1_🇺🇸 github.com/freefq - 美国  5, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡Choopa数据中心 6, 0831_1_🇨🇳 github.com/freefq - 广东省深圳市移动 7, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 8, 0831_1_🇷🇴 github.com/freefq - 罗马尼亚  9, 0831_1_🇺🇸 github.com/freefq
-      - 美国  10, 0831_1_github.com/freefq - 乌克兰  11, 0831_1_🇷🇴 github.com/freefq -
-      罗马尼亚  12, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 13, 0831_1_🇸🇬
-      github.com/freefq - 新加坡DigitalOcean数据中心 14, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      15, 0831_1_🇯🇵 github.com/freefq - 日本  16, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      17, 0831_1_🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 18, 0831_1_🇸🇬 github.com/freefq
-      - 新加坡DigitalOcean数据中心 19, 0831_1_github.com/freefq - 乌克兰  20, 0831_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0831_1_🇦🇺 github.com/freefq - 澳大利亚  22, 0831_1_🇺🇸 github.com/freefq
-      - 美国RF Engineering 23, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 24,
-    0831_1_github.com/freefq - 广东省移动 25, 0831_1_🇨🇳 github.com/freefq - 广东省广州市移动 26,
-    0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 27, 0831_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 28, 0831_1_🇬🇧 github.com/freefq - 英国  29, 0831_1_🇮🇷 github.com/freefq
-      - 伊朗  30, 0831_1_github.com/freefq - 广东省移动 31, 0831_1_🇺🇸 github.com/freefq -
-      北美地区  32, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 33, 0831_1_🇦🇺 github.com/freefq
-      - 澳大利亚  34, 0831_1_🇯🇵 github.com/freefq - 日本  35, 0831_1_🇭🇰 github.com/freefq
-      - 香港ADCDATA数据中心 36, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0831_1_🇯🇵 github.com/freefq - 日本  1, 0831_1_🇺🇸
+      github.com/freefq - 美国Nokia 2, 0831_1_github.com/freefq - 广东省佛山市移动 3, 0831_1_🇺🇸
+      github.com/freefq - 北美地区  4, 0831_1_🇯🇵 github.com/freefq - 日本  5, 0831_1_github.com/freefq
+      - 广东省佛山市移动 6, 0831_1_🇯🇵 github.com/freefq - 日本  7, 0831_1_🇺🇸 github.com/freefq
+      - 美国华盛顿Cogent通信公司 8, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0831_1_🇨🇦
+      github.com/freefq - 加拿大  10, 0831_1_🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心
+      11, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 0831_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 0831_1_🇮🇳 github.com/freefq - 印度孟买阿里云 14, 0831_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 15, 0831_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0831_1_github.com/freefq
+      - 乌克兰  17, 0831_1_🇮🇷 github.com/freefq - 伊朗  18, 0831_1_🇯🇵 github.com/freefq
+      - 日本东京M247网络 19, 0831_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 20, 0831_1_🇸🇬
+      github.com/freefq - 新加坡DigitalOcean数据中心 21, 0831_1_🇺🇸 github.com/freefq - 美国RF
+      Engineering 22, 0831_1_🇸🇬 github.com/freefq - 新加坡Choopa数据中心 23, 0831_1_🇺🇸 github.com/freefq
+      - 美国RF Engineering 24, 0831_1_🇯🇵 github.com/freefq - 日本IPTELECOM 25, 0831_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 26, 0831_1_🇺🇸 github.com/freefq - 美国  27,
+    0831_1_github.com/freefq - 乌克兰  28, 0831_1_🇺🇸 github.com/freefq - 美国  29, 0831_1_🇬🇧
+      github.com/freefq - 英国  30, '0831_4_[08-31]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0831_4_[08-31]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0831_4_[08-31]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0831_4_[08-31]|openrunner|美国(US)USA/LosAngeles_6', '0831_4_[08-31]|openrunner|新加坡(SG)Singapore/Singapore_7',
