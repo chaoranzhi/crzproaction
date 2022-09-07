@@ -4,34 +4,169 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {name: 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, password: 42b6b292-719b-429a-b9f9-c9751298a9ba,
-  port: 50001, server: sg1.fastconnect.ml, skip-cert-verify: false, type: trojan,
-  udp: true}
+- {name: 0907_1_🇺🇸 github.com/freefq - 美国  1, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
+  server: ty1-3.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0907_1_🇺🇸 github.com/freefq - 美国  2, password: UhCF2JxsDxStDp5NTQ, port: 443,
+  server: ty1-1.crabyakiniku.com, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0907_1_🇯🇵 github.com/freefq - 日本  3, password: 21aefd43-c656-4c38-8c99-afe5aee918d6,
+  port: 4433, server: 93hk03.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国惠普HP 2
+  name: 0907_1_🇭🇰 github.com/freefq - 香港阿里云 4
   network: ws
-  port: 80
-  server: v21.xn--6nq44r2uh9rhj7f.com
+  port: 41565
+  server: s192.s2022.buzz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 424fb726-b6a3-3459-9f39-8e5dd1ab5b41
+  ws-opts:
+    headers: {Host: s192.s2022.buzz}
+    path: /
+- {name: 0907_1_🇺🇸 github.com/freefq - 美国  5, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
+  server: ty1-2.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
+- {alterId: 0, cipher: auto, name: 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
+    6, port: 443, server: bw.mario-web.live, skip-cert-verify: false, tls: true, type: vmess,
+  udp: true, uuid: dbea6907-abf2-4cc2-d507-bba7998beb65}
+- {name: 0907_1_🇯🇵 github.com/freefq - 日本  7, password: 21aefd43-c656-4c38-8c99-afe5aee918d6,
+  port: 443, server: 831sg.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 2
+  cipher: auto
+  name: 0907_1_🇮🇳 github.com/freefq - 印度孟买Amazon数据中心 8
+  network: ws
+  port: 443
+  server: jklahblog.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 96edbdf0-c8b8-49f2-839e-940698bbf83d
+  ws-opts:
+    headers: {Host: jklahblog.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0907_1_github.com/freefq - 广东省佛山市移动 9
+  network: ws
+  port: 38401
+  server: in-us-1.onebox6.org
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 0164445c-98cb-4333-82ee-11f6de992b6d
+  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
   ws-opts:
-    headers: {Host: tms.dingtalk.com}
+    headers: {Host: '%7B%22Host%22:%22in-us-1.onebox6.org%22%7D'}
+    path: /hls/cctv5phd.m3u8
+- {name: 0907_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428,
+  port: 443, server: musashino.freetrade.link, skip-cert-verify: false, type: trojan,
+  udp: true}
+- alterId: 2
+  cipher: auto
+  name: 0907_1_🇺🇸 github.com/freefq - 美国  11
+  network: ws
+  port: 16666
+  server: usa1.dianshangqw.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4e2ad0dd-d97a-3126-9347-0cb4b373ea83
+  ws-opts:
+    headers: {Host: www.baidu.com}
     path: /
-- {name: 0907_1_🇯🇵 github.com/freefq - 日本  3, password: 21aefd43-c656-4c38-8c99-afe5aee918d6,
-  port: 443, server: 823jp.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- {cipher: aes-128-cfb, name: 0907_1_🇺🇸 github.com/freefq - 美国  4, password: shadowsocks,
-  port: 443, server: 156.146.38.163, type: ss, udp: true}
-- {cipher: aes-256-gcm, name: 0907_1_🇺🇸 github.com/freefq - 美国  5, password: abcd1234,
-  port: 6800, server: 45.59.184.12, type: ss, udp: true}
-- {name: 0907_1_🇺🇸 github.com/freefq - 美国  6, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
-  server: ty1-1.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0907_1_github.com/freefq - 广东省佛山市移动 7
+  name: 0907_1_🇻🇳 github.com/freefq - 越南  12
+  network: ws
+  port: 80
+  server: hanoi05.vifast.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5
+  ws-opts:
+    headers: {Host: dl.kgvn.garenanow.com}
+    path: /
+- {alterId: 0, cipher: auto, name: 0907_1_github.com/freefq - 乌克兰  13, port: 31372,
+  server: 5.181.132.235, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 0bb88eea-73a5-4e37-ac8b-03090a57acba}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇺🇸 github.com/freefq - 美国  14
+  network: ws
+  port: 80
+  server: xjp.azzhuangaping.tw
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be
+  ws-opts:
+    headers: {Host: xjp.azzhuangaping.tw}
+    path: /adobe
+- {name: 0907_1_🇺🇸 github.com/freefq - 美国  15, password: UhCF2JxsDxStDp5NTQ, port: 443,
+  server: ty1-3.crabyakiniku.com, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 0907_1_🇺🇸 github.com/freefq - 美国  16, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
+  server: ty1-1.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
+- {cipher: aes-256-gcm, name: 0907_1_🇺🇸 github.com/freefq - 美国  17, password: abcd1234,
+  port: 6800, server: 45.59.184.12, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0907_1_🇦🇺 github.com/freefq - 澳大利亚  18, port: 80,
+  server: 129.154.61.32, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 93c8fd94-17de-4730-8977-d55e304e9a85}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19
+  network: ws
+  port: 888
+  server: asjlg-1041-v2-1.hkg-d-hkt.nd.cjhh.mom
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
+  ws-opts:
+    headers: {Host: edge.cjhh.mom}
+    path: /
+- {cipher: aes-256-cfb, name: 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶 20, password: bwhskrskr05,
+  port: 253, server: 97.64.122.63, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21
+  network: ws
+  port: 8443
+  server: blsj.moonfree.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 48ef67dd-9cce-4bd1-8998-893d563a393b
+  ws-opts:
+    headers: {Host: blsj.moonfree.top}
+    path: /
+- {name: 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 22, password: 0fc39e24-c3f3-4a34-b277-90edae5891ea,
+  port: 9999, server: bo1.paoche.work, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23
+  network: ws
+  port: 443
+  server: cdn.linil.ml
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2fb8c800-89c1-44dd-a425-b37bc0bb2a0a
+  ws-opts:
+    headers: {Host: zxdz1962cc.czsx1624.tk}
+    path: /f65a148681c42/
+- {name: 0907_1_🇻🇳 github.com/freefq - 越南  24, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed,
+  port: 443, server: hanoi-4.4g.mkvn.net, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_github.com/freefq - 广东省佛山市移动 25
   network: ws
   port: 38701
   server: ingress-i1.onebox6.org
@@ -45,202 +180,7 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 0907_1_github.com/freefq - 广东省佛山市移动 8
-  network: ws
-  port: 38401
-  server: in-us-1.onebox6.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 79386685-16da-327c-9e14-aa6d702d86bc
-  ws-opts:
-    headers: {Host: '%7B%22Host%22:%22in-us-1.onebox6.org%22%7D'}
-    path: /hls/cctv5phd.m3u8
-- {name: 0907_1_🇺🇸 github.com/freefq - 美国  9, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
-  server: ty1-3.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇻🇳 github.com/freefq - 越南  10
-  network: ws
-  port: 80
-  server: hanoi05.vifast.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4c2d3f00-8f9b-49c2-a43b-10f022b2fde5
-  ws-opts:
-    headers: {Host: dl.kgvn.garenanow.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11
-  network: ws
-  port: 888
-  server: asjlg-1041-v2-1.hkg-d-hkt.nd.cjhh.mom
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
-  ws-opts:
-    headers: {Host: edge.cjhh.mom}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国加州 12
-  network: ws
-  port: 443
-  server: 64.112.42.73
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4946f776-0af3-49f3-acad-d157475d253e
-  ws-opts: {path: /}
-- {name: 0907_1_🇺🇸 github.com/freefq - 美国  13, password: 4V4kxVXmcg5Yn2DqF2, port: 443,
-  server: ty1-2.nigirocloud.com, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 2
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国  14
-  network: ws
-  port: 16666
-  server: usa1.dianshangqw.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4e2ad0dd-d97a-3126-9347-0cb4b373ea83
-  ws-opts:
-    headers: {Host: www.baidu.com}
-    path: /
-- {name: 0907_1_🇺🇸 github.com/freefq - 美国  15, password: UhCF2JxsDxStDp5NTQ, port: 443,
-  server: ty1-3.crabyakiniku.com, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0907_1_🇯🇵 github.com/freefq - 日本  16, password: 21aefd43-c656-4c38-8c99-afe5aee918d6,
-  port: 443, server: 831sg.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国  17
-  network: ws
-  port: 80
-  server: xjp.azzhuangaping.tw
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c178223-0bd9-3af7-bcd3-32c074f626be
-  ws-opts:
-    headers: {Host: xjp.azzhuangaping.tw}
-    path: /adobe
-- {name: 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18, password: 0fc39e24-c3f3-4a34-b277-90edae5891ea,
-  port: 9999, server: bo1.paoche.work, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19
-  network: ws
-  port: 44444
-  server: gd-sg.netflix.wales
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d38524e7-26ae-492f-c38e-c4706b60cd09
-  ws-opts:
-    headers: {Host: gd-sg.netflix.wales}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 20
-  network: ws
-  port: 443
-  server: 188.114.97.110
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
-  ws-opts:
-    headers: {Host: v2fly.samrt.website}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21
-  network: ws
-  port: 10017
-  server: cm.fanqiecn.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 82713dc8-a8d5-3120-b97f-f83883ac4e16
-  ws-opts:
-    headers: {Host: cm.fanqiecn.top}
-    path: /
-- {name: 0907_1_🇺🇸 github.com/freefq - 美国  22, password: UhCF2JxsDxStDp5NTQ, port: 443,
-  server: ty1-1.crabyakiniku.com, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23
-  network: ws
-  port: 443
-  server: cdn.linil.ml
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2c7da08b-b0a0-4544-a4d9-fd75515cc373
-  ws-opts:
-    headers: {Host: eu.ratx.tech}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24
-  network: ws
-  port: 8443
-  server: blsj.moonfree.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 48ef67dd-9cce-4bd1-8998-893d563a393b
-  ws-opts:
-    headers: {Host: blsj.moonfree.top}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-  network: ws
-  port: 443
-  server: sgamd.ptuu.ga
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1bbf1ef7-3056-4160-9cab-491e024de705
-  ws-opts:
-    headers: {Host: sgamd.ptuu.ga}
-    path: /123
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26
-  network: ws
-  port: 443
-  server: cdn.linil.ml
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7ac0dc7a-0ec5-4b62-ab61-4d0c00fc113a
-  ws-opts:
-    headers: {Host: jlnt8169.czsx1624.tk}
-    path: /
-- {alterId: 0, cipher: auto, name: 0907_1_🇦🇺 github.com/freefq - 澳大利亚  27, port: 80,
-  server: 129.154.61.32, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 93c8fd94-17de-4730-8977-d55e304e9a85}
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 28
+  name: 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26
   network: ws
   port: 80
   server: ca1.vmess.tunnel.cx
@@ -254,26 +194,38 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0907_1_🇬🇧 github.com/freefq - 英国  29
+  name: 0907_1_🇺🇸 github.com/freefq - 美国加州 27
   network: ws
   port: 443
-  server: brasil.jcnf.app
+  server: 64.112.42.73
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: c753e8a8-e180-4e76-a486-c917273d718b
-  ws-opts:
-    headers: {Host: brasil.jcnf.app}
-    path: /
-- {name: 0907_1_🇬🇧 github.com/freefq - 英国  30, password: gMVN7PbEX2, port: 23868,
-  server: rbobosz.tk, skip-cert-verify: false, type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心
-    31, port: 38941, server: 139.59.244.143, skip-cert-verify: false, tls: false,
-  type: vmess, udp: true, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918}
+  uuid: 4946f776-0af3-49f3-acad-d157475d253e
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 0907_1_🇬🇧 github.com/freefq - 英国  28, port: 40762,
+  server: rbobosz.tk, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 5115f550-3f8c-44fe-a064-eb02e2fbb89b}
+- {name: 0907_1_github.com/freefq - 乌克兰  29, password: 5y8y3CwxRVYhyfSY, port: 443,
+  server: ce.rutracker-cn.com, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙 32
+  name: 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30
+  network: ws
+  port: 443
+  server: 188.114.97.110
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94
+  ws-opts:
+    headers: {Host: v2fly.samrt.website}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙 31
   network: ws
   port: 888
   server: mtkzb-1038-v2-1.sjc-d-cn2.jd.cjhh.lol
@@ -287,49 +239,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0907_1_github.com/freefq - 亚太地区  33
-  network: ws
-  port: 888
-  server: kvgwv-1037-v2-1.hkg-d-cmi.jd.cjhh.lol
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
-  ws-opts:
-    headers: {Host: node.inforun.work}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 34
-  network: ws
-  port: 443
-  server: 172.67.167.100
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f5e74e66-0241-447c-83a4-a4005f438536
-  ws-opts:
-    headers: {Host: m4.v2rayfree1.xyz}
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35
+  name: 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32
   network: ws
   port: 80
-  server: v83.xn--6nq44r2uh9rhj7f.com
+  server: fr-v.sshmax.xyz
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 0164445c-98cb-4333-82ee-11f6de992b6d
+  uuid: 8500264f-8362-4c30-a97f-6594d8445e0b
   ws-opts:
-    headers: {Host: tms.dingtalk.com}
+    headers: {Host: fr-v.sshmax.xyz}
+    path: /vmess
+- {name: 0907_1_🇯🇵 github.com/freefq - 日本  33, password: 21aefd43-c656-4c38-8c99-afe5aee918d6,
+  port: 443, server: 823jp.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0907_1_🇬🇧 github.com/freefq - 英国  34
+  network: ws
+  port: 443
+  server: brasil.jcnf.app
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c753e8a8-e180-4e76-a486-c917273d718b
+  ws-opts:
+    headers: {Host: brasil.jcnf.app}
     path: /
-- {alterId: 0, cipher: auto, name: 0907_1_🇺🇸 github.com/freefq - 美国  36, port: 34401,
-  server: 152.70.136.12, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 890a284d-5d99-45e7-a982-2c34e5616778}
+- {name: 0907_1_🇬🇧 github.com/freefq - 英国  35, password: gMVN7PbEX2, port: 23868,
+  server: rbobosz.tk, skip-cert-verify: false, type: trojan, udp: true}
+- {alterId: 0, cipher: auto, name: 0907_1_🇮🇷 github.com/freefq - 伊朗  36, port: 54242,
+  server: nnv.chitacdn.xyz, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: f2393d82-94c4-4b12-8267-293a7500e487}
 - {alterId: 2, cipher: auto, name: 0907_3_公益机场:https://bit.ly/3BPeo5G, port: 52286,
   server: 86.wowogg.cyou, skip-cert-verify: true, tls: false, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51}
 - {alterId: 0, cipher: auto, name: 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, port: 9043,
@@ -1629,40 +1571,39 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, 0907_1_🇺🇸
-      github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸 github.com/freefq
+      - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq -
+      香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1745,40 +1686,39 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, 0907_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸 github.com/freefq
-      - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
-      美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸 github.com/freefq - 美国  2,
+    0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq - 香港阿里云 4, 0907_1_🇺🇸
+      github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 6,
+    0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq - 印度孟买Amazon数据中心
+      8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
+      10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq - 越南  12,
+    0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq - 美国  14, 0907_1_🇺🇸
+      github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq - 美国  16, 0907_1_🇺🇸
+      github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq - 澳大利亚  18, 0907_1_🇭🇰
+      github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶
+      20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 0907_1_🇻🇳
+      github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动 25, 0907_1_🇨🇦
+      github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq - 美国加州
+      27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq - 乌克兰  29,
+    0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1861,40 +1801,39 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1,
-    0907_1_🇺🇸 github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸
+      github.com/freefq - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq
+      - 香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1982,40 +1921,39 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1,
-    0907_1_🇺🇸 github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸
+      github.com/freefq - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq
+      - 香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2097,40 +2035,39 @@ proxy-groups:
       美国(欢迎订阅Youtube破解资源君) 46, 0907_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 47]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, 0907_1_🇺🇸 github.com/freefq
-      - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸 github.com/freefq
-      - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
-      美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸 github.com/freefq
+      - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq -
+      香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2212,40 +2149,39 @@ proxy-groups:
       美国(欢迎订阅Youtube破解资源君) 46, 0907_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 47]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, 0907_1_🇺🇸
-      github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 🔰 节点选择, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸 github.com/freefq
+      - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq -
+      香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2327,40 +2263,39 @@ proxy-groups:
       美国(欢迎订阅Youtube破解资源君) 46, 0907_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 47]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, 0907_1_🇺🇸
-      github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸 github.com/freefq
+      - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq -
+      香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2442,40 +2377,39 @@ proxy-groups:
       美国(欢迎订阅Youtube破解资源君) 46, 0907_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 47]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1,
-    0907_1_🇺🇸 github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸
+      github.com/freefq - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq
+      - 香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2563,40 +2497,39 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0907_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1,
-    0907_1_🇺🇸 github.com/freefq - 美国惠普HP 2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇺🇸
-      github.com/freefq - 美国  4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
-      - 美国  6, 0907_1_github.com/freefq - 广东省佛山市移动 7, 0907_1_github.com/freefq - 广东省佛山市移动
-      8, 0907_1_🇺🇸 github.com/freefq - 美国  9, 0907_1_🇻🇳 github.com/freefq - 越南  10,
-    0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 11, 0907_1_🇺🇸 github.com/freefq - 美国加州
-      12, 0907_1_🇺🇸 github.com/freefq - 美国  13, 0907_1_🇺🇸 github.com/freefq - 美国  14,
-    0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇯🇵 github.com/freefq - 日本  16, 0907_1_🇺🇸
-      github.com/freefq - 美国  17, 0907_1_🇯🇵 github.com/freefq - 日本东京Digital VM 18,
-    0907_1_🇺🇸 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 19, 0907_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 20, 0907_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0907_1_🇺🇸
-      github.com/freefq - 美国  22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      23, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 24, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 25, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 0907_1_🇦🇺
-      github.com/freefq - 澳大利亚  27, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
-      28, 0907_1_🇬🇧 github.com/freefq - 英国  29, 0907_1_🇬🇧 github.com/freefq - 英国  30,
-    0907_1_🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 31, 0907_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙 32, 0907_1_github.com/freefq - 亚太地区  33, 0907_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 34, 0907_1_🇺🇸 github.com/freefq - 美国Amazon数据中心 35, 0907_1_🇺🇸
-      github.com/freefq - 美国  36, 0907_3_公益机场:https://bit.ly/3BPeo5G, 0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08,
-    0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11, 0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲
-      US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0907_1_🇺🇸 github.com/freefq - 美国  1, 0907_1_🇺🇸
+      github.com/freefq - 美国  2, 0907_1_🇯🇵 github.com/freefq - 日本  3, 0907_1_🇭🇰 github.com/freefq
+      - 香港阿里云 4, 0907_1_🇺🇸 github.com/freefq - 美国  5, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 6, 0907_1_🇯🇵 github.com/freefq - 日本  7, 0907_1_🇮🇳 github.com/freefq
+      - 印度孟买Amazon数据中心 8, 0907_1_github.com/freefq - 广东省佛山市移动 9, 0907_1_🇯🇵 github.com/freefq
+      - 日本东京Amazon数据中心 10, 0907_1_🇺🇸 github.com/freefq - 美国  11, 0907_1_🇻🇳 github.com/freefq
+      - 越南  12, 0907_1_github.com/freefq - 乌克兰  13, 0907_1_🇺🇸 github.com/freefq -
+      美国  14, 0907_1_🇺🇸 github.com/freefq - 美国  15, 0907_1_🇺🇸 github.com/freefq -
+      美国  16, 0907_1_🇺🇸 github.com/freefq - 美国  17, 0907_1_🇦🇺 github.com/freefq -
+      澳大利亚  18, 0907_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 19, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚洛杉矶 20, 0907_1_🇫🇷 github.com/freefq - 法国Online S.A.S 21, 0907_1_🇯🇵
+      github.com/freefq - 日本东京Digital VM 22, 0907_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      23, 0907_1_🇻🇳 github.com/freefq - 越南  24, 0907_1_github.com/freefq - 广东省佛山市移动
+      25, 0907_1_🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心 26, 0907_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 0907_1_🇬🇧 github.com/freefq - 英国  28, 0907_1_github.com/freefq -
+      乌克兰  29, 0907_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点 30, 0907_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙 31, 0907_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 32, 0907_1_🇯🇵
+      github.com/freefq - 日本  33, 0907_1_🇬🇧 github.com/freefq - 英国  34, 0907_1_🇬🇧
+      github.com/freefq - 英国  35, 0907_1_🇮🇷 github.com/freefq - 伊朗  36, 0907_3_公益机场:https://bit.ly/3BPeo5G,
+    0907_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0907_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0907_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0907_3__01, 0907_3__02, 0907_3_🇯🇵 Pool_🇯🇵JP_08, 0907_3_🇷🇴 RO_10, 0907_3_🇷🇴 RO_11,
+    0907_3_🇷🇴 RO_12, 0907_3_🇷🇴 RO_13, 0907_3_🇺🇲 US_14, 0907_3_ZZ_22, '0907_4_[09-07]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0907_4_[09-07]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0907_4_[09-07]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0907_4_[09-07]|openrunner|美国(US)USA/LosAngeles_6', '0907_4_[09-07]|openrunner|新加坡(SG)Singapore/Singapore_7',
