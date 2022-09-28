@@ -4,48 +4,68 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1
-  network: ws
-  port: 33954
-  server: s354.okggnode.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e4832ca0-d6f6-32c8-87da-f3eccffe73c0
-  ws-opts:
-    headers: {Host: s354.okggnode.top}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 2
-  network: ws
-  port: 10002
-  server: ah.yd01.paopaocloud.cyou
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
-  ws-opts:
-    headers: {Host: ah.yd01.paopaocloud.cyou}
-    path: /
-- {alterId: 0, cipher: auto, name: 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3,
-  port: 46933, server: 13.212.219.4, skip-cert-verify: false, tls: true, type: vmess,
-  udp: true, uuid: 7446e9a8-2428-4663-bfbc-581dedd1b2cb}
+- {cipher: aes-256-cfb, name: 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, password: amazonskr05,
+  port: 443, server: 35.87.114.40, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
+    2, port: 12623, server: c12s4.jamjams3.net, skip-cert-verify: false, tls: false,
+  type: vmess, udp: true, uuid: 8ff878d1-eaf8-4afd-8cbb-6d657596af64}
+- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+    3, port: 58554, server: v2.layspay.co, skip-cert-verify: false, tls: true, type: vmess,
+  udp: true, uuid: 0c5adea8-ca19-43e4-9e66-1def2ba0e663}
 - {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络
     4, port: 12623, server: c12s801.jamjams3.net, skip-cert-verify: false, tls: false,
   type: vmess, udp: true, uuid: 8ff878d1-eaf8-4afd-8cbb-6d657596af64}
-- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
-    5, port: 12623, server: c12s4.jamjams3.net, skip-cert-verify: false, tls: false,
-  type: vmess, udp: true, uuid: 8ff878d1-eaf8-4afd-8cbb-6d657596af64}
-- {cipher: chacha20-ietf-poly1305, name: 0928_1_🇫🇷 github.com/freefq - 法国  6, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1,
+- {alterId: 0, cipher: auto, name: 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心
+    5, port: 21008, server: 138.68.178.33, skip-cert-verify: false, tls: false, type: vmess,
+  udp: true, uuid: 80b5645a-86b7-48af-9252-977ba807a338}
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
+  network: ws
+  port: 443
+  server: 172.105.219.18
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts: {path: /}
+- {cipher: chacha20-ietf-poly1305, name: 0928_1_🇫🇷 github.com/freefq - 法国  7, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1,
   port: 18888, server: mf02.xmss.vip, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国  7
+  name: 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 8
+  network: ws
+  port: 8080
+  server: 138.68.90.231
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
+  ws-opts:
+    headers: {Host: 138.68.90.231}
+    path: /cctv13/hd.m3u8
+- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+    9, port: 13944, server: nice-jp02.tiktokcdn.buzz, skip-cert-verify: false, tls: true,
+  type: vmess, udp: true, uuid: 6c6ab0e8-a26c-48d2-994a-7ade314d4281}
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+  network: ws
+  port: 443
+  server: qiqis.cf
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93
+  ws-opts:
+    headers: {Host: 1dcelis.qiqis.ml}
+    path: /b356a4/
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国  11
   network: ws
   port: 443
   server: 161.35.229.94
@@ -57,47 +77,6 @@ proxies:
   ws-opts:
     headers: {Host: 161.35.229.94}
     path: /
-- {alterId: 0, cipher: auto, name: 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心
-    8, port: 21008, server: 138.68.178.33, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 80b5645a-86b7-48af-9252-977ba807a338}
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 9
-  network: ws
-  port: 443
-  server: riop.miaoge110.cf
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8a0e0eed-3294-42cb-982f-b3bb949c5a4c
-  ws-opts:
-    headers: {Host: riop.miaoge110.cf}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇬🇧 github.com/freefq - 英国  10
-  network: ws
-  port: 443
-  server: 31.22.109.209
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
-  ws-opts: {path: /}
-- alterId: 2
-  cipher: auto
-  name: 0928_1_🇨🇦 github.com/freefq - 加拿大  11
-  network: ws
-  port: 443
-  server: 165.154.244.100
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
-  ws-opts: {path: /}
 - alterId: 2
   cipher: auto
   name: 0928_1_🇨🇦 github.com/freefq - 加拿大  12
@@ -112,72 +91,49 @@ proxies:
   ws-opts:
     headers: {Host: 527hk1.fans8.xyz}
     path: /
-- alterId: 0
+- {name: 0928_1_🇯🇵 github.com/freefq - 日本  13, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998,
+  port: 443, server: jgw2.gaox.ml, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 2
   cipher: auto
-  name: 0928_1_🇬🇧 github.com/freefq - 英国社会保险安全部 13
-  network: ws
-  port: 80
-  server: 51.38.48.107
-  servername: C.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2c294d59-f28c-4930-88ce-b68b24f1e8db
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14
+  name: 0928_1_🇨🇦 github.com/freefq - 加拿大  14
   network: ws
   port: 443
-  server: 172.105.219.18
+  server: 165.154.244.100
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a
   ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  15, port: 41443,
-  server: 94.177.8.87, skip-cert-verify: false, tls: true, type: vmess, udp: true,
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
-- {name: 0928_1_🇨🇦 github.com/freefq - 加拿大  16, password: 82bd7228-81e2-421f-ac42-a205917b467c,
-  port: 443, server: 921tw.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 0928_1_🇨🇦 github.com/freefq - 加拿大  17, password: 82bd7228-81e2-421f-ac42-a205917b467c,
-  port: 44318, server: 913tw.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 4
+- alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国  18
+  name: 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15
   network: ws
   port: 443
-  server: 192.96.204.250
+  server: 13.125.43.34
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  uuid: 74dd345a-c6f7-4803-8682-5e2b003e2aab
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 16
+  network: ws
+  port: 10002
+  server: ah.yd01.paopaocloud.cyou
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
   ws-opts:
-    headers: {Host: 192.96.204.250}
+    headers: {Host: ah.yd01.paopaocloud.cyou}
     path: /
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19
-  network: ws
-  port: 8443
-  server: imkcp.gay
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 73973a3e-202a-4160-db24-f6fc734ab11c
-  ws-opts:
-    headers: {Host: imkcp.gay}
-    path: /imkcp.gay
-- {alterId: 0, cipher: auto, name: 0928_1_🇪🇸 github.com/freefq - 西班牙  20, port: 41443,
-  server: 185.194.30.40, skip-cert-verify: false, tls: true, type: vmess, udp: true,
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 21
+  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
   network: ws
   port: 80
   server: 104.18.21.226
@@ -192,23 +148,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 22
+  name: 0928_1_🇬🇧 github.com/freefq - 英国  18
   network: ws
-  port: 8080
-  server: 138.68.90.231
+  port: 443
+  server: 31.22.109.209
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 294ffdc3-5942-45ae-a154-dc6c92eacf1d
-  ws-opts:
-    headers: {Host: 138.68.90.231}
-    path: /cctv13/hd.m3u8
-- {cipher: chacha20-ietf-poly1305, name: 0928_1_github.com/freefq - 乌克兰  23, password: 35b0f578-8961-4a2b-99a1-db9555e522e4,
-  port: 18888, server: mf01.xmss.vip, type: ss, udp: true}
+  uuid: 36793d2c-0d5a-4a84-8862-f9c93e9af5b5
+  ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24
+  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   network: ws
   port: 443
   server: 141.101.114.80
@@ -220,88 +172,50 @@ proxies:
   ws-opts:
     headers: {Host: v2ray1.zhujicn2.org}
     path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25
-  network: ws
-  port: 443
-  server: nice-us01.nicevpn.top
-  servername: nice-us01.nicevpn.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 11c69bcb-8950-41e4-872f-7177ccd3de50
-  ws-opts:
-    headers: {Host: nice-us01.nicevpn.top}
-    path: /ffatunvws
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26
-  network: ws
-  port: 443
-  server: qiqis.cf
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93
-  ws-opts:
-    headers: {Host: 1dcelis.qiqis.ml}
-    path: /b356a4/
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27
-  network: ws
-  port: 27480
-  server: 139.162.119.81
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f72ee58f-78bf-4b61-8442-7b9cca912b14
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28
-  network: ws
-  port: 443
-  server: nice1509.xn--8lt534m.tk
-  servername: nice1509.xn--8lt534m.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 74dd345a-c6f7-4803-8682-5e2b003e2aab
-  ws-opts:
-    headers: {Host: nice1509.xn--8lt534m.tk}
-    path: /iuodvws
+- {alterId: 0, cipher: auto, name: 0928_1_🇪🇸 github.com/freefq - 西班牙  20, port: 41443,
+  server: 185.194.30.40, skip-cert-verify: false, tls: true, type: vmess, udp: true,
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
+- {name: 0928_1_🇨🇦 github.com/freefq - 加拿大  21, password: 82bd7228-81e2-421f-ac42-a205917b467c,
+  port: 443, server: 921tw.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- {alterId: 64, cipher: auto, name: 0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22,
+  port: 47173, server: 111.45.22.187, skip-cert-verify: false, tls: false, type: vmess,
+  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-    29, port: 58554, server: v2.layspay.co, skip-cert-verify: false, tls: true, type: vmess,
+    23, port: 58554, server: 192.210.231.59, skip-cert-verify: false, tls: true, type: vmess,
   udp: true, uuid: 0c5adea8-ca19-43e4-9e66-1def2ba0e663}
+- {name: 0928_1_🇨🇦 github.com/freefq - 加拿大  24, password: 82bd7228-81e2-421f-ac42-a205917b467c,
+  port: 44318, server: 913tw.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 4
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国  25
+  network: ws
+  port: 443
+  server: 192.96.204.250
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
+  ws-opts:
+    headers: {Host: 192.96.204.250}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇪🇺 github.com/freefq - 欧洲  30
+  name: 0928_1_🇩🇪 github.com/freefq - 德国  26
   network: ws
   port: 80
-  server: mx1.v2rayserv.com
+  server: sg-v.sshmax.xyz
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: f1b438a7-b8f3-4cd7-8aca-d54efdaf64e3
+  uuid: 0baaf014-af04-4028-be53-f5c75bb276ae
   ws-opts:
-    headers: {Host: mx1.v2rayserv.com}
+    headers: {Host: sg-v.sshmax.xyz}
     path: /
-- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 31,
-  port: 13142, server: 20.168.85.79, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: ddbceb5c-8c65-49eb-b1a2-cb945963b2af}
-- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32,
-  port: 443, server: nice-kr02.lime345.cf, skip-cert-verify: false, tls: true, type: vmess,
-  udp: true, uuid: 17101f8f-b184-4760-8f90-6cb4645da3b2}
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33
+  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27
   network: ws
   port: 443
   server: cf.naixii.top
@@ -315,53 +229,86 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇪🇺 github.com/freefq - 欧洲  34
+  name: 0928_1_🇪🇺 github.com/freefq - 欧洲  28
   network: ws
   port: 80
-  server: 131.196.253.140
+  server: mx1.v2rayserv.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: f1b438a7-b8f3-4cd7-8aca-d54efdaf64e3
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35
-  network: ws
-  port: 443
-  server: jp2.tzccwz.fit
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0c1149d2-c49d-4000-ecb9-c6001e66a3d0
   ws-opts:
-    headers: {Host: '%7B%22Host%22:%22jp2.tzccwz.fit%22%7D'}
+    headers: {Host: mx1.v2rayserv.com}
     path: /
-- alterId: 0
+- {alterId: 0, cipher: auto, name: 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29,
+  port: 46933, server: 13.212.219.4, skip-cert-verify: false, tls: true, type: vmess,
+  udp: true, uuid: 7446e9a8-2428-4663-bfbc-581dedd1b2cb}
+- alterId: 2
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 36
+  name: 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 30
   network: ws
-  port: 443
-  server: xiao.miaoge.gay
+  port: 30866
+  server: v29.heduian.online
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 8a0e0eed-3294-42cb-982f-b3bb949c5a4c
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    headers: {Host: xiao.miaoge.gay}
+    headers: {Host: baidu.com}
     path: /
-- {alterId: 0, cipher: auto, name: 0928_1_github.com/freefq - 亚太地区  37, port: 51919,
-  server: 103.159.132.100, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 35e0c4cb-2caa-4c09-cb85-cb26c2cb06b9}
-- {alterId: 64, cipher: auto, name: 0928_1_github.com/freefq - 湖南省怀化市移动 38, port: 52102,
-  server: 111.23.252.218, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, port: 41443,
+  server: 94.177.8.87, skip-cert-verify: false, tls: true, type: vmess, udp: true,
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
+- {alterId: 0, cipher: auto, name: 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32,
+  port: 443, server: nice-kr02.lime345.cf, skip-cert-verify: false, tls: true, type: vmess,
+  udp: true, uuid: 17101f8f-b184-4760-8f90-6cb4645da3b2}
 - alterId: 0
   cipher: auto
-  name: 0928_1_🇺🇸 github.com/freefq - 美国  39
+  name: 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33
+  network: ws
+  port: 443
+  server: 35.164.175.77
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 11c69bcb-8950-41e4-872f-7177ccd3de50
+  ws-opts: {path: /}
+- alterId: 2
+  cipher: auto
+  name: 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34
+  network: ws
+  port: 30866
+  server: v4.heduian.online
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers: {Host: baidu.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国  35
+  network: ws
+  port: 80
+  server: us-v.sshmax.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fd4fa030-b8f1-424b-a780-578dbb59f950
+  ws-opts:
+    headers: {Host: us-v.sshmax.xyz}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 0928_1_github.com/freefq - 乌克兰  36, password: 35b0f578-8961-4a2b-99a1-db9555e522e4,
+  port: 18888, server: mf01.xmss.vip, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国  37
   network: ws
   port: 443
   server: 161.129.34.102
@@ -373,12 +320,20 @@ proxies:
   ws-opts:
     headers: {Host: 161.129.34.102}
     path: /
-- {alterId: 64, cipher: auto, name: 0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 40,
-  port: 47173, server: 111.45.22.187, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, port: 39999,
-  server: tw-tb-c.zc20200426.club, skip-cert-verify: false, tls: true, type: vmess,
-  udp: true, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b}
+- alterId: 0
+  cipher: auto
+  name: 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38
+  network: ws
+  port: 443
+  server: usamd.ptuu.tk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 009a2a72-afe7-4521-fec0-391908a088c6
+  ws-opts:
+    headers: {Host: usamd.ptuu.tk}
+    path: /
 - {alterId: 2, cipher: auto, name: 0928_3_公益机场:https://bit.ly/3BPeo5G, port: 52286,
   server: 86.wowogg.cyou, skip-cert-verify: true, tls: false, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51}
 - {alterId: 0, cipher: auto, name: 0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, port: 30862,
@@ -1770,29 +1725,28 @@ proxies:
   ws-path: /footers
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3, 0928_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
-      5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq - 美国  7,
-    0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, 0928_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇬🇧 github.com/freefq
+      - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, 0928_1_🇫🇷
+      github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
+      8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 9, 0928_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq - 美国  11, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  12, 0928_1_🇯🇵 github.com/freefq - 日本  13, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  14, 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 16, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17,
+    0928_1_🇬🇧 github.com/freefq - 英国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21,
+    0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq -
+      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸
+      github.com/freefq - 美国  25, 0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28,
+    0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29, 0928_1_🇸🇬 github.com/freefq -
+      美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq
+      - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33,
+    0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸 github.com/freefq -
+      美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq - 美国  37,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -1904,44 +1858,44 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3, 0928_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 5, 0928_1_🇫🇷
-      github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq - 美国  7, 0928_1_🇬🇧 github.com/freefq
-      - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 9, 0928_1_🇬🇧
-      github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq - 加拿大  11, 0928_1_🇨🇦
-      github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq - 英国社会保险安全部 13, 0928_1_🇯🇵
-      github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  15,
-    0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq - 加拿大  17,
-    0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 22, 0928_1_github.com/freefq
-      - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0928_1_🇺🇸 github.com/freefq
-      - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27, 0928_1_🇰🇷 github.com/freefq
-      - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq - 欧洲  34, 0928_1_🇯🇵 github.com/freefq
-      - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 36, 0928_1_github.com/freefq
-      - 亚太地区  37, 0928_1_github.com/freefq - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq
-      - 美国  39, 0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq
-      - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G, 0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V25-付费推荐:suo.yt/ssrsub,
-    0928_3_@SSRSUB-V26-付费推荐:suo.yt/ssrsub, 0928_3_🇺🇲 @SSRSUB-美国V01-付费推荐:dlj.tf/ssrsub,
-    0928_3_🇺🇲 @SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub, 0928_3_🇺🇲 @SSRSUB-美国T01-付费推荐:dlj.tf/ssrsub,
-    0928_3_🇺🇲 @SSRSUB-美国T02-付费推荐:dlj.tf/ssrsub, 0928_3_GB_06, 0928_3_GB_07, '0928_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, 0928_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇬🇧 github.com/freefq
+      - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, 0928_1_🇫🇷
+      github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
+      8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 9, 0928_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq - 美国  11, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  12, 0928_1_🇯🇵 github.com/freefq - 日本  13, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  14, 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 16, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17,
+    0928_1_🇬🇧 github.com/freefq - 英国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21,
+    0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq -
+      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸
+      github.com/freefq - 美国  25, 0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28,
+    0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29, 0928_1_🇸🇬 github.com/freefq -
+      美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq
+      - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33,
+    0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸 github.com/freefq -
+      美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq - 美国  37,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+    0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V07-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V08-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V09-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V10-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V11-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V12-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V13-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V14-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V15-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V16-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V17-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V18-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V19-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V20-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V21-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V22-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V23-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V24-付费推荐:suo.yt/ssrsub,
+    0928_3_@SSRSUB-V25-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V26-付费推荐:suo.yt/ssrsub,
+    0928_3_🇺🇲 @SSRSUB-美国V01-付费推荐:dlj.tf/ssrsub, 0928_3_🇺🇲 @SSRSUB-美国V02-付费推荐:dlj.tf/ssrsub,
+    0928_3_🇺🇲 @SSRSUB-美国T01-付费推荐:dlj.tf/ssrsub, 0928_3_🇺🇲 @SSRSUB-美国T02-付费推荐:dlj.tf/ssrsub,
+    0928_3_GB_06, 0928_3_GB_07, '0928_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '0928_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '0928_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '0928_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '0928_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '0928_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '0928_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2037,29 +1991,28 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
-      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶IT7网络 5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq
-      - 美国  7, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1,
+    0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq
+      - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络
+      4, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq
+      - 日本东京Linode数据中心 6, 0928_1_🇫🇷 github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq
+      - 德国黑森州法兰克福DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      9, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq
+      - 美国  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇯🇵 github.com/freefq
+      - 日本  13, 0928_1_🇨🇦 github.com/freefq - 加拿大  14, 0928_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 16, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 17, 0928_1_🇬🇧 github.com/freefq - 英国  18,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq -
+      西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21, 0928_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸 github.com/freefq - 美国  25,
+    0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
+      29, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq
+      - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq
+      - 美国俄勒冈州波特兰Amazon数据中心 33, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸
+      github.com/freefq - 美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq
+      - 美国  37, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2176,29 +2129,28 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
-      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶IT7网络 5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq
-      - 美国  7, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1,
+    0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq
+      - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络
+      4, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq
+      - 日本东京Linode数据中心 6, 0928_1_🇫🇷 github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq
+      - 德国黑森州法兰克福DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      9, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq
+      - 美国  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇯🇵 github.com/freefq
+      - 日本  13, 0928_1_🇨🇦 github.com/freefq - 加拿大  14, 0928_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 16, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 17, 0928_1_🇬🇧 github.com/freefq - 英国  18,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq -
+      西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21, 0928_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸 github.com/freefq - 美国  25,
+    0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
+      29, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq
+      - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq
+      - 美国俄勒冈州波特兰Amazon数据中心 33, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸
+      github.com/freefq - 美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq
+      - 美国  37, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2309,29 +2261,28 @@ proxy-groups:
       29, 0928_7_罗马(欢迎订阅Youtube破解资源君) 7, 0928_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 30]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3, 0928_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
-      5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq - 美国  7,
-    0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🎯 全球直连, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, 0928_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇬🇧 github.com/freefq
+      - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, 0928_1_🇫🇷
+      github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
+      8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 9, 0928_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq - 美国  11, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  12, 0928_1_🇯🇵 github.com/freefq - 日本  13, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  14, 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 16, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17,
+    0928_1_🇬🇧 github.com/freefq - 英国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21,
+    0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq -
+      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸
+      github.com/freefq - 美国  25, 0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28,
+    0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29, 0928_1_🇸🇬 github.com/freefq -
+      美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq
+      - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33,
+    0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸 github.com/freefq -
+      美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq - 美国  37,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2442,29 +2393,28 @@ proxy-groups:
       29, 0928_7_罗马(欢迎订阅Youtube破解资源君) 7, 0928_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 30]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3, 0928_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
-      5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq - 美国  7,
-    0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🎯 全球直连, 🔰 节点选择, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, 0928_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇬🇧 github.com/freefq
+      - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, 0928_1_🇫🇷
+      github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
+      8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 9, 0928_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq - 美国  11, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  12, 0928_1_🇯🇵 github.com/freefq - 日本  13, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  14, 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 16, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17,
+    0928_1_🇬🇧 github.com/freefq - 英国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21,
+    0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq -
+      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸
+      github.com/freefq - 美国  25, 0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28,
+    0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29, 0928_1_🇸🇬 github.com/freefq -
+      美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq
+      - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33,
+    0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸 github.com/freefq -
+      美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq - 美国  37,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2575,29 +2525,28 @@ proxy-groups:
       29, 0928_7_罗马(欢迎订阅Youtube破解资源君) 7, 0928_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 30]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 3, 0928_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络
-      5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq - 美国  7,
-    0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🔰 节点选择, 🎯 全球直连, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1, 0928_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇬🇧 github.com/freefq
+      - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, 0928_1_🇫🇷
+      github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
+      8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 9, 0928_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq - 美国  11, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  12, 0928_1_🇯🇵 github.com/freefq - 日本  13, 0928_1_🇨🇦 github.com/freefq
+      - 加拿大  14, 0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 16, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17,
+    0928_1_🇬🇧 github.com/freefq - 英国  18, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21,
+    0928_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq -
+      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸
+      github.com/freefq - 美国  25, 0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28,
+    0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 29, 0928_1_🇸🇬 github.com/freefq -
+      美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq
+      - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 33,
+    0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸 github.com/freefq -
+      美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq - 美国  37,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2708,29 +2657,28 @@ proxy-groups:
       29, 0928_7_罗马(欢迎订阅Youtube破解资源君) 7, 0928_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 30]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
-      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶IT7网络 5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq
-      - 美国  7, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1,
+    0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq
+      - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络
+      4, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq
+      - 日本东京Linode数据中心 6, 0928_1_🇫🇷 github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq
+      - 德国黑森州法兰克福DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      9, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq
+      - 美国  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇯🇵 github.com/freefq
+      - 日本  13, 0928_1_🇨🇦 github.com/freefq - 加拿大  14, 0928_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 16, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 17, 0928_1_🇬🇧 github.com/freefq - 英国  18,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq -
+      西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21, 0928_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸 github.com/freefq - 美国  25,
+    0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
+      29, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq
+      - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq
+      - 美国俄勒冈州波特兰Amazon数据中心 33, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸
+      github.com/freefq - 美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq
+      - 美国  37, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
@@ -2847,29 +2795,28 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0928_1_🇨🇳 github.com/freefq - 中国阿里云 1, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 2, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
-      3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络 4, 0928_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶IT7网络 5, 0928_1_🇫🇷 github.com/freefq - 法国  6, 0928_1_🇺🇸 github.com/freefq
-      - 美国  7, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 9, 0928_1_🇬🇧 github.com/freefq - 英国  10, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 13, 0928_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 14, 0928_1_🇷🇴 github.com/freefq
-      - 罗马尼亚  15, 0928_1_🇨🇦 github.com/freefq - 加拿大  16, 0928_1_🇨🇦 github.com/freefq
-      - 加拿大  17, 0928_1_🇺🇸 github.com/freefq - 美国  18, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq - 西班牙  20, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 0928_1_🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心
-      22, 0928_1_github.com/freefq - 乌克兰  23, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      24, 0928_1_🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 25, 0928_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 26, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 27,
-    0928_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 28, 0928_1_🇺🇸 github.com/freefq -
-      美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 29, 0928_1_🇪🇺 github.com/freefq - 欧洲  30, 0928_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon
-      EC2服务器 32, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 33, 0928_1_🇪🇺 github.com/freefq
-      - 欧洲  34, 0928_1_🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 35, 0928_1_🇺🇸 github.com/freefq
-      - 美国Microsoft数据中心 36, 0928_1_github.com/freefq - 亚太地区  37, 0928_1_github.com/freefq
-      - 湖南省怀化市移动 38, 0928_1_🇺🇸 github.com/freefq - 美国  39, 0928_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 40, 0928_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 41, 0928_3_公益机场:https://bit.ly/3BPeo5G,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0928_1_🇺🇸 github.com/freefq - 美国Merit网络公司 1,
+    0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 2, 0928_1_🇺🇸 github.com/freefq
+      - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司 3, 0928_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙IT7网络
+      4, 0928_1_🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 5, 0928_1_🇯🇵 github.com/freefq
+      - 日本东京Linode数据中心 6, 0928_1_🇫🇷 github.com/freefq - 法国  7, 0928_1_🇩🇪 github.com/freefq
+      - 德国黑森州法兰克福DigitalOcean数据中心 8, 0928_1_🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      9, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 0928_1_🇺🇸 github.com/freefq
+      - 美国  11, 0928_1_🇨🇦 github.com/freefq - 加拿大  12, 0928_1_🇯🇵 github.com/freefq
+      - 日本  13, 0928_1_🇨🇦 github.com/freefq - 加拿大  14, 0928_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 15, 0928_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 16, 0928_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 17, 0928_1_🇬🇧 github.com/freefq - 英国  18,
+    0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19, 0928_1_🇪🇸 github.com/freefq -
+      西班牙  20, 0928_1_🇨🇦 github.com/freefq - 加拿大  21, 0928_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 22, 0928_1_🇺🇸 github.com/freefq - 美国纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      23, 0928_1_🇨🇦 github.com/freefq - 加拿大  24, 0928_1_🇺🇸 github.com/freefq - 美国  25,
+    0928_1_🇩🇪 github.com/freefq - 德国  26, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      27, 0928_1_🇪🇺 github.com/freefq - 欧洲  28, 0928_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
+      29, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 30, 0928_1_🇷🇴 github.com/freefq
+      - 罗马尼亚  31, 0928_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 32, 0928_1_🇺🇸 github.com/freefq
+      - 美国俄勒冈州波特兰Amazon数据中心 33, 0928_1_🇸🇬 github.com/freefq - 美国新泽西州Linode公司 34, 0928_1_🇺🇸
+      github.com/freefq - 美国  35, 0928_1_github.com/freefq - 乌克兰  36, 0928_1_🇺🇸 github.com/freefq
+      - 美国  37, 0928_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 38, 0928_3_公益机场:https://bit.ly/3BPeo5G,
     0928_3_@SSRSUB-V01-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V02-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V03-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V04-付费推荐:suo.yt/ssrsub,
     0928_3_@SSRSUB-V05-付费推荐:suo.yt/ssrsub, 0928_3_@SSRSUB-V06-付费推荐:suo.yt/ssrsub,
