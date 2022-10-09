@@ -4,28 +4,15 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {cipher: aes-128-gcm, name: 1009_1_🇮🇹 github.com/freefq - 意大利  1, password: shadowsocks,
-  port: 443, server: 212.102.53.194, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 1009_1_github.com/freefq - 亚太地区  1, port: 31372,
+  server: 103.159.133.166, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 912864fc-41c2-44e2-dcdf-0b01ef96237e}
+- {alterId: 0, cipher: auto, name: 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 2,
+  port: 9044, server: 111.45.22.151, skip-cert-verify: false, tls: false, type: vmess,
+  udp: true, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 2
-  network: ws
-  port: 15234
-  server: gs.jisudashi.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bb81313e-a9bc-435c-b6cb-b1f6485332ff
-  ws-opts:
-    headers: {Host: gs.jisudashi.top}
-    path: /jisudashi.top
-- {alterId: 0, cipher: auto, name: 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, port: 9041,
-  server: 221.131.165.72, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2}
-- alterId: 0
-  cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国  4
+  name: 1009_1_🇺🇸 github.com/freefq - 美国  3
   network: ws
   port: 443
   server: 146.190.2.54
@@ -37,7 +24,25 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5
+  name: 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 4
+  network: ws
+  port: 15234
+  server: gs.jisudashi.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bb81313e-a9bc-435c-b6cb-b1f6485332ff
+  ws-opts:
+    headers: {Host: gs.jisudashi.top}
+    path: /jisudashi.top
+- {cipher: aes-128-gcm, name: 1009_1_🇮🇹 github.com/freefq - 意大利  5, password: shadowsocks,
+  port: 443, server: 212.102.53.194, type: ss, udp: true}
+- {name: 1009_1_🇯🇵 github.com/freefq - 日本  6, password: c65e5f8b-4e75-4b36-8faa-c6611b278d3f,
+  port: 44393, server: 924hk.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
   network: ws
   port: 80
   server: shopify.com
@@ -49,61 +54,42 @@ proxies:
   ws-opts:
     headers: {Host: tgus.cloudflare.quest}
     path: /
-- {name: 1009_1_🇺🇸 github.com/freefq - 美国  6, password: f39bd244-f5fe-415c-8b98-a1e5250bf178,
-  port: 443, server: fhcarm2.gaox.ml, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 1009_1_🇨🇦 github.com/freefq - 加拿大  7, password: c65e5f8b-4e75-4b36-8faa-c6611b278d3f,
+- {name: 1009_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 8, password: 69a019dd-617b-449f-9af0-57762a476530,
+  port: 24114, server: ru.p1.gay, skip-cert-verify: false, type: trojan, udp: true}
+- {name: 1009_1_🇨🇦 github.com/freefq - 加拿大  9, password: c65e5f8b-4e75-4b36-8faa-c6611b278d3f,
   port: 443, server: 1002hk1326.tfzhc.top, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1009_1_🇯🇵 github.com/freefq - 日本  8, password: c65e5f8b-4e75-4b36-8faa-c6611b278d3f,
-  port: 44393, server: 924hk.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 9, password: ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428,
-  port: 443, server: musashino.freetrade.link, skip-cert-verify: false, type: trojan,
   udp: true}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+  name: 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 10
   network: ws
-  port: 443
-  server: sgp.kapok.buzz
+  port: 10035
+  server: az.hk01.paopaocloud.cyou
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
   ws-opts:
-    headers: {Host: sgp.kapok.buzz}
-    path: /4befdd8a6/
+    headers: {Host: paopao.v2.tw04.paopaocloud.cyou}
+    path: /
 - alterId: 0
   cipher: auto
   name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11
   network: ws
-  port: 443
-  server: 172.64.153.150
+  port: 8443
+  server: ca.0112233.xyz
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: bf4619e4-01dc-48ca-be08-0976b54968ce
+  uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
   ws-opts:
-    headers: {Host: lg5.zhujicn2.com}
-    path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12
-  network: ws
-  port: 443
-  server: us02.gogogoo.cyou
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda
-  ws-opts:
-    headers: {Host: us02.gogogoo.cyou}
+    headers: {Host: ca.0112233.xyz}
     path: /
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 13
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   network: ws
   port: 80
   server: shopify.com
@@ -115,40 +101,23 @@ proxies:
   ws-opts:
     headers: {Host: tguk.cloudflare.quest}
     path: /aries
-- {alterId: 0, cipher: auto, name: 1009_1_🇺🇸 github.com/freefq - 美国加州 14, port: 16999,
-  server: 64.112.42.72, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13
   network: ws
   port: 443
-  server: 172.64.153.200
+  server: 198.41.212.20
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4
+  uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3
   ws-opts:
-    headers: {Host: lg4.zhujicn2.com}
+    headers: {Host: lg1.zhujicn2.com}
     path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-  network: ws
-  port: 80
-  server: shopify.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 90e35d9e-d5a0-4ffa-fdeb-f5c14f957b21
-  ws-opts:
-    headers: {Host: tgsg.cloudflare.quest}
-    path: /aries
 - alterId: 64
   cipher: auto
-  name: 1009_1_🇳🇴 github.com/freefq - 挪威  17
+  name: 1009_1_🇳🇴 github.com/freefq - 挪威  14
   network: ws
   port: 443
   server: 46.29.218.84
@@ -160,21 +129,21 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15
   network: ws
   port: 443
-  server: 198.41.212.30
+  server: qiqis.cf
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b
+  uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93
   ws-opts:
-    headers: {Host: lg2.zhujicn2.com}
-    path: /dongtaiwang.com
+    headers: {Host: 1dcelis.qiqis.ml}
+    path: /b356a4/
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇳🇴 github.com/freefq - 挪威  19
+  name: 1009_1_🇳🇴 github.com/freefq - 挪威  16
   network: ws
   port: 443
   server: 146.59.43.129
@@ -186,35 +155,7 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-  network: ws
-  port: 443
-  server: jpamd.fineyoo.cf
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 9bdac558-1d2b-425b-f0e7-445d38be025e
-  ws-opts:
-    headers: {Host: jpamd.fineyoo.cf}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国  21
-  network: ws
-  port: 443
-  server: www.flieswiming.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b7519a6f-c1de-4667-e606-b60c65d19078
-  ws-opts:
-    headers: {Host: www.flieswiming.tk}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17
   network: ws
   port: 443
   server: 141.101.114.20
@@ -228,35 +169,49 @@ proxies:
     path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18
   network: ws
   port: 443
-  server: free-godlikeanyone.koyeb.app
+  server: 172.64.153.150
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: b7b1f689-f82e-4ce4-97e7-8a8997370e44
+  uuid: bf4619e4-01dc-48ca-be08-0976b54968ce
   ws-opts:
-    headers: {Host: free-godlikeanyone.koyeb.app}
-    path: /
+    headers: {Host: lg5.zhujicn2.com}
+    path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 24
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19
   network: ws
   port: 443
-  server: amdkr.ptuu.ml
+  server: jpamd.fineyoo.cf
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: e2cdc305-dda7-465e-b675-ba0468d2a8b3
+  uuid: 9bdac558-1d2b-425b-f0e7-445d38be025e
   ws-opts:
-    headers: {Host: amdkr.ptuu.ml}
+    headers: {Host: jpamd.fineyoo.cf}
     path: /
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25
+  name: 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心 20
+  network: ws
+  port: 56656
+  server: aa.houdinix.space
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fdb1740c-f246-4f5d-d1ff-87c5b29ae22c
+  ws-opts:
+    headers: {Host: aa.houdinix.space}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21
   network: ws
   port: 443
   server: sg.prpr.link
@@ -270,21 +225,49 @@ proxies:
     path: /Telegram/ShareCentrePro/mknnix
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22
   network: ws
   port: 443
-  server: 198.41.212.20
+  server: 172.64.153.200
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3
+  uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4
   ws-opts:
-    headers: {Host: lg1.zhujicn2.com}
+    headers: {Host: lg4.zhujicn2.com}
     path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 27
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23
+  network: ws
+  port: 443
+  server: 198.41.212.30
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b
+  ws-opts:
+    headers: {Host: lg2.zhujicn2.com}
+    path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24
+  network: ws
+  port: 443
+  server: sgp.kapok.buzz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c1bac6b8-934a-44e2-9cf2-ee0db1fc1c85
+  ws-opts:
+    headers: {Host: sgp.kapok.buzz}
+    path: /4befdd8a6/
+- alterId: 0
+  cipher: auto
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25
   network: ws
   port: 80
   server: www.digitalocean.com
@@ -298,7 +281,24 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28
+  name: 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26
+  network: ws
+  port: 80
+  server: shopify.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 90e35d9e-d5a0-4ffa-fdeb-f5c14f957b21
+  ws-opts:
+    headers: {Host: tgsg.cloudflare.quest}
+    path: /aries
+- {alterId: 0, cipher: auto, name: 1009_1_🇺🇸 github.com/freefq - 美国加州 27, port: 16999,
+  server: 64.112.42.72, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd}
+- alterId: 0
+  cipher: auto
+  name: 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28
   network: ws
   port: 10014
   server: ah.yd01.paopaocloud.cyou
@@ -310,7 +310,10 @@ proxies:
   ws-opts:
     headers: {Host: paopao.v2.sgp01.paopaocloud.cyou}
     path: /
-- {alterId: 0, cipher: auto, name: 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29,
+- {alterId: 0, cipher: auto, name: 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 29, port: 9041,
+  server: 221.131.165.72, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2}
+- {alterId: 0, cipher: auto, name: 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30,
   port: 11919, server: 111.45.22.152, skip-cert-verify: false, tls: false, type: vmess,
   udp: true, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2}
 - {cipher: aes-256-gcm, name: '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
@@ -1240,23 +1243,23 @@ proxies:
   port: 8091, server: 134.195.196.81, type: ss}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, 1009_1_🇺🇸
-      github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5, 1009_1_🇯🇵 github.com/freefq
+      - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 1009_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq - 加拿大  9, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      13, 1009_1_🇳🇴 github.com/freefq - 挪威  14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      15, 1009_1_🇳🇴 github.com/freefq - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心
+      20, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq
+      - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1361,51 +1364,52 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath
-      2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, 1009_1_🇺🇸 github.com/freefq - 美国  4,
-    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1009_1_🇺🇸 github.com/freefq
-      - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7, 1009_1_🇯🇵 github.com/freefq -
-      日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 9, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 1009_1_🇺🇸 github.com/freefq - 美国加州 14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      15, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq
-      - 挪威  17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq
-      - 挪威  19, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq
-      - 美国  21, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸
-      github.com/freefq - 美国Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
-    '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
-    '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
-    '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1009_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
-    '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1009_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
-    '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1009_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
-    '1009_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
-    '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1009_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
-    '1009_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
-    '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
-    '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1009_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
-    '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1009_4_[09-26]|openrunner|美国(US)USA/Washington_34',
-    '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1009_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
-    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
-    '1009_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
-    '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1009_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
-    1009_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1009_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
-    1009_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1009_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
-    1009_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1009_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
-    1009_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
-    1009_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
-    1009_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
-    1009_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1009_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
-    1009_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1009_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+  proxies: [1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
+      2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath
+      4, 1009_1_🇮🇹 github.com/freefq - 意大利  5, 1009_1_🇯🇵 github.com/freefq - 日本  6,
+    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 1009_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq - 加拿大  9, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      13, 1009_1_🇳🇴 github.com/freefq - 挪威  14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      15, 1009_1_🇳🇴 github.com/freefq - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心
+      20, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq
+      - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+    '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
+    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
+    '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
+    '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
+    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
+    '1009_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
+    '1009_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
+    '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
+    '1009_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1009_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
+    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
+    '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
+    '1009_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
+    '1009_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1009_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
+    '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
+    '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
+    '1009_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
+    '1009_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1009_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
+    '1009_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
+    '1009_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1009_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
+    '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1009_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
+    '1009_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1009_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
+    1009_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1009_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
+    1009_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
+    1009_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
+    1009_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1009_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
+    1009_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1009_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
+    1009_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1009_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
+    1009_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1009_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
+    1009_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1009_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1009_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1009_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1009_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1009_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1009_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -1481,23 +1485,24 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动
-      3, 1009_1_🇺🇸 github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5,
+    1009_1_🇯🇵 github.com/freefq - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      7, 1009_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq
+      - 加拿大  9, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 13, 1009_1_🇳🇴 github.com/freefq - 挪威  14,
+    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15, 1009_1_🇳🇴 github.com/freefq
+      - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心 20, 1009_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq - 美国加州 27, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1607,23 +1612,24 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动
-      3, 1009_1_🇺🇸 github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5,
+    1009_1_🇯🇵 github.com/freefq - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      7, 1009_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq
+      - 加拿大  9, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 13, 1009_1_🇳🇴 github.com/freefq - 挪威  14,
+    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15, 1009_1_🇳🇴 github.com/freefq
+      - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心 20, 1009_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq - 美国加州 27, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1727,23 +1733,23 @@ proxy-groups:
       41, 1009_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 36, 1009_7_🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, 1009_1_🇺🇸
-      github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5, 1009_1_🇯🇵 github.com/freefq
+      - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 1009_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq - 加拿大  9, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      13, 1009_1_🇳🇴 github.com/freefq - 挪威  14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      15, 1009_1_🇳🇴 github.com/freefq - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心
+      20, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq
+      - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1847,23 +1853,23 @@ proxy-groups:
       41, 1009_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 36, 1009_7_🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, 1009_1_🇺🇸
-      github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🎯 全球直连, 🔰 节点选择, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5, 1009_1_🇯🇵 github.com/freefq
+      - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 1009_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq - 加拿大  9, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      13, 1009_1_🇳🇴 github.com/freefq - 挪威  14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      15, 1009_1_🇳🇴 github.com/freefq - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心
+      20, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq
+      - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1967,23 +1973,23 @@ proxy-groups:
       41, 1009_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 36, 1009_7_🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 3, 1009_1_🇺🇸
-      github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5, 1009_1_🇯🇵 github.com/freefq
+      - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 1009_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq - 加拿大  9, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      13, 1009_1_🇳🇴 github.com/freefq - 挪威  14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      15, 1009_1_🇳🇴 github.com/freefq - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      17, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心
+      20, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq
+      - 美国加州 27, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq
+      - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2087,23 +2093,24 @@ proxy-groups:
       41, 1009_7_🇺🇸 美国(欢迎订阅Youtube破解资源君) 36, 1009_7_🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动
-      3, 1009_1_🇺🇸 github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5,
+    1009_1_🇯🇵 github.com/freefq - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      7, 1009_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq
+      - 加拿大  9, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 13, 1009_1_🇳🇴 github.com/freefq - 挪威  14,
+    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15, 1009_1_🇳🇴 github.com/freefq
+      - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心 20, 1009_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq - 美国加州 27, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -2213,23 +2220,24 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_1_🇮🇹 github.com/freefq - 意大利  1, 1009_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 2, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动
-      3, 1009_1_🇺🇸 github.com/freefq - 美国  4, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      5, 1009_1_🇺🇸 github.com/freefq - 美国  6, 1009_1_🇨🇦 github.com/freefq - 加拿大  7,
-    1009_1_🇯🇵 github.com/freefq - 日本  8, 1009_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      9, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 13, 1009_1_🇺🇸 github.com/freefq - 美国加州
-      14, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 16, 1009_1_🇳🇴 github.com/freefq - 挪威  17, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 18, 1009_1_🇳🇴 github.com/freefq - 挪威  19, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 20, 1009_1_🇺🇸 github.com/freefq - 美国  21, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 22, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1009_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      25, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 1009_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 27, 1009_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 28,
-    1009_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 29, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_1_github.com/freefq - 亚太地区  1, 1009_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 2, 1009_1_🇺🇸 github.com/freefq - 美国  3, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 4, 1009_1_🇮🇹 github.com/freefq - 意大利  5,
+    1009_1_🇯🇵 github.com/freefq - 日本  6, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      7, 1009_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 8, 1009_1_🇨🇦 github.com/freefq
+      - 加拿大  9, 1009_1_🇭🇰 github.com/freefq - 香港Microsoft数据中心 10, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 13, 1009_1_🇳🇴 github.com/freefq - 挪威  14,
+    1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 15, 1009_1_🇳🇴 github.com/freefq
+      - 挪威  16, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 18, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1009_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞Choopa数据中心 20, 1009_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 21, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 22, 1009_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      24, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 25, 1009_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 26, 1009_1_🇺🇸 github.com/freefq - 美国加州 27, 1009_1_🇭🇰 github.com/freefq
+      - 香港Microsoft数据中心 28, 1009_1_🇨🇳 github.com/freefq - 江苏省宿迁市移动 29, 1009_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 30, '1009_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1009_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1009_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1009_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1009_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
