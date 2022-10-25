@@ -4,26 +4,105 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {name: 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52,
-  port: 443, server: sg.liangyuandian.top, skip-cert-verify: false, type: trojan,
-  udp: true}
 - alterId: 0
   cipher: auto
-  name: 1025_1_🇺🇸 github.com/freefq - 美国  2
+  name: 1025_1_🇯🇵 github.com/freefq - 日本  1
   network: ws
-  port: 25365
-  server: mg1.xbywwcp.us
+  port: 443
+  server: 43.201.43.107
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6248895b-4255-4f07-9479-d198bc1eb8db
+  ws-opts:
+    headers: {Host: dc1-download.windowsupdate1.com}
+    path: /guolicheng/kr?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心 2
+  network: ws
+  port: 80
+  server: 18.140.197.69
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: d92b67dc-8ed2-38ed-8ac8-df695846c601
+  uuid: 94673e19-11fa-4370-8583-989e9eb1a710
   ws-opts:
-    headers: {Host: mg1.xbywwcp.us}
+    headers: {Host: shoutingtoutiao3.10010.com}
     path: /
 - alterId: 0
   cipher: auto
-  name: 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+  name: 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3
+  network: ws
+  port: 443
+  server: 3.38.117.60
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6248895b-4255-4f07-9479-d198bc1eb8db
+  ws-opts:
+    headers: {Host: dc1-download.windowsupdate1.com}
+    path: /guolicheng/kr?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 4
+  network: ws
+  port: 443
+  server: 220.130.80.179
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
+  ws-opts:
+    headers: {Host: v2ray2.udpgw.com}
+    path: /howdy
+- alterId: 0
+  cipher: auto
+  name: 1025_1_github.com/freefq - 海南省海口市电信 5
+  network: ws
+  port: 46096
+  server: relay_cm1.flyxxl.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c15eefe5-a42f-4cc7-ab02-376b6dfed9e0
+  ws-opts:
+    headers: {Host: f932c3d98981b.download.microsoft.com}
+    path: /pic/fjiew2-054j0gewn23k-1fr
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 6
+  network: ws
+  port: 80
+  server: 198.199.70.13
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 7
+  network: ws
+  port: 80
+  server: 32a16649-2d4e-4368-85e0-2b1395259f95.cheme.tech
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6
+  ws-opts:
+    headers: {Host: gd.189.cn}
+    path: /yitai
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8
   network: ws
   port: 443
   server: 141.101.114.150
@@ -35,9 +114,27 @@ proxies:
   ws-opts:
     headers: {Host: clash6.ssr-free.xyz}
     path: /
+- {name: 1025_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 9, password: b8a01914-f44f-499d-8a65-26d845ef4fc9,
+  port: 443, server: bl.v209.fun, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4
+  name: 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
+  network: ws
+  port: 443
+  server: 141.101.115.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
+  ws-opts:
+    headers: {Host: clash1.trump2023.net}
+    path: /
+- {name: 1025_1_🇷🇺 github.com/freefq - 俄罗斯  11, password: b8a01914-f44f-499d-8a65-26d845ef4fc9,
+  port: 443, server: ru.v211.fun, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 12
   network: ws
   port: 888
   server: asswb-1036-v2-1.hkg-d-kcd.nd.cjhh.mom
@@ -49,20 +146,6 @@ proxies:
   ws-opts:
     headers: {Host: node.inforun.work}
     path: /je5x3pBN1vez3NQudNkB
-- alterId: 0
-  cipher: auto
-  name: 1025_1_🇩🇪 github.com/freefq - 德国  5
-  network: ws
-  port: 443
-  server: vau1.0bad.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers: {Host: vau1.0bad.com}
-    path: /
 - {cipher: aes-256-gcm, name: '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
   password: TEzjfAYq2IjtuoS, port: 6697, server: 141.164.39.146, type: ss}
 - alterId: 0
@@ -987,10 +1070,14 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 1025_1_🇺🇸
-      github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1025_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪 github.com/freefq
-      - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬 github.com/freefq
+      - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3, 1025_1_🇨🇳
+      github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq - 海南省海口市电信 5, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心
+      7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1025_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1025_1_🇷🇺
+      github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane
+      Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
     '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
@@ -1062,38 +1149,42 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 1025_1_🇺🇸 github.com/freefq
-      - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1025_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪 github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1025_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1025_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1025_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1025_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1025_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1025_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1025_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1025_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1025_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1025_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+  proxies: [1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬 github.com/freefq - 新加坡Amazon数据中心
+      2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3, 1025_1_🇨🇳 github.com/freefq
+      - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq - 海南省海口市电信 5, 1025_1_🇺🇸 github.com/freefq
+      - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心
+      7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1025_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1025_1_🇷🇺
+      github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane
+      Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1025_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1025_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1025_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1025_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1025_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1025_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1025_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1025_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1025_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1025_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1025_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1025_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1025_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1025_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1025_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1025_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1025_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1025_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1025_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -1137,10 +1228,14 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      1, 1025_1_🇺🇸 github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪
-      github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬
+      github.com/freefq - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon
+      EC2服务器 3, 1025_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq
+      - 海南省海口市电信 5, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      8, 1025_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1025_1_🇷🇺 github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙Hurricane Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1218,10 +1313,14 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      1, 1025_1_🇺🇸 github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪
-      github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬
+      github.com/freefq - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon
+      EC2服务器 3, 1025_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq
+      - 海南省海口市电信 5, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      8, 1025_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1025_1_🇷🇺 github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙Hurricane Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1293,38 +1392,42 @@ proxy-groups:
     1025_7_亚洲(油管:破解资源君2.0) 5]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 1025_1_🇺🇸 github.com/freefq
-      - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1025_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪 github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1025_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1025_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1025_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1025_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1025_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1025_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1025_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1025_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1025_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1025_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1025_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1025_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+  proxies: [🎯 全球直连, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬 github.com/freefq
+      - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3, 1025_1_🇨🇳
+      github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq - 海南省海口市电信 5, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心
+      7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1025_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1025_1_🇷🇺
+      github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane
+      Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1025_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1025_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1025_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1025_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1025_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1025_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1025_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1025_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1025_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1025_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1025_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1025_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1025_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1025_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1025_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1025_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1025_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1025_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1025_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1025_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1025_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1025_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1025_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1025_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1025_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1025_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1025_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1025_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -1367,10 +1470,14 @@ proxy-groups:
     1025_7_亚洲(油管:破解资源君2.0) 5]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 1025_1_🇺🇸
-      github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1025_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪 github.com/freefq
-      - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+  proxies: [🎯 全球直连, 🔰 节点选择, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬 github.com/freefq
+      - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3, 1025_1_🇨🇳
+      github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq - 海南省海口市电信 5, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心
+      7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1025_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1025_1_🇷🇺
+      github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane
+      Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
     '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
@@ -1441,10 +1548,14 @@ proxy-groups:
     1025_7_亚洲(油管:破解资源君2.0) 5]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, 1025_1_🇺🇸
-      github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1025_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪 github.com/freefq
-      - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+  proxies: [🔰 节点选择, 🎯 全球直连, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬 github.com/freefq
+      - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon EC2服务器 3, 1025_1_🇨🇳
+      github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq - 海南省海口市电信 5, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心
+      7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1025_1_🇷🇺 github.com/freefq
+      - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1025_1_🇷🇺
+      github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane
+      Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
     '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
@@ -1515,10 +1626,14 @@ proxy-groups:
     1025_7_亚洲(油管:破解资源君2.0) 5]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      1, 1025_1_🇺🇸 github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪
-      github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬
+      github.com/freefq - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon
+      EC2服务器 3, 1025_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq
+      - 海南省海口市电信 5, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      8, 1025_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1025_1_🇷🇺 github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙Hurricane Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
@@ -1596,10 +1711,14 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1025_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心
-      1, 1025_1_🇺🇸 github.com/freefq - 美国  2, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1025_1_🇺🇸 github.com/freefq - 美国加利福尼亚州费利蒙Hurricane Electric公司 4, 1025_1_🇩🇪
-      github.com/freefq - 德国  5, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1025_1_🇯🇵 github.com/freefq - 日本  1, 1025_1_🇸🇬
+      github.com/freefq - 新加坡Amazon数据中心 2, 1025_1_🇺🇸 github.com/freefq - 美国Amazon
+      EC2服务器 3, 1025_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 4, 1025_1_github.com/freefq
+      - 海南省海口市电信 5, 1025_1_🇺🇸 github.com/freefq - 美国纽约DigitalOcean数据中心 6, 1025_1_🇺🇸
+      github.com/freefq - 美国纽约DigitalOcean数据中心 7, 1025_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      8, 1025_1_🇷🇺 github.com/freefq - 俄罗斯鞑靼斯坦喀山justhost 9, 1025_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1025_1_🇷🇺 github.com/freefq - 俄罗斯  11, 1025_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州费利蒙Hurricane Electric公司 12, '1025_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
     '1025_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
     '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1025_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
     '1025_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1025_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
