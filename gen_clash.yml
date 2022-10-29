@@ -4,10 +4,23 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {name: 1029_1_🇯🇵 github.com/freefq - 日本  1, password: d28cdee6-077d-4a86-bc42-dd63e42695af,
-  port: 80, server: 1024hk02.tfzhc.top, skip-cert-verify: false, type: trojan, udp: true}
-- {name: 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 2, password: 752a9404-c729-485e-8ea5-acb3f4fc8180,
-  port: 5236, server: tr6.tgcunzhang.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1
+  network: ws
+  port: 80
+  server: tw.33yun.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62b12463-1c73-40ed-adff-724756b9a6f0
+  ws-opts:
+    headers: {Host: tw.33yun.xyz}
+    path: /
+- {name: 1029_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 2, password: 752a9404-c729-485e-8ea5-acb3f4fc8180,
+  port: 9227, server: hg13.leifengkeji.live, skip-cert-verify: false, type: trojan,
+  udp: true}
 - alterId: 0
   cipher: auto
   name: 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心 3
@@ -22,46 +35,24 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+  name: 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4
   network: ws
-  port: 443
-  server: qiqis.cf
+  port: 80
+  server: ca2.v2rayserv.com
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93
+  uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4
   ws-opts:
-    headers: {Host: 1dcelis.qiqis.ml}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-  network: ws
-  port: 443
-  server: 141.101.115.20
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
-  ws-opts:
-    headers: {Host: clash1.trump2023.net}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6
-  network: ws
-  port: 443
-  server: 172.64.154.155
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  ws-opts:
-    headers: {Host: clash6.ssr-free.xyz}
-    path: /dongtaiwang.com
+    headers: {Host: ca2.v2rayserv.com}
+    path: /sshocean
+- {name: 1029_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 5, password: 752a9404-c729-485e-8ea5-acb3f4fc8180,
+  port: 3456, server: hg12.leifengkeji.live, skip-cert-verify: false, type: trojan,
+  udp: true}
+- {name: 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, password: 752a9404-c729-485e-8ea5-acb3f4fc8180,
+  port: 6723, server: tr17.tgcunzhang.xyz, skip-cert-verify: false, type: trojan,
+  udp: true}
 - alterId: 0
   cipher: auto
   name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7
@@ -81,6 +72,48 @@ proxies:
   name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8
   network: ws
   port: 443
+  server: 141.101.115.20
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a
+  ws-opts:
+    headers: {Host: clash1.trump2023.net}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9
+  network: ws
+  port: 443
+  server: 128.14.140.254
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+  ws-opts:
+    headers: {Host: v2ray2.ssr-free2.xyz}
+    path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
+  network: ws
+  port: 443
+  server: 141.101.114.200
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+  ws-opts:
+    headers: {Host: v2ray2.ssr-free2.xyz}
+    path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+  network: ws
+  port: 443
   server: 141.101.115.111
   skip-cert-verify: false
   tls: true
@@ -90,23 +123,68 @@ proxies:
   ws-opts:
     headers: {Host: fr2.cfcdn4.xyz}
     path: /
+- {alterId: 0, cipher: auto, name: 1029_1_🇷🇺 github.com/freefq - 俄罗斯  12, port: 34141,
+  server: pf.napsternetv.com, skip-cert-verify: false, tls: true, type: vmess, udp: true,
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 13
   network: ws
-  port: 80
-  server: ca2.v2rayserv.com
+  port: 443
+  server: v122.aagogo.cf
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4
+  uuid: 5d3e4f62-135d-3224-80cb-7463a6464c67
   ws-opts:
-    headers: {Host: ca2.v2rayserv.com}
-    path: /sshocean
+    headers: {Host: v122.aagogo.cf}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+  name: 1029_1_🇯🇵 github.com/freefq - 日本  14
+  network: ws
+  port: 443
+  server: 146.56.162.25
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+  ws-opts:
+    headers: {Host: sg1.31vpn.com}
+    path: /fastssh/1731390093/6357cedd7a199/
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
+  network: ws
+  port: 443
+  server: 172.64.154.155
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+  ws-opts:
+    headers: {Host: clash6.ssr-free.xyz}
+    path: /dongtaiwang.com
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16
+  network: ws
+  port: 443
+  server: 8.209.114.168
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  ws-opts:
+    headers: {Host: goodfamily19.site}
+    path: /wmzmvws
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
   network: ws
   port: 443
   server: api.qiscus.com
@@ -121,95 +199,35 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11
+  name: 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18
   network: ws
   port: 443
-  server: 220.130.80.179
+  server: vde1.0bad.com
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
-    headers: {Host: v2ray2.udpgw.com}
-    path: /howdy
-- alterId: 0
-  cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12
-  network: ws
-  port: 443
-  server: 128.14.140.254
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-  ws-opts:
-    headers: {Host: v2ray2.ssr-free2.xyz}
-    path: /dongtaiwang.com
-- {alterId: 0, cipher: auto, name: 1029_1_🇷🇺 github.com/freefq - 俄罗斯  13, port: 34141,
-  server: pf.napsternetv.com, skip-cert-verify: false, tls: true, type: vmess, udp: true,
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF}
-- alterId: 2
-  cipher: auto
-  name: 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14
-  network: ws
-  port: 30866
-  server: v29.heduian.online
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers: {Host: baidu.com}
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
-  network: ws
-  port: 443
-  server: 141.101.114.200
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
-  ws-opts:
-    headers: {Host: v2ray2.ssr-free2.xyz}
-    path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-  network: ws
-  port: 443
-  server: v122.aagogo.cf
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5d3e4f62-135d-3224-80cb-7463a6464c67
-  ws-opts:
-    headers: {Host: v122.aagogo.cf}
+    headers: {Host: vde1.0bad.com}
     path: /
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 17
+  name: 1029_1_🇨🇳 github.com/freefq - 中国阿里云 19
   network: ws
-  port: 80
-  server: 51.222.137.198
+  port: 443
+  server: 8.209.112.151
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 18,
-  port: 11921, server: 111.45.22.246, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 454f865f-2660-3acb-a453-7c2382954196}
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers: {Host: lg30.cfcdn3.xyz}
+    path: /ray
 - alterId: 0
   cipher: auto
-  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20
   network: ws
   port: 443
   server: powerservice.com
@@ -221,9 +239,96 @@ proxies:
   ws-opts:
     headers: {Host: uk2.v2rayserv.com}
     path: /
-- {alterId: 0, cipher: auto, name: 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 20,
+- {alterId: 0, cipher: auto, name: 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 21,
+  port: 11921, server: 111.45.22.246, skip-cert-verify: false, tls: false, type: vmess,
+  udp: true, uuid: 454f865f-2660-3acb-a453-7c2382954196}
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+  network: ws
+  port: 443
+  server: v.tggroupv2ray233.tk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5f79f3f4-6c00-4da7-98d0-743d5d7515e7
+  ws-opts:
+    headers: {Host: v.tggroupv2ray233.tk}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23
+  network: ws
+  port: 443
+  server: qiqis.cf
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93
+  ws-opts:
+    headers: {Host: 1dcelis.qiqis.ml}
+    path: /
+- {alterId: 0, cipher: auto, name: 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 24,
   port: 9006, server: 111.45.22.136, skip-cert-verify: false, tls: false, type: vmess,
   udp: true, uuid: 454f865f-2660-3acb-a453-7c2382954196}
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇯🇵 github.com/freefq - 日本  25
+  network: ws
+  port: 443
+  server: 146.56.149.205
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+  ws-opts:
+    headers: {Host: sg1.31vpn.com}
+    path: /fastssh/1731390093/6357cedd7a199/
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇭🇰 github.com/freefq - 香港特别行政区 26
+  network: ws
+  port: 10010
+  server: az.hk01.paopaocloud.cyou
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
+  ws-opts:
+    headers: {Host: az.hk01.paopaocloud.cyou}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27
+  network: ws
+  port: 443
+  server: www.xt000.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 80782eff-e3fe-fc69-37cd-7efd760adf91
+  ws-opts:
+    headers: {Host: www.xt000.xyz}
+    path: /gceevws
+- alterId: 0
+  cipher: auto
+  name: 1029_1_🇨🇳 github.com/freefq - 中国阿里云 28
+  network: ws
+  port: 443
+  server: 8.209.88.199
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
+  ws-opts:
+    headers: {Host: goodfamily19.site}
+    path: /wmzmvws
 - {cipher: aes-256-gcm, name: '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
   password: TEzjfAYq2IjtuoS, port: 6697, server: 141.164.39.146, type: ss}
 - alterId: 0
@@ -2357,48 +2462,51 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 454f865f-2660-3acb-a453-7c2382954196}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸 github.com/freefq
-      - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -2468,47 +2576,51 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心
-      2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心 3, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 1029_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1029_1_🇬🇧 github.com/freefq
-      - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳
-      github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心
-      12, 1029_1_🇷🇺 github.com/freefq - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心
-      14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳
-      github.com/freefq - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+  proxies: [1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心 3, 1029_1_🇬🇧
+      github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心
+      5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1029_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -2578,48 +2690,51 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -2694,48 +2809,51 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -2804,48 +2922,51 @@ proxy-groups:
       5, 1029_7_欧洲(油管:破解资源君2.0) 6]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸 github.com/freefq
-      - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+  proxies: [🎯 全球直连, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷 github.com/freefq
+      - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心 3, 1029_1_🇬🇧
+      github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心
+      5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1029_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -2914,48 +3035,51 @@ proxy-groups:
       5, 1029_7_欧洲(油管:破解资源君2.0) 6]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸 github.com/freefq
-      - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🎯 全球直连, 🔰 节点选择, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -3024,48 +3148,51 @@ proxy-groups:
       5, 1029_7_欧洲(油管:破解资源君2.0) 6]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸 github.com/freefq
-      - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -3134,48 +3261,51 @@ proxy-groups:
       5, 1029_7_欧洲(油管:破解资源君2.0) 6]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
@@ -3250,48 +3380,51 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1029_1_🇯🇵 github.com/freefq - 日本  1, 1029_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
-      3, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1029_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1029_1_🇨🇳 github.com/freefq - 台湾省花莲县中华电信 1, 1029_1_🇰🇷
+      github.com/freefq - 韩国首尔Amazon数据中心 2, 1029_1_🇳🇱 github.com/freefq - 荷兰阿姆斯特丹LeaseWeb数据中心
+      3, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 4, 1029_1_🇰🇷 github.com/freefq -
+      韩国首尔Amazon数据中心 5, 1029_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本Amazon数据中心 6, 1029_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 7, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      8, 1029_1_🇬🇧 github.com/freefq - 英国社会保险安全部 9, 1029_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 10, 1029_1_🇨🇳 github.com/freefq - 台湾省彰化县中华电信 11, 1029_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 12, 1029_1_🇷🇺 github.com/freefq
-      - 俄罗斯  13, 1029_1_github.com/freefq - 河南省驻马店市行上云数据中心 14, 1029_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 15, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 1029_1_🇬🇧
-      github.com/freefq - 英国社会保险安全部 17, 1029_1_🇨🇳 github.com/freefq - 广东省广州市电信IDC机房
-      18, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 1029_1_🇨🇳 github.com/freefq
-      - 广东省广州市电信IDC机房 20, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5',
-    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21',
-    '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25',
-    '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26', '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27',
-    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29',
-    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31',
-    '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33',
-    '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34', '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35',
-    '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38', '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39',
-    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41',
-    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42', 1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix,
-    1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix,
-    1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix,
-    1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix,
-    1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix, 1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix,
-    1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
+      8, 1029_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 9, 1029_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 10, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 1029_1_🇷🇺
+      github.com/freefq - 俄罗斯  12, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      13, 1029_1_🇯🇵 github.com/freefq - 日本  14, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1029_1_🇨🇳 github.com/freefq - 中国阿里云 16, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 1029_1_🇯🇵 github.com/freefq - 日本东京Linode数据中心 18, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 19, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 20, 1029_1_🇨🇳
+      github.com/freefq - 广东省广州市电信IDC机房 21, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      22, 1029_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 23, 1029_1_🇨🇳 github.com/freefq
+      - 广东省广州市电信IDC机房 24, 1029_1_🇯🇵 github.com/freefq - 日本  25, 1029_1_🇭🇰 github.com/freefq
+      - 香港特别行政区 26, 1029_1_🇺🇸 github.com/freefq - 美国Microsoft数据中心 27, 1029_1_🇨🇳 github.com/freefq
+      - 中国阿里云 28, '1029_4_[09-26]|openrunner|斯洛伐克(SK)Slovakia/Bratislava_1', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_2',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_3', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_4',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_5', '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_6',
+    '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_7', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_8',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_9', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_10',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_11', '1029_4_[09-26]|openrunner|美国(US)USA/Scottsdale_12',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_13', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_14',
+    '1029_4_[09-26]|openrunner|美国(US)USA/LosAngeles_15', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_16',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_17', '1029_4_[09-26]|openrunner|美国(US)USA/Clifton_18',
+    '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)HongkongSARChina/HongKong_19', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Beijing/(可能是中转节点)_20',
+    '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_21', '1029_4_[09-26]|openrunner|中国台湾(TW)Taiwan/CityOffice_22',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_23', '1029_4_[09-26]|openrunner|美国(US)USA/SanJose_24',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_25', '1029_4_[09-26]|openrunner|印度(IN)India/Hyderabad_26',
+    '1029_4_[09-26]|openrunner|英国(GB)United+Kiongdom/Slough_27', '1029_4_[09-26]|openrunner|新加坡(SG)Singapore/Singapore_28',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_29', '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_30',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_31', '1029_4_[09-26]|openrunner|美国(US)USA/SanFrancisco_32',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_33', '1029_4_[09-26]|openrunner|美国(US)USA/Washington_34',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Los+Angeles_35', '1029_4_[09-26]|openrunner|美国(US)USA/PiscatawayTownship_36',
+    '1029_4_[09-26]|openrunner|中国香港/中国台湾(CN)China/Shenzhen/(可能是中转节点)_37', '1029_4_[09-26]|openrunner|日本(JP)Japan/Tokyo_38',
+    '1029_4_[09-26]|openrunner|美国(US)USA/Dallas_39', '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_40',
+    '1029_4_[09-26]|openrunner|日本(JP)Japan/Osaka_41', '1029_4_[09-26]|openrunner|中国香港特别行政区(HK)Hongkong+SAR+China/Hong+Kong_42',
+    1029_6_🇬🇧:英国-ss-212.102.53.78:443-可用-直连-不支持Netflix, 1029_6_🇺🇸:美国-ss-38.143.66.99:8118-可用-直连-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.194:443-可用-直连-不支持Netflix, 1029_6_🇬🇧:英国-ss-212.102.53.81:443-可用-直连-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11020-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12055-可用-中转:103.156.242.116-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11035-可用-中转:129.227.144.195-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11003-可用-中转:129.227.144.194-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-14.29.124.174:11011-可用-中转:129.227.144.194-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.174:11050-可用-中转:129.227.144.195-不支持Netflix,
+    1029_6_🇨🇳:中国-ss-bfb7573d.jvgnwn.sbs:12010-可用-中转:103.138.75.221-不支持Netflix, 1029_6_🇨🇳:中国-ss-14.29.124.168:24000-可用-中转:223.26.73.202-不支持Netflix,
+    1029_6_🇬🇧:英国-ss-212.102.53.197:443-可用-直连-不支持Netflix, 1029_6_🇰🇷:韩国-ss-3.36.118.190:443-可用-直连-不支持Netflix,
+    1029_6_🇯🇵:日本-ssr-jp-am48-6.eqnode.net:8081-可用-中转:13.230.177.238-不支持Netflix, 1029_6_🇸🇬:新加坡-ssr-sg-am3.eqsunshine.com:32001-可用-中转:18.141.224.248-不支持Netflix,
     1029_6_🇨🇳:中国-vmess-124.223.44.153:80-可用-直连-完全不支持NF, 1029_6_🇺🇸:美国-vmess-68.183.129.197:8080-可用-直连-仅支持美国地区NF自制剧,
     1029_6_🇨🇳:中国-vmess-47.93.231.218:53022-可用-直连-完全不支持NF, 1029_6_🇦🇺:澳大利亚-vmess-au2.3320.top:443-可用-中转:45.79.237.232-仅支持澳大利亚地区NF自制剧,
     1029_6_🇮🇳:印度-vmess-139.59.85.231:8080-可用-直连-仅支持印度地区NF自制剧, 1029_6_🇨🇳:中国-vmess-106.12.168.13:13156-可用-直连-完全不支持NF,
