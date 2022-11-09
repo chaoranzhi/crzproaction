@@ -12,8 +12,8 @@ daystring=time.strftime("%m%d", time.localtime())
 # 生成日期字符串，类似于1126
 
 
-# gitee_chenx转换
-url0='https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fgitee.com%2Fchenx58%2Fclash%2Fraw%2Fmaster%2FV2R&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true'
+# github anaer
+url0='https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml'
 # github freefq转换 
 url1='https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true'
 # github_skywolf
@@ -24,8 +24,8 @@ url3='https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml'
 url4='https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml'
 # 代理池etproxypool需要全局模式
 url5='https://etproxypool.ga/clash/proxies?c=HK,TW,SG,US&speed=30,100&type=vmess,ssr,trojan'
-# free_proxy_ss需要全局模式
-url6='https://cdn.jsdelivr.net/gh/learnhard-cn/free_proxy_ss@main/clash/clash.provider.yaml'
+# ermaozi
+url6='https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml'
 
 # github_pojieziyuan更改日期，
 url7='https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{}clash.yml'.format(daystring)
