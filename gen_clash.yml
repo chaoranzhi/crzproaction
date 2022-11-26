@@ -4,33 +4,21 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 1126_0_俄罗斯 001
-  network: ws
-  port: 80
-  server: cl-gl2d3b3310.gcdn.co
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 938415bb-7df2-14dc-992d-8904a5bb6df2
-  ws-opts:
-    headers: {Host: "tls.weoworks.ml\r\ntls.weoworks.ml"}
-    path: /
 - alterId: 64
   cipher: auto
   http-opts:
     headers:
       Host: [apple.com]
     path: [/]
-  name: 1126_0_俄罗斯 002
+  name: 1126_0_俄罗斯 001
   network: http
   port: 37672
   server: 176.119.159.245
   type: vmess
   uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477
-- {alterId: 0, cipher: auto, name: 1126_0_匈牙利 001, port: 45081, server: 185.225.69.134,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9}
+- {name: 1126_0_加拿大 001, password: 9b807f48-266d-4f1e-8aba-31fc270c5414, port: 40312,
+  server: tw11142.tfzhc.top, skip-cert-verify: false, sni: tw11142.tfzhc.top, type: trojan,
+  uuid: f91f1765-850f-195b-9a53-a49a5b50a717}
 - alterId: 0
   cipher: auto
   name: 1126_0_印度 001
@@ -50,8 +38,10 @@ proxies:
   skip-cert-verify: false, tls: true, type: vmess, udp: true, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c}
 - {alterId: 0, cipher: auto, name: 1126_0_巴西 002, port: 21365, server: 168.138.207.66,
   skip-cert-verify: false, tls: false, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245}
-- {name: 1126_0_德国 001, password: Sp3eDVp, port: 443, server: content-provider5.cdn-delivery.akamaicd.com,
-  skip-cert-verify: true, type: trojan, udp: true, uuid: a733279b-5de9-2367-2f2f-bfb425b0213d}
+- {alterId: 0, cipher: auto, name: 1126_0_巴西 003, port: 10328, server: 168.138.201.208,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: bf847bf7-0ba5-4885-bd2b-da4d77afbda8}
+- {name: 1126_0_德国 001, password: origin, port: 443, server: 51.77.71.134, skip-cert-verify: true,
+  type: trojan, udp: true, uuid: 5f95679f-8fa4-f511-7648-72bb0bf930d4}
 - alterId: 0
   cipher: auto
   name: 1126_0_德国 002
@@ -65,26 +55,11 @@ proxies:
   ws-opts:
     headers: {Host: 5.161.105.171}
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1126_0_德国 003
-  network: ws
-  port: 3389
-  server: 5.161.105.171
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 06d52c29-1230-49a7-8fa6-66dbc9749a95
-  ws-opts:
-    headers: {Host: 5.161.105.171}
-    path: /
-- {name: 1126_0_德国 004, password: origin, port: 443, server: 51.77.71.134, skip-cert-verify: true,
-  type: trojan, udp: true, uuid: 5f95679f-8fa4-f511-7648-72bb0bf930d4}
-- {name: 1126_0_德国 005, password: Sp3eDVp, port: 443, server: 51.77.71.131, skip-cert-verify: true,
+- {name: 1126_0_德国 003, password: Sp3eDVp, port: 443, server: 51.77.71.131, skip-cert-verify: true,
   type: trojan, udp: true, uuid: aed4b10b-e84f-2e10-2d5b-e1200bbb5175}
 - alterId: 0
   cipher: auto
-  name: 1126_0_德国 006
+  name: 1126_0_德国 004
   network: ws
   port: 2082
   server: 194.233.83.238
@@ -93,63 +68,59 @@ proxies:
   ws-opts:
     headers: {host: 194.233.83.238}
     path: /aries
-- {name: 1126_0_德国 007, password: origin, port: 443, server: content-provider12.cdn-delivery.akamaicd.com,
+- {name: 1126_0_德国 005, password: origin, port: 443, server: content-provider12.cdn-delivery.akamaicd.com,
   skip-cert-verify: true, type: trojan, udp: true, uuid: 20c6d6c7-55ed-2c7d-20e6-8d9c4b9cdfaa}
-- {alterId: 0, cipher: auto, name: 1126_0_德国 008, network: ws, port: 35855, server: 188.34.159.186,
-  skip-cert-verify: true, type: vmess, uuid: 97e8fba7-327a-4752-8aca-043858a7e518,
-  ws-path: /}
-- {alterId: 0, cipher: auto, name: 1126_0_德国 009, network: ws, port: 51549, server: 162.55.214.110,
-  skip-cert-verify: true, type: vmess, uuid: 6399ab58-b7ce-4d24-be9e-92c581c93b44,
-  ws-path: /}
 - {alterId: 32, cipher: auto, name: 1126_0_新加坡 001, port: 443, server: 139.99.91.95,
   skip-cert-verify: false, tls: false, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_新加坡 002
-  network: ws
-  port: 16520
-  server: 172.104.162.207
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1f145a5f-24dc-4252-e19f-8bfede2d15d8
-  ws-opts:
-    headers: {Host: 172.104.162.207}
-    path: /hkaa0
-- alterId: 0
-  cipher: auto
-  name: 1126_0_新加坡 003
-  network: ws
-  port: 443
-  server: vus3.0bad.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    headers: {Host: vus3.0bad.com}
-    path: /chat
-- {cipher: aes-256-cfb, name: 1126_0_新加坡 004, obfs: tls1.2_ticket_auth, password: 3g0dHlKME,
+- {cipher: aes-256-cfb, name: 1126_0_新加坡 002, obfs: tls1.2_ticket_auth, password: 3g0dHlKME,
   port: 32001, protocol: origin, server: sg-am3.eqsunshine.com, type: ssr, uuid: 47737270-5442-7dfb-49d7-cd78d0abd2ec}
-- {alterId: 0, cipher: auto, name: 1126_0_新加坡 005, network: tcp, port: 40771, server: lll.277428.xyz,
+- {alterId: 0, cipher: auto, name: 1126_0_新加坡 003, network: tcp, port: 40771, server: lll.277428.xyz,
   tls: true, type: vmess, uuid: 61194810-5193-48bc-eb0a-7978a059d681}
 - alterId: 0
   cipher: auto
-  name: 1126_0_新加坡 006
+  name: 1126_0_日本 001
   network: ws
-  port: 16510
-  server: 172.104.162.207
+  port: 3331
+  server: f1f3227.v3.glados-config.net
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
-  uuid: 5f38801e-527a-4253-9a74-02a2eca9d88d
-  ws-opts: {path: /hkaa0}
-- {alterId: 0, cipher: auto, name: 1126_0_新加坡 007, network: ws, port: 16530, server: 172.104.162.207,
-  skip-cert-verify: true, type: vmess, uuid: 6fb03dca-1491-468f-8e15-4c305690ad46,
-  ws-path: /hkaa0}
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers: {Host: api.skype.com}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1126_0_日本 001
+  name: 1126_0_日本 002
+  network: ws
+  port: 3331
+  server: f1f3227.v1.glados-config.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers: {Host: api.apple.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1126_0_日本 003
+  network: ws
+  port: 3331
+  server: f1f3227.v4.glados-config.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers: {Host: api.apple.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1126_0_日本 004
   network: ws
   port: 443
   server: 146.56.104.236
@@ -158,36 +129,26 @@ proxies:
   type: vmess
   uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
   ws-opts: {path: /}
-- {name: 1126_0_日本 002, password: 40c89b10235c40321e7a3cef82b53a03, port: 443, server: trs17.bolab.net,
-  skip-cert-verify: true, sni: trs17.bolab.net, type: trojan, udp: true, uuid: 247f803e-8d49-a9c1-f8f1-dee4997e31aa}
-- {alterId: 0, cipher: auto, name: 1126_0_日本 003, port: 37121, server: m4.40010010.xyz,
-  skip-cert-verify: false, tls: true, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5}
-- {name: 1126_0_日本 004, password: dc26913c-a31c-4b3f-9c03-28a6b4283a89, port: 443,
+- {name: 1126_0_日本 005, password: a5e26c4c-95bf-43f9-8904-213492f1ed65, port: 443,
+  server: dl-jp2.efpan.one, skip-cert-verify: true, sni: data-jp.efpan.one, type: trojan,
+  udp: true, uuid: 524ff4ad-ee08-7871-7128-d5f213b0ed3f}
+- {name: 1126_0_日本 006, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, port: 443,
+  server: 146.56.189.146, skip-cert-verify: true, type: trojan, udp: true, uuid: 4838b60a-d207-d655-ec1d-64ca71028cca}
+- {name: 1126_0_日本 007, password: 8d2d5953-d649-4034-94f2-72f2df2623da, port: 443,
+  server: 168.138.44.176, skip-cert-verify: true, type: trojan, udp: true, uuid: f0716c2f-f672-f7c1-db4b-be327fcb0ef8}
+- {name: 1126_0_日本 008, password: dc26913c-a31c-4b3f-9c03-28a6b4283a89, port: 443,
   server: kr1.api-aws.com, skip-cert-verify: true, type: trojan, udp: true, uuid: dfd7185e-db08-6ea8-d4f2-e040a3001e2a}
-- {name: 1126_0_日本 005, password: 14bdba6dede262387ebdebaa706e1c90, port: 443, server: trs12.bolab.net,
+- {name: 1126_0_日本 009, password: 14bdba6dede262387ebdebaa706e1c90, port: 443, server: trs12.bolab.net,
   skip-cert-verify: true, type: trojan, udp: true, uuid: 48202c17-1bfa-6724-1ee8-f86991addccb}
-- {name: 1126_0_日本 006, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, port: 443,
+- {name: 1126_0_日本 010, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, port: 443,
   server: 168.138.43.89, skip-cert-verify: true, type: trojan, udp: true, uuid: 7f443041-ee0b-58d7-b7f6-a3d2115a31d5}
-- {cipher: aes-256-cfb, name: 1126_0_日本 007, obfs: tls1.2_ticket_auth, password: eAokbaDN6,
+- {cipher: aes-256-cfb, name: 1126_0_日本 011, obfs: tls1.2_ticket_auth, password: eAokbaDN6,
   port: 8081, protocol: origin, server: jp-am48-6.eqnode.net, type: ssr, uuid: ea065981-1bfd-cccf-7bd2-70ed574cdf7b}
-- {name: 1126_0_日本 008, password: 40c89b10235c40321e7a3cef82b53a03, port: 443, server: trs03.bolab.net,
-  skip-cert-verify: false, sni: trs03.bolab.net, type: trojan, uuid: dec82417-cb31-00d1-6a41-6d704b700919}
-- {name: 1126_0_日本 009, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, port: 443,
-  server: 146.56.189.146, skip-cert-verify: false, sni: 146.56.189.146, type: trojan,
-  uuid: 4838b60a-d207-d655-ec1d-64ca71028cca}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_比利时 001
-  network: ws
-  port: 80
-  server: 57.128.45.161
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 35d25899-ed20-46d9-9c7c-99c0d414d5e4
-  ws-opts:
-    headers: {Host: 57.128.45.161}
-    path: /user
+- {name: 1126_0_日本 012, password: 40c89b10235c40321e7a3cef82b53a03, port: 443, server: trs16.bolab.net,
+  skip-cert-verify: false, sni: trs16.bolab.net, type: trojan, uuid: 007673b6-cc13-7321-f41e-981831a8e260}
+- {alterId: 0, cipher: auto, name: 1126_0_日本 013, network: ws, port: 3331, server: f1f3227.v8.glados-config.net,
+  skip-cert-verify: true, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0,
+  ws-path: /s/f1f3227.fm.apple.com:111548}
 - alterId: 0
   cipher: auto
   name: 1126_0_法国 001
@@ -203,35 +164,8 @@ proxies:
   type: trojan, udp: true, uuid: ec175be9-f90c-9441-4b5a-4fd4402f3522}
 - {name: 1126_0_法国 003, password: origin, port: 443, server: content-provider26.cdn-delivery.akamaicd.com,
   skip-cert-verify: true, type: trojan, udp: true, uuid: c4b8c5be-db9a-d471-b23b-18da912e26ab}
-- {alterId: 0, cipher: auto, name: 1126_0_法国 004, network: ws, port: 443, server: 51.75.188.6,
-  skip-cert-verify: true, type: vmess, uuid: b2737260-b925-4434-9ca1-6116fa8ab83c,
-  ws-path: /cw21sadd3}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_瑞士 001
-  network: ws
-  port: 443
-  server: www.kehuai.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 353b3a7d-28d2-4e4b-9633-1c90f23b6514
-  ws-opts:
-    headers: {Host: www.kehuai.tk}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1126_0_瑞士 002
-  network: ws
-  port: 443
-  server: www.liuyiyang19891222.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ad48ebeb-f949-472b-9717-e8c8f0f7984d
-  ws-opts:
-    headers: {Host: www.liuyiyang19891222.tk}
-    path: /
+- {alterId: 0, cipher: auto, name: 1126_0_澳大利亚 001, port: 23183, server: 43.154.34.49,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: b402a4af-285a-463e-c3a7-53f91efdec78}
 - {cipher: aes-128-gcm, name: 1126_0_美国 001, password: 6601fb90e9b3, port: 443, server: www.v2rayfree.eu.org,
   type: ss, udp: true, uuid: 97a248ff-cd1f-485f-df8d-02b661833e5f}
 - alterId: 64
@@ -481,37 +415,65 @@ proxies:
   ws-opts:
     headers: {Host: ssrsub.v01.asuka.buzz}
     path: /api/v3/download.getFile
-- {name: 1126_0_美国 022, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, port: 443,
-  server: 138.2.81.70, skip-cert-verify: true, type: trojan, udp: true, uuid: 2d7d5290-33d1-d4a9-fa0c-d3f42b8c3f63}
-- {name: 1126_0_美国 023, password: HdsUZmsHQW, port: 443, server: 148.113.141.99, skip-cert-verify: true,
-  type: trojan, udp: true, uuid: f1bd4554-1685-648a-10be-ed8e0315ff6f}
-- {name: 1126_0_美国 024, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
+- {name: 1126_0_美国 022, password: a5e26c4c-95bf-43f9-8904-213492f1ed65, port: 443,
+  server: dl-hk2.efpan.one, skip-cert-verify: true, sni: data-hk.efpan.one, type: trojan,
+  udp: true, uuid: 2954f1ff-0bf9-a1e4-e81a-500629db7887}
+- {name: 1126_0_美国 023, password: a5e26c4c-95bf-43f9-8904-213492f1ed65, port: 443,
+  server: dl-sg3.efpan.one, skip-cert-verify: true, sni: data-sg.efpan.one, type: trojan,
+  udp: true, uuid: 1dde8f3f-282b-92d5-523c-250e89a64b00}
+- {name: 1126_0_美国 024, password: a5e26c4c-95bf-43f9-8904-213492f1ed65, port: 443,
+  server: dl-tw2.efpan.one, skip-cert-verify: true, sni: data-tw.efpan.one, type: trojan,
+  udp: true, uuid: 4bc9b1ed-547b-5866-03c7-a3f57199fb44}
+- {name: 1126_0_美国 025, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, port: 443,
+  server: 138.2.113.84, skip-cert-verify: true, type: trojan, udp: true, uuid: 763c60ee-0692-3e79-806b-a052ee7016c9}
+- {name: 1126_0_美国 026, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
   server: sg.liangyuandian.top, skip-cert-verify: true, sni: sg.liangyuandian.top,
   type: trojan, udp: true, uuid: 6b363403-0c6e-f98f-9a54-189394f31f43}
-- {name: 1126_0_美国 025, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
+- {name: 1126_0_美国 027, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
   server: ap.liangyuandian.top, skip-cert-verify: true, sni: ap.liangyuandian.top,
   type: trojan, udp: true, uuid: b609d172-5260-05f1-7ca5-3c08166ff922}
-- {name: 1126_0_美国 026, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
+- {name: 1126_0_美国 028, password: ceaea123-1b4b-469b-8358-bcd5f5529305, port: 443,
   server: jp.liangyuandian.top, skip-cert-verify: true, sni: jp.liangyuandian.top,
   type: trojan, udp: true, uuid: 908c02d6-f6d3-7cf3-37e3-e4e4514f7f4b}
-- alterId: 0
+- {alterId: 64, cipher: auto, name: 1126_0_美国 029, port: 20081, server: 138.2.44.211,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973}
+- alterId: 2
   cipher: auto
-  name: 1126_0_美国 027
+  name: 1126_0_美国 030
   network: ws
   port: 443
-  server: 51.195.140.208
+  server: 161.129.34.102
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: b2737260-b925-4434-9ca1-6116fa8ab83c
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 031, port: 26676, server: 152.70.241.18,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: ecd274c0-175d-45f7-8276-a3da93786632}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 032, port: 32586, server: 129.159.41.233,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 033, port: 1258, server: 23.230.146.254,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 034, port: 23292, server: 150.230.41.9,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 035, port: 1069, server: 152.69.197.60,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf}
+- alterId: 2
+  cipher: auto
+  name: 1126_0_美国 036
+  network: ws
+  port: 443
+  server: lc-kr02-direct01.lc-kr02.lc-node.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
   ws-opts:
-    headers: {Host: node1.wblogw1.tk}
-    path: /cw21sadd3
-- {alterId: 64, cipher: auto, name: 1126_0_美国 028, port: 20081, server: 138.2.44.211,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973}
+    headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}
+    path: /
 - alterId: 64
   cipher: auto
-  name: 1126_0_美国 029
+  name: 1126_0_美国 037
   network: ws
   port: 443
   server: 67.21.72.41
@@ -522,32 +484,9 @@ proxies:
   ws-opts:
     headers: {Host: www.17080100.xyz}
     path: /path/173418141123
-- {alterId: 0, cipher: auto, name: 1126_0_美国 030, port: 37584, server: 23.105.199.160,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 61914893-393a-4685-fc2d-13328bd8e491}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 031, port: 23166, server: 23.105.199.160,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: f1cda9da-c859-4f26-f609-a2e8837cc9b8}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 032, port: 27317, server: 23.105.199.160,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 033, port: 25078, server: 23.105.199.160,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 964f9b2b-7ff1-4026-d4a9-41b824f4b3bb}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 034, port: 23903, server: 23.105.199.160,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_美国 035
-  network: ws
-  port: 8443
-  server: ca.0112233.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
-  ws-opts:
-    headers: {Host: ca.0112233.xyz}
-    path: /home
 - alterId: 64
   cipher: auto
-  name: 1126_0_美国 036
+  name: 1126_0_美国 038
   network: ws
   port: 443
   server: 67.21.72.44
@@ -560,7 +499,7 @@ proxies:
     path: /path/120208301422
 - alterId: 0
   cipher: auto
-  name: 1126_0_美国 037
+  name: 1126_0_美国 039
   network: ws
   port: 443
   server: 129.159.139.101
@@ -571,84 +510,45 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 1126_0_美国 038
+  name: 1126_0_美国 040
   network: ws
-  port: 443
-  server: aus01.paopaocloud.cyou
+  port: 10015
+  server: ah.yd01.paopaocloud.cyou
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
   ws-opts:
-    headers: {Host: aus01.paopaocloud.cyou}
+    headers: {Host: paopao.v2.jp02.paopaocloud.cyou}
     path: /v2ray
+- {alterId: 0, cipher: auto, name: 1126_0_美国 041, port: 23903, server: 23.105.199.160,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 042, port: 25078, server: 23.105.199.160,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 964f9b2b-7ff1-4026-d4a9-41b824f4b3bb}
 - alterId: 0
-  cipher: auto
-  name: 1126_0_美国 039
-  network: ws
-  port: 443
-  server: buyvm.imkcp.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6fb9a750-55b8-4e6e-857b-242b795399dc
-  ws-opts:
-    headers: {Host: buyvm.imkcp.eu.org}
-    path: /imkcpyyds
-- alterId: 2
-  cipher: auto
-  name: 1126_0_美国 040
-  network: ws
-  port: 443
-  server: 161.129.34.102
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ec736482-173e-3eff-9114-b49df8056e7d
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 041, port: 32586, server: 129.159.41.233,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 042, port: 1258, server: 23.230.146.254,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0}
-- alterId: 2
   cipher: auto
   name: 1126_0_美国 043
   network: ws
-  port: 443
-  server: lc-kr02-direct01.lc-kr02.lc-node.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ec736482-173e-3eff-9114-b49df8056e7d
-  ws-opts:
-    headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}
-    path: /
-- {alterId: 0, cipher: auto, name: 1126_0_美国 044, port: 1069, server: 152.69.197.60,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf}
-- {alterId: 10, cipher: auto, name: 1126_0_美国 045, port: 8189, server: hk1vdf-node.aiqiche123.com,
-  skip-cert-verify: false, tls: true, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638}
-- {alterId: 10, cipher: auto, name: 1126_0_美国 046, port: 8189, server: 206.119.112.6,
-  skip-cert-verify: false, tls: true, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_美国 047
-  network: ws
-  port: 443
-  server: 152.69.167.11
+  port: 10009
+  server: ah.yd01.paopaocloud.cyou
   skip-cert-verify: false
   tls: true
   type: vmess
   uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2
   ws-opts:
-    headers: {Host: 152.69.167.11}
+    headers: {Host: paopao.v2.hk06.paopaocloud.cyou}
     path: /v2ray
-- {alterId: 0, cipher: auto, name: 1126_0_美国 048, port: 23292, server: 150.230.41.9,
-  skip-cert-verify: false, tls: false, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750}
-- {name: 1126_0_美国 049, password: e23f408a-012e-4030-8b31-02022031cb50, port: 443,
+- {alterId: 0, cipher: auto, name: 1126_0_美国 044, port: 37584, server: 23.105.199.160,
+  skip-cert-verify: false, tls: false, type: vmess, uuid: 61914893-393a-4685-fc2d-13328bd8e491}
+- {alterId: 10, cipher: auto, name: 1126_0_美国 045, port: 8189, server: 206.119.112.6,
+  skip-cert-verify: false, tls: true, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638}
+- {alterId: 10, cipher: auto, name: 1126_0_美国 046, port: 8189, server: hk1vdf-node.aiqiche123.com,
+  skip-cert-verify: false, tls: true, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638}
+- {name: 1126_0_美国 047, password: e23f408a-012e-4030-8b31-02022031cb50, port: 443,
   server: 129.146.135.157, skip-cert-verify: true, type: trojan, udp: true, uuid: 174c0bd2-dfc5-b7b7-9534-47361fa4f62f}
 - alterId: 0
   cipher: auto
-  name: 1126_0_美国 050
+  name: 1126_0_美国 048
   network: ws
   port: 443
   server: 104.29.64.2
@@ -658,13 +558,11 @@ proxies:
   ws-opts:
     headers: {host: fr2.cfcdn4.xyz}
     path: /ray
-- {name: 1126_0_美国 051, password: 9c822f05-cfdc-479a-9534-60f3d4127435, port: 443,
+- {name: 1126_0_美国 049, password: 9c822f05-cfdc-479a-9534-60f3d4127435, port: 443,
   server: 138.2.113.248, skip-cert-verify: true, type: trojan, udp: true, uuid: 7a07ec2e-0cd7-4292-e338-20d64ffbb030}
-- {name: 1126_0_美国 052, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, port: 443,
-  server: 138.2.113.84, skip-cert-verify: true, type: trojan, udp: true, uuid: 763c60ee-0692-3e79-806b-a052ee7016c9}
 - alterId: 0
   cipher: auto
-  name: 1126_0_美国 053
+  name: 1126_0_美国 050
   network: ws
   port: 443
   server: 141.101.114.20
@@ -674,15 +572,17 @@ proxies:
   ws-opts:
     headers: {host: clash1.trump2023.net}
     path: /dongtaiwang.com
-- {name: 1126_0_美国 054, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, port: 443,
+- {name: 1126_0_美国 051, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, port: 443,
   server: 129.146.190.42, skip-cert-verify: true, type: trojan, udp: true, uuid: 34f4cb1a-d3e9-0e9f-3ca4-ee2f06a3f285}
-- {name: 1126_0_美国 055, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, port: 443,
+- {name: 1126_0_美国 052, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, port: 443,
   server: 129.146.255.158, skip-cert-verify: true, type: trojan, udp: true, uuid: 1bc62db2-5331-1f92-7721-4a63830d9457}
-- {name: 1126_0_美国 056, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, port: 443,
+- {name: 1126_0_美国 053, password: HdsUZmsHQW, port: 443, server: 148.113.141.99, skip-cert-verify: true,
+  type: trojan, udp: true, uuid: f1bd4554-1685-648a-10be-ed8e0315ff6f}
+- {name: 1126_0_美国 054, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, port: 443,
   server: fhcamd2.gaox.ml, skip-cert-verify: true, type: trojan, udp: true, uuid: b32acfc1-6ffd-3e02-2a12-d34c821e1662}
 - alterId: 0
   cipher: auto
-  name: 1126_0_美国 057
+  name: 1126_0_美国 055
   network: ws
   port: 443
   server: ca.0112233.xyz
@@ -690,37 +590,50 @@ proxies:
   type: vmess
   uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d
   ws-opts: {path: /}
-- {name: 1126_0_美国 058, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, port: 443,
+- {name: 1126_0_美国 056, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, port: 443,
   server: 129.146.242.130, skip-cert-verify: true, type: trojan, udp: true, uuid: d63108b5-044f-bc78-9fee-bf6166b267a7}
-- alterId: 0
+- alterId: 64
+  cipher: auto
+  name: 1126_0_美国 057
+  network: ws
+  port: 443
+  server: 137.175.12.229
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3
+  ws-opts:
+    headers: {Host: www.66218164.xyz}
+    path: /path/321113221131
+- alterId: 64
+  cipher: auto
+  name: 1126_0_美国 058
+  network: ws
+  port: 443
+  server: 107.148.192.80
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {Host: www.23423425.xyz}
+    path: /path/321113221131
+- alterId: 64
   cipher: auto
   name: 1126_0_美国 059
   network: ws
   port: 443
-  server: 43.72img.xyz
+  server: 194.35.15.94
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
-    headers: {Host: 43.72img.xyz}
-    path: /
+    headers: {Host: www.67143273.xyz}
+    path: /path/321113221131
 - alterId: 0
   cipher: auto
   name: 1126_0_美国 060
-  network: ws
-  port: 443
-  server: 198.41.212.122
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
-  ws-opts:
-    headers: {Host: lg1.cfcdn1.xyz}
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 1126_0_美国 061
   network: ws
   port: 80
   server: 104.29.64.24
@@ -731,18 +644,31 @@ proxies:
   ws-opts:
     headers: {Host: hl1.cachexy.ga}
     path: /lXvA0Vse/
-- {alterId: 0, cipher: auto, name: 1126_0_美国 062, network: ws, port: 80, server: 152.69.230.170,
-  skip-cert-verify: true, type: vmess, uuid: 6aa24ded-5f15-48c7-8cba-3e2a159d6b77,
-  ws-path: /}
+- alterId: 0
+  cipher: auto
+  name: 1126_0_美国 061
+  network: ws
+  port: 443
+  server: 198.41.212.122
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
+  ws-opts:
+    headers: {Host: lg1.cfcdn1.xyz}
+    path: /ray
+- {alterId: 0, cipher: auto, name: 1126_0_美国 062, network: ws, port: 443, server: 198.41.203.4,
+  skip-cert-verify: true, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1,
+  ws-path: /ray}
 - {alterId: 0, cipher: auto, name: 1126_0_美国 063, network: ws, port: 443, server: 141.101.115.120,
   skip-cert-verify: true, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7,
   ws-path: /ray}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 064, network: ws, port: 443, server: 198.41.212.145,
-  skip-cert-verify: true, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781,
-  ws-path: /dongtaiwang.com}
-- {alterId: 0, cipher: auto, name: 1126_0_美国 065, network: ws, port: 443, server: 34.145.145.76,
+- {alterId: 0, cipher: auto, name: 1126_0_美国 064, network: ws, port: 443, server: 128.14.162.48,
   skip-cert-verify: true, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd,
   ws-path: /dongtaiwang.com}
+- {alterId: 0, cipher: auto, name: 1126_0_美国 065, network: ws, port: 80, server: 15.235.147.186,
+  skip-cert-verify: true, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925,
+  ws-path: /sshkit/Ertusg86/635014638c264/}
 - alterId: 64
   cipher: auto
   name: 1126_0_英国 001
@@ -759,34 +685,16 @@ proxies:
     path: /getweather
 - {name: 1126_0_英国 002, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, port: 443,
   server: 144.24.72.126, skip-cert-verify: true, type: trojan, udp: true, uuid: 43d01040-621e-f65e-e75f-63faaafe2ca7}
-- {alterId: 0, cipher: auto, name: 1126_0_英国 003, network: ws, port: 80, server: nl1.v2rayserv.com,
-  skip-cert-verify: true, type: vmess, uuid: e727f6e3-d206-4f04-80f8-30dafd52fbe2,
-  ws-path: /Danhuang/Jiang}
-- {name: 1126_0_荷兰 001, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, port: 443,
-  server: 5.255.103.209, skip-cert-verify: true, type: trojan, udp: true, uuid: 58373ff6-0c96-0fff-e124-b11dec2fc7f4}
-- {name: 1126_0_荷兰 002, password: Sp3eDVp, port: 443, server: content-provider23.cdn-delivery.akamaicd.com,
+- {name: 1126_0_荷兰 001, password: Sp3eDVp, port: 443, server: content-provider23.cdn-delivery.akamaicd.com,
   skip-cert-verify: true, type: trojan, udp: true, uuid: 455e7a1f-fc06-9482-cde6-30b3aab95066}
+- {name: 1126_0_荷兰 002, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, port: 443,
+  server: 5.255.103.209, skip-cert-verify: true, type: trojan, udp: true, uuid: 58373ff6-0c96-0fff-e124-b11dec2fc7f4}
 - {name: 1126_0_荷兰 003, password: Sp3eDVp, port: 443, server: content-provider24.cdn-delivery.akamaicd.com,
   skip-cert-verify: true, type: trojan, udp: true, uuid: e600e5e1-9ad4-6fa4-006e-aacf27a1a194}
 - {name: 1126_0_荷兰 004, password: Sp3eDVp, port: 443, server: 185.212.200.75, skip-cert-verify: true,
   type: trojan, udp: true, uuid: 2d617ecb-bb4f-9b35-5954-8d3cbf0fe68d}
-- {alterId: 0, cipher: auto, name: 1126_0_荷兰 005, network: ws, port: 443, server: amshare.jingledev.me,
-  skip-cert-verify: true, type: vmess, uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0,
-  ws-path: /pkhhvws}
 - {name: 1126_0_韩国 001, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, port: 443,
-  server: 52.141.26.55, skip-cert-verify: true, sni: vzwzasc.cn, type: trojan, udp: true,
-  uuid: b3b0f675-a68d-1923-d43e-8292b0169bc3}
-- alterId: 0
-  cipher: auto
-  name: 1126_0_韩国 002
-  network: ws
-  port: 42517
-  server: 54.180.114.77
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts: {path: /}
+  server: 52.141.26.55, skip-cert-verify: true, type: trojan, udp: true, uuid: b3b0f675-a68d-1923-d43e-8292b0169bc3}
 - alterId: 0
   cipher: auto
   name: 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1
@@ -2178,28 +2086,26 @@ proxies:
   port: 8888, server: 38.121.43.71, type: ss, udp: true}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001, 1126_0_印度
-      001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国 002,
-    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007, 1126_0_德国
-      008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003, 1126_0_新加坡
-      004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001, 1126_0_日本
-      002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007,
-    1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国
-      003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001, 1126_0_美国 002,
-    1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国
-      008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013,
-    1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国
-      019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024,
-    1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国
-      030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035,
-    1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国
-      041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046,
-    1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国
-      052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057,
-    1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国
-      063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_英国 003,
-    1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰 005, 1126_0_韩国
-      001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001, 1126_0_印度
+      002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国 002,
+    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡
+      003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005,
+    1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_日本 010, 1126_0_日本
+      011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003,
+    1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国
+      005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010,
+    1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国
+      016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021,
+    1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国
+      027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032,
+    1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国
+      038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043,
+    1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国
+      049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054,
+    1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国
+      060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065,
+    1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰
+      004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
       - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq
@@ -2267,32 +2173,30 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001, 1126_0_印度 001, 1126_0_印度
-      002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国 002, 1126_0_德国 003,
-    1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007, 1126_0_德国 008, 1126_0_德国
-      009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003, 1126_0_新加坡 004, 1126_0_新加坡
-      005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本
-      003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008,
-    1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003, 1126_0_法国
-      004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003,
-    1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国
-      009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014,
-    1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国
-      020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025,
-    1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国
-      031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036,
-    1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国
-      042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047,
-    1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国
-      053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058,
-    1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国
-      064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_英国 003, 1126_0_荷兰 001,
-    1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰 005, 1126_0_韩国 001, 1126_0_韩国
-      002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心
-      2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 1126_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq -
-      美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 8, 1126_1_🇺🇸
+  proxies: [1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001, 1126_0_印度 002, 1126_0_巴西
+      001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国 002, 1126_0_德国 003,
+    1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003,
+    1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本
+      006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_日本 010, 1126_0_日本 011,
+    1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003, 1126_0_澳大利亚
+      001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005,
+    1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国
+      011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016,
+    1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国
+      022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027,
+    1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国
+      033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038,
+    1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国
+      044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049,
+    1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国
+      055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060,
+    1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国
+      001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004,
+    1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 8, 1126_1_🇺🇸
       github.com/freefq - 美国  9, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10,
     1126_1_🇬🇷 github.com/freefq - 希腊  11, 1126_1_🇩🇪 github.com/freefq - 德国  12, 1126_1_🇯🇵
       github.com/freefq - 日本北海道石狩SAKURA数据中心 13, 1126_1_🇺🇸 github.com/freefq - 美国惠普公司
@@ -2356,32 +2260,30 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001,
-    1126_0_印度 001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国
-      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007,
-    1126_0_德国 008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003,
-    1126_0_新加坡 004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001,
-    1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本
-      007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国
-      002, 1126_0_法国 003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001,
-    1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国
-      007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012,
-    1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国
-      018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023,
-    1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国
-      029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034,
-    1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国
-      040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045,
-    1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国
-      051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056,
-    1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国
-      062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002,
-    1126_0_英国 003, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰
-      005, 1126_0_韩国 001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳
-      github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6,
-    1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001,
+    1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国
+      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡
+      002, 1126_0_新加坡 003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本
+      004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009,
+    1126_0_日本 010, 1126_0_日本 011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国
+      002, 1126_0_法国 003, 1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国
+      003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008,
+    1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国
+      014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019,
+    1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国
+      025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030,
+    1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国
+      036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041,
+    1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国
+      047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052,
+    1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国
+      058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063,
+    1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰
+      002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq
+      - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心
+      6, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
       - 香港电讯盈科有限公司 8, 1126_1_🇺🇸 github.com/freefq - 美国  9, 1126_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 10, 1126_1_🇬🇷 github.com/freefq - 希腊  11, 1126_1_🇩🇪 github.com/freefq
       - 德国  12, 1126_1_🇯🇵 github.com/freefq - 日本北海道石狩SAKURA数据中心 13, 1126_1_🇺🇸 github.com/freefq
@@ -2450,32 +2352,30 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001,
-    1126_0_印度 001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国
-      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007,
-    1126_0_德国 008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003,
-    1126_0_新加坡 004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001,
-    1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本
-      007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国
-      002, 1126_0_法国 003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001,
-    1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国
-      007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012,
-    1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国
-      018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023,
-    1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国
-      029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034,
-    1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国
-      040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045,
-    1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国
-      051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056,
-    1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国
-      062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002,
-    1126_0_英国 003, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰
-      005, 1126_0_韩国 001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳
-      github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6,
-    1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001,
+    1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国
+      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡
+      002, 1126_0_新加坡 003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本
+      004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009,
+    1126_0_日本 010, 1126_0_日本 011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国
+      002, 1126_0_法国 003, 1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国
+      003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008,
+    1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国
+      014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019,
+    1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国
+      025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030,
+    1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国
+      036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041,
+    1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国
+      047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052,
+    1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国
+      058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063,
+    1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰
+      002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq
+      - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心
+      6, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
       - 香港电讯盈科有限公司 8, 1126_1_🇺🇸 github.com/freefq - 美国  9, 1126_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 10, 1126_1_🇬🇷 github.com/freefq - 希腊  11, 1126_1_🇩🇪 github.com/freefq
       - 德国  12, 1126_1_🇯🇵 github.com/freefq - 日本北海道石狩SAKURA数据中心 13, 1126_1_🇺🇸 github.com/freefq
@@ -2538,28 +2438,26 @@ proxy-groups:
       30, 1126_7_欧洲(油管:破解资源君2.0) 31, 1126_7_欧洲(油管:破解资源君2.0) 32]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001, 1126_0_印度 001,
-    1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国 002, 1126_0_德国
-      003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007, 1126_0_德国 008,
-    1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003, 1126_0_新加坡 004,
-    1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001, 1126_0_日本 002,
-    1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本
-      008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国
-      003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001, 1126_0_美国 002,
-    1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国
-      008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013,
-    1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国
-      019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024,
-    1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国
-      030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035,
-    1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国
-      041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046,
-    1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国
-      052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057,
-    1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国
-      063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_英国 003,
-    1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰 005, 1126_0_韩国
-      001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
+  proxies: [🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001, 1126_0_印度 002,
+    1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国 002, 1126_0_德国
+      003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡
+      003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005,
+    1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_日本 010, 1126_0_日本
+      011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003,
+    1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国
+      005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010,
+    1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国
+      016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021,
+    1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国
+      027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032,
+    1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国
+      038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043,
+    1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国
+      049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054,
+    1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国
+      060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065,
+    1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰
+      004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
       - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq
@@ -2626,28 +2524,26 @@ proxy-groups:
       30, 1126_7_欧洲(油管:破解资源君2.0) 31, 1126_7_欧洲(油管:破解资源君2.0) 32]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001, 1126_0_印度
-      001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国 002,
-    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007, 1126_0_德国
-      008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003, 1126_0_新加坡
-      004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001, 1126_0_日本
-      002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007,
-    1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国
-      003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001, 1126_0_美国 002,
-    1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国
-      008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013,
-    1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国
-      019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024,
-    1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国
-      030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035,
-    1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国
-      041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046,
-    1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国
-      052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057,
-    1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国
-      063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_英国 003,
-    1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰 005, 1126_0_韩国
-      001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001, 1126_0_印度
+      002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国 002,
+    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡
+      003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005,
+    1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_日本 010, 1126_0_日本
+      011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003,
+    1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国
+      005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010,
+    1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国
+      016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021,
+    1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国
+      027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032,
+    1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国
+      038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043,
+    1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国
+      049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054,
+    1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国
+      060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065,
+    1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰
+      004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
       - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq
@@ -2714,28 +2610,26 @@ proxy-groups:
       30, 1126_7_欧洲(油管:破解资源君2.0) 31, 1126_7_欧洲(油管:破解资源君2.0) 32]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001, 1126_0_印度
-      001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国 002,
-    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007, 1126_0_德国
-      008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003, 1126_0_新加坡
-      004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001, 1126_0_日本
-      002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007,
-    1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国
-      003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001, 1126_0_美国 002,
-    1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国
-      008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013,
-    1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国
-      019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024,
-    1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国
-      030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035,
-    1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国
-      041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046,
-    1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国
-      052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057,
-    1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国
-      063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_英国 003,
-    1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰 005, 1126_0_韩国
-      001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001, 1126_0_印度
+      002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国 002,
+    1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡
+      003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005,
+    1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_日本 010, 1126_0_日本
+      011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国 002, 1126_0_法国 003,
+    1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国
+      005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010,
+    1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国
+      016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021,
+    1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国
+      027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032,
+    1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国
+      038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043,
+    1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国
+      049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054,
+    1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国
+      060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065,
+    1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰
+      004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq
       - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1126_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6, 1126_1_🇺🇸 github.com/freefq
@@ -2802,32 +2696,30 @@ proxy-groups:
       30, 1126_7_欧洲(油管:破解资源君2.0) 31, 1126_7_欧洲(油管:破解资源君2.0) 32]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001,
-    1126_0_印度 001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国
-      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007,
-    1126_0_德国 008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003,
-    1126_0_新加坡 004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001,
-    1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本
-      007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国
-      002, 1126_0_法国 003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001,
-    1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国
-      007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012,
-    1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国
-      018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023,
-    1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国
-      029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034,
-    1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国
-      040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045,
-    1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国
-      051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056,
-    1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国
-      062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002,
-    1126_0_英国 003, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰
-      005, 1126_0_韩国 001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳
-      github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6,
-    1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001,
+    1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国
+      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡
+      002, 1126_0_新加坡 003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本
+      004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009,
+    1126_0_日本 010, 1126_0_日本 011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国
+      002, 1126_0_法国 003, 1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国
+      003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008,
+    1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国
+      014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019,
+    1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国
+      025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030,
+    1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国
+      036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041,
+    1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国
+      047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052,
+    1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国
+      058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063,
+    1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰
+      002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq
+      - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心
+      6, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
       - 香港电讯盈科有限公司 8, 1126_1_🇺🇸 github.com/freefq - 美国  9, 1126_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 10, 1126_1_🇬🇷 github.com/freefq - 希腊  11, 1126_1_🇩🇪 github.com/freefq
       - 德国  12, 1126_1_🇯🇵 github.com/freefq - 日本北海道石狩SAKURA数据中心 13, 1126_1_🇺🇸 github.com/freefq
@@ -2896,32 +2788,30 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1126_0_俄罗斯 001, 1126_0_俄罗斯 002, 1126_0_匈牙利 001,
-    1126_0_印度 001, 1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_德国 001, 1126_0_德国
-      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_德国 006, 1126_0_德国 007,
-    1126_0_德国 008, 1126_0_德国 009, 1126_0_新加坡 001, 1126_0_新加坡 002, 1126_0_新加坡 003,
-    1126_0_新加坡 004, 1126_0_新加坡 005, 1126_0_新加坡 006, 1126_0_新加坡 007, 1126_0_日本 001,
-    1126_0_日本 002, 1126_0_日本 003, 1126_0_日本 004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本
-      007, 1126_0_日本 008, 1126_0_日本 009, 1126_0_比利时 001, 1126_0_法国 001, 1126_0_法国
-      002, 1126_0_法国 003, 1126_0_法国 004, 1126_0_瑞士 001, 1126_0_瑞士 002, 1126_0_美国 001,
-    1126_0_美国 002, 1126_0_美国 003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国
-      007, 1126_0_美国 008, 1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012,
-    1126_0_美国 013, 1126_0_美国 014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国
-      018, 1126_0_美国 019, 1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023,
-    1126_0_美国 024, 1126_0_美国 025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国
-      029, 1126_0_美国 030, 1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034,
-    1126_0_美国 035, 1126_0_美国 036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国
-      040, 1126_0_美国 041, 1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045,
-    1126_0_美国 046, 1126_0_美国 047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国
-      051, 1126_0_美国 052, 1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056,
-    1126_0_美国 057, 1126_0_美国 058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国
-      062, 1126_0_美国 063, 1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002,
-    1126_0_英国 003, 1126_0_荷兰 001, 1126_0_荷兰 002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_荷兰
-      005, 1126_0_韩国 001, 1126_0_韩国 002, 1126_1_🇷🇺 github.com/freefq - 俄罗斯  1, 1126_1_🇨🇳
-      github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 6,
-    1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1126_0_俄罗斯 001, 1126_0_加拿大 001, 1126_0_印度 001,
+    1126_0_印度 002, 1126_0_巴西 001, 1126_0_巴西 002, 1126_0_巴西 003, 1126_0_德国 001, 1126_0_德国
+      002, 1126_0_德国 003, 1126_0_德国 004, 1126_0_德国 005, 1126_0_新加坡 001, 1126_0_新加坡
+      002, 1126_0_新加坡 003, 1126_0_日本 001, 1126_0_日本 002, 1126_0_日本 003, 1126_0_日本
+      004, 1126_0_日本 005, 1126_0_日本 006, 1126_0_日本 007, 1126_0_日本 008, 1126_0_日本 009,
+    1126_0_日本 010, 1126_0_日本 011, 1126_0_日本 012, 1126_0_日本 013, 1126_0_法国 001, 1126_0_法国
+      002, 1126_0_法国 003, 1126_0_澳大利亚 001, 1126_0_美国 001, 1126_0_美国 002, 1126_0_美国
+      003, 1126_0_美国 004, 1126_0_美国 005, 1126_0_美国 006, 1126_0_美国 007, 1126_0_美国 008,
+    1126_0_美国 009, 1126_0_美国 010, 1126_0_美国 011, 1126_0_美国 012, 1126_0_美国 013, 1126_0_美国
+      014, 1126_0_美国 015, 1126_0_美国 016, 1126_0_美国 017, 1126_0_美国 018, 1126_0_美国 019,
+    1126_0_美国 020, 1126_0_美国 021, 1126_0_美国 022, 1126_0_美国 023, 1126_0_美国 024, 1126_0_美国
+      025, 1126_0_美国 026, 1126_0_美国 027, 1126_0_美国 028, 1126_0_美国 029, 1126_0_美国 030,
+    1126_0_美国 031, 1126_0_美国 032, 1126_0_美国 033, 1126_0_美国 034, 1126_0_美国 035, 1126_0_美国
+      036, 1126_0_美国 037, 1126_0_美国 038, 1126_0_美国 039, 1126_0_美国 040, 1126_0_美国 041,
+    1126_0_美国 042, 1126_0_美国 043, 1126_0_美国 044, 1126_0_美国 045, 1126_0_美国 046, 1126_0_美国
+      047, 1126_0_美国 048, 1126_0_美国 049, 1126_0_美国 050, 1126_0_美国 051, 1126_0_美国 052,
+    1126_0_美国 053, 1126_0_美国 054, 1126_0_美国 055, 1126_0_美国 056, 1126_0_美国 057, 1126_0_美国
+      058, 1126_0_美国 059, 1126_0_美国 060, 1126_0_美国 061, 1126_0_美国 062, 1126_0_美国 063,
+    1126_0_美国 064, 1126_0_美国 065, 1126_0_英国 001, 1126_0_英国 002, 1126_0_荷兰 001, 1126_0_荷兰
+      002, 1126_0_荷兰 003, 1126_0_荷兰 004, 1126_0_韩国 001, 1126_1_🇷🇺 github.com/freefq
+      - 俄罗斯  1, 1126_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 2, 1126_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 3, 1126_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1126_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 5, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心
+      6, 1126_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Zenlayer数据中心 7, 1126_1_🇭🇰 github.com/freefq
       - 香港电讯盈科有限公司 8, 1126_1_🇺🇸 github.com/freefq - 美国  9, 1126_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 10, 1126_1_🇬🇷 github.com/freefq - 希腊  11, 1126_1_🇩🇪 github.com/freefq
       - 德国  12, 1126_1_🇯🇵 github.com/freefq - 日本北海道石狩SAKURA数据中心 13, 1126_1_🇺🇸 github.com/freefq
