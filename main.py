@@ -28,7 +28,7 @@ url5='https://etproxypool.ga/clash/proxies?c=HK,TW,SG,US&speed=30,100&type=vmess
 url6='https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml'
 
 # github_pojieziyuan更改日期，
-url7='https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/{}clash.yml'.format(daystring)
+url7='https://raw.githubusercontent.com/pojiezhiyuanjun/2023/master/{}clash.yml'.format(daystring)
 # 类似于1126clash.yml的格式，需要每日生成
 
 ## 生成yaml文件夹
