@@ -12,21 +12,20 @@ daystring=time.strftime("%m%d", time.localtime())
 # 生成日期字符串，类似于1126
 
 
-# github anaer
-url0='https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml'
+# pmsub
+url0='https://sub.pmsub.me/clash.yaml'
 # github freefq转换 
 url1='https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https://raw.githubusercontent.com/freefq/free/master/v2&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true'
 # github_skywolf
 url2='https://raw.githubusercontent.com/skywolf627/ProxiesActions/main/subscribe/vmess.txt'
+# sihaiyun 
+url3='http://sub.sihaiyun.vip/api/v1/client/subscribe?token=1909108ea2e7442f0aa9a45b354256d0'
+# lihuayun 
+url4='https://dy.lihuayun.icu/api/v1/client/subscribe?token=36b42f8d2b3c925b175f2cb558e9478e'
+# github anaer
+url5='https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml'
 # telegram_ssrsub 
-url3='https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml'
-# github_clash-freenode 
-url4='https://raw.githubusercontent.com/oslook/clash-freenode/main/clash.yaml'
-# 代理池etproxypool需要全局模式
-url5='https://etproxypool.ga/clash/proxies?c=HK,TW,SG,US&speed=30,100&type=vmess,ssr,trojan'
-# ermaozi
-url6='https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml'
-
+url6='https://raw.githubusercontent.com/ssrsub/ssr/master/Clash.yml'
 # github_pojieziyuan更改日期，
 url7='https://raw.githubusercontent.com/pojiezhiyuanjun/2023/master/{}clash.yml'.format(daystring)
 # 类似于1126clash.yml的格式，需要每日生成
