@@ -4,8 +4,27 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {name: 0828_0_🇺🇸 United States 01 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
-  port: 443, server: 108.181.24.41, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
+- {cipher: aes-256-cfb, name: 0828_0_🇸🇬 Singapore 01 @nodpai, password: amazonskr05,
+  port: 443, server: 13.212.247.98, type: ss, udp: true}
+- {cipher: aes-256-cfb, name: 0828_0_🇺🇸 United States 01 @nodpai, password: amazonskr05,
+  port: 443, server: 35.91.109.62, type: ss, udp: true}
+- {name: 0828_0_🇬🇧 United Kingdom 01 @nodpai, password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d,
+  port: 443, server: 57.128.173.6, skip-cert-verify: true, sni: www.speedtest.net,
+  type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_中转 🇨🇳 China 01 @nodpai
+  network: ws
+  port: 80
+  server: 36.150.27.31
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: db8d12d5-1968-4125-b775-77d50aa65923
+  ws-opts: {path: /}
+- {name: 0828_0_🇨🇦 Canada 01 @nodpai, password: 006e3baa-cacd-4530-ae52-d633c4e9056d,
+  port: 443, server: 51.161.35.200, skip-cert-verify: true, sni: speed.cloudflare.com,
   type: trojan, udp: true}
 - alterId: 0
   cipher: auto
@@ -23,47 +42,35 @@ proxies:
   cipher: auto
   name: 0828_0_🇺🇸 United States 02 @nodpai
   network: ws
-  port: 2052
-  server: 103.160.204.37
+  port: 80
+  server: 103.160.204.70
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f
-  ws-opts: {path: /blue99}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇩🇪 Germany 01 @nodpai
-  network: ws
-  port: 443
-  server: 172.67.51.152
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709
-  ws-opts: {path: /ikun}
-- {name: 0828_0_🇯🇵 Japan 01 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
-  port: 443, server: gsawsjp2.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
-  type: trojan, udp: true}
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
 - alterId: 0
   cipher: auto
   name: 0828_0_🇺🇸 United States 03 @nodpai
   network: ws
   port: 80
-  server: 104.25.13.12
+  server: 172.67.93.232
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
-  ws-opts: {path: a7ee85f4}
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- {name: 0828_0_🇯🇵 Japan 01 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
+  port: 443, server: gsawshk2.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
+  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
   name: 0828_0_🇺🇸 United States 04 @nodpai
   network: ws
   port: 80
-  server: 162.159.253.16
+  server: 172.67.95.171
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -72,58 +79,45 @@ proxies:
   ws-opts: {path: /shirker}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇱🇺 Luxembourg 01 @nodpai
-  network: ws
-  port: 443
-  server: 104.31.16.196
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6abfe33a-1894-4f62-8879-83b71a35e5fd
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇱🇺 Luxembourg 02 @nodpai
-  network: ws
-  port: 443
-  server: zfc.windowsupdate1.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6abfe33a-1894-4f62-8879-83b71a35e5fd
-  ws-opts:
-    headers: {Host: zfc.windowsupdate1.com}
-    path: /
-- {name: 0828_0_🇹🇼 Taiwan 01 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
-  port: 443, server: gshinet1.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
   name: 0828_0_🇺🇸 United States 05 @nodpai
   network: ws
-  port: 443
-  server: 216.24.57.1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
-  ws-opts: {path: a7ee85f4}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇨🇱 Chile 01 @nodpai
-  network: ws
   port: 80
-  server: sdygarm.e5outllok.me
+  server: 162.159.247.47
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇺🇸 United States 06 @nodpai, password: 956e5797-bf54-414f-80bc-5a896f3a553d,
+  port: 54455, server: free.node.kk-proxy.pro, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_中转 🇺🇸 United States 07 @nodpai
+  network: ws
+  port: 13003
+  server: cdn.node.user-sub.pddns-usersdk.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f9f4df4-5398-35d1-9a6a-44a8a575832d
   ws-opts:
-    headers: {Host: sdygarm.e5outllok.me}
+    headers: {Host: cdn.node.user-sub.pddns-usersdk.com}
+    path: /ef483582-6269-468c-93af-c511eccb8a69
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇩🇪 Germany 01 @nodpai
+  network: ws
+  port: 8880
+  server: yd1.992688.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2fc248d5-7c81-471d-c2cf-a14e7f5aed2d
+  ws-opts:
+    headers: {Host: yd1.992688.xyz}
     path: /
 - alterId: 0
   cipher: auto
@@ -139,185 +133,81 @@ proxies:
   ws-opts: {path: /shirker}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇮🇳 India 01 @nodpai
+  name: 0828_0_🇺🇸 United States 08 @nodpai
   network: ws
   port: 80
-  server: ydarm.e5outllok.me
+  server: 188.114.97.245
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267
-  ws-opts:
-    headers: {Host: ydarm.e5outllok.me}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 06 @nodpai
-  network: ws
-  port: 443
-  server: stock.hostmonit.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: cd7f6a89-e86a-47ae-87d3-0277d205286f
-  ws-opts:
-    headers: {Host: stock.hostmonit.com}
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 07 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.132.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_中转 🇺🇸 United States 08 @nodpai
-  network: ws
-  port: 13003
-  server: cdn.node.user-sub.pddns-usersdk.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f9f4df4-5398-35d1-9a6a-44a8a575832d
-  ws-opts:
-    headers: {Host: cdn.node.user-sub.pddns-usersdk.com}
-    path: /ef483582-6269-468c-93af-c511eccb8a69
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
 - alterId: 0
   cipher: auto
   name: 0828_0_🇺🇸 United States 09 @nodpai
   network: ws
   port: 80
-  server: 172.64.101.91
+  server: cf-lt.sharecentre.online
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 10 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.203.172
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- {cipher: aes-256-cfb, name: 0828_0_🇰🇷 South Korea 01 @nodpai, password: amazonskr05,
-  port: 443, server: 43.201.61.124, type: ss, udp: true}
-- {cipher: aes-256-cfb, name: 0828_0_🇺🇸 United States 11 @nodpai, password: amazonskr05,
-  port: 443, server: 35.91.109.62, type: ss, udp: true}
-- {name: 0828_0_🇯🇵 Japan 02 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
-  port: 443, server: gsawshk2.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 12 @nodpai
-  network: ws
-  port: 443
-  server: cdn.twitter.now.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709
+  uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
   ws-opts:
-    headers: {Host: cdn.twitter.now.cc}
-    path: /ikun
-- {name: 0828_0_🇨🇦 Canada 01 @nodpai, password: 006e3baa-cacd-4530-ae52-d633c4e9056d,
-  port: 443, server: 51.161.35.200, skip-cert-verify: true, sni: speed.cloudflare.com,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 53173,
-  server: 36.141.40.34, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 0828_0_🇺🇸 United States 13 @nodpai, port: 43900,
-  server: 107.167.30.132, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 58e560b4-bba6-4843-be5f-83321022fa0d}
-- {name: 0828_0_🇬🇧 United Kingdom 01 @nodpai, password: 29f2cf65-f0ee-4a08-83f3-df1beb74d55d,
-  port: 443, server: 57.128.173.6, skip-cert-verify: true, sni: www.speedtest.net,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_中转 🇨🇳 China 01 @nodpai
-  network: ws
-  port: 80
-  server: 36.150.27.31
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: db8d12d5-1968-4125-b775-77d50aa65923
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 14 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.93.232
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 15 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.87.175
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+    headers: {Host: cf-lt.sharecentre.online}
+    path: a7ee85f4
 - alterId: 0
   cipher: auto
   name: 0828_0_🇩🇪 Germany 02 @nodpai
   network: ws
-  port: 443
-  server: 172.67.8.239
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709
-  ws-opts: {path: /ikun}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_🇧🇷 Brazil 01 @nodpai, password: 5ae3363e-252a-4466-8eba-3e2efb90c434,
-  port: 8058, server: arm.gougouvpn.xyz, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇩🇪 Germany 03 @nodpai
-  network: ws
-  port: 8880
+  port: 8080
   server: yd1.992688.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 2fc248d5-7c81-471d-c2cf-a14e7f5aed2d
+  uuid: 369ea2ab-8446-4142-d8b6-5a7dd9ddffdc
   ws-opts:
     headers: {Host: yd1.992688.xyz}
     path: /
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 16 @nodpai, port: 51002,
-  server: 36.141.40.34, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+- {alterId: 0, cipher: auto, name: 0828_0_🇨🇳 China 02 @nodpai, port: 53999, server: 137.175.22.187,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 0828_0_🇺🇸 United States 10 @nodpai, port: 39077,
+  server: 45.15.166.78, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇸🇬 Singapore 01 @nodpai
+  name: 0828_0_中转 🇨🇳 China 03 @nodpai
+  network: ws
+  port: 19709
+  server: 123.249.101.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
+  ws-opts: {path: /}
+- {name: 0828_0_🇹🇼 Taiwan 01 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
+  port: 443, server: gshinet1.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
+  type: trojan, udp: true}
+- {cipher: aes-256-cfb, name: 0828_0_🇸🇬 Singapore 02 @nodpai, password: amazonskr05,
+  port: 443, server: 13.213.59.139, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai
+  network: ws
+  port: 8858
+  server: 120.233.27.138
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9d6fd014-095e-45ca-b61f-01618eb51016
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇸🇬 Singapore 03 @nodpai
   network: ws
   port: 80
   server: wxxjp.e5outllok.me
@@ -335,34 +225,21 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}
 - alterId: 0
   cipher: auto
-  name: 0828_0_中转 🇭🇰 Hong Kong 02 @nodpai
+  name: 0828_0_🇨🇱 Chile 01 @nodpai
   network: ws
-  port: 8858
-  server: 120.233.27.138
+  port: 80
+  server: sdygarm.e5outllok.me
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 9d6fd014-095e-45ca-b61f-01618eb51016
-  ws-opts: {path: /}
+  uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267
+  ws-opts:
+    headers: {Host: sdygarm.e5outllok.me}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 0828_0_中转 🇨🇳 China 02 @nodpai
-  network: ws
-  port: 19709
-  server: 123.249.101.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts: {path: /}
-- {name: 0828_0_🇺🇸 United States 17 @nodpai, password: 7ea37e4f-325b-416f-901a-67012367307f,
-  port: 80, server: 15.204.209.50, skip-cert-verify: true, sni: telewebion.com, type: trojan,
-  udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_中转 🇯🇵 Japan 03 @nodpai
+  name: 0828_0_中转 🇯🇵 Japan 02 @nodpai
   network: ws
   port: 45501
   server: 120.233.27.138
@@ -372,20 +249,22 @@ proxies:
   udp: true
   uuid: 9d6fd014-095e-45ca-b61f-01618eb51016
   ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇸🇬 Singapore 02 @nodpai, password: 956e5797-bf54-414f-80bc-5a896f3a553d,
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇮🇳 India 01 @nodpai
+  network: ws
+  port: 80
+  server: ydarm.e5outllok.me
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267
+  ws-opts:
+    headers: {Host: ydarm.e5outllok.me}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇸🇬 Singapore 04 @nodpai, password: 956e5797-bf54-414f-80bc-5a896f3a553d,
   port: 54087, server: free.node.kk-proxy.pro, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇮🇳 India 02 @nodpai, port: 36988, server: zjxc.pmxu.link,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 518e0801-7191-3f9e-b6eb-728a6c2890ab}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 04 @nodpai, port: 19278, server: zjxc.pmxu.link,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 518e0801-7191-3f9e-b6eb-728a6c2890ab}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇸🇬 Singapore 03 @nodpai, password: 956e5797-bf54-414f-80bc-5a896f3a553d,
-  port: 31659, server: free.node.kk-proxy.pro, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇵🇭 Philippines 01 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
-  port: 20050, server: s400l.ddns1.pw, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇮🇳 India 03 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
-  port: 20003, server: s400l.ddns1.pw, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇱🇻 Latvia 01 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
-  port: 20008, server: s400l.ddns1.pw, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   name: 0828_0_🇹🇼 Taiwan 04 @nodpai
@@ -400,8 +279,430 @@ proxies:
   ws-opts:
     headers: {Host: tw1.kidcc.xyz}
     path: /
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇮🇳 India 02 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
+  port: 20003, server: s400l.ddns1.pw, type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai,
+  password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493, port: 20013, server: s400l.ddns1.pw,
+  type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇱🇻 Latvia 01 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
+  port: 20008, server: s400l.ddns1.pw, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 03 @nodpai, port: 61001, server: 183.232.170.14,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 11 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.102.115
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- {name: 0828_0_🇺🇸 United States 12 @nodpai, password: 7ea37e4f-325b-416f-901a-67012367307f,
+  port: 80, server: 15.204.209.50, skip-cert-verify: true, sni: telewebion.com, type: trojan,
+  udp: true}
+- {alterId: 0, cipher: auto, name: 0828_0_🇨🇳 China 04 @nodpai, port: 43427, server: 198.2.195.196,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 13 @nodpai
+  network: ws
+  port: 80
+  server: 172.64.103.88
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇩🇪 Germany 03 @nodpai
+  network: ws
+  port: 443
+  server: 89.163.129.5
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/252617081903}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇸🇬 Singapore 05 @nodpai, password: 956e5797-bf54-414f-80bc-5a896f3a553d,
+  port: 31659, server: free.node.kk-proxy.pro, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 14 @nodpai
+  network: ws
+  port: 80
+  server: microsoftdebug.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1726c859-4a58-462f-afef-fb379876d4e9
+  ws-opts:
+    headers: {Host: microsoftdebug.com}
+    path: /windows7.ios
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 03 @nodpai, port: 46412,
+  server: 156.225.67.153, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 15 @nodpai
+  network: ws
+  port: 80
+  server: 103.160.204.183
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 04 @nodpai, port: 32301,
+  server: 45.199.138.162, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇸🇬 Singapore 06 @nodpai
+  network: ws
+  port: 443
+  server: free2.node.kk-proxy.pro
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 956e5797-bf54-414f-80bc-5a896f3a553d
+  ws-opts:
+    headers: {Host: free2.node.kk-proxy.pro}
+    path: /ec3a017507e0/
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, port: 25023,
+  server: piscium.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, port: 25021,
+  server: aquaril.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_🇧🇷 Brazil 01 @nodpai, password: 5ae3363e-252a-4466-8eba-3e2efb90c434,
+  port: 45879, server: fell.gougouvpn.xyz, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, port: 25026,
+  server: ophiuchi.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 25025,
+  server: centauri.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇸🇬 Singapore 07 @nodpai, port: 25013,
+  server: ophiuchi.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, port: 25019,
+  server: aquaril.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 04 @nodpai, port: 25027, server: aquaril.verdens.xyz,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 05 @nodpai, port: 25024, server: centauri.verdens.xyz,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 16 @nodpai, port: 25007,
+  server: centauri.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 17 @nodpai, port: 25009,
+  server: ophiuchi.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇨🇦 Canada 02 @nodpai, port: 25016, server: piscium.verdens.xyz,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇷🇺 Russia 01 @nodpai, port: 25020, server: piscium.verdens.xyz,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
 - {alterId: 0, cipher: auto, name: 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, port: 44207, server: zjxc.pmxu.link,
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
+- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇵🇭 Philippines 01 @nodpai, password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493,
+  port: 20050, server: s400l.ddns1.pw, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 06 @nodpai, port: 25153, server: zjxc.pmxu.link,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇩🇪 Germany 04 @nodpai, port: 25017, server: centauri.verdens.xyz,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 18 @nodpai, port: 25006,
+  server: aquaril.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
+  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 07 @nodpai, port: 25153, server: zjxc.pmxu.link,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 518e0801-7191-3f9e-b6eb-728a6c2890ab}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 19 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.228.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 20 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.222.19
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 21 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.99.102
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 22 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.160.46
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 23 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.220.37
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 24 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.113.83
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 25 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.166.238
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 26 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.16.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 27 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.120.64
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 28 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.7.166
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 29 @nodpai
+  network: ws
+  port: 80
+  server: 172.64.174.252
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 30 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.194.31
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 31 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.237.93
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 32 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.120.200
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 33 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.201.47
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 34 @nodpai
+  network: ws
+  port: 80
+  server: 104.25.80.96
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 35 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.212.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 36 @nodpai
+  network: ws
+  port: 80
+  server: 190.93.245.196
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 37 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.12.43
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 38 @nodpai
+  network: ws
+  port: 80
+  server: 172.64.82.127
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 39 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.221.17
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 40 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.8.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 41 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.109.113
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇰🇷 South Korea 01 @nodpai, port: 64097,
+  server: in06.my1188.org, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 886ac452-590a-3dae-bed9-96203e9aacfb}
 - alterId: 0
   cipher: auto
   name: 0828_0_🇹🇼 Taiwan 06 @nodpai
@@ -416,53 +717,89 @@ proxies:
   ws-opts:
     headers: {Host: hinet.guguyun.pw}
     path: /
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai,
-  password: 05bfdacf-95d8-48b0-9ce8-c9169bac7493, port: 20013, server: s400l.ddns1.pw,
-  type: ss, udp: true}
+- {cipher: aes-256-cfb, name: 0828_0_🇸🇬 Singapore 08 @nodpai, password: amazonskr05,
+  port: 443, server: 13.215.161.16, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 42 @nodpai, port: 51009,
+  server: 198.200.37.229, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 18 @nodpai
+  name: 0828_0_🇩🇪 Germany 05 @nodpai
   network: ws
-  port: 443
-  server: singapore.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
-  ws-opts:
-    headers: {Host: singapore.com}
-    path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 19 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.92.119
+  port: 8443
+  server: 45.32.153.201
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: 3d0c8ee5-3329-4252-aa1c-65f3fdaa0343
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 0828_0_🇺🇸 United States 43 @nodpai, port: 53404,
+  server: 108.186.208.156, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 0828_0_🇨🇳 China 05 @nodpai, port: 37351, server: 137.175.86.189,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 20 @nodpai
+  name: 0828_0_🇺🇸 United States 44 @nodpai
   network: ws
-  port: 80
-  server: 172.67.149.100
+  port: 8080
+  server: 190.93.244.188
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: 74a890ab-5c4b-4f35-aea4-5fc2459bebd2
+  ws-opts: {path: /blue}
+- {alterId: 0, cipher: auto, name: 0828_0_🇺🇸 United States 45 @nodpai, port: 58082,
+  server: 45.83.130.173, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 05 @nodpai, port: 43851,
+  server: 156.225.67.78, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 21 @nodpai
+  name: 0828_0_🇺🇸 United States 46 @nodpai
+  network: ws
+  port: 80
+  server: 103.160.204.21
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 06 @nodpai, port: 37025,
+  server: 45.199.138.62, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 07 @nodpai, port: 53119,
+  server: 45.199.138.135, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa}
+- {alterId: 0, cipher: auto, name: 0828_0_🇨🇳 China 06 @nodpai, port: 32307, server: 142.4.114.117,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 0828_0_🇨🇳 China 07 @nodpai, port: 46500, server: 199.188.111.249,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 47 @nodpai
+  network: ws
+  port: 80
+  server: 188.114.97.152
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 185d6ff9-a0a7-4d39-f3e8-783b7a6bbc79
+  ws-opts: {path: /blue}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 08 @nodpai, port: 35977,
+  server: 156.225.67.170, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 48 @nodpai
   network: ws
   port: 2082
-  server: 103.160.204.70
+  server: 190.93.244.28
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -471,112 +808,31 @@ proxies:
   ws-opts: {path: /blue}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 22 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.59.121
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 23 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.6.189
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 24 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.161.58
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇨🇦 Canada 02 @nodpai, port: 15037, server: 15037.kuaiyin.win,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇮🇳 India 04 @nodpai, port: 15018, server: 15018.kuaiyin.win,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇯🇵 Japan 05 @nodpai, port: 61001, server: 183.232.170.14,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}
-- {cipher: chacha20-ietf-poly1305, name: 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, password: 97680f09-fd8c-41fc-ab22-091acab6f10e,
-  port: 2001, server: 183.240.222.80, type: ss, udp: true}
-- {cipher: aes-256-cfb, name: 0828_0_🇸🇬 Singapore 04 @nodpai, password: amazonskr05,
-  port: 443, server: 13.213.59.139, type: ss, udp: true}
-- {alterId: 0, cipher: chacha20-poly1305, name: 0828_0_中转 🇸🇬 Singapore 05 @nodpai,
-  port: 12318, server: zjxc.pmxu.link, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, port: 64096,
-  server: in06.my1188.org, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 886ac452-590a-3dae-bed9-96203e9aacfb}
-- {alterId: 0, cipher: chacha20-poly1305, name: 0828_0_中转 🇯🇵 Japan 06 @nodpai, port: 25153,
-  server: zjxc.pmxu.link, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
-- {alterId: 0, cipher: chacha20-poly1305, name: 0828_0_中转 🇮🇳 India 05 @nodpai, port: 36988,
-  server: zjxc.pmxu.link, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 25026,
-  server: ophiuchi.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, port: 25021,
-  server: aquaril.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
-- {alterId: 0, cipher: chacha20-poly1305, name: 0828_0_中转 🇯🇵 Japan 07 @nodpai, port: 19278,
-  server: zjxc.pmxu.link, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 0be35458-c447-3ddb-8f12-159b124accb8}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇭🇰 Hong Kong 07 @nodpai, port: 25023,
-  server: piscium.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇺🇸 United States 25 @nodpai, port: 25007,
-  server: centauri.verdens.xyz, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
-- {alterId: 0, cipher: auto, name: 0828_0_中转 🇹🇼 Taiwan 07 @nodpai, port: 25014, server: piscium.verdens.xyz,
-  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 26 @nodpai
+  name: 0828_0_🇨🇳 China 08 @nodpai
   network: ws
   port: 443
-  server: a2.wuxianliulianng.xyz
-  servername: 1.wuxianliulianng.xyz
+  server: 192.74.234.211
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: c0949fdc-f58e-4b02-8c6c-54c5f2e1d848
-  ws-opts:
-    headers: {Host: a2.wuxianliulianng.xyz}
-    path: /mp4
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/1693121358558}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇳🇱 Netherlands 03 @nodpai
+  name: 0828_0_🇺🇸 United States 49 @nodpai
   network: ws
-  port: 443
-  server: bobbykotick.rip
-  servername: amsterdam.bobbykotick.rip
+  port: 80
+  server: 162.159.46.98
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 691c16ee-d3a5-4ba6-ae8b-59c12b278d86
-  ws-opts:
-    headers: {Host: bobbykotick.rip}
-    path: /speedtest
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 27 @nodpai
+  name: 0828_0_🇺🇸 United States 50 @nodpai
   network: ws
   port: 80
   server: 172.67.15.189
@@ -586,12 +842,64 @@ proxies:
   udp: true
   uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
   ws-opts: {path: /shirker}
+- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 09 @nodpai, port: 32138,
+  server: 45.199.138.186, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 28 @nodpai
+  name: 0828_0_🇩🇪 Germany 06 @nodpai
+  network: ws
+  port: 443
+  server: 89.163.150.44
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/252617081903}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇩🇪 Germany 07 @nodpai
+  network: ws
+  port: 443
+  server: 89.163.150.201
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/252617081903}
+- alterId: 0
+  cipher: auto
+  grpc-opts: {grpc-service-name: fffffffstrrrrryyyyhhhhsnnnkakkkkdllllssasdf}
+  name: 0828_0_🇩🇪 Germany 08 @nodpai
+  network: grpc
+  port: 2087
+  server: 104.31.16.3
+  servername: ttttyyynnnnnnsnsnsnsnsnnsjssjsjjsjsjsjsjsjsksosowowosmsnsn2222919jjajjaja.akdmaksdmaskldmasdmfmosadmfsfdsdfsdfsdfsdfbcvbcvbcvbsdfsdfsqweq.fun
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98bd45bd-ad4a-4480-87b2-84f81c09aaa8
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 51 @nodpai
+  network: ws
+  port: 443
+  server: 171.22.116.55
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/1691489542385}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 52 @nodpai
   network: ws
   port: 80
-  server: 172.67.176.129
+  server: 172.64.105.187
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -600,22 +908,58 @@ proxies:
   ws-opts: {path: /shirker}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 29 @nodpai
+  name: 0828_0_🇺🇸 United States 53 @nodpai
   network: ws
   port: 80
-  server: 172.67.201.47
+  server: 104.21.63.185
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267
+  ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 30 @nodpai
+  name: 0828_0_🇺🇸 United States 54 @nodpai
+  network: ws
+  port: 8080
+  server: 104.24.201.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 74a890ab-5c4b-4f35-aea4-5fc2459bebd2
+  ws-opts: {path: /blue}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 55 @nodpai
+  network: ws
+  port: 80
+  server: 198.41.217.138
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 56 @nodpai
+  network: ws
+  port: 8080
+  server: 104.25.123.112
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 74a890ab-5c4b-4f35-aea4-5fc2459bebd2
+  ws-opts: {path: /blue}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 57 @nodpai
   network: ws
   port: 2052
-  server: 103.160.204.103
+  server: 104.27.62.123
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -624,193 +968,22 @@ proxies:
   ws-opts: {path: /blue99}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 31 @nodpai
+  name: 0828_0_🇺🇸 United States 58 @nodpai
   network: ws
-  port: 80
-  server: 172.67.143.200
+  port: 8080
+  server: 198.41.192.62
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: 74a890ab-5c4b-4f35-aea4-5fc2459bebd2
+  ws-opts: {path: /blue}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 32 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.194.57
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 33 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.11.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 34 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.136.25
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 35 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.239.136
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 36 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.175.16
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 37 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.142.32
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 38 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.103.121
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 39 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.169.211
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 40 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.207.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 41 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.101.49
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 42 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.130.126
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 43 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.138.141
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 44 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.198.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 45 @nodpai
-  network: ws
-  port: 80
-  server: 172.64.143.109
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- {alterId: 0, cipher: auto, name: 0828_0_🇳🇱 Netherlands 04 @nodpai, port: 37952,
-  server: 45.199.138.179, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 46 @nodpai
+  name: 0828_0_🇺🇸 United States 59 @nodpai
   network: ws
   port: 2052
-  server: 104.17.241.21
+  server: 103.160.204.242
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -819,45 +992,93 @@ proxies:
   ws-opts: {path: /blue99}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇳🇱 Netherlands 05 @nodpai
+  name: 0828_0_🇺🇸 United States 60 @nodpai
+  network: ws
+  port: 2052
+  server: 104.25.206.185
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f
+  ws-opts: {path: /blue99}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 61 @nodpai
   network: ws
   port: 80
-  server: 172.67.247.81
+  server: 188.114.98.64
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: 185d6ff9-a0a7-4d39-f3e8-783b7a6bbc79
+  ws-opts: {path: /blue}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 47 @nodpai
+  name: 0828_0_🇺🇸 United States 62 @nodpai
   network: ws
   port: 80
-  server: 172.67.12.43
+  server: 104.27.120.246
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇿🇦 South Africa 01 @nodpai
+  name: 0828_0_🇺🇸 United States 63 @nodpai
   network: ws
-  port: 2082
-  server: jhpcza.66666654.xyz
+  port: 80
+  server: 198.41.216.100
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 0bb55212-6c02-39d5-8189-e6c5a9f825be
-  ws-opts:
-    headers: {Host: jhpcza.66666654.xyz}
-    path: /bxpty
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 48 @nodpai
+  name: 0828_0_🇺🇸 United States 64 @nodpai
+  network: ws
+  port: 80
+  server: 198.41.221.228
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts: {path: /blue06}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 65 @nodpai
+  network: ws
+  port: 8080
+  server: 104.18.163.147
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 74a890ab-5c4b-4f35-aea4-5fc2459bebd2
+  ws-opts: {path: /blue}
+- {alterId: 0, cipher: auto, name: 0828_0_中转 🇮🇳 India 03 @nodpai, port: 15018, server: 15018.kuaiyin.win,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 66 @nodpai
+  network: ws
+  port: 2052
+  server: 173.245.58.164
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f
+  ws-opts: {path: /blue99}
+- alterId: 0
+  cipher: auto
+  name: 0828_0_🇺🇸 United States 67 @nodpai
   network: ws
   port: 80
   server: 172.64.137.196
@@ -869,78 +1090,18 @@ proxies:
   ws-opts: {path: /shirker}
 - alterId: 0
   cipher: auto
-  name: 0828_0_🇺🇸 United States 49 @nodpai
+  name: 0828_0_🇳🇱 Netherlands 10 @nodpai
   network: ws
-  port: 80
-  server: 172.67.67.71
+  port: 443
+  server: cdnjs.com
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 50 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.183.250
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 51 @nodpai
-  network: ws
-  port: 2082
-  server: 103.160.204.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606
-  ws-opts: {path: /blue}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇸🇬 Singapore 06 @nodpai
-  network: ws
-  port: 80
-  server: 162.159.129.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fba4085a-57ef-4381-98a2-6e3062be585f
-  ws-opts: {path: /videos}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇮🇳 India 06 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.191.240
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f5a7d64-be9c-4be2-81cf-82ecdcc95787
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0828_0_🇺🇸 United States 52 @nodpai
-  network: ws
-  port: 80
-  server: cf-lt.sharecentre.online
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a7ee85f4-2528-412e-994f-ce65f54754e4
+  uuid: dce76061-ee65-49db-997c-a6a880dade3a
   ws-opts:
-    headers: {Host: cf-lt.sharecentre.online}
-    path: a7ee85f4
+    headers: {Host: cdnjs.com}
+    path: /speedtest
 - {cipher: aes-256-gcm, name: 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司
     1, password: dongtaiwang.com, port: 12201, server: www.dongtaiwang4.com, type: ss,
   udp: true}
@@ -10600,52 +10761,63 @@ proxies:
   ws-path: /blue
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱 Netherlands
-      01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai,
-    0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇺🇸 United
-      States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺 Luxembourg 02
-      @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_🇨🇱
-      Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai,
-    0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States 07 @nodpai, 0828_0_中转
-      🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇺🇸 United
-      States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai, 0828_0_🇺🇸 United States
-      11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
-    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇺🇸 United
-      States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
-      @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai,
-    0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪 Germany 03
-      @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore 01 @nodpai,
-    0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_中转 🇭🇰 Hong
-      Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 17 @nodpai,
-    0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇮🇳
-      India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 03 @nodpai,
-    0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_中转
-      🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai,
-    0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_🇺🇸
-      United States 18 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United
-      States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States
-      22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai,
-    0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India 04 @nodpai, 0828_0_中转 🇯🇵 Japan
-      05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇸🇬 Singapore 04 @nodpai,
-    0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转
-      🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05
-      @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_中转
-      🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United States 25 @nodpai, 0828_0_中转 🇹🇼
-      Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇳🇱 Netherlands
-      03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai,
-    0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸
-      United States 31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United
-      States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States
-      35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai,
-    0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸
-      United States 40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_🇺🇸 United
-      States 42 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇺🇸 United States
-      44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai,
-    0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸
-      United States 47 @nodpai, 0828_0_🇿🇦 South Africa 01 @nodpai, 0828_0_🇺🇸 United
-      States 48 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States
-      50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
-    0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United States
+      01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai,
+    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸 United
+      States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai,
+    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai, 0828_0_🇩🇪
+      Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United States
+      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
+    0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转 🇨🇳 China
+      03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai, 0828_0_中转
+      🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore 04 @nodpai,
+    0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇦🇪 United
+      Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转 🇯🇵 Japan
+      03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
+    0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇩🇪 Germany
+      03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai,
+    0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇳🇱
+      Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转
+      🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, 0828_0_中转 🇯🇵
+      Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇺🇸 United States
+      16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai,
+    0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_中转 🇵🇭 Philippines
+      01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇩🇪 Germany 04 @nodpai,
+    0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸
+      United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United
+      States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States
+      23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸 United States 25 @nodpai,
+    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸
+      United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United
+      States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United States
+      32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai,
+    0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸
+      United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United
+      States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United States
+      41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
+    0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States 42 @nodpai, 0828_0_🇩🇪
+      Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇨🇳 China 05 @nodpai,
+    0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱
+      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands
+      06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai, 0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳
+      China 07 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇳🇱 Netherlands
+      08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇨🇳 China 08 @nodpai,
+    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇳🇱
+      Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai, 0828_0_🇩🇪 Germany 07 @nodpai,
+    0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇺🇸 United
+      States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai, 0828_0_🇺🇸 United States
+      54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸 United States 56 @nodpai,
+    0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United States 58 @nodpai, 0828_0_🇺🇸
+      United States 59 @nodpai, 0828_0_🇺🇸 United States 60 @nodpai, 0828_0_🇺🇸 United
+      States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai, 0828_0_🇺🇸 United States
+      63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸 United States 65 @nodpai,
+    0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States 66 @nodpai, 0828_0_🇺🇸 United
+      States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai, 0828_1_🇺🇸 github.com/freefq
       - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
       NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
@@ -10825,52 +10997,63 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai,
-    0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇯🇵 Japan
-      01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai,
-    0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺 Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan
-      01 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
-    0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_🇺🇸 United
-      States 06 @nodpai, 0828_0_🇺🇸 United States 07 @nodpai, 0828_0_中转 🇺🇸 United States
-      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai,
-    0828_0_🇰🇷 South Korea 01 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵
-      Japan 02 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧
-      United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States
-      14 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
-    0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇺🇸 United
-      States 16 @nodpai, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai,
-    0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳
-      China 02 @nodpai, 0828_0_🇺🇸 United States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03
-      @nodpai, 0828_0_中转 🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
-      🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines
-      01 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼
-      Taiwan 04 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
-    0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai,
-    0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸
-      United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United
-      States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02
-      @nodpai, 0828_0_中转 🇮🇳 India 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
-      🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore
-      05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
-    0828_0_中转 🇮🇳 India 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 06 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai,
-    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸
-      United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United
-      States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States
-      31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai,
-    0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸
-      United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United
-      States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States
-      40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai,
-    0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸
-      United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United
-      States 46 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
-      47 @nodpai, 0828_0_🇿🇦 South Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
-    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸
-      United States 51 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06
-      @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司
+  proxies: [0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇬🇧
+      United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai, 0828_0_🇨🇦 Canada 01
+      @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai,
+    0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United
+      States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_中转 🇺🇸 United States
+      06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai,
+    0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸
+      United States 09 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇨🇳 China 02 @nodpai,
+    0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转 🇨🇳 China 03 @nodpai, 0828_0_🇹🇼 Taiwan
+      01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan
+      03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_中转 🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳
+      India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore 04 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai,
+    0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_中转
+      🇱🇻 Latvia 01 @nodpai, 0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_🇺🇸 United States
+      11 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai, 0828_0_🇨🇳 China 04 @nodpai,
+    0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇸🇬
+      Singapore 05 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇳🇱 Netherlands
+      03 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai,
+    0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇭🇰
+      Hong Kong 03 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04
+      @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇸🇬 Singapore 07 @nodpai,
+    0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转
+      🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_中转 🇺🇸 United
+      States 17 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇷🇺 Russia 01 @nodpai,
+    0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇩🇪 Germany 04 @nodpai, 0828_0_中转 🇺🇸 United States
+      18 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai,
+    0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸
+      United States 22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United
+      States 24 @nodpai, 0828_0_🇺🇸 United States 25 @nodpai, 0828_0_🇺🇸 United States
+      26 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai,
+    0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸
+      United States 31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United
+      States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States
+      35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai,
+    0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸
+      United States 40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_中转 🇰🇷 South
+      Korea 01 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_🇸🇬 Singapore 08 @nodpai,
+    0828_0_中转 🇺🇸 United States 42 @nodpai, 0828_0_🇩🇪 Germany 05 @nodpai, 0828_0_🇺🇸
+      United States 43 @nodpai, 0828_0_🇨🇳 China 05 @nodpai, 0828_0_🇺🇸 United States
+      44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai,
+    0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands 06 @nodpai, 0828_0_🇳🇱
+      Netherlands 07 @nodpai, 0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳 China 07 @nodpai,
+    0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇳🇱 Netherlands 08 @nodpai, 0828_0_🇺🇸
+      United States 48 @nodpai, 0828_0_🇨🇳 China 08 @nodpai, 0828_0_🇺🇸 United States
+      49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇳🇱 Netherlands 09 @nodpai,
+    0828_0_🇩🇪 Germany 06 @nodpai, 0828_0_🇩🇪 Germany 07 @nodpai, 0828_0_🇩🇪 Germany
+      08 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai,
+    0828_0_🇺🇸 United States 53 @nodpai, 0828_0_🇺🇸 United States 54 @nodpai, 0828_0_🇺🇸
+      United States 55 @nodpai, 0828_0_🇺🇸 United States 56 @nodpai, 0828_0_🇺🇸 United
+      States 57 @nodpai, 0828_0_🇺🇸 United States 58 @nodpai, 0828_0_🇺🇸 United States
+      59 @nodpai, 0828_0_🇺🇸 United States 60 @nodpai, 0828_0_🇺🇸 United States 61 @nodpai,
+    0828_0_🇺🇸 United States 62 @nodpai, 0828_0_🇺🇸 United States 63 @nodpai, 0828_0_🇺🇸
+      United States 64 @nodpai, 0828_0_🇺🇸 United States 65 @nodpai, 0828_0_中转 🇮🇳 India
+      03 @nodpai, 0828_0_🇺🇸 United States 66 @nodpai, 0828_0_🇺🇸 United States 67 @nodpai,
+    0828_0_🇳🇱 Netherlands 10 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司
       1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
       - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
@@ -11049,66 +11232,77 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱
-      Netherlands 01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany
-      01 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai,
-    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺
-      Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States
-      05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳
-      India 01 @nodpai, 0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09
-      @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai,
-    0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United
-      States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai,
-    0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转
-      🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States
-      15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪
-      Germany 03 @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore
-      01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United
-      States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02
-      @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转
-      🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India
-      03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转
-      🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab
-      Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai, 0828_0_🇺🇸 United States
-      19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai,
-    0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸
-      United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India
-      04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai,
-    0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转
-      🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United
-      States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26
-      @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai,
-    0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸
-      United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United
-      States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States
-      34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai,
-    0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸
-      United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United
-      States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai, 0828_0_🇺🇸 United States
-      43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai,
-    0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱
-      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇿🇦 South
-      Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇺🇸 United States
-      49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai,
-    0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States
-      52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸
-      github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
-      - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶SharkTech数据中心 7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8,
-    0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      13, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq
-      - 澳大利亚  19, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq
-      - 美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United
+      States 01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
+      @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸
+      United States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan
+      01 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai,
+    0828_0_中转 🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai,
+    0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United
+      States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02
+      @nodpai, 0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转
+      🇨🇳 China 03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼
+      Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
+    0828_0_中转 🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
+      🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States
+      12 @nodpai, 0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai,
+    0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United
+      States 14 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States
+      15 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷
+      Brazil 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      05 @nodpai, 0828_0_中转 🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02
+      @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转
+      🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05
+      @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
+    0828_0_中转 🇩🇪 Germany 04 @nodpai, 0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转
+      🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States
+      20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai,
+    0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸
+      United States 25 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United
+      States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States
+      29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai,
+    0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸
+      United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United
+      States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States
+      38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai,
+    0828_0_🇺🇸 United States 41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼
+      Taiwan 06 @nodpai, 0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States
+      42 @nodpai, 0828_0_🇩🇪 Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai,
+    0828_0_🇨🇳 China 05 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United
+      States 45 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
+      46 @nodpai, 0828_0_🇳🇱 Netherlands 06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai,
+    0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳 China 07 @nodpai, 0828_0_🇺🇸 United States
+      47 @nodpai, 0828_0_🇳🇱 Netherlands 08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
+    0828_0_🇨🇳 China 08 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United
+      States 50 @nodpai, 0828_0_🇳🇱 Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai,
+    0828_0_🇩🇪 Germany 07 @nodpai, 0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States
+      51 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai,
+    0828_0_🇺🇸 United States 54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸
+      United States 56 @nodpai, 0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United
+      States 58 @nodpai, 0828_0_🇺🇸 United States 59 @nodpai, 0828_0_🇺🇸 United States
+      60 @nodpai, 0828_0_🇺🇸 United States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai,
+    0828_0_🇺🇸 United States 63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸
+      United States 65 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States
+      66 @nodpai, 0828_0_🇺🇸 United States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai,
+    0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq
+      - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq
+      - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
+      7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 0828_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点
+      15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq - 澳大利亚  19,
+    0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq -
+      美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
       316, 0828_5_美国 315, 0828_5_美国 314, 0828_5_美国 313, 0828_5_美国 312, 0828_5_美国 311,
     0828_5_美国 310, 0828_5_美国 309, 0828_5_美国 308, 0828_5_美国 307, 0828_5_美国 306, 0828_5_美国
       305, 0828_5_美国 304, 0828_5_美国 303, 0828_5_美国 302, 0828_5_美国 301, 0828_5_美国 300,
@@ -11279,66 +11473,77 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱
-      Netherlands 01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany
-      01 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai,
-    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺
-      Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States
-      05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳
-      India 01 @nodpai, 0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09
-      @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai,
-    0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United
-      States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai,
-    0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转
-      🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States
-      15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪
-      Germany 03 @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore
-      01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United
-      States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02
-      @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转
-      🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India
-      03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转
-      🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab
-      Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai, 0828_0_🇺🇸 United States
-      19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai,
-    0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸
-      United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India
-      04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai,
-    0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转
-      🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United
-      States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26
-      @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai,
-    0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸
-      United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United
-      States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States
-      34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai,
-    0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸
-      United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United
-      States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai, 0828_0_🇺🇸 United States
-      43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai,
-    0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱
-      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇿🇦 South
-      Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇺🇸 United States
-      49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai,
-    0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States
-      52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸
-      github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
-      - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶SharkTech数据中心 7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8,
-    0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      13, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq
-      - 澳大利亚  19, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq
-      - 美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United
+      States 01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
+      @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸
+      United States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan
+      01 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai,
+    0828_0_中转 🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai,
+    0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United
+      States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02
+      @nodpai, 0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转
+      🇨🇳 China 03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼
+      Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
+    0828_0_中转 🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
+      🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States
+      12 @nodpai, 0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai,
+    0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United
+      States 14 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States
+      15 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷
+      Brazil 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      05 @nodpai, 0828_0_中转 🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02
+      @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转
+      🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05
+      @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
+    0828_0_中转 🇩🇪 Germany 04 @nodpai, 0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转
+      🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States
+      20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai,
+    0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸
+      United States 25 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United
+      States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States
+      29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai,
+    0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸
+      United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United
+      States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States
+      38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai,
+    0828_0_🇺🇸 United States 41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼
+      Taiwan 06 @nodpai, 0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States
+      42 @nodpai, 0828_0_🇩🇪 Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai,
+    0828_0_🇨🇳 China 05 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United
+      States 45 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
+      46 @nodpai, 0828_0_🇳🇱 Netherlands 06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai,
+    0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳 China 07 @nodpai, 0828_0_🇺🇸 United States
+      47 @nodpai, 0828_0_🇳🇱 Netherlands 08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
+    0828_0_🇨🇳 China 08 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United
+      States 50 @nodpai, 0828_0_🇳🇱 Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai,
+    0828_0_🇩🇪 Germany 07 @nodpai, 0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States
+      51 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai,
+    0828_0_🇺🇸 United States 54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸
+      United States 56 @nodpai, 0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United
+      States 58 @nodpai, 0828_0_🇺🇸 United States 59 @nodpai, 0828_0_🇺🇸 United States
+      60 @nodpai, 0828_0_🇺🇸 United States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai,
+    0828_0_🇺🇸 United States 63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸
+      United States 65 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States
+      66 @nodpai, 0828_0_🇺🇸 United States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai,
+    0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq
+      - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq
+      - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
+      7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 0828_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点
+      15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq - 澳大利亚  19,
+    0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq -
+      美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
       316, 0828_5_美国 315, 0828_5_美国 314, 0828_5_美国 313, 0828_5_美国 312, 0828_5_美国 311,
     0828_5_美国 310, 0828_5_美国 309, 0828_5_美国 308, 0828_5_美国 307, 0828_5_美国 306, 0828_5_美国
       305, 0828_5_美国 304, 0828_5_美国 303, 0828_5_美国 302, 0828_5_美国 301, 0828_5_美国 300,
@@ -11503,65 +11708,77 @@ proxy-groups:
       3, 0828_7_亚洲(油管:破解资源君), 0828_7_亚洲(油管:破解资源君) 2]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai,
-    0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇯🇵 Japan
-      01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai,
-    0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺 Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan
-      01 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
-    0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_🇺🇸 United
-      States 06 @nodpai, 0828_0_🇺🇸 United States 07 @nodpai, 0828_0_中转 🇺🇸 United States
-      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai,
-    0828_0_🇰🇷 South Korea 01 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵
-      Japan 02 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧
-      United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States
-      14 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
-    0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇺🇸 United
-      States 16 @nodpai, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai,
-    0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳
-      China 02 @nodpai, 0828_0_🇺🇸 United States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03
-      @nodpai, 0828_0_中转 🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
-      🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines
-      01 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼
-      Taiwan 04 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
-    0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai,
-    0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸
-      United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United
-      States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02
-      @nodpai, 0828_0_中转 🇮🇳 India 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
-      🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore
-      05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
-    0828_0_中转 🇮🇳 India 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 06 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai,
-    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸
-      United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United
-      States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States
-      31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai,
-    0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸
-      United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United
-      States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States
-      40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai,
-    0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸
-      United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United
-      States 46 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
-      47 @nodpai, 0828_0_🇿🇦 South Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
-    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸
-      United States 51 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06
-      @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司
-      1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
-      - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶SharkTech数据中心 7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8,
-    0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      13, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq
-      - 澳大利亚  19, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq
-      - 美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
+  proxies: [🎯 全球直连, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United States 01 @nodpai,
+    0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai, 0828_0_🇨🇦
+      Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸 United States
+      02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai,
+    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai, 0828_0_🇩🇪
+      Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United States
+      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
+    0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转 🇨🇳 China
+      03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai, 0828_0_中转
+      🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore 04 @nodpai,
+    0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇦🇪 United
+      Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转 🇯🇵 Japan
+      03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
+    0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇩🇪 Germany
+      03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai,
+    0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇳🇱
+      Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转
+      🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, 0828_0_中转 🇯🇵
+      Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇺🇸 United States
+      16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai,
+    0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_中转 🇵🇭 Philippines
+      01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇩🇪 Germany 04 @nodpai,
+    0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸
+      United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United
+      States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States
+      23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸 United States 25 @nodpai,
+    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸
+      United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United
+      States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United States
+      32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai,
+    0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸
+      United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United
+      States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United States
+      41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
+    0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States 42 @nodpai, 0828_0_🇩🇪
+      Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇨🇳 China 05 @nodpai,
+    0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱
+      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands
+      06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai, 0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳
+      China 07 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇳🇱 Netherlands
+      08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇨🇳 China 08 @nodpai,
+    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇳🇱
+      Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai, 0828_0_🇩🇪 Germany 07 @nodpai,
+    0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇺🇸 United
+      States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai, 0828_0_🇺🇸 United States
+      54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸 United States 56 @nodpai,
+    0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United States 58 @nodpai, 0828_0_🇺🇸
+      United States 59 @nodpai, 0828_0_🇺🇸 United States 60 @nodpai, 0828_0_🇺🇸 United
+      States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai, 0828_0_🇺🇸 United States
+      63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸 United States 65 @nodpai,
+    0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States 66 @nodpai, 0828_0_🇺🇸 United
+      States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai, 0828_1_🇺🇸 github.com/freefq
+      - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
+      7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 0828_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点
+      15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq - 澳大利亚  19,
+    0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq -
+      美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
       316, 0828_5_美国 315, 0828_5_美国 314, 0828_5_美国 313, 0828_5_美国 312, 0828_5_美国 311,
     0828_5_美国 310, 0828_5_美国 309, 0828_5_美国 308, 0828_5_美国 307, 0828_5_美国 306, 0828_5_美国
       305, 0828_5_美国 304, 0828_5_美国 303, 0828_5_美国 302, 0828_5_美国 301, 0828_5_美国 300,
@@ -11726,52 +11943,63 @@ proxy-groups:
       3, 0828_7_亚洲(油管:破解资源君), 0828_7_亚洲(油管:破解资源君) 2]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱 Netherlands
-      01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai,
-    0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇺🇸 United
-      States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺 Luxembourg 02
-      @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_🇨🇱
-      Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai,
-    0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States 07 @nodpai, 0828_0_中转
-      🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇺🇸 United
-      States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai, 0828_0_🇺🇸 United States
-      11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
-    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇺🇸 United
-      States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
-      @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai,
-    0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪 Germany 03
-      @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore 01 @nodpai,
-    0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_中转 🇭🇰 Hong
-      Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 17 @nodpai,
-    0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇮🇳
-      India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 03 @nodpai,
-    0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_中转
-      🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai,
-    0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_🇺🇸
-      United States 18 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United
-      States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States
-      22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai,
-    0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India 04 @nodpai, 0828_0_中转 🇯🇵 Japan
-      05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇸🇬 Singapore 04 @nodpai,
-    0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转
-      🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05
-      @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_中转
-      🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United States 25 @nodpai, 0828_0_中转 🇹🇼
-      Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇳🇱 Netherlands
-      03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai,
-    0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸
-      United States 31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United
-      States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States
-      35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai,
-    0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸
-      United States 40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_🇺🇸 United
-      States 42 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇺🇸 United States
-      44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai,
-    0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸
-      United States 47 @nodpai, 0828_0_🇿🇦 South Africa 01 @nodpai, 0828_0_🇺🇸 United
-      States 48 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States
-      50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
-    0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United States
+      01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai,
+    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸 United
+      States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai,
+    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai, 0828_0_🇩🇪
+      Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United States
+      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
+    0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转 🇨🇳 China
+      03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai, 0828_0_中转
+      🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore 04 @nodpai,
+    0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇦🇪 United
+      Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转 🇯🇵 Japan
+      03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
+    0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇩🇪 Germany
+      03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai,
+    0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇳🇱
+      Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转
+      🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, 0828_0_中转 🇯🇵
+      Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇺🇸 United States
+      16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai,
+    0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_中转 🇵🇭 Philippines
+      01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇩🇪 Germany 04 @nodpai,
+    0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸
+      United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United
+      States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States
+      23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸 United States 25 @nodpai,
+    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸
+      United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United
+      States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United States
+      32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai,
+    0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸
+      United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United
+      States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United States
+      41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
+    0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States 42 @nodpai, 0828_0_🇩🇪
+      Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇨🇳 China 05 @nodpai,
+    0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱
+      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands
+      06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai, 0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳
+      China 07 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇳🇱 Netherlands
+      08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇨🇳 China 08 @nodpai,
+    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇳🇱
+      Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai, 0828_0_🇩🇪 Germany 07 @nodpai,
+    0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇺🇸 United
+      States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai, 0828_0_🇺🇸 United States
+      54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸 United States 56 @nodpai,
+    0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United States 58 @nodpai, 0828_0_🇺🇸
+      United States 59 @nodpai, 0828_0_🇺🇸 United States 60 @nodpai, 0828_0_🇺🇸 United
+      States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai, 0828_0_🇺🇸 United States
+      63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸 United States 65 @nodpai,
+    0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States 66 @nodpai, 0828_0_🇺🇸 United
+      States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai, 0828_1_🇺🇸 github.com/freefq
       - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
       NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
@@ -11950,52 +12178,63 @@ proxy-groups:
       3, 0828_7_亚洲(油管:破解资源君), 0828_7_亚洲(油管:破解资源君) 2]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱 Netherlands
-      01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany 01 @nodpai,
-    0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇺🇸 United
-      States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺 Luxembourg 02
-      @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_🇨🇱
-      Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai,
-    0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States 07 @nodpai, 0828_0_中转
-      🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇺🇸 United
-      States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai, 0828_0_🇺🇸 United States
-      11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
-    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇺🇸 United
-      States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
-      @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai,
-    0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪 Germany 03
-      @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore 01 @nodpai,
-    0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_中转 🇭🇰 Hong
-      Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 17 @nodpai,
-    0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02 @nodpai, 0828_0_中转 🇮🇳
-      India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 03 @nodpai,
-    0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_中转
-      🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai,
-    0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_🇺🇸
-      United States 18 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United
-      States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States
-      22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai,
-    0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India 04 @nodpai, 0828_0_中转 🇯🇵 Japan
-      05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇸🇬 Singapore 04 @nodpai,
-    0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转
-      🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05
-      @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_中转
-      🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United States 25 @nodpai, 0828_0_中转 🇹🇼
-      Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇳🇱 Netherlands
-      03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai,
-    0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸
-      United States 31 @nodpai, 0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United
-      States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai, 0828_0_🇺🇸 United States
-      35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai,
-    0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸
-      United States 40 @nodpai, 0828_0_🇺🇸 United States 41 @nodpai, 0828_0_🇺🇸 United
-      States 42 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇺🇸 United States
-      44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai,
-    0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸
-      United States 47 @nodpai, 0828_0_🇿🇦 South Africa 01 @nodpai, 0828_0_🇺🇸 United
-      States 48 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States
-      50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
-    0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United States
+      01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01 @nodpai,
+    0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸 United
+      States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai,
+    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai, 0828_0_🇩🇪
+      Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United States
+      08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai,
+    0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转 🇨🇳 China
+      03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai, 0828_0_中转
+      🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore 04 @nodpai,
+    0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇦🇪 United
+      Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转 🇯🇵 Japan
+      03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States 12 @nodpai,
+    0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇩🇪 Germany
+      03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai,
+    0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 15 @nodpai, 0828_0_🇳🇱
+      Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转
+      🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02 @nodpai, 0828_0_中转 🇯🇵
+      Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇺🇸 United States
+      16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai,
+    0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05 @nodpai, 0828_0_中转 🇵🇭 Philippines
+      01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇩🇪 Germany 04 @nodpai,
+    0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转 🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸
+      United States 19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United
+      States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States
+      23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸 United States 25 @nodpai,
+    0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai, 0828_0_🇺🇸
+      United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸 United
+      States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United States
+      32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States 34 @nodpai,
+    0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai, 0828_0_🇺🇸
+      United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸 United
+      States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United States
+      41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai,
+    0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States 42 @nodpai, 0828_0_🇩🇪
+      Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai, 0828_0_🇨🇳 China 05 @nodpai,
+    0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai, 0828_0_🇳🇱
+      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱 Netherlands
+      06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai, 0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳
+      China 07 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇳🇱 Netherlands
+      08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇨🇳 China 08 @nodpai,
+    0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇳🇱
+      Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai, 0828_0_🇩🇪 Germany 07 @nodpai,
+    0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai, 0828_0_🇺🇸 United
+      States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai, 0828_0_🇺🇸 United States
+      54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸 United States 56 @nodpai,
+    0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United States 58 @nodpai, 0828_0_🇺🇸
+      United States 59 @nodpai, 0828_0_🇺🇸 United States 60 @nodpai, 0828_0_🇺🇸 United
+      States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai, 0828_0_🇺🇸 United States
+      63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸 United States 65 @nodpai,
+    0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States 66 @nodpai, 0828_0_🇺🇸 United
+      States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai, 0828_1_🇺🇸 github.com/freefq
       - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq - 美国  2, 0828_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
       NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
@@ -12174,66 +12413,77 @@ proxy-groups:
       3, 0828_7_亚洲(油管:破解资源君), 0828_7_亚洲(油管:破解资源君) 2]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱
-      Netherlands 01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany
-      01 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai,
-    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺
-      Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States
-      05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳
-      India 01 @nodpai, 0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09
-      @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai,
-    0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United
-      States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai,
-    0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转
-      🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States
-      15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪
-      Germany 03 @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore
-      01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United
-      States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02
-      @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转
-      🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India
-      03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转
-      🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab
-      Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai, 0828_0_🇺🇸 United States
-      19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai,
-    0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸
-      United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India
-      04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai,
-    0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转
-      🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United
-      States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26
-      @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai,
-    0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸
-      United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United
-      States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States
-      34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai,
-    0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸
-      United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United
-      States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai, 0828_0_🇺🇸 United States
-      43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai,
-    0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱
-      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇿🇦 South
-      Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇺🇸 United States
-      49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai,
-    0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States
-      52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸
-      github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
-      - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶SharkTech数据中心 7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8,
-    0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      13, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq
-      - 澳大利亚  19, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq
-      - 美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United
+      States 01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
+      @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸
+      United States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan
+      01 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai,
+    0828_0_中转 🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai,
+    0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United
+      States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02
+      @nodpai, 0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转
+      🇨🇳 China 03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼
+      Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
+    0828_0_中转 🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
+      🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States
+      12 @nodpai, 0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai,
+    0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United
+      States 14 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States
+      15 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷
+      Brazil 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      05 @nodpai, 0828_0_中转 🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02
+      @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转
+      🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05
+      @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
+    0828_0_中转 🇩🇪 Germany 04 @nodpai, 0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转
+      🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States
+      20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai,
+    0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸
+      United States 25 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United
+      States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States
+      29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai,
+    0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸
+      United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United
+      States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States
+      38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai,
+    0828_0_🇺🇸 United States 41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼
+      Taiwan 06 @nodpai, 0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States
+      42 @nodpai, 0828_0_🇩🇪 Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai,
+    0828_0_🇨🇳 China 05 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United
+      States 45 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
+      46 @nodpai, 0828_0_🇳🇱 Netherlands 06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai,
+    0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳 China 07 @nodpai, 0828_0_🇺🇸 United States
+      47 @nodpai, 0828_0_🇳🇱 Netherlands 08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
+    0828_0_🇨🇳 China 08 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United
+      States 50 @nodpai, 0828_0_🇳🇱 Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai,
+    0828_0_🇩🇪 Germany 07 @nodpai, 0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States
+      51 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai,
+    0828_0_🇺🇸 United States 54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸
+      United States 56 @nodpai, 0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United
+      States 58 @nodpai, 0828_0_🇺🇸 United States 59 @nodpai, 0828_0_🇺🇸 United States
+      60 @nodpai, 0828_0_🇺🇸 United States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai,
+    0828_0_🇺🇸 United States 63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸
+      United States 65 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States
+      66 @nodpai, 0828_0_🇺🇸 United States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai,
+    0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq
+      - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq
+      - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
+      7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 0828_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点
+      15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq - 澳大利亚  19,
+    0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq -
+      美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
       316, 0828_5_美国 315, 0828_5_美国 314, 0828_5_美国 313, 0828_5_美国 312, 0828_5_美国 311,
     0828_5_美国 310, 0828_5_美国 309, 0828_5_美国 308, 0828_5_美国 307, 0828_5_美国 306, 0828_5_美国
       305, 0828_5_美国 304, 0828_5_美国 303, 0828_5_美国 302, 0828_5_美国 301, 0828_5_美国 300,
@@ -12404,66 +12654,77 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0828_0_🇺🇸 United States 01 @nodpai, 0828_0_🇳🇱
-      Netherlands 01 @nodpai, 0828_0_🇺🇸 United States 02 @nodpai, 0828_0_🇩🇪 Germany
-      01 @nodpai, 0828_0_🇯🇵 Japan 01 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai,
-    0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇱🇺 Luxembourg 01 @nodpai, 0828_0_🇱🇺
-      Luxembourg 02 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇺🇸 United States
-      05 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇮🇳
-      India 01 @nodpai, 0828_0_🇺🇸 United States 06 @nodpai, 0828_0_🇺🇸 United States
-      07 @nodpai, 0828_0_中转 🇺🇸 United States 08 @nodpai, 0828_0_🇺🇸 United States 09
-      @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_🇰🇷 South Korea 01 @nodpai,
-    0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇯🇵 Japan 02 @nodpai, 0828_0_🇺🇸 United
-      States 12 @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 01 @nodpai,
-    0828_0_🇺🇸 United States 13 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转
-      🇨🇳 China 01 @nodpai, 0828_0_🇺🇸 United States 14 @nodpai, 0828_0_🇺🇸 United States
-      15 @nodpai, 0828_0_🇩🇪 Germany 02 @nodpai, 0828_0_🇧🇷 Brazil 01 @nodpai, 0828_0_🇩🇪
-      Germany 03 @nodpai, 0828_0_中转 🇺🇸 United States 16 @nodpai, 0828_0_🇸🇬 Singapore
-      01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United
-      States 17 @nodpai, 0828_0_中转 🇯🇵 Japan 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 02
-      @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转
-      🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇮🇳 India
-      03 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转
-      🇹🇼 Taiwan 05 @nodpai, 0828_0_🇹🇼 Taiwan 06 @nodpai, 0828_0_中转 🇦🇪 United Arab
-      Emirates 01 @nodpai, 0828_0_🇺🇸 United States 18 @nodpai, 0828_0_🇺🇸 United States
-      19 @nodpai, 0828_0_🇺🇸 United States 20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai,
-    0828_0_🇺🇸 United States 22 @nodpai, 0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸
-      United States 24 @nodpai, 0828_0_中转 🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇮🇳 India
-      04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai,
-    0828_0_🇸🇬 Singapore 04 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai, 0828_0_中转 🇮🇳 India 05 @nodpai,
-    0828_0_中转 🇭🇰 Hong Kong 05 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 06 @nodpai, 0828_0_中转
-      🇯🇵 Japan 07 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 07 @nodpai, 0828_0_中转 🇺🇸 United
-      States 25 @nodpai, 0828_0_中转 🇹🇼 Taiwan 07 @nodpai, 0828_0_🇺🇸 United States 26
-      @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States 27 @nodpai,
-    0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States 29 @nodpai, 0828_0_🇺🇸
-      United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai, 0828_0_🇺🇸 United
-      States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸 United States
-      34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United States 36 @nodpai,
-    0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States 38 @nodpai, 0828_0_🇺🇸
-      United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai, 0828_0_🇺🇸 United
-      States 41 @nodpai, 0828_0_🇺🇸 United States 42 @nodpai, 0828_0_🇺🇸 United States
-      43 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United States 45 @nodpai,
-    0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇺🇸 United States 46 @nodpai, 0828_0_🇳🇱
-      Netherlands 05 @nodpai, 0828_0_🇺🇸 United States 47 @nodpai, 0828_0_🇿🇦 South
-      Africa 01 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai, 0828_0_🇺🇸 United States
-      49 @nodpai, 0828_0_🇺🇸 United States 50 @nodpai, 0828_0_🇺🇸 United States 51 @nodpai,
-    0828_0_🇸🇬 Singapore 06 @nodpai, 0828_0_🇮🇳 India 06 @nodpai, 0828_0_🇺🇸 United States
-      52 @nodpai, 0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸
-      github.com/freefq - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      3, 0828_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq
-      - 荷兰  5, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶SharkTech数据中心 7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8,
-    0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      13, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq
-      - 巴西圣保罗CloudFlare节点 15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq
-      - 澳大利亚  19, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq
-      - 美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0828_0_🇸🇬 Singapore 01 @nodpai, 0828_0_🇺🇸 United
+      States 01 @nodpai, 0828_0_🇬🇧 United Kingdom 01 @nodpai, 0828_0_中转 🇨🇳 China 01
+      @nodpai, 0828_0_🇨🇦 Canada 01 @nodpai, 0828_0_🇳🇱 Netherlands 01 @nodpai, 0828_0_🇺🇸
+      United States 02 @nodpai, 0828_0_🇺🇸 United States 03 @nodpai, 0828_0_🇯🇵 Japan
+      01 @nodpai, 0828_0_🇺🇸 United States 04 @nodpai, 0828_0_🇺🇸 United States 05 @nodpai,
+    0828_0_中转 🇺🇸 United States 06 @nodpai, 0828_0_中转 🇺🇸 United States 07 @nodpai,
+    0828_0_🇩🇪 Germany 01 @nodpai, 0828_0_🇳🇱 Netherlands 02 @nodpai, 0828_0_🇺🇸 United
+      States 08 @nodpai, 0828_0_🇺🇸 United States 09 @nodpai, 0828_0_🇩🇪 Germany 02
+      @nodpai, 0828_0_🇨🇳 China 02 @nodpai, 0828_0_🇺🇸 United States 10 @nodpai, 0828_0_中转
+      🇨🇳 China 03 @nodpai, 0828_0_🇹🇼 Taiwan 01 @nodpai, 0828_0_🇸🇬 Singapore 02 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0828_0_🇸🇬 Singapore 03 @nodpai, 0828_0_中转 🇹🇼
+      Taiwan 02 @nodpai, 0828_0_中转 🇹🇼 Taiwan 03 @nodpai, 0828_0_🇨🇱 Chile 01 @nodpai,
+    0828_0_中转 🇯🇵 Japan 02 @nodpai, 0828_0_🇮🇳 India 01 @nodpai, 0828_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0828_0_🇹🇼 Taiwan 04 @nodpai, 0828_0_中转 🇮🇳 India 02 @nodpai, 0828_0_中转
+      🇦🇪 United Arab Emirates 01 @nodpai, 0828_0_中转 🇱🇻 Latvia 01 @nodpai, 0828_0_中转
+      🇯🇵 Japan 03 @nodpai, 0828_0_🇺🇸 United States 11 @nodpai, 0828_0_🇺🇸 United States
+      12 @nodpai, 0828_0_🇨🇳 China 04 @nodpai, 0828_0_🇺🇸 United States 13 @nodpai,
+    0828_0_🇩🇪 Germany 03 @nodpai, 0828_0_中转 🇸🇬 Singapore 05 @nodpai, 0828_0_🇺🇸 United
+      States 14 @nodpai, 0828_0_🇳🇱 Netherlands 03 @nodpai, 0828_0_🇺🇸 United States
+      15 @nodpai, 0828_0_🇳🇱 Netherlands 04 @nodpai, 0828_0_🇸🇬 Singapore 06 @nodpai,
+    0828_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0828_0_🇧🇷
+      Brazil 01 @nodpai, 0828_0_中转 🇭🇰 Hong Kong 04 @nodpai, 0828_0_中转 🇭🇰 Hong Kong
+      05 @nodpai, 0828_0_中转 🇸🇬 Singapore 07 @nodpai, 0828_0_中转 🇬🇧 United Kingdom 02
+      @nodpai, 0828_0_中转 🇯🇵 Japan 04 @nodpai, 0828_0_中转 🇯🇵 Japan 05 @nodpai, 0828_0_中转
+      🇺🇸 United States 16 @nodpai, 0828_0_中转 🇺🇸 United States 17 @nodpai, 0828_0_中转
+      🇨🇦 Canada 02 @nodpai, 0828_0_中转 🇷🇺 Russia 01 @nodpai, 0828_0_中转 🇹🇼 Taiwan 05
+      @nodpai, 0828_0_中转 🇵🇭 Philippines 01 @nodpai, 0828_0_中转 🇯🇵 Japan 06 @nodpai,
+    0828_0_中转 🇩🇪 Germany 04 @nodpai, 0828_0_中转 🇺🇸 United States 18 @nodpai, 0828_0_中转
+      🇯🇵 Japan 07 @nodpai, 0828_0_🇺🇸 United States 19 @nodpai, 0828_0_🇺🇸 United States
+      20 @nodpai, 0828_0_🇺🇸 United States 21 @nodpai, 0828_0_🇺🇸 United States 22 @nodpai,
+    0828_0_🇺🇸 United States 23 @nodpai, 0828_0_🇺🇸 United States 24 @nodpai, 0828_0_🇺🇸
+      United States 25 @nodpai, 0828_0_🇺🇸 United States 26 @nodpai, 0828_0_🇺🇸 United
+      States 27 @nodpai, 0828_0_🇺🇸 United States 28 @nodpai, 0828_0_🇺🇸 United States
+      29 @nodpai, 0828_0_🇺🇸 United States 30 @nodpai, 0828_0_🇺🇸 United States 31 @nodpai,
+    0828_0_🇺🇸 United States 32 @nodpai, 0828_0_🇺🇸 United States 33 @nodpai, 0828_0_🇺🇸
+      United States 34 @nodpai, 0828_0_🇺🇸 United States 35 @nodpai, 0828_0_🇺🇸 United
+      States 36 @nodpai, 0828_0_🇺🇸 United States 37 @nodpai, 0828_0_🇺🇸 United States
+      38 @nodpai, 0828_0_🇺🇸 United States 39 @nodpai, 0828_0_🇺🇸 United States 40 @nodpai,
+    0828_0_🇺🇸 United States 41 @nodpai, 0828_0_中转 🇰🇷 South Korea 01 @nodpai, 0828_0_🇹🇼
+      Taiwan 06 @nodpai, 0828_0_🇸🇬 Singapore 08 @nodpai, 0828_0_中转 🇺🇸 United States
+      42 @nodpai, 0828_0_🇩🇪 Germany 05 @nodpai, 0828_0_🇺🇸 United States 43 @nodpai,
+    0828_0_🇨🇳 China 05 @nodpai, 0828_0_🇺🇸 United States 44 @nodpai, 0828_0_🇺🇸 United
+      States 45 @nodpai, 0828_0_🇳🇱 Netherlands 05 @nodpai, 0828_0_🇺🇸 United States
+      46 @nodpai, 0828_0_🇳🇱 Netherlands 06 @nodpai, 0828_0_🇳🇱 Netherlands 07 @nodpai,
+    0828_0_🇨🇳 China 06 @nodpai, 0828_0_🇨🇳 China 07 @nodpai, 0828_0_🇺🇸 United States
+      47 @nodpai, 0828_0_🇳🇱 Netherlands 08 @nodpai, 0828_0_🇺🇸 United States 48 @nodpai,
+    0828_0_🇨🇳 China 08 @nodpai, 0828_0_🇺🇸 United States 49 @nodpai, 0828_0_🇺🇸 United
+      States 50 @nodpai, 0828_0_🇳🇱 Netherlands 09 @nodpai, 0828_0_🇩🇪 Germany 06 @nodpai,
+    0828_0_🇩🇪 Germany 07 @nodpai, 0828_0_🇩🇪 Germany 08 @nodpai, 0828_0_🇺🇸 United States
+      51 @nodpai, 0828_0_🇺🇸 United States 52 @nodpai, 0828_0_🇺🇸 United States 53 @nodpai,
+    0828_0_🇺🇸 United States 54 @nodpai, 0828_0_🇺🇸 United States 55 @nodpai, 0828_0_🇺🇸
+      United States 56 @nodpai, 0828_0_🇺🇸 United States 57 @nodpai, 0828_0_🇺🇸 United
+      States 58 @nodpai, 0828_0_🇺🇸 United States 59 @nodpai, 0828_0_🇺🇸 United States
+      60 @nodpai, 0828_0_🇺🇸 United States 61 @nodpai, 0828_0_🇺🇸 United States 62 @nodpai,
+    0828_0_🇺🇸 United States 63 @nodpai, 0828_0_🇺🇸 United States 64 @nodpai, 0828_0_🇺🇸
+      United States 65 @nodpai, 0828_0_中转 🇮🇳 India 03 @nodpai, 0828_0_🇺🇸 United States
+      66 @nodpai, 0828_0_🇺🇸 United States 67 @nodpai, 0828_0_🇳🇱 Netherlands 10 @nodpai,
+    0828_1_🇺🇸 github.com/freefq - 美国得克萨斯州达拉斯Limestone网络公司 1, 0828_1_🇺🇸 github.com/freefq
+      - 美国  2, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, 0828_1_🇺🇸 github.com/freefq
+      - 美国弗吉尼亚州阿什本NV NEXT数据中心 4, 0828_1_🇳🇱 github.com/freefq - 荷兰  5, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 6, 0828_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
+      7, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 0828_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶MULTACOM数据中心 9, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      10, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0828_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 13, 0828_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 14, 0828_1_🇧🇷 github.com/freefq - 巴西圣保罗CloudFlare节点
+      15, 0828_1_github.com/freefq - 亚太地区  16, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      17, 0828_1_github.com/freefq - 亚太地区  18, 0828_1_🇦🇺 github.com/freefq - 澳大利亚  19,
+    0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0828_1_🇺🇸 github.com/freefq -
+      美国加州 21, 0828_1_github.com/freefq - 亚太地区  22, 0828_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 23, 0828_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0828_5_美国
       316, 0828_5_美国 315, 0828_5_美国 314, 0828_5_美国 313, 0828_5_美国 312, 0828_5_美国 311,
     0828_5_美国 310, 0828_5_美国 309, 0828_5_美国 308, 0828_5_美国 307, 0828_5_美国 306, 0828_5_美国
       305, 0828_5_美国 304, 0828_5_美国 303, 0828_5_美国 302, 0828_5_美国 301, 0828_5_美国 300,
