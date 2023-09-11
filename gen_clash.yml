@@ -4,105 +4,34 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {cipher: aes-256-cfb, name: 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, password: amazonskr05,
-  port: 443, server: 43.201.62.15, type: ss, udp: true}
-- name: 0911_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01
-  network: ws
-  password: d02058f4f819dced
-  port: 3306
-  server: 60.248.114.188
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {Host: n2.gladns.com}
-    path: /gateway/connect
-- {name: '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', password: 8196dd4b-513f-4b2d-8631-56a4f0c8597d,
-  port: 443, server: 5.104.108.109, skip-cert-verify: true, sni: 20-24-33-134.nhost.00cdn.com,
-  type: trojan, udp: true}
-- {name: '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼 TW 01', password: 8196dd4b-513f-4b2d-8631-56a4f0c8597d,
-  port: 443, server: pqhinet1.aiopen.cfd, skip-cert-verify: true, sni: 18-140-66-207.nhost.00cdn.com,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 0911_0_🇳🇱 Netherlands 01 @nodpai, port: 49224,
-  server: 7373join.outline-vpn.cloud, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b}
 - alterId: 0
   cipher: auto
-  name: 0911_0_🇺🇸 United States 01 @nodpai
+  name: 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
   network: ws
-  port: 443
-  server: singapore.com
+  port: 19709
+  server: 123.249.101.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
+  ws-opts: {path: /}
+- {cipher: aes-128-gcm, name: '0911_0_「蛋挞云,流媒体全解锁」🇬🇧 GB 01', password: shadowsocks,
+  port: 443, server: 212.102.53.79, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01
+  network: ws
+  port: 20403
+  server: 168.138.41.87
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
-  ws-opts:
-    headers: {Host: singapore.com}
-    path: /dongtaiwang.com
-- name: 0911_0_🇸🇬 Singapore 02 @nodpai
-  network: ws
-  password: 182228812d1e0f23
-  port: 3306
-  server: 5.44.249.42
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {Host: n2.gladns.com}
-    path: /gateway/connect
-- name: 0911_0_🇸🇬 Singapore 03 @nodpai
-  network: ws
-  password: faf42aa0a9ad4c1e
-  port: 3306
-  server: 5.44.249.42
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {Host: n2.gladns.com}
-    path: '%2fgateway%2fconnect'
-- alterId: 0
-  cipher: auto
-  name: 0911_0_🇺🇸 United States 02 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.211.251
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  ws-opts: {path: /shirker}
-- name: 0911_0_🇸🇬 Singapore 04 @nodpai
-  network: ws
-  password: 3febb05ea76a940f
-  port: 3306
-  server: 5.44.249.42
-  skip-cert-verify: true
-  sni: n2.gladns.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers: {Host: n2.gladns.com}
-    path: '%2fgateway%2fconnect'
-- alterId: 0
-  cipher: auto
-  name: 0911_0_🇺🇸 United States 03 @nodpai
-  network: ws
-  port: 80
-  server: stock.hostmonit.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6fea1649-425b-4092-bf53-29792152c925
-  ws-opts:
-    headers: {Host: stock.hostmonit.com}
-    path: /sshkit/@yzcjd/64fb4a7d30294/
+  uuid: 343e890c-e0ad-4184-a4fc-1ca01c13a4f7
+  ws-opts: {path: /some.php}
+- {cipher: aes-256-cfb, name: '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01', password: amazonskr05,
+  port: 443, server: 43.201.62.15, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   name: 0911_0_🇧🇷 Brazil 01 @nodpai
@@ -115,57 +44,202 @@ proxies:
   udp: true
   uuid: ce4a5b14-6927-40c4-9f23-531e8c61eaea
   ws-opts: {path: /}
-- {alterId: 64, cipher: auto, name: 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-    1, port: 43900, server: 107.167.30.181, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d}
-- {alterId: 64, cipher: auto, name: 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-    2, port: 43900, server: 107.167.30.149, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d}
-- {alterId: 64, cipher: auto, name: 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH
-    3, port: 51715, server: 142.4.126.22, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, port: 50043,
-  server: 36.140.102.11, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 6dda6aa3-eef0-4ed3-8b8d-659a50f9805e}
-- {alterId: 0, cipher: auto, name: 0911_1_🇨🇳 github.com/freefq - 北京市移动 5, port: 50019,
-  server: 19.kccic2pa.xyz, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 6dda6aa3-eef0-4ed3-8b8d-659a50f9805e}
-- {name: 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, password: cc491f13e9, port: 443,
+- name: 0911_0_🇸🇬 Singapore 01 @nodpai
+  network: ws
+  password: 3febb05ea76a940f
+  port: 3306
+  server: 45.11.104.94
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇺🇸 United States 01 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.211.251
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- name: 0911_0_🇸🇬 Singapore 02 @nodpai
+  network: ws
+  password: 3febb05ea76a940f
+  port: 3306
+  server: 103.168.155.69
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- {name: 0911_0_🇫🇷 France 01 @nodpai, password: cc491f13e9, port: 443, server: 51.158.63.14,
+  skip-cert-verify: true, sni: fra1.connecton.surf, type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇭🇰 Hong Kong 01 @nodpai
+  network: ws
+  port: 80
+  server: hongkong1145141.baiduvideos.online
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9186a3f7-8952-417b-bf1e-193f53447777
+  ws-opts:
+    headers: {Host: hongkong1145141.baiduvideos.online}
+    path: /11451
+- name: 0911_0_🇸🇬 Singapore 03 @nodpai
+  network: ws
+  password: faf42aa0a9ad4c1e
+  port: 3306
+  server: 5.44.249.53
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: '%2fgateway%2fconnect'
+- name: 0911_0_🇸🇬 Singapore 04 @nodpai
+  network: ws
+  password: faf42aa0a9ad4c1e
+  port: 3306
+  server: 5.44.249.42
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: '%2fgateway%2fconnect'
+- {cipher: chacha20-ietf-poly1305, name: 0911_0_中转 🇮🇳 India 01 @nodpai, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
+  port: 27103, server: hefei.chiguayun.cc, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0911_0_中转 🇭🇰 Hong Kong 02 @nodpai, port: 42055,
+  server: 120.226.50.93, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- name: 0911_0_🇸🇬 Singapore 05 @nodpai
+  network: ws
+  password: 3febb05ea76a940f
+  port: 3306
+  server: 5.44.249.42
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: '%2fgateway%2fconnect'
+- {alterId: 0, cipher: auto, name: 0911_0_🇫🇷 France 02 @nodpai, port: 2096, server: dr3.drnet.pw,
+  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: b0c73ff3-7986-46a9-868c-2a5936c9d8df}
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇺🇸 United States 02 @nodpai
+  network: ws
+  port: 80
+  server: stock.hostmonit.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6fea1649-425b-4092-bf53-29792152c925
+  ws-opts:
+    headers: {Host: stock.hostmonit.com}
+    path: /sshkit/@yzcjd/64fb4a7d30294/
+- {cipher: chacha20-ietf-poly1305, name: 0911_0_中转 🇸🇬 Singapore 06 @nodpai, password: 2a23c437-de2c-47e3-b779-fb1d2289578f,
+  port: 27201, server: fs.xianyuwangluo.cyou, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇺🇸 United States 03 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.93.232
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- name: 0911_0_🇸🇬 Singapore 07 @nodpai
+  network: ws
+  password: 182228812d1e0f23
+  port: 3306
+  server: 5.44.249.42
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇺🇸 United States 04 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.166.238
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- alterId: 0
+  cipher: auto
+  name: 0911_0_🇺🇸 United States 05 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.131.98
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts: {path: /shirker}
+- {cipher: aes-256-gcm, name: 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 1, password: YX3wgYWMpLKYEnho,
+  port: 44361, server: zjxc.pmxu.link, type: ss, udp: true}
+- {cipher: aes-256-gcm, name: 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, password: YX3wgYWMpLKYEnho,
+  port: 42862, server: zjxc.pmxu.link, type: ss, udp: true}
+- {name: 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 3, password: cc491f13e9, port: 443,
   server: fra1.connecton.surf, skip-cert-verify: false, type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 7
+  name: 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4
   network: ws
-  port: 443
-  server: dongtaiwang2.com
+  port: 3331
+  server: 46caadb.f2.gladns.com
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 87a95522-985c-4a17-afea-9b7d7208bce5
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
   ws-opts:
-    headers: {Host: 3.freek1.xyz}
+    headers: {Host: 46caadb.f2.gladns.com}
     path: /
-- {alterId: 0, cipher: auto, name: 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, port: 50004,
-  server: 04.kccic2pa.xyz, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 6dda6aa3-eef0-4ed3-8b8d-659a50f9805e}
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5
   network: ws
-  port: 80
-  server: 104.31.16.68
+  port: 443
+  server: wi.saintink.eu.org
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 9b66f5c7-cc71-4b72-8ad7-d136c1e95f71
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
-    headers: {Host: fr1vm.cdn-03.live}
-    path: /vmess
+    headers: {Host: sub2.saintink.eu.org}
+    path: /vuk2.0bad.com/chat
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6
   network: ws
   port: 80
   server: stock.hostmonit.com
@@ -179,22 +253,80 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
   network: ws
-  port: 8443
-  server: 172.67.195.251
-  servername: us.freebaipiao.tk
+  port: 443
+  server: 104.27.193.64
+  servername: avaspeed.jetspeed.fun
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 03221b25-1a6a-4501-e519-1745b25f6c1f
+  uuid: 8bb01190-f127-4a5a-9845-e6adf93eccc1
   ws-opts:
-    headers: {Host: us.freebaipiao.tk}
-    path: /freebaipiao
+    headers: {Host: avaspeed.jetspeed.fun}
+    path: /pDDgT3v8NaAJHFPuEaDfC8t
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 12
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
+  network: ws
+  port: 80
+  server: 104.31.16.68
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9b66f5c7-cc71-4b72-8ad7-d136c1e95f71
+  ws-opts:
+    headers: {Host: fr1vm.cdn-03.live}
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国  9
+  network: ws
+  port: 443
+  server: vsg1.0bad.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    headers: {Host: vsg1.0bad.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
+  network: ws
+  port: 443
+  server: cloudflare.piaole.me
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 589612ae-ede2-494a-a0d4-6e4293040088
+  ws-opts:
+    headers: {Host: cloudflare.piaole.me}
+    path: /huawei
+- {cipher: aes-256-gcm, name: 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, password: YX3wgYWMpLKYEnho,
+  port: 55906, server: shct.pmxu.link, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+  network: ws
+  port: 443
+  server: zfc.windowsupdate1.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6abfe33a-1894-4f62-8879-83b71a35e5fd
+  ws-opts:
+    headers: {Host: us-1.acyun.tk}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13
   network: ws
   port: 443
   server: 23.227.38.82
@@ -208,50 +340,87 @@ proxies:
     path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 13
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
   network: ws
-  port: 8443
-  server: us.freebaipiao.tk
-  servername: us.freebaipiao.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a9f76e09-24c6-44f3-d140-037e99bf717a
-  ws-opts:
-    headers: {Host: us.freebaipiao.tk}
-    path: /freebaipiao
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14
-  network: ws
-  port: 8080
-  server: us1.mianfenyun012.eu.org
+  port: 2082
+  server: 104.31.16.46
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 89e8501d-1a59-4754-cdc2-0e6334b97e3b
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
-    headers: {Host: us1.mianfenyun012.eu.org}
-    path: /
+    headers: {Host: ca5.tehme100.fun}
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国  15
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
+  network: ws
+  port: 80
+  server: cf-lt.sharecentre.online
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  ws-opts:
+    headers: {Host: lv3.sharecentrepro.org}
+    path: /shirker
+- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 安徽省亳州市移动 16, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
+  port: 27133, server: hefei.chiguayun.cc, type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 安徽省亳州市移动 17, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
+  port: 27117, server: hefei.chiguayun.cc, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18
+  network: ws
+  port: 80
+  server: us01.runba.gq
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers: {Host: us01.runba.gq}
+    path: /v1893298323Py
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 19
   network: ws
   port: 443
-  server: cold-dawn-9246.fly.dev
+  server: dongtaiwang2.com
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  uuid: 87a95522-985c-4a17-afea-9b7d7208bce5
   ws-opts:
-    headers: {Host: cold-dawn-9246.fly.dev}
+    headers: {Host: 3.freek1.xyz}
     path: /
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16
+  name: 0911_1_github.com/freefq - 亚太地区  20
+  network: ws
+  port: 80
+  server: 103.160.204.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f336c0ab-87fb-4f6f-e069-14fbc903b67d
+  ws-opts:
+    headers: {Host: 2.wyhkaa0.gq}
+    path: /TG:@hkaa0
+- {cipher: chacha20-ietf-poly1305, name: 0911_1_🇦🇺 github.com/freefq - 澳大利亚  21, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
+  port: 45879, server: fell.gougouvpn.xyz, type: ss, udp: true}
+- {name: 0911_1_🇺🇸 github.com/freefq - 美国  22, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
+  port: 443, server: rb.gougouvpn.xyz, skip-cert-verify: false, type: trojan, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 浙江省金华市移动 23, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
+  port: 27137, server: foshan.chiguayun.cc, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24
   network: ws
   port: 8080
   server: us2.mianfenyun012.eu.org
@@ -265,66 +434,7 @@ proxies:
     path: /jdbp606
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-  network: ws
-  port: 2052
-  server: iran01.biqibao.site
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5732c152-0c1d-49d9-a9df-03958295f1c1
-  ws-opts:
-    headers: {Host: de2.biqibao.site}
-    path: /public
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18
-  network: ws
-  port: 443
-  server: cloudflare.piaole.me
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 589612ae-ede2-494a-a0d4-6e4293040088
-  ws-opts:
-    headers: {Host: cloudflare.piaole.me}
-    path: /huawei
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19
-  network: ws
-  port: 443
-  server: 104.27.193.64
-  servername: avaspeed.jetspeed.fun
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8bb01190-f127-4a5a-9845-e6adf93eccc1
-  ws-opts:
-    headers: {Host: avaspeed.jetspeed.fun}
-    path: /pDDgT3v8NaAJHFPuEaDfC8t
-- {name: 0911_1_🇺🇸 github.com/freefq - 美国  20, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
-  port: 443, server: rb.gougouvpn.xyz, skip-cert-verify: false, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-  network: ws
-  port: 8880
-  server: ns1.v2-vip.fun
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
-  ws-opts:
-    headers: {Host: fr7.tehme100.fun}
-    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇨🇳 github.com/freefq - 广东省深圳市移动 22
+  name: 0911_1_🇨🇳 github.com/freefq - 广东省深圳市移动 25
   network: ws
   port: 29938
   server: rbaun-1079-v2-1.r-kcd-c.iote.bond
@@ -336,101 +446,20 @@ proxies:
   ws-opts:
     headers: {Host: cdn.cjhh.lol}
     path: /
-- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 安徽省亳州市移动 23, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
-  port: 27117, server: hefei.chiguayun.cc, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24
+  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26
   network: ws
-  port: 80
-  server: us01.runba.gq
+  port: 8880
+  server: ns1.v2-vip.fun
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
   ws-opts:
-    headers: {Host: us01.runba.gq}
-    path: /v1893298323Py
-- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 安徽省移动 25, password: 6fc1c0c5-9851-4b06-accd-77d422cf8385,
-  port: 10709, server: yidong.liulangdiqiu.cyou, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 浙江省金华市移动 26, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
-  port: 27137, server: foshan.chiguayun.cc, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27
-  network: ws
-  port: 8443
-  server: us.freebaipiao.tk
-  servername: us.freebaipiao.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7e0edc93-87e6-4828-a2ec-da35ace8bbe6
-  ws-opts:
-    headers: {Host: us.freebaipiao.tk}
-    path: /freebaipiao
-- alterId: 0
-  cipher: auto
-  name: 0911_1_github.com/freefq - 亚太地区  28
-  network: ws
-  port: 80
-  server: 103.160.204.8
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 65d2b6ea-8c03-439d-bbb3-5f9a5f44c33c
-  ws-opts:
-    headers: {Host: 10.wyhkaa0.gq}
-    path: /TG:@hkaa0
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29
-  network: ws
-  port: 888
-  server: wnnsu-1095-v2-1.d-hkt.ddll.bond
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ac5be27f-0af3-4a22-bc90-f0cc5fdc2291
-  ws-opts:
-    headers: {Host: cdn.cjhh.lol}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇨🇳 github.com/freefq - 广东省深圳市移动 30
-  network: ws
-  port: 39918
-  server: kvxul-1092-v2-4.r-kcd-b.iote.bond
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ac5be27f-0af3-4a22-bc90-f0cc5fdc2291
-  ws-opts:
-    headers: {Host: cdn.cjhh.lol}
-    path: /je5x3pBN1vez3NQudNkB
-- {cipher: chacha20-ietf-poly1305, name: 0911_1_github.com/freefq - 安徽省亳州市移动 31, password: 9ac88df2-8cac-4420-94a6-fdd2d41d0109,
-  port: 27133, server: hefei.chiguayun.cc, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 32
-  network: ws
-  port: 443
-  server: aaaa.wxx.gay
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: aede6782-5057-11ee-a0a4-000017022008
-  ws-opts:
-    headers: {Host: aaaa.wxx.gay}
-    path: /look
-- {cipher: chacha20-ietf-poly1305, name: 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
-  port: 45879, server: fell.gougouvpn.xyz, type: ss, udp: true}
+    headers: {Host: fr7.tehme100.fun}
+    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
   name: 0911_5_美国 001
@@ -5565,30 +5594,30 @@ proxies:
   ws-path: /shirker
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -5693,30 +5722,30 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01', '0911_0_「eggtartcloud.shop
-      自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼 TW 01', 0911_0_🇳🇱 Netherlands
-      01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai,
-    0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United States 02 @nodpai, 0911_0_🇸🇬
-      Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03 @nodpai, 0911_0_🇧🇷 Brazil 01
-      @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 1, 0911_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧 GB 01', '0911_0_「eggtartcloud.shop
+      自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai,
+    0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai, 0911_0_🇸🇬
+      Singapore 02 @nodpai, 0911_0_🇫🇷 France 01 @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai,
+    0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India
+      01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai,
+    0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸 United States 02 @nodpai, 0911_0_中转 🇸🇬
+      Singapore 06 @nodpai, 0911_0_🇺🇸 United States 03 @nodpai, 0911_0_🇸🇬 Singapore
+      07 @nodpai, 0911_0_🇺🇸 United States 04 @nodpai, 0911_0_🇺🇸 United States 05 @nodpai,
+    0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      2, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq
+      - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 0911_1_🇺🇸 github.com/freefq - 美国  9,
+    0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 0911_1_🇨🇳 github.com/freefq -
+      上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0911_1_github.com/freefq
+      - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动 17, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify)
+      19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  21,
+    0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq - 浙江省金华市移动 23,
+    0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq -
+      广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -5821,30 +5850,30 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -5954,30 +5983,30 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -6081,30 +6110,30 @@ proxy-groups:
       47, 0911_7_美国(油管:破解资源君) 48, 0911_7_美国(油管:破解资源君) 49]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01',
-    '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼 TW 01',
-    0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai, 0911_0_🇸🇬
-      Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United States
-      02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03 @nodpai,
-    0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧 GB 01',
+    '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01',
+    0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸 United
+      States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01 @nodpai,
+    0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬 Singapore
+      04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong 02 @nodpai,
+    0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸 United
+      States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United States
+      03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04 @nodpai,
+    0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -6208,30 +6237,30 @@ proxy-groups:
       47, 0911_7_美国(油管:破解资源君) 48, 0911_7_美国(油管:破解资源君) 49]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🎯 全球直连, 🔰 节点选择, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -6335,30 +6364,30 @@ proxy-groups:
       47, 0911_7_美国(油管:破解资源君) 48, 0911_7_美国(油管:破解资源君) 49]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🔰 节点选择, 🎯 全球直连, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -6462,30 +6491,30 @@ proxy-groups:
       47, 0911_7_美国(油管:破解资源君) 48, 0911_7_美国(油管:破解资源君) 49]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
@@ -6595,30 +6624,30 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0911_0_「节点冠名招商 @nodpai」🇰🇷 KR 01, '0911_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇩🇪 DE 01', '0911_0_「蛋挞云,超低价格,超高体验」🇹🇼
-      TW 01', 0911_0_🇳🇱 Netherlands 01 @nodpai, 0911_0_🇺🇸 United States 01 @nodpai,
-    0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇺🇸 United
-      States 02 @nodpai, 0911_0_🇸🇬 Singapore 04 @nodpai, 0911_0_🇺🇸 United States 03
-      @nodpai, 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      1, 0911_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 2, 0911_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 3, 0911_1_🇨🇳 github.com/freefq - 北京市移动 4, 0911_1_🇨🇳 github.com/freefq
-      - 北京市移动 5, 0911_1_🇫🇷 github.com/freefq - 法国巴黎Online S.A.S 6, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 7, 0911_1_🇨🇳 github.com/freefq - 北京市移动 8, 0911_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      10, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点(shopify) 12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      13, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 14, 0911_1_🇺🇸 github.com/freefq
-      - 美国  15, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 16, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      18, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 19, 0911_1_🇺🇸 github.com/freefq
-      - 美国  20, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 21, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 22, 0911_1_github.com/freefq - 安徽省亳州市移动 23, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 24, 0911_1_github.com/freefq - 安徽省移动 25, 0911_1_github.com/freefq
-      - 浙江省金华市移动 26, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0911_1_github.com/freefq
-      - 亚太地区  28, 0911_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 29, 0911_1_🇨🇳 github.com/freefq
-      - 广东省深圳市移动 30, 0911_1_github.com/freefq - 安徽省亳州市移动 31, 0911_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 32, 0911_1_🇦🇺 github.com/freefq - 澳大利亚  33, 0911_5_美国 001,
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0911_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0911_0_「蛋挞云,流媒体全解锁」🇬🇧
+      GB 01', '0911_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0911_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0911_0_🇧🇷 Brazil 01 @nodpai, 0911_0_🇸🇬 Singapore 01 @nodpai, 0911_0_🇺🇸
+      United States 01 @nodpai, 0911_0_🇸🇬 Singapore 02 @nodpai, 0911_0_🇫🇷 France 01
+      @nodpai, 0911_0_🇭🇰 Hong Kong 01 @nodpai, 0911_0_🇸🇬 Singapore 03 @nodpai, 0911_0_🇸🇬
+      Singapore 04 @nodpai, 0911_0_中转 🇮🇳 India 01 @nodpai, 0911_0_中转 🇭🇰 Hong Kong
+      02 @nodpai, 0911_0_🇸🇬 Singapore 05 @nodpai, 0911_0_🇫🇷 France 02 @nodpai, 0911_0_🇺🇸
+      United States 02 @nodpai, 0911_0_中转 🇸🇬 Singapore 06 @nodpai, 0911_0_🇺🇸 United
+      States 03 @nodpai, 0911_0_🇸🇬 Singapore 07 @nodpai, 0911_0_🇺🇸 United States 04
+      @nodpai, 0911_0_🇺🇸 United States 05 @nodpai, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司
+      1, 0911_1_🇸🇬 github.com/freefq - 北京市新国信通信有限公司 2, 0911_1_🇫🇷 github.com/freefq
+      - 法国巴黎Online S.A.S 3, 0911_1_🇷🇺 github.com/freefq - 俄罗斯  4, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 5, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 7, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 0911_1_🇺🇸 github.com/freefq - 美国  9, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      10, 0911_1_🇨🇳 github.com/freefq - 上海市电信 11, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      12, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 13, 0911_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 0911_1_github.com/freefq - 安徽省亳州市移动 16, 0911_1_github.com/freefq - 安徽省亳州市移动
+      17, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 18, 0911_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 19, 0911_1_github.com/freefq - 亚太地区  20, 0911_1_🇦🇺
+      github.com/freefq - 澳大利亚  21, 0911_1_🇺🇸 github.com/freefq - 美国  22, 0911_1_github.com/freefq
+      - 浙江省金华市移动 23, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 24, 0911_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 25, 0911_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 26, 0911_5_美国 001,
     0911_5_美国 002, 0911_5_美国 003, 0911_5_美国 004, 0911_5_美国 005, 0911_5_美国 006, 0911_5_美国
       007, 0911_5_美国 008, 0911_5_美国 009, 0911_5_美国 010, 0911_5_美国 011, 0911_5_美国 012,
     0911_5_美国 013, 0911_5_美国 014, 0911_5_美国 015, 0911_5_美国 016, 0911_5_美国 017, 0911_5_美国
