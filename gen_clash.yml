@@ -4,25 +4,39 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {alterId: 0, cipher: auto, name: 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, port: 50004, server: 04.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
-- {alterId: 0, cipher: auto, name: '0919_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02', port: 50005, server: 05.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- {alterId: 0, cipher: auto, name: 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, port: 8211, server: d02a7cb4-8303-4228-bb9b-22ea778f8ce9.jp.node.touhou.earth,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: c3e1a9a8-ccbe-11eb-8aa6-f23c91d8700f}
+- {cipher: aes-256-gcm, name: '0919_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01', password: dongtaiwang.com,
+  port: 10088, server: www.dtku49.xyz, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01',
+  port: 50003, server: 03.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- {alterId: 0, cipher: auto, name: '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 02', port: 50004,
+  server: 04.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- {alterId: 0, cipher: auto, name: 0919_0_中转 🇺🇸 United States 03 @nodpai, port: 50005,
+  server: 05.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- {alterId: 0, cipher: auto, name: 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 58271,
+  server: 183.240.232.81, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - alterId: 0
   cipher: auto
-  name: 0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03
+  name: 0919_0_🇫🇷 France 01 @nodpai
   network: ws
-  port: 443
-  server: 142.0.131.56
+  port: 80
+  server: ms.shabijichang.com
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: 2a23dbd5-09cf-4aa8-a835-3230728c4973
-  ws-opts: {path: /path/252617081903}
+  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  ws-opts:
+    headers: {Host: ms.shabijichang.com}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 0919_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01
+  name: 0919_0_🇯🇵 Japan 02 @nodpai
   network: ws
   port: 443
   server: 104.19.237.65
@@ -38,102 +52,6 @@ proxies:
   name: 0919_0_🇨🇦 Canada 01 @nodpai
   network: ws
   port: 443
-  server: api.jquery.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers: {Host: api.jquery.com}
-    path: /oliv.beauty:443/linkvws
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇯🇵 Japan 02 @nodpai
-  network: ws
-  port: 443
-  server: 190.93.247.161
-  servername: jp.denny.cf
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 99357805-2332-4548-95d7-73bf03c24599
-  ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: 0919_0_中转 🇸🇬 Singapore 01 @nodpai, password: 11ac3cf9-e29e-4532-9cb1-08f2934f62b4,
-  port: 13929, server: sg.relay-idc.top, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇯🇵 Japan 03 @nodpai
-  network: ws
-  port: 443
-  server: 190.93.245.8
-  servername: jp.denny.cf
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 99357805-2332-4548-95d7-73bf03c24599
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇺🇸 United States 04 @nodpai
-  network: ws
-  port: 443
-  server: 192.74.228.173
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
-  ws-opts: {path: /path/1692005985685}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_中转 🇯🇵 Japan 04 @nodpai
-  network: ws
-  port: 23619
-  server: 19.v2-ray.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f33b629c-7428-360e-a893-3e0c37c18599
-  ws-opts:
-    headers: {Host: 19.v2-ray.cyou}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇫🇮 Finland 01 @nodpai
-  network: ws
-  port: 2087
-  server: 104.31.16.3
-  servername: fll6.appmeli19.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 0919_0_中转 🇺🇸 United States 05 @nodpai, port: 50003,
-  server: 03.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇺🇸 United States 06 @nodpai
-  network: ws
-  port: 443
-  server: 137.175.49.194
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /path/1695032909164}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇺🇸 United States 07 @nodpai
-  network: ws
-  port: 443
   server: codepen.io
   skip-cert-verify: true
   tls: true
@@ -145,59 +63,19 @@ proxies:
     path: /octavi.cfd:443/linkvws
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇩🇪 Germany 01 @nodpai
-  network: ws
-  port: 2087
-  server: 104.27.193.64
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇩🇪 Germany 02 @nodpai
-  network: ws
-  port: 2083
-  server: 104.31.16.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇨🇳 China 01 @nodpai
+  name: 0919_0_🇺🇸 United States 04 @nodpai
   network: ws
   port: 443
-  server: 137.175.22.146
+  server: 142.0.131.56
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /path/1694947665388}
-- {alterId: 0, cipher: auto, name: 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, port: 50013, server: 13.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+  uuid: 2a23dbd5-09cf-4aa8-a835-3230728c4973
+  ws-opts: {path: /path/252617081903}
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇩🇪 Germany 03 @nodpai
-  network: ws
-  port: 2087
-  server: mci.servermeli.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
-  ws-opts:
-    headers: {Host: mci.servermeli.xyz}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇯🇵 Japan 05 @nodpai
+  name: 0919_0_🇯🇵 Japan 03 @nodpai
   network: ws
   port: 443
   server: 173.245.59.163
@@ -208,6 +86,60 @@ proxies:
   udp: true
   uuid: 99357805-2332-4548-95d7-73bf03c24599
   ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇯🇵 Japan 04 @nodpai
+  network: ws
+  port: 443
+  server: 190.93.247.161
+  servername: jp.denny.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 99357805-2332-4548-95d7-73bf03c24599
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇮🇳 India 01 @nodpai
+  network: ws
+  port: 80
+  server: 172.67.146.22
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 545e2bdb-ac6d-428f-82c7-7966be8d9ebc
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇺🇸 United States 05 @nodpai
+  network: ws
+  port: 2052
+  server: 162.159.130.115
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 23bea995-d5db-4530-85d1-ddb2082e1811
+  ws-opts: {path: /public}
+- {alterId: 0, cipher: auto, name: 0919_0_中转 🇺🇸 United States 06 @nodpai, port: 50020,
+  server: 20.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇺🇸 United States 07 @nodpai
+  network: ws
+  port: 443
+  server: 192.74.228.173
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e
+  ws-opts: {path: /path/1692005985685}
+- {cipher: chacha20-ietf-poly1305, name: 0919_0_🇧🇷 Brazil 01 @nodpai, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
+  port: 8020, server: frel.sdxpay.cn, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   name: 0919_0_🇱🇺 Luxembourg 01 @nodpai
@@ -224,21 +156,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0919_0_中转 🇺🇸 United States 08 @nodpai
-  network: ws
-  port: 23615
-  server: 15.v2-ray.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f33b629c-7428-360e-a893-3e0c37c18599
-  ws-opts:
-    headers: {Host: 15.v2-ray.cyou}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇩🇪 Germany 04 @nodpai
+  name: 0919_0_🇩🇪 Germany 01 @nodpai
   network: ws
   port: 2083
   server: 104.31.16.70
@@ -248,51 +166,38 @@ proxies:
   udp: true
   uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
   ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 0919_0_中转 🇺🇸 United States 08 @nodpai, port: 50002,
+  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇭🇰 Hong Kong 01 @nodpai
-  network: ws
-  port: 80
-  server: speedip.eu.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88955ce4-7c17-4e75-9f17-00c6dc4fdc02
-  ws-opts:
-    headers: {Host: speedip.eu.org}
-    path: /xingsuyun
-- {cipher: chacha20-ietf-poly1305, name: 0919_0_🇧🇷 Brazil 01 @nodpai, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
-  port: 8020, server: frel.sdxpay.cn, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇮🇳 India 01 @nodpai
-  network: ws
-  port: 80
-  server: mm.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
-  ws-opts:
-    headers: {Host: mm.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0919_0_🇳🇱 Netherlands 01 @nodpai
+  name: 0919_0_🇺🇸 United States 09 @nodpai
   network: ws
   port: 443
-  server: 156.225.67.77
+  server: api.jquery.com
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf
-  ws-opts: {path: /path/1695032909164}
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers: {Host: api.jquery.com}
+    path: /oliv.beauty:443/linkvws
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇩🇪 Germany 05 @nodpai
+  name: 0919_0_🇩🇪 Germany 02 @nodpai
+  network: ws
+  port: 2083
+  server: 104.31.16.69
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇩🇪 Germany 03 @nodpai
   network: ws
   port: 2083
   server: 104.31.16.71
@@ -304,30 +209,43 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇦🇪 United Arab Emirates 01 @nodpai
+  name: 0919_0_🇩🇪 Germany 04 @nodpai
   network: ws
-  port: 80
-  server: 172.64.199.158
+  port: 2087
+  server: 104.27.193.64
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 54ed5ad0-1d84-4dd2-9dc8-1c6ad9269132
+  uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇦🇺 Australia 01 @nodpai
+  name: 0919_0_🇯🇵 Japan 05 @nodpai
+  network: ws
+  port: 443
+  server: 190.93.245.8
+  servername: jp.denny.cf
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 99357805-2332-4548-95d7-73bf03c24599
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇻🇳 Viet Nam 01 @nodpai
   network: ws
   port: 80
-  server: xn4.shabijichang.com
+  server: dn1.4ghatde.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  uuid: 7c810704-e3d7-4e14-92c1-a8e2f63dd52d
   ws-opts:
-    headers: {Host: xn4.shabijichang.com}
-    path: /
+    headers: {Host: dn1.4ghatde.com}
+    path: /4ghatde.com
 - alterId: 0
   cipher: auto
   name: 0919_0_🇯🇵 Japan 06 @nodpai
@@ -343,19 +261,48 @@ proxies:
   ws-opts: {path: /}
 - alterId: 0
   cipher: auto
-  name: 0919_0_🇫🇮 Finland 02 @nodpai
+  name: 0919_0_🇭🇰 Hong Kong 02 @nodpai
+  network: ws
+  port: 80
+  server: speedip.eu.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88955ce4-7c17-4e75-9f17-00c6dc4fdc02
+  ws-opts:
+    headers: {Host: speedip.eu.org}
+    path: /xingsuyun
+- {alterId: 0, cipher: auto, name: 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai, port: 50010,
+  server: 10.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: b1c9fdae-2c24-4e41-b89f-503716a0650d}
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇩🇪 Germany 05 @nodpai
   network: ws
   port: 2087
-  server: rtl.servermeli.xyz
-  servername: fll6.appmanage5.ir
+  server: mci.servermeli.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
   ws-opts:
-    headers: {Host: rtl.servermeli.xyz}
+    headers: {Host: mci.servermeli.xyz}
     path: /
+- alterId: 0
+  cipher: auto
+  name: 0919_0_🇫🇮 Finland 01 @nodpai
+  network: ws
+  port: 2087
+  server: 104.31.16.3
+  servername: fll6.appmeli19.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1e404e80-6a84-467b-9fe9-8a27794ddc43
+  ws-opts: {path: /}
 - {alterId: 64, cipher: auto, name: 0919_1_🇿🇦 github.com/freefq - 南非  1, port: 45423,
   server: 156.225.67.49, skip-cert-verify: false, tls: false, type: vmess, udp: true,
   uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b}
@@ -8046,189 +7993,21 @@ proxies:
   ws-path: /zh-cn
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 23, 0919_1_🇨🇳 github.com/freefq - 上海市电信
-      24, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 25, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 26, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      29, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 30, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 31, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 32, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 33, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
-      34, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 35, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 36, 0919_5_美国 001, 0919_5_美国 002, 0919_5_美国 003, 0919_5_美国
-      004, 0919_5_美国 005, 0919_5_美国 006, 0919_5_美国 007, 0919_5_美国 008, 0919_5_美国 009,
-    0919_5_美国 010, 0919_5_美国 011, 0919_5_美国 012, 0919_5_美国 013, 0919_5_美国 014, 0919_5_美国
-      015, 0919_5_美国 016, 0919_5_美国 017, 0919_5_美国 018, 0919_5_美国 019, 0919_5_美国 020,
-    0919_5_美国 021, 0919_5_美国 022, 0919_5_美国 023, 0919_5_美国 024, 0919_5_美国 025, 0919_5_美国
-      026, 0919_5_美国 027, 0919_5_美国 028, 0919_5_美国 029, 0919_5_美国 030, 0919_5_美国 031,
-    0919_5_美国 032, 0919_5_美国 033, 0919_5_美国 034, 0919_5_美国 035, 0919_5_美国 036, 0919_5_美国
-      037, 0919_5_美国 038, 0919_5_美国 039, 0919_5_美国 040, 0919_5_美国 041, 0919_5_美国 042,
-    0919_5_美国 043, 0919_5_美国 044, 0919_5_美国 045, 0919_5_美国 046, 0919_5_美国 047, 0919_5_美国
-      048, 0919_5_美国 049, 0919_5_韩国 001, 0919_5_美国 050, 0919_5_美国 051, 0919_5_加拿大
-      001, 0919_5_加拿大 002, 0919_5_香港 001, 0919_5_美国 052, 0919_5_加拿大 003, 0919_5_香港
-      002, 0919_5_加拿大 004, 0919_5_荷兰 001, 0919_5_加拿大 005, 0919_5_加拿大 006, 0919_5_加拿大
-      007, 0919_5_加拿大 008, 0919_5_加拿大 009, 0919_5_加拿大 010, 0919_5_香港 003, 0919_5_加拿大
-      011, 0919_5_加拿大 012, 0919_5_法国 001, 0919_5_美国 053, 0919_5_加拿大 013, 0919_5_加拿大
-      014, 0919_5_加拿大 015, 0919_5_加拿大 016, 0919_5_加拿大 017, 0919_5_香港 004, 0919_5_加拿大
-      018, 0919_5_加拿大 019, 0919_5_美国 054, 0919_5_加拿大 020, 0919_5_加拿大 021, 0919_5_加拿大
-      022, 0919_5_加拿大 023, 0919_5_加拿大 024, 0919_5_美国 055, 0919_5_香港 005, 0919_5_加拿大
-      025, 0919_5_加拿大 026, 0919_5_韩国 002, 0919_5_加拿大 027, 0919_5_香港 006, 0919_5_韩国
-      003, 0919_5_加拿大 028, 0919_5_加拿大 029, 0919_5_韩国 004, 0919_5_加拿大 030, 0919_5_加拿大
-      031, 0919_5_加拿大 032, 0919_5_韩国 005, 0919_5_加拿大 033, 0919_5_美国 056, 0919_5_香港
-      007, 0919_5_加拿大 034, 0919_5_香港 008, 0919_5_加拿大 035, 0919_5_加拿大 036, 0919_5_香港
-      009, 0919_5_加拿大 037, 0919_5_加拿大 038, 0919_5_加拿大 039, 0919_5_加拿大 040, 0919_5_加拿大
-      041, 0919_5_加拿大 042, 0919_5_加拿大 043, 0919_5_加拿大 044, 0919_5_美国 057, 0919_5_香港
-      010, 0919_5_荷兰 002, 0919_5_加拿大 045, 0919_5_香港 011, 0919_5_加拿大 046, 0919_5_加拿大
-      047, 0919_5_加拿大 048, 0919_5_香港 012, 0919_5_加拿大 049, 0919_5_加拿大 050, 0919_5_加拿大
-      051, 0919_5_美国 058, 0919_5_美国 059, 0919_5_美国 060, 0919_5_美国 061, 0919_5_加拿大
-      052, 0919_5_加拿大 053, 0919_5_荷兰 003, 0919_5_加拿大 054, 0919_5_香港 013, 0919_5_美国
-      062, 0919_5_美国 063, 0919_5_荷兰 004, 0919_5_荷兰 005, 0919_5_波兰 001, 0919_5_法国 002,
-    0919_5_法国 003, 0919_5_加拿大 055, 0919_5_美国 064, 0919_5_香港 014, 0919_5_加拿大 056, 0919_5_加拿大
-      057, 0919_5_加拿大 058, 0919_5_加拿大 059, 0919_5_加拿大 060, 0919_5_加拿大 061, 0919_5_加拿大
-      062, 0919_5_加拿大 063, 0919_5_加拿大 064, 0919_5_加拿大 065, 0919_5_加拿大 066, 0919_5_加拿大
-      067, 0919_5_美国 065, 0919_5_加拿大 068, 0919_5_美国 066, 0919_5_加拿大 069, 0919_5_加拿大
-      070, 0919_5_香港 015, 0919_5_美国 067, 0919_5_美国 068, 0919_5_加拿大 071, 0919_5_加拿大
-      072, 0919_5_加拿大 073, 0919_5_加拿大 074, 0919_5_加拿大 075, 0919_5_美国 069, 0919_5_美国
-      070, 0919_5_香港 016, 0919_5_美国 071, 0919_5_美国 072, 0919_5_香港 017, 0919_5_荷兰 006,
-    0919_5_香港 018, 0919_5_加拿大 076, 0919_5_加拿大 077, 0919_5_加拿大 078, 0919_5_加拿大 079,
-    0919_5_日本 001, 0919_5_加拿大 080, 0919_5_美国 073, 0919_5_加拿大 081, 0919_5_加拿大 082,
-    0919_5_美国 074, 0919_5_加拿大 083, 0919_5_美国 075, 0919_5_美国 076, 0919_5_加拿大 084, 0919_5_加拿大
-      085, 0919_5_加拿大 086, 0919_5_加拿大 087, 0919_5_加拿大 088, 0919_5_加拿大 089, 0919_5_美国
-      077, 0919_5_加拿大 090, 0919_5_加拿大 091, 0919_5_加拿大 092, 0919_5_加拿大 093, 0919_5_加拿大
-      094, 0919_5_加拿大 095, 0919_5_加拿大 096, 0919_5_加拿大 097, 0919_5_加拿大 098, 0919_5_加拿大
-      099, 0919_5_美国 078, 0919_5_加拿大 100, 0919_5_加拿大 101, 0919_5_加拿大 102, 0919_5_加拿大
-      103, 0919_5_加拿大 104, 0919_5_美国 079, 0919_5_美国 080, 0919_5_加拿大 105, 0919_5_荷兰
-      007, 0919_5_加拿大 106, 0919_5_加拿大 107, 0919_5_加拿大 108, 0919_5_加拿大 109, 0919_5_加拿大
-      110, 0919_5_加拿大 111, 0919_5_加拿大 112, 0919_5_伊朗 001, 0919_5_美国 081, 0919_5_法国
-      004, 0919_5_加拿大 113, 0919_5_加拿大 114, 0919_5_加拿大 115, 0919_5_美国 082, 0919_5_加拿大
-      116, 0919_5_美国 083, 0919_5_加拿大 117, 0919_5_美国 084, 0919_5_美国 085, 0919_5_加拿大
-      118, 0919_5_美国 086, 0919_5_日本 002, 0919_5_美国 087, 0919_5_加拿大 119, 0919_5_美国
-      088, 0919_5_新加坡 001, 0919_5_加拿大 120, 0919_5_美国 089, 0919_5_荷兰 008, 0919_5_香港
-      019, 0919_5_美国 090, 0919_5_加拿大 121, 0919_5_美国 091, 0919_5_美国 092, 0919_5_加拿大
-      122, 0919_5_加拿大 123, 0919_5_美国 093, 0919_5_美国 094, 0919_5_美国 095, 0919_5_美国
-      096, 0919_5_美国 097, 0919_5_美国 098, 0919_5_美国 099, 0919_5_美国 100, 0919_5_美国 101,
-    0919_5_美国 102, 0919_5_美国 103, 0919_5_美国 104, 0919_5_美国 105, 0919_5_美国 106, 0919_5_美国
-      107, 0919_5_美国 108, 0919_5_塞浦路斯 001, 0919_5_塞浦路斯 002, 0919_5_加拿大 124, 0919_5_美国
-      109, 0919_5_加拿大 125, 0919_5_美国 110, 0919_5_美国 111, 0919_5_伊朗 002, 0919_5_加拿大
-      126, 0919_5_美国 112, 0919_5_美国 113, 0919_5_美国 114, 0919_5_加拿大 127, 0919_5_美国
-      115, 0919_5_加拿大 128, 0919_5_美国 116, 0919_5_美国 117, 0919_5_美国 118, 0919_5_美国
-      119, 0919_5_加拿大 129, 0919_5_日本 003, 0919_5_加拿大 130, 0919_5_南非 001, 0919_5_美国
-      120, 0919_5_美国 121, 0919_5_加拿大 131, 0919_5_美国 122, 0919_5_美国 123, 0919_5_美国
-      124, 0919_5_美国 125, 0919_5_加拿大 132, 0919_5_美国 126, 0919_5_加拿大 133, 0919_5_美国
-      127, 0919_5_德国 001, 0919_5_加拿大 134, 0919_5_加拿大 135, 0919_5_美国 128, 0919_5_香港
-      020, 0919_5_加拿大 136, 0919_5_加拿大 137, 0919_5_加拿大 138, 0919_5_加拿大 139, 0919_5_加拿大
-      140, 0919_5_加拿大 141, 0919_5_加拿大 142, 0919_5_加拿大 143, 0919_5_加拿大 144, 0919_5_美国
-      129, 0919_5_荷兰 009, 0919_5_越南 001, 0919_5_加拿大 145, 0919_5_加拿大 146, 0919_5_越南
-      002, 0919_5_加拿大 147, 0919_5_加拿大 148, 0919_5_美国 130, 0919_5_加拿大 149, 0919_5_美国
-      131, 0919_5_捷克 001, 0919_5_加拿大 150, 0919_5_美国 132, 0919_5_日本 004, 0919_5_加拿大
-      151, 0919_5_加拿大 152, 0919_5_加拿大 153, 0919_5_加拿大 154, 0919_5_加拿大 155, 0919_5_加拿大
-      156, 0919_5_美国 133, 0919_5_加拿大 157, 0919_5_加拿大 158, 0919_5_加拿大 159, 0919_5_加拿大
-      160, 0919_5_美国 134, 0919_5_美国 135, 0919_5_加拿大 161, 0919_5_加拿大 162, 0919_5_美国
-      136, 0919_5_美国 137, 0919_5_加拿大 163, 0919_5_加拿大 164, 0919_5_美国 138, 0919_5_加拿大
-      165, 0919_5_加拿大 166, 0919_5_加拿大 167, 0919_5_加拿大 168, 0919_5_美国 139, 0919_5_日本
-      005, 0919_5_香港 021, 0919_5_加拿大 169, 0919_5_加拿大 170, 0919_5_加拿大 171, 0919_5_芬兰
-      001, 0919_5_美国 140, 0919_5_美国 141, 0919_5_加拿大 172, 0919_5_加拿大 173, 0919_5_美国
-      142, 0919_5_香港 022, 0919_5_美国 143, 0919_5_美国 144, 0919_5_加拿大 174, 0919_5_加拿大
-      175, 0919_5_加拿大 176, 0919_5_加拿大 177, 0919_5_加拿大 178, 0919_5_加拿大 179, 0919_5_美国
-      145, 0919_5_美国 146, 0919_5_加拿大 180, 0919_5_加拿大 181, 0919_5_加拿大 182, 0919_5_美国
-      147, 0919_5_美国 148, 0919_5_加拿大 183, 0919_5_美国 149, 0919_5_新加坡 002, 0919_5_台湾
-      001, 0919_5_加拿大 184, 0919_5_美国 150, 0919_5_加拿大 185, 0919_5_波兰 002, 0919_5_美国
-      151, 0919_5_荷兰 010, 0919_5_加拿大 186, 0919_5_加拿大 187, 0919_5_美国 152, 0919_5_加拿大
-      188, 0919_5_美国 153, 0919_5_加拿大 189, 0919_5_加拿大 190, 0919_5_加拿大 191, 0919_5_加拿大
-      192, 0919_5_加拿大 193, 0919_5_加拿大 194, 0919_5_加拿大 195, 0919_5_土耳其 001, 0919_5_加拿大
-      196, 0919_5_加拿大 197, 0919_5_美国 154, 0919_5_越南 003, 0919_5_越南 004, 0919_5_越南
-      005, 0919_5_越南 006, 0919_5_越南 007, 0919_5_越南 008, 0919_5_越南 009, 0919_5_越南 010,
-    0919_5_加拿大 198, 0919_5_美国 155, 0919_5_美国 156, 0919_5_美国 157, 0919_5_美国 158, 0919_5_美国
-      159, 0919_5_加拿大 199, 0919_5_加拿大 200, 0919_5_香港 023, 0919_5_加拿大 201, 0919_5_美国
-      160, 0919_5_美国 161, 0919_5_加拿大 202, 0919_5_美国 162, 0919_5_越南 011, 0919_5_美国
-      163, 0919_5_越南 012, 0919_5_美国 164, 0919_5_美国 165, 0919_5_加拿大 203, 0919_5_越南
-      013, 0919_5_加拿大 204, 0919_5_美国 166, 0919_5_美国 167, 0919_5_美国 168, 0919_5_美国
-      169, 0919_5_美国 170, 0919_5_美国 171, 0919_5_荷兰 011, 0919_5_美国 172, 0919_5_美国 173,
-    0919_5_美国 174, 0919_5_美国 175, 0919_5_美国 176, 0919_5_美国 177, 0919_5_美国 178, 0919_5_美国
-      179, 0919_5_美国 180, 0919_5_美国 181, 0919_5_美国 182, 0919_5_美国 183, 0919_5_美国 184,
-    0919_5_美国 185, 0919_5_美国 186, 0919_5_美国 187, 0919_5_美国 188, 0919_5_美国 189, 0919_5_美国
-      190, 0919_5_美国 191, 0919_5_美国 192, 0919_5_美国 193, 0919_5_美国 194, 0919_5_美国 195,
-    0919_5_美国 196, 0919_5_美国 197, 0919_5_美国 198, 0919_5_美国 199, 0919_5_美国 200, 0919_5_美国
-      201, 0919_5_美国 202, 0919_5_美国 203, 0919_5_美国 204, 0919_5_美国 205, 0919_5_美国 206,
-    0919_5_美国 207, 0919_5_美国 208, 0919_5_美国 209, 0919_5_越南 014, 0919_5_美国 210, 0919_5_美国
-      211, 0919_5_美国 212, 0919_5_德国 002, 0919_5_美国 213, 0919_5_美国 214, 0919_5_美国 215,
-    0919_5_美国 216, 0919_5_美国 217, 0919_6_公益机场:https://bit.ly/3BPeo5G, 0919_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0919_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0919_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub, 0919_7_亚洲(油管:破解资源君), 0919_7_亚洲(油管:破解资源君)
-      2, 0919_7_亚洲(油管:破解资源君) 3, 0919_7_亚洲(油管:破解资源君) 4, 0919_7_亚洲(油管:破解资源君) 5, 0919_7_亚洲(油管:破解资源君)
-      6, 0919_7_亚洲(油管:破解资源君) 7, 0919_7_亚洲(油管:破解资源君) 8, 0919_7_亚洲(油管:破解资源君) 9, 0919_7_亚洲(油管:破解资源君)
-      10, 0919_7_欧洲(油管:破解资源君), 0919_7_欧洲(油管:破解资源君) 2, 0919_7_美国(油管:破解资源君), 0919_7_美国(油管:破解资源君)
-      2, 0919_7_美国(油管:破解资源君) 3, 0919_7_美国(油管:破解资源君) 4, 0919_7_美国(油管:破解资源君) 5, 0919_7_美国(油管:破解资源君)
-      6, 0919_7_美国(油管:破解资源君) 7, 0919_7_美国(油管:破解资源君) 8, 0919_7_美国(油管:破解资源君) 9, 0919_7_美国(油管:破解资源君)
-      10, 0919_7_美国(油管:破解资源君) 11, 0919_7_美国(油管:破解资源君) 12, 0919_7_美国(油管:破解资源君) 13,
-    0919_7_美国(油管:破解资源君) 14, 0919_7_美国(油管:破解资源君) 15, 0919_7_美国(油管:破解资源君) 16, 0919_7_美国(油管:破解资源君)
-      17, 0919_7_美国(油管:破解资源君) 18, 0919_7_美国(油管:破解资源君) 19, 0919_7_美国(油管:破解资源君) 20,
-    0919_7_美国(油管:破解资源君) 21, 0919_7_美国(油管:破解资源君) 22, 0919_7_美国(油管:破解资源君) 23, 0919_7_美国(油管:破解资源君)
-      24, 0919_7_美国(油管:破解资源君) 25, 0919_7_美国(油管:破解资源君) 26, 0919_7_美国(油管:破解资源君) 27,
-    0919_7_美国(油管:破解资源君) 28, 0919_7_美国(油管:破解资源君) 29, 0919_7_美国(油管:破解资源君) 30, 0919_7_美国(油管:破解资源君)
-      31, 0919_7_美国(油管:破解资源君) 32, 0919_7_美国(油管:破解资源君) 33, 0919_7_美国(油管:破解资源君) 34,
-    0919_7_美国(油管:破解资源君) 35, 0919_7_美国(油管:破解资源君) 36, 0919_7_美国(油管:破解资源君) 37, 0919_7_美国(油管:破解资源君)
-      38, 0919_7_美国(油管:破解资源君) 39, 0919_7_美国(油管:破解资源君) 40, 0919_7_美国(油管:破解资源君) 41,
-    0919_7_美国(油管:破解资源君) 42, 0919_7_美国(油管:破解资源君) 43, 0919_7_美国(油管:破解资源君) 44, 0919_7_美国(油管:破解资源君)
-      45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
-  type: select
-- interval: 300
-  name: ♻️ 自动选择
-  proxies: [0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02', '0919_0_「eggtartcloud.shop
-      自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01', 0919_0_🇨🇦 Canada 01 @nodpai,
-    0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬 Singapore 01 @nodpai, 0919_0_🇯🇵 Japan
-      03 @nodpai, 0919_0_🇺🇸 United States 04 @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai,
-    0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转 🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸
-      United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇩🇪 Germany
-      01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai, 0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转
-      🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai,
-    0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪
-      Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong 01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai,
-    0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱 Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany
-      05 @nodpai, 0919_0_🇦🇪 United Arab Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01
-      @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai, 0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦
-      github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
       NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
       - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
@@ -8379,32 +8158,199 @@ proxy-groups:
       38, 0919_7_美国(油管:破解资源君) 39, 0919_7_美国(油管:破解资源君) 40, 0919_7_美国(油管:破解资源君) 41,
     0919_7_美国(油管:破解资源君) 42, 0919_7_美国(油管:破解资源君) 43, 0919_7_美国(油管:破解资源君) 44, 0919_7_美国(油管:破解资源君)
       45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
+  type: select
+- interval: 300
+  name: ♻️ 自动选择
+  proxies: [0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01', '0919_0_「eggtartcloud.shop
+      自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 02', 0919_0_中转 🇺🇸 United States
+      03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0919_0_🇫🇷 France 01 @nodpai,
+    0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇺🇸 United States
+      04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan 04 @nodpai, 0919_0_🇮🇳
+      India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai, 0919_0_中转 🇺🇸 United States
+      06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai,
+    0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_中转 🇺🇸 United
+      States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪 Germany 02
+      @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇯🇵
+      Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
+    0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0919_0_🇩🇪 Germany
+      05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1,
+    0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
+      3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify)
+      5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq
+      - 美国  7, 0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq -
+      南非  9, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 23, 0919_1_🇨🇳 github.com/freefq - 上海市电信
+      24, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 25, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 26, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 27, 0919_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 28, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      29, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 30, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 31, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 32, 0919_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 33, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      34, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 35, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 36, 0919_5_美国 001, 0919_5_美国 002, 0919_5_美国 003, 0919_5_美国
+      004, 0919_5_美国 005, 0919_5_美国 006, 0919_5_美国 007, 0919_5_美国 008, 0919_5_美国 009,
+    0919_5_美国 010, 0919_5_美国 011, 0919_5_美国 012, 0919_5_美国 013, 0919_5_美国 014, 0919_5_美国
+      015, 0919_5_美国 016, 0919_5_美国 017, 0919_5_美国 018, 0919_5_美国 019, 0919_5_美国 020,
+    0919_5_美国 021, 0919_5_美国 022, 0919_5_美国 023, 0919_5_美国 024, 0919_5_美国 025, 0919_5_美国
+      026, 0919_5_美国 027, 0919_5_美国 028, 0919_5_美国 029, 0919_5_美国 030, 0919_5_美国 031,
+    0919_5_美国 032, 0919_5_美国 033, 0919_5_美国 034, 0919_5_美国 035, 0919_5_美国 036, 0919_5_美国
+      037, 0919_5_美国 038, 0919_5_美国 039, 0919_5_美国 040, 0919_5_美国 041, 0919_5_美国 042,
+    0919_5_美国 043, 0919_5_美国 044, 0919_5_美国 045, 0919_5_美国 046, 0919_5_美国 047, 0919_5_美国
+      048, 0919_5_美国 049, 0919_5_韩国 001, 0919_5_美国 050, 0919_5_美国 051, 0919_5_加拿大
+      001, 0919_5_加拿大 002, 0919_5_香港 001, 0919_5_美国 052, 0919_5_加拿大 003, 0919_5_香港
+      002, 0919_5_加拿大 004, 0919_5_荷兰 001, 0919_5_加拿大 005, 0919_5_加拿大 006, 0919_5_加拿大
+      007, 0919_5_加拿大 008, 0919_5_加拿大 009, 0919_5_加拿大 010, 0919_5_香港 003, 0919_5_加拿大
+      011, 0919_5_加拿大 012, 0919_5_法国 001, 0919_5_美国 053, 0919_5_加拿大 013, 0919_5_加拿大
+      014, 0919_5_加拿大 015, 0919_5_加拿大 016, 0919_5_加拿大 017, 0919_5_香港 004, 0919_5_加拿大
+      018, 0919_5_加拿大 019, 0919_5_美国 054, 0919_5_加拿大 020, 0919_5_加拿大 021, 0919_5_加拿大
+      022, 0919_5_加拿大 023, 0919_5_加拿大 024, 0919_5_美国 055, 0919_5_香港 005, 0919_5_加拿大
+      025, 0919_5_加拿大 026, 0919_5_韩国 002, 0919_5_加拿大 027, 0919_5_香港 006, 0919_5_韩国
+      003, 0919_5_加拿大 028, 0919_5_加拿大 029, 0919_5_韩国 004, 0919_5_加拿大 030, 0919_5_加拿大
+      031, 0919_5_加拿大 032, 0919_5_韩国 005, 0919_5_加拿大 033, 0919_5_美国 056, 0919_5_香港
+      007, 0919_5_加拿大 034, 0919_5_香港 008, 0919_5_加拿大 035, 0919_5_加拿大 036, 0919_5_香港
+      009, 0919_5_加拿大 037, 0919_5_加拿大 038, 0919_5_加拿大 039, 0919_5_加拿大 040, 0919_5_加拿大
+      041, 0919_5_加拿大 042, 0919_5_加拿大 043, 0919_5_加拿大 044, 0919_5_美国 057, 0919_5_香港
+      010, 0919_5_荷兰 002, 0919_5_加拿大 045, 0919_5_香港 011, 0919_5_加拿大 046, 0919_5_加拿大
+      047, 0919_5_加拿大 048, 0919_5_香港 012, 0919_5_加拿大 049, 0919_5_加拿大 050, 0919_5_加拿大
+      051, 0919_5_美国 058, 0919_5_美国 059, 0919_5_美国 060, 0919_5_美国 061, 0919_5_加拿大
+      052, 0919_5_加拿大 053, 0919_5_荷兰 003, 0919_5_加拿大 054, 0919_5_香港 013, 0919_5_美国
+      062, 0919_5_美国 063, 0919_5_荷兰 004, 0919_5_荷兰 005, 0919_5_波兰 001, 0919_5_法国 002,
+    0919_5_法国 003, 0919_5_加拿大 055, 0919_5_美国 064, 0919_5_香港 014, 0919_5_加拿大 056, 0919_5_加拿大
+      057, 0919_5_加拿大 058, 0919_5_加拿大 059, 0919_5_加拿大 060, 0919_5_加拿大 061, 0919_5_加拿大
+      062, 0919_5_加拿大 063, 0919_5_加拿大 064, 0919_5_加拿大 065, 0919_5_加拿大 066, 0919_5_加拿大
+      067, 0919_5_美国 065, 0919_5_加拿大 068, 0919_5_美国 066, 0919_5_加拿大 069, 0919_5_加拿大
+      070, 0919_5_香港 015, 0919_5_美国 067, 0919_5_美国 068, 0919_5_加拿大 071, 0919_5_加拿大
+      072, 0919_5_加拿大 073, 0919_5_加拿大 074, 0919_5_加拿大 075, 0919_5_美国 069, 0919_5_美国
+      070, 0919_5_香港 016, 0919_5_美国 071, 0919_5_美国 072, 0919_5_香港 017, 0919_5_荷兰 006,
+    0919_5_香港 018, 0919_5_加拿大 076, 0919_5_加拿大 077, 0919_5_加拿大 078, 0919_5_加拿大 079,
+    0919_5_日本 001, 0919_5_加拿大 080, 0919_5_美国 073, 0919_5_加拿大 081, 0919_5_加拿大 082,
+    0919_5_美国 074, 0919_5_加拿大 083, 0919_5_美国 075, 0919_5_美国 076, 0919_5_加拿大 084, 0919_5_加拿大
+      085, 0919_5_加拿大 086, 0919_5_加拿大 087, 0919_5_加拿大 088, 0919_5_加拿大 089, 0919_5_美国
+      077, 0919_5_加拿大 090, 0919_5_加拿大 091, 0919_5_加拿大 092, 0919_5_加拿大 093, 0919_5_加拿大
+      094, 0919_5_加拿大 095, 0919_5_加拿大 096, 0919_5_加拿大 097, 0919_5_加拿大 098, 0919_5_加拿大
+      099, 0919_5_美国 078, 0919_5_加拿大 100, 0919_5_加拿大 101, 0919_5_加拿大 102, 0919_5_加拿大
+      103, 0919_5_加拿大 104, 0919_5_美国 079, 0919_5_美国 080, 0919_5_加拿大 105, 0919_5_荷兰
+      007, 0919_5_加拿大 106, 0919_5_加拿大 107, 0919_5_加拿大 108, 0919_5_加拿大 109, 0919_5_加拿大
+      110, 0919_5_加拿大 111, 0919_5_加拿大 112, 0919_5_伊朗 001, 0919_5_美国 081, 0919_5_法国
+      004, 0919_5_加拿大 113, 0919_5_加拿大 114, 0919_5_加拿大 115, 0919_5_美国 082, 0919_5_加拿大
+      116, 0919_5_美国 083, 0919_5_加拿大 117, 0919_5_美国 084, 0919_5_美国 085, 0919_5_加拿大
+      118, 0919_5_美国 086, 0919_5_日本 002, 0919_5_美国 087, 0919_5_加拿大 119, 0919_5_美国
+      088, 0919_5_新加坡 001, 0919_5_加拿大 120, 0919_5_美国 089, 0919_5_荷兰 008, 0919_5_香港
+      019, 0919_5_美国 090, 0919_5_加拿大 121, 0919_5_美国 091, 0919_5_美国 092, 0919_5_加拿大
+      122, 0919_5_加拿大 123, 0919_5_美国 093, 0919_5_美国 094, 0919_5_美国 095, 0919_5_美国
+      096, 0919_5_美国 097, 0919_5_美国 098, 0919_5_美国 099, 0919_5_美国 100, 0919_5_美国 101,
+    0919_5_美国 102, 0919_5_美国 103, 0919_5_美国 104, 0919_5_美国 105, 0919_5_美国 106, 0919_5_美国
+      107, 0919_5_美国 108, 0919_5_塞浦路斯 001, 0919_5_塞浦路斯 002, 0919_5_加拿大 124, 0919_5_美国
+      109, 0919_5_加拿大 125, 0919_5_美国 110, 0919_5_美国 111, 0919_5_伊朗 002, 0919_5_加拿大
+      126, 0919_5_美国 112, 0919_5_美国 113, 0919_5_美国 114, 0919_5_加拿大 127, 0919_5_美国
+      115, 0919_5_加拿大 128, 0919_5_美国 116, 0919_5_美国 117, 0919_5_美国 118, 0919_5_美国
+      119, 0919_5_加拿大 129, 0919_5_日本 003, 0919_5_加拿大 130, 0919_5_南非 001, 0919_5_美国
+      120, 0919_5_美国 121, 0919_5_加拿大 131, 0919_5_美国 122, 0919_5_美国 123, 0919_5_美国
+      124, 0919_5_美国 125, 0919_5_加拿大 132, 0919_5_美国 126, 0919_5_加拿大 133, 0919_5_美国
+      127, 0919_5_德国 001, 0919_5_加拿大 134, 0919_5_加拿大 135, 0919_5_美国 128, 0919_5_香港
+      020, 0919_5_加拿大 136, 0919_5_加拿大 137, 0919_5_加拿大 138, 0919_5_加拿大 139, 0919_5_加拿大
+      140, 0919_5_加拿大 141, 0919_5_加拿大 142, 0919_5_加拿大 143, 0919_5_加拿大 144, 0919_5_美国
+      129, 0919_5_荷兰 009, 0919_5_越南 001, 0919_5_加拿大 145, 0919_5_加拿大 146, 0919_5_越南
+      002, 0919_5_加拿大 147, 0919_5_加拿大 148, 0919_5_美国 130, 0919_5_加拿大 149, 0919_5_美国
+      131, 0919_5_捷克 001, 0919_5_加拿大 150, 0919_5_美国 132, 0919_5_日本 004, 0919_5_加拿大
+      151, 0919_5_加拿大 152, 0919_5_加拿大 153, 0919_5_加拿大 154, 0919_5_加拿大 155, 0919_5_加拿大
+      156, 0919_5_美国 133, 0919_5_加拿大 157, 0919_5_加拿大 158, 0919_5_加拿大 159, 0919_5_加拿大
+      160, 0919_5_美国 134, 0919_5_美国 135, 0919_5_加拿大 161, 0919_5_加拿大 162, 0919_5_美国
+      136, 0919_5_美国 137, 0919_5_加拿大 163, 0919_5_加拿大 164, 0919_5_美国 138, 0919_5_加拿大
+      165, 0919_5_加拿大 166, 0919_5_加拿大 167, 0919_5_加拿大 168, 0919_5_美国 139, 0919_5_日本
+      005, 0919_5_香港 021, 0919_5_加拿大 169, 0919_5_加拿大 170, 0919_5_加拿大 171, 0919_5_芬兰
+      001, 0919_5_美国 140, 0919_5_美国 141, 0919_5_加拿大 172, 0919_5_加拿大 173, 0919_5_美国
+      142, 0919_5_香港 022, 0919_5_美国 143, 0919_5_美国 144, 0919_5_加拿大 174, 0919_5_加拿大
+      175, 0919_5_加拿大 176, 0919_5_加拿大 177, 0919_5_加拿大 178, 0919_5_加拿大 179, 0919_5_美国
+      145, 0919_5_美国 146, 0919_5_加拿大 180, 0919_5_加拿大 181, 0919_5_加拿大 182, 0919_5_美国
+      147, 0919_5_美国 148, 0919_5_加拿大 183, 0919_5_美国 149, 0919_5_新加坡 002, 0919_5_台湾
+      001, 0919_5_加拿大 184, 0919_5_美国 150, 0919_5_加拿大 185, 0919_5_波兰 002, 0919_5_美国
+      151, 0919_5_荷兰 010, 0919_5_加拿大 186, 0919_5_加拿大 187, 0919_5_美国 152, 0919_5_加拿大
+      188, 0919_5_美国 153, 0919_5_加拿大 189, 0919_5_加拿大 190, 0919_5_加拿大 191, 0919_5_加拿大
+      192, 0919_5_加拿大 193, 0919_5_加拿大 194, 0919_5_加拿大 195, 0919_5_土耳其 001, 0919_5_加拿大
+      196, 0919_5_加拿大 197, 0919_5_美国 154, 0919_5_越南 003, 0919_5_越南 004, 0919_5_越南
+      005, 0919_5_越南 006, 0919_5_越南 007, 0919_5_越南 008, 0919_5_越南 009, 0919_5_越南 010,
+    0919_5_加拿大 198, 0919_5_美国 155, 0919_5_美国 156, 0919_5_美国 157, 0919_5_美国 158, 0919_5_美国
+      159, 0919_5_加拿大 199, 0919_5_加拿大 200, 0919_5_香港 023, 0919_5_加拿大 201, 0919_5_美国
+      160, 0919_5_美国 161, 0919_5_加拿大 202, 0919_5_美国 162, 0919_5_越南 011, 0919_5_美国
+      163, 0919_5_越南 012, 0919_5_美国 164, 0919_5_美国 165, 0919_5_加拿大 203, 0919_5_越南
+      013, 0919_5_加拿大 204, 0919_5_美国 166, 0919_5_美国 167, 0919_5_美国 168, 0919_5_美国
+      169, 0919_5_美国 170, 0919_5_美国 171, 0919_5_荷兰 011, 0919_5_美国 172, 0919_5_美国 173,
+    0919_5_美国 174, 0919_5_美国 175, 0919_5_美国 176, 0919_5_美国 177, 0919_5_美国 178, 0919_5_美国
+      179, 0919_5_美国 180, 0919_5_美国 181, 0919_5_美国 182, 0919_5_美国 183, 0919_5_美国 184,
+    0919_5_美国 185, 0919_5_美国 186, 0919_5_美国 187, 0919_5_美国 188, 0919_5_美国 189, 0919_5_美国
+      190, 0919_5_美国 191, 0919_5_美国 192, 0919_5_美国 193, 0919_5_美国 194, 0919_5_美国 195,
+    0919_5_美国 196, 0919_5_美国 197, 0919_5_美国 198, 0919_5_美国 199, 0919_5_美国 200, 0919_5_美国
+      201, 0919_5_美国 202, 0919_5_美国 203, 0919_5_美国 204, 0919_5_美国 205, 0919_5_美国 206,
+    0919_5_美国 207, 0919_5_美国 208, 0919_5_美国 209, 0919_5_越南 014, 0919_5_美国 210, 0919_5_美国
+      211, 0919_5_美国 212, 0919_5_德国 002, 0919_5_美国 213, 0919_5_美国 214, 0919_5_美国 215,
+    0919_5_美国 216, 0919_5_美国 217, 0919_6_公益机场:https://bit.ly/3BPeo5G, 0919_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0919_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
+    0919_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0919_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
+    0919_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub, 0919_7_亚洲(油管:破解资源君), 0919_7_亚洲(油管:破解资源君)
+      2, 0919_7_亚洲(油管:破解资源君) 3, 0919_7_亚洲(油管:破解资源君) 4, 0919_7_亚洲(油管:破解资源君) 5, 0919_7_亚洲(油管:破解资源君)
+      6, 0919_7_亚洲(油管:破解资源君) 7, 0919_7_亚洲(油管:破解资源君) 8, 0919_7_亚洲(油管:破解资源君) 9, 0919_7_亚洲(油管:破解资源君)
+      10, 0919_7_欧洲(油管:破解资源君), 0919_7_欧洲(油管:破解资源君) 2, 0919_7_美国(油管:破解资源君), 0919_7_美国(油管:破解资源君)
+      2, 0919_7_美国(油管:破解资源君) 3, 0919_7_美国(油管:破解资源君) 4, 0919_7_美国(油管:破解资源君) 5, 0919_7_美国(油管:破解资源君)
+      6, 0919_7_美国(油管:破解资源君) 7, 0919_7_美国(油管:破解资源君) 8, 0919_7_美国(油管:破解资源君) 9, 0919_7_美国(油管:破解资源君)
+      10, 0919_7_美国(油管:破解资源君) 11, 0919_7_美国(油管:破解资源君) 12, 0919_7_美国(油管:破解资源君) 13,
+    0919_7_美国(油管:破解资源君) 14, 0919_7_美国(油管:破解资源君) 15, 0919_7_美国(油管:破解资源君) 16, 0919_7_美国(油管:破解资源君)
+      17, 0919_7_美国(油管:破解资源君) 18, 0919_7_美国(油管:破解资源君) 19, 0919_7_美国(油管:破解资源君) 20,
+    0919_7_美国(油管:破解资源君) 21, 0919_7_美国(油管:破解资源君) 22, 0919_7_美国(油管:破解资源君) 23, 0919_7_美国(油管:破解资源君)
+      24, 0919_7_美国(油管:破解资源君) 25, 0919_7_美国(油管:破解资源君) 26, 0919_7_美国(油管:破解资源君) 27,
+    0919_7_美国(油管:破解资源君) 28, 0919_7_美国(油管:破解资源君) 29, 0919_7_美国(油管:破解资源君) 30, 0919_7_美国(油管:破解资源君)
+      31, 0919_7_美国(油管:破解资源君) 32, 0919_7_美国(油管:破解资源君) 33, 0919_7_美国(油管:破解资源君) 34,
+    0919_7_美国(油管:破解资源君) 35, 0919_7_美国(油管:破解资源君) 36, 0919_7_美国(油管:破解资源君) 37, 0919_7_美国(油管:破解资源君)
+      38, 0919_7_美国(油管:破解资源君) 39, 0919_7_美国(油管:破解资源君) 40, 0919_7_美国(油管:破解资源君) 41,
+    0919_7_美国(油管:破解资源君) 42, 0919_7_美国(油管:破解资源君) 43, 0919_7_美国(油管:破解资源君) 44, 0919_7_美国(油管:破解资源君)
+      45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -8555,29 +8501,29 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -8722,29 +8668,29 @@ proxy-groups:
       45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02',
-    '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01',
-    0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬 Singapore
-      01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04 @nodpai,
-    0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转 🇺🇸 United
-      States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States
-      07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai, 0919_0_🇨🇳
-      China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai,
-    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转 🇺🇸 United
-      States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong 01 @nodpai,
-    0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱 Netherlands
-      01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab Emirates 01
-      @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai, 0919_0_🇫🇮
-      Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01',
+    '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 02',
+    0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai, 0919_0_🇫🇷
+      France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -8889,29 +8835,29 @@ proxy-groups:
       45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🎯 全球直连, 🔰 节点选择, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -9056,29 +9002,29 @@ proxy-groups:
       45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -9223,29 +9169,29 @@ proxy-groups:
       45, 0919_7_美国(油管:破解资源君) 46, 0919_7_美国(油管:破解资源君) 47, 0919_7_美国(油管:破解资源君) 48]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
@@ -9396,29 +9342,29 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0919_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0919_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 02', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0919_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 0919_0_🇨🇦 Canada 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_中转 🇸🇬
-      Singapore 01 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇺🇸 United States 04
-      @nodpai, 0919_0_中转 🇯🇵 Japan 04 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 05 @nodpai, 0919_0_🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United
-      States 07 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai, 0919_0_🇩🇪 Germany 02 @nodpai,
-    0919_0_🇨🇳 China 01 @nodpai, 0919_0_中转 🇹🇼 Taiwan 01 @nodpai, 0919_0_🇩🇪 Germany
-      03 @nodpai, 0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_中转
-      🇺🇸 United States 08 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai, 0919_0_🇭🇰 Hong Kong
-      01 @nodpai, 0919_0_🇧🇷 Brazil 01 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇳🇱
-      Netherlands 01 @nodpai, 0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 0919_0_🇦🇺 Australia 01 @nodpai, 0919_0_🇯🇵 Japan 06 @nodpai,
-    0919_0_🇫🇮 Finland 02 @nodpai, 0919_1_🇿🇦 github.com/freefq - 南非  1, 0919_1_🇮🇷 github.com/freefq
-      - 伊朗  2, 0919_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq
-      - 美国  4, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸
-      github.com/freefq - 美国弗吉尼亚州阿什本NV NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7,
-    0919_1_🇿🇦 github.com/freefq - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      11, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      14, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0919_0_「节点冠名招商 @nodpai」🇯🇵 JP 01, '0919_0_「蛋挞云,流媒体全解锁」🇹🇼
+      TW 01', '0919_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 01', '0919_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 02', 0919_0_中转 🇺🇸 United States 03 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 01 @nodpai,
+    0919_0_🇫🇷 France 01 @nodpai, 0919_0_🇯🇵 Japan 02 @nodpai, 0919_0_🇨🇦 Canada 01 @nodpai,
+    0919_0_🇺🇸 United States 04 @nodpai, 0919_0_🇯🇵 Japan 03 @nodpai, 0919_0_🇯🇵 Japan
+      04 @nodpai, 0919_0_🇮🇳 India 01 @nodpai, 0919_0_🇺🇸 United States 05 @nodpai,
+    0919_0_中转 🇺🇸 United States 06 @nodpai, 0919_0_🇺🇸 United States 07 @nodpai, 0919_0_🇧🇷
+      Brazil 01 @nodpai, 0919_0_🇱🇺 Luxembourg 01 @nodpai, 0919_0_🇩🇪 Germany 01 @nodpai,
+    0919_0_中转 🇺🇸 United States 08 @nodpai, 0919_0_🇺🇸 United States 09 @nodpai, 0919_0_🇩🇪
+      Germany 02 @nodpai, 0919_0_🇩🇪 Germany 03 @nodpai, 0919_0_🇩🇪 Germany 04 @nodpai,
+    0919_0_🇯🇵 Japan 05 @nodpai, 0919_0_🇻🇳 Viet Nam 01 @nodpai, 0919_0_🇯🇵 Japan 06
+      @nodpai, 0919_0_🇭🇰 Hong Kong 02 @nodpai, 0919_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    0919_0_🇩🇪 Germany 05 @nodpai, 0919_0_🇫🇮 Finland 01 @nodpai, 0919_1_🇿🇦 github.com/freefq
+      - 南非  1, 0919_1_🇮🇷 github.com/freefq - 伊朗  2, 0919_1_🇺🇸 github.com/freefq -
+      美国加利福尼亚州洛杉矶PetaExpress 3, 0919_1_🇺🇸 github.com/freefq - 美国  4, 0919_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点(shopify) 5, 0919_1_🇺🇸 github.com/freefq - 美国弗吉尼亚州阿什本NV
+      NEXT数据中心 6, 0919_1_🇺🇸 github.com/freefq - 美国  7, 0919_1_🇿🇦 github.com/freefq
+      - 南非  8, 0919_1_🇿🇦 github.com/freefq - 南非  9, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 10, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 12, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 13, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14,
+    0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 0919_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 16, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 17, 0919_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 18, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       19, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 20, 0919_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 21, 0919_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 0919_1_🇺🇸
