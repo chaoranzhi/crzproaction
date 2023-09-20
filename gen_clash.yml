@@ -4,160 +4,202 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
+- name: 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01
   network: ws
-  port: 19709
-  server: 123.249.101.15
+  password: d02058f4f819dced
+  port: 3306
+  server: 211.72.35.154
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: n2.gladns.com
+  type: trojan
   udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01
-  network: ws
-  port: 23612
-  server: 12.v2-ray.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083
   ws-opts:
-    headers: {Host: 12.v2-ray.cyou}
-    path: /
-- {alterId: 0, cipher: auto, name: '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01',
-  port: 23608, server: 8.v2-ray.cyou, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083}
-- {cipher: chacha20-ietf-poly1305, name: '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01', password: 13937015-1410-482f-a6f5-12d2153e76fe,
-  port: 10115, server: pinhk.cu.edu.kg, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 0920_0_🇹🇼 Taiwan 01 @nodpai, port: 230, server: twpaopao3.dskjahf.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 0fafb730-f3ec-3fd8-a637-eadf20c9febf}
-- {alterId: 0, cipher: auto, name: 0920_0_🇺🇸 United States 01 @nodpai, port: 41522,
-  server: 137.175.0.155, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 0920_0_中转 🇬🇧 United Kingdom 01 @nodpai, port: 57264,
-  server: shdx.zf1.jetfast.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 2779894e-79d2-434f-b7e4-a5bc41467f8e}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_中转 🇯🇵 Japan 02 @nodpai
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- name: 0920_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02
   network: ws
-  port: 23619
-  server: 19.v2-ray.cyou
+  password: 8a5360b3b31229d8
+  port: 3306
+  server: 211.72.35.154
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: n2.gladns.com
+  type: trojan
   udp: true
-  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083
   ws-opts:
-    headers: {Host: 19.v2-ray.cyou}
-    path: /
-- {alterId: 0, cipher: auto, name: 0920_0_中转 🇺🇸 United States 02 @nodpai, port: 50580,
-  server: hzdx.pt.jetfast.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 2779894e-79d2-434f-b7e4-a5bc41467f8e}
-- {name: 0920_0_🇺🇸 United States 03 @nodpai, password: 76fcac80-9943-4eab-8717-0ebebea94b70,
+    headers: {Host: n2.gladns.com}
+    path: '%2fgateway%2fconnect'
+- name: 0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03
+  network: ws
+  password: 7b06d22a8a7c764f
+  port: 3306
+  server: 211.72.35.154
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- {alterId: 0, cipher: auto, name: '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01', port: 23608,
+  server: 8.v2-ray.cyou, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083}
+- {name: 0920_0_🇺🇸 United States 04 @nodpai, password: 76fcac80-9943-4eab-8717-0ebebea94b70,
   port: 80, server: 135.148.148.4, skip-cert-verify: true, sni: us3.trojanvh.xyz,
   type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇻🇳 Viet Nam 01 @nodpai
-  network: ws
-  port: 443
-  server: vn5.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c29f4d4f-321c-4085-907d-99cd612b0bf0
-  ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
-- {name: 0920_0_🇺🇸 United States 04 @nodpai, password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd,
+- {name: 0920_0_🇺🇸 United States 05 @nodpai, password: ee2bccd3-0f30-42d4-86d6-3d393ad230bd,
   port: 80, server: 135.148.148.4, skip-cert-verify: true, sni: us3.trojanvh.xyz\\r,
   type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇻🇳 Viet Nam 02 @nodpai
-  network: ws
-  port: 443
-  server: vn3.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c29f4d4f-321c-4085-907d-99cd612b0bf0
-  ws-opts:
-    headers: {Host: vn3.4gspeed.me}
-    path: /4gspeed.me
-- {name: 0920_0_🇺🇸 United States 05 @nodpai, password: 892c4f6e-732b-4f71-ad04-6e77344f2d0e,
+- {name: 0920_0_🇺🇸 United States 06 @nodpai, password: 892c4f6e-732b-4f71-ad04-6e77344f2d0e,
   port: 80, server: 135.148.148.4, skip-cert-verify: true, sni: us3.trojanvh.xyz,
   type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇻🇳 Viet Nam 03 @nodpai
+  name: 0920_0_中转 🇰🇷 South Korea 01 @nodpai
+  network: ws
+  port: 23611
+  server: 11.v2-ray.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083
+  ws-opts:
+    headers: {Host: 11.v2-ray.cyou}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 0920_0_中转 🇸🇬 Singapore 01 @nodpai, password: bb97375a-806f-4aa1-8477-daf235a362d2,
+  port: 44023, server: starspeed.tbh.iosds.com, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇺🇸 United States 07 @nodpai
+  network: ws
+  port: 2087
+  server: cf2.jiasuq.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
+  ws-opts:
+    headers: {Host: cf2.jiasuq.top}
+    path: /
+- name: 0920_0_🇸🇬 Singapore 02 @nodpai
+  network: ws
+  password: 3febb05ea76a940f
+  port: 3306
+  server: 211.72.35.154
+  skip-cert-verify: true
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers: {Host: n2.gladns.com}
+    path: /gateway/connect
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇺🇸 United States 08 @nodpai
+  network: ws
+  port: 2087
+  server: cf4.jiasuq.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
+  ws-opts:
+    headers: {Host: cf4.jiasuq.top}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇨🇭 Switzerland 01 @nodpai
   network: ws
   port: 80
-  server: vn3.4gspeed.me
+  server: fd.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: c29f4d4f-321c-4085-907d-99cd612b0bf0
+  uuid: 2710a78f-4354-4e11-97c9-c45b3949db1d
   ws-opts:
-    headers: {Host: vn3.4gspeed.me}
-    path: /4gspeed.me
+    headers: {Host: fd.shabijichang.com}
+    path: /
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇻🇳 Viet Nam 04 @nodpai
+  name: 0920_0_🇺🇸 United States 09 @nodpai
   network: ws
-  port: 443
-  server: vn4.4gspeed.me
+  port: 2087
+  server: cf3.jiasuq.top
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: c29f4d4f-321c-4085-907d-99cd612b0bf0
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
   ws-opts:
-    headers: {Host: vn4.4gspeed.me}
-    path: /4gspeed.me
+    headers: {Host: cf3.jiasuq.top}
+    path: /
+- {alterId: 0, cipher: auto, name: 0920_0_🇺🇸 United States 10 @nodpai, port: 41522,
+  server: 137.175.0.155, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇻🇳 Viet Nam 05 @nodpai
+  name: 0920_0_🇯🇵 Japan 02 @nodpai
+  network: ws
+  port: 2087
+  server: cf8.jiasuq.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
+  ws-opts:
+    headers: {Host: cf8.jiasuq.top}
+    path: /
+- {alterId: 0, cipher: auto, name: 0920_0_🇹🇼 Taiwan 01 @nodpai, port: 230, server: 111.249.52.155,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 0fafb730-f3ec-3fd8-a637-eadf20c9febf}
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇯🇵 Japan 03 @nodpai
+  network: ws
+  port: 2087
+  server: cf9.jiasuq.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
+  ws-opts:
+    headers: {Host: cf9.jiasuq.top}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇯🇵 Japan 04 @nodpai
+  network: ws
+  port: 2087
+  server: cf10.jiasuq.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
+  ws-opts:
+    headers: {Host: cf10.jiasuq.top}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0920_0_🇺🇸 United States 11 @nodpai
   network: ws
   port: 80
-  server: vn5.4gspeed.me
+  server: speedip.eu.org
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: c29f4d4f-321c-4085-907d-99cd612b0bf0
+  uuid: bb97375a-806f-4aa1-8477-daf235a362d2
   ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
-- {cipher: chacha20-ietf-poly1305, name: 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai, password: bb97375a-806f-4aa1-8477-daf235a362d2,
-  port: 30417, server: starspeed.tbh.iosds.com, type: ss, udp: true}
+    headers: {Host: speedip.eu.org}
+    path: /xingsuyun
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇩🇪 Germany 01 @nodpai
-  network: ws
-  port: 8080
-  server: yd1.992688.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cafbdf1c-5812-492f-92ac-330650c6ecf0
-  ws-opts:
-    headers: {Host: yd1.992688.xyz}
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇺🇸 United States 06 @nodpai
+  name: 0920_0_🇺🇸 United States 12 @nodpai
   network: ws
   port: 80
   server: microsoftdebug.com
@@ -169,78 +211,6 @@ proxies:
   ws-opts:
     headers: {Host: microsoftdebug.com}
     path: /windows7.ios
-- alterId: 0
-  cipher: auto
-  name: 0920_0_中转 🇺🇸 United States 07 @nodpai
-  network: ws
-  port: 23614
-  server: 14.v2-ray.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083
-  ws-opts:
-    headers: {Host: 14.v2-ray.cyou}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇩🇪 Germany 02 @nodpai
-  network: ws
-  port: 8080
-  server: dx1.992688.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fbe45fb6-7cf1-40f0-880d-fcb5b0bfbbf3
-  ws-opts:
-    headers: {Host: dx1.992688.xyz}
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇩🇪 Germany 03 @nodpai
-  network: ws
-  port: 8080
-  server: dx1.992688.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cafbdf1c-5812-492f-92ac-330650c6ecf0
-  ws-opts:
-    headers: {Host: dx1.992688.xyz}
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 0920_0_中转 🇩🇪 Germany 04 @nodpai
-  network: ws
-  port: 23616
-  server: 16.v2-ray.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 51a7575b-55b0-3844-ac1f-b4e0e762d083
-  ws-opts:
-    headers: {Host: 16.v2-ray.cyou}
-    path: /
-- {cipher: chacha20-ietf-poly1305, name: 0920_0_中转 🇺🇸 United States 08 @nodpai, password: bb97375a-806f-4aa1-8477-daf235a362d2,
-  port: 51855, server: starspeed.tbh.iosds.com, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇨🇦 Canada 01 @nodpai
-  network: ws
-  port: 443
-  server: api.jquery.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers: {Host: api.jquery.com}
-    path: /oliv.beauty:443/linkvws
 - {cipher: chacha20-ietf-poly1305, name: 0920_0_🇧🇷 Brazil 01 @nodpai, password: f73092f3-6a42-46a3-8953-c629620b8ef8,
   port: 45887, server: 146.56.189.127, type: ss, udp: true}
 - alterId: 0
@@ -259,31 +229,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇩🇪 Germany 05 @nodpai
-  network: ws
-  port: 2083
-  server: 104.31.16.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇩🇪 Germany 06 @nodpai
-  network: ws
-  port: 2083
-  server: 104.31.16.70
-  servername: germany-one.port888.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
   name: 0920_0_🇦🇺 Australia 02 @nodpai
   network: ws
   port: 2087
@@ -298,7 +243,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇦🇺 Australia 03 @nodpai
+  name: 0920_0_🇦🇪 United Arab Emirates 01 @nodpai
   network: ws
   port: 80
   server: fd.shabijichang.com
@@ -306,25 +251,13 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  uuid: 0c1644bd-e69a-45b0-8066-6f0f850ac5fd
   ws-opts:
     headers: {Host: fd.shabijichang.com}
     path: /
 - alterId: 0
   cipher: auto
-  name: 0920_0_🇩🇪 Germany 07 @nodpai
-  network: ws
-  port: 2083
-  server: 104.31.16.71
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇦🇺 Australia 04 @nodpai
+  name: 0920_0_🇦🇺 Australia 03 @nodpai
   network: ws
   port: 80
   server: 172.67.184.13
@@ -334,76 +267,8 @@ proxies:
   udp: true
   uuid: 53701585-591f-48a3-9515-8831ed0524ac
   ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇦🇺 Australia 05 @nodpai
-  network: ws
-  port: 2087
-  server: cf7.jiasuq.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0b970e0a-1237-4f7d-b74f-41593fb80a6a
-  ws-opts:
-    headers: {Host: cf7.jiasuq.top}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇩🇪 Germany 08 @nodpai
-  network: ws
-  port: 2083
-  server: bwntaz.port888.site
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 15bf0db4-fbff-46d0-a486-b6e4a9e74a91
-  ws-opts:
-    headers: {Host: bwntaz.port888.site}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇮🇳 India 01 @nodpai
-  network: ws
-  port: 80
-  server: 172.67.146.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 545e2bdb-ac6d-428f-82c7-7966be8d9ebc
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇺🇸 United States 09 @nodpai
-  network: ws
-  port: 443
-  server: laravel.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers: {Host: laravel.com}
-    path: /octavi.cfd:443/linkvws
-- alterId: 0
-  cipher: auto
-  name: 0920_0_🇺🇸 United States 10 @nodpai
-  network: ws
-  port: 8880
-  server: yd1.992688.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d
-  ws-opts:
-    headers: {Host: yd1.992688.xyz}
-    path: /
 - {name: 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
-  port: 41929, server: 14.18.106.137, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
+  port: 41929, server: 14.18.108.108, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
   type: trojan, udp: true}
 - {alterId: 0, cipher: auto, name: 0920_1_github.com/freefq - 亚太地区  1, port: 19482,
   server: 103.149.144.45, skip-cert-verify: false, tls: false, type: vmess, udp: true,
@@ -7286,24 +7151,19 @@ proxies:
   ws-path: /vmess
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -7443,22 +7303,17 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01', '0920_0_「eggtartcloud.shop
-      自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai,
-    0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转
-      🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United States 02 @nodpai, 0920_0_🇺🇸 United
-      States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01 @nodpai, 0920_0_🇺🇸 United States 04
-      @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
-    0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam
-      05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai, 0920_0_🇩🇪 Germany 01 @nodpai,
-    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸 United States 07 @nodpai, 0920_0_🇩🇪
-      Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03 @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai,
-    0920_0_中转 🇺🇸 United States 08 @nodpai, 0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷
-      Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai,
-    0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺 Australia 02 @nodpai, 0920_0_🇦🇺 Australia
-      03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai, 0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺
-      Australia 05 @nodpai, 0920_0_🇩🇪 Germany 08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai,
-    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转
+  proxies: [0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02', '0920_0_「eggtartcloud.shop
+      自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01', 0920_0_🇺🇸 United States
+      04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai,
+    0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转 🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸
+      United States 07 @nodpai, 0920_0_🇸🇬 Singapore 02 @nodpai, 0920_0_🇺🇸 United States
+      08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
+    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵 Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan
+      01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵 Japan 04 @nodpai, 0920_0_🇺🇸
+      United States 11 @nodpai, 0920_0_🇺🇸 United States 12 @nodpai, 0920_0_🇧🇷 Brazil
+      01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺 Australia 02 @nodpai,
+    0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_中转
       🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify)
       3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 0920_1_🇺🇸 github.com/freefq
@@ -7600,24 +7455,19 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -7762,24 +7612,19 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -7918,24 +7763,19 @@ proxy-groups:
       55, 0920_7_美国(油管:破解资源君) 56]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01',
-    '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01',
-    0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转 🇬🇧
-      United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸 US 02',
+    '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01',
+    0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇺🇸
+      United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转 🇸🇬
+      Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -8074,24 +7914,19 @@ proxy-groups:
       55, 0920_7_美国(油管:破解资源君) 56]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -8230,24 +8065,19 @@ proxy-groups:
       55, 0920_7_美国(油管:破解资源君) 56]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -8386,24 +8216,19 @@ proxy-groups:
       55, 0920_7_美国(油管:破解资源君) 56]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
@@ -8548,24 +8373,19 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0920_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '0920_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '0920_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 01', 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇺🇸 United States 01 @nodpai, 0920_0_中转
-      🇬🇧 United Kingdom 01 @nodpai, 0920_0_中转 🇯🇵 Japan 02 @nodpai, 0920_0_中转 🇺🇸 United
-      States 02 @nodpai, 0920_0_🇺🇸 United States 03 @nodpai, 0920_0_🇻🇳 Viet Nam 01
-      @nodpai, 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇻🇳 Viet Nam 02 @nodpai,
-    0920_0_🇺🇸 United States 05 @nodpai, 0920_0_🇻🇳 Viet Nam 03 @nodpai, 0920_0_🇻🇳 Viet
-      Nam 04 @nodpai, 0920_0_🇻🇳 Viet Nam 05 @nodpai, 0920_0_中转 🇭🇰 Hong Kong 02 @nodpai,
-    0920_0_🇩🇪 Germany 01 @nodpai, 0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇺🇸
-      United States 07 @nodpai, 0920_0_🇩🇪 Germany 02 @nodpai, 0920_0_🇩🇪 Germany 03
-      @nodpai, 0920_0_中转 🇩🇪 Germany 04 @nodpai, 0920_0_中转 🇺🇸 United States 08 @nodpai,
-    0920_0_🇨🇦 Canada 01 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia
-      01 @nodpai, 0920_0_🇩🇪 Germany 05 @nodpai, 0920_0_🇩🇪 Germany 06 @nodpai, 0920_0_🇦🇺
-      Australia 02 @nodpai, 0920_0_🇦🇺 Australia 03 @nodpai, 0920_0_🇩🇪 Germany 07 @nodpai,
-    0920_0_🇦🇺 Australia 04 @nodpai, 0920_0_🇦🇺 Australia 05 @nodpai, 0920_0_🇩🇪 Germany
-      08 @nodpai, 0920_0_🇮🇳 India 01 @nodpai, 0920_0_🇺🇸 United States 09 @nodpai,
-    0920_0_🇺🇸 United States 10 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq
-      - 亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0920_0_「节点冠名招商 @nodpai」🇺🇸 US 01, '0920_0_「蛋挞云,流媒体全解锁」🇺🇸
+      US 02', '0920_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 03', '0920_0_「蛋挞云,超低价格,超高体验」🇯🇵
+      JP 01', 0920_0_🇺🇸 United States 04 @nodpai, 0920_0_🇺🇸 United States 05 @nodpai,
+    0920_0_🇺🇸 United States 06 @nodpai, 0920_0_中转 🇰🇷 South Korea 01 @nodpai, 0920_0_中转
+      🇸🇬 Singapore 01 @nodpai, 0920_0_🇺🇸 United States 07 @nodpai, 0920_0_🇸🇬 Singapore
+      02 @nodpai, 0920_0_🇺🇸 United States 08 @nodpai, 0920_0_🇨🇭 Switzerland 01 @nodpai,
+    0920_0_🇺🇸 United States 09 @nodpai, 0920_0_🇺🇸 United States 10 @nodpai, 0920_0_🇯🇵
+      Japan 02 @nodpai, 0920_0_🇹🇼 Taiwan 01 @nodpai, 0920_0_🇯🇵 Japan 03 @nodpai, 0920_0_🇯🇵
+      Japan 04 @nodpai, 0920_0_🇺🇸 United States 11 @nodpai, 0920_0_🇺🇸 United States
+      12 @nodpai, 0920_0_🇧🇷 Brazil 01 @nodpai, 0920_0_🇦🇺 Australia 01 @nodpai, 0920_0_🇦🇺
+      Australia 02 @nodpai, 0920_0_🇦🇪 United Arab Emirates 01 @nodpai, 0920_0_🇦🇺 Australia
+      03 @nodpai, 0920_0_中转 🇳🇱 Netherlands 01 @nodpai, 0920_1_github.com/freefq -
+      亚太地区  1, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点(shopify) 3, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0920_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 6, 0920_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0920_1_🇺🇸
