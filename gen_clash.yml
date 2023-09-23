@@ -4,28 +4,58 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
+- cipher: aes-256-gcm
+  name: 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01
+  password: 2c8b8e83c082
+  plugin: v2ray-plugin
+  plugin-opts: {host: yjy3.viynos.com, mode: websocket, mux: true, path: /bnftmarohnw,
+    skip-cert-verify: true, tls: true}
+  port: 443
+  server: 202.181.25.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 0923_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02
+  password: c518266da98b
+  plugin: v2ray-plugin
+  plugin-opts: {host: yjy2.viynos.com, mode: websocket, mux: true, path: /mkqhgxflbhfk,
+    skip-cert-verify: true, tls: true}
+  port: 443
+  server: 123.254.108.243
+  type: ss
+  udp: true
+- {alterId: 0, cipher: auto, name: '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01',
+  port: 50013, server: 13.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
+- {cipher: aes-256-cfb, name: '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01', password: amazonskr05,
+  port: 443, server: 43.202.67.172, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 01 @nodpai, port: 50003,
+  server: 03.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
 - alterId: 0
   cipher: auto
-  name: 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01
+  name: 0923_0_🇺🇸 United States 02 @nodpai
   network: ws
-  port: 55455
-  server: 42.3.68.44
+  port: 80
+  server: sd.db-link.in
+  servername: d.cn-db.top
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: d2ce45e6-9f22-492d-d81d-d639067a7583
-  ws-opts: {path: /}
-- {name: '0923_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02', password: 43b48c1412, port: 20443, server: home-hkt-1.strongpipe.live,
-  skip-cert-verify: true, tls: true, type: http, udp: true, username: c0b15b8aea}
-- {cipher: aes-256-cfb, name: '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', password: amazonskr05,
-  port: 443, server: 43.202.63.42, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪 DE 01', port: 50027,
-  server: 91.107.244.77, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: b9f75eba-67b0-4a6b-b89e-7e18217c61f5}
+  uuid: 9a0e6456-dc36-31f4-8b91-2cc8cff87390
+  ws-opts:
+    headers: {Host: sd.db-link.in}
+    path: /db
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 03 @nodpai, port: 50004,
+  server: 04.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 04 @nodpai, port: 50005,
+  server: 05.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇺🇸 United States 01 @nodpai
+  name: 0923_0_🇺🇸 United States 05 @nodpai
   network: ws
   port: 2082
   server: fx3-108.181.10.17.nip.io
@@ -37,69 +67,21 @@ proxies:
   ws-opts:
     headers: {Host: fx3-108.181.10.17.nip.io}
     path: /v2rayyngvpn
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇩🇪 Germany 01 @nodpai, port: 50041, server: 41.kccic2pa.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 06 @nodpai, port: 50002,
+  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 07 @nodpai, port: 50001,
+  server: 01.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇺🇸 United States 02 @nodpai
+  name: 0923_0_中转 🇺🇸 United States 08 @nodpai
   network: ws
-  port: 8080
-  server: fx4-108.181.10.17.nip.io
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b2e93e40-5553-11ee-b033-205c6d5f5d78
-  ws-opts:
-    headers: {Host: fx4-108.181.10.17.nip.io}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 01 @nodpai
-  network: ws
-  port: 443
-  server: vn4.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn4.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 02 @nodpai
-  network: ws
-  port: 80
-  server: vn5.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 03 @nodpai
-  network: ws
-  port: 80
-  server: vn4.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn4.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0923_0_中转 🇺🇸 United States 03 @nodpai
-  network: ws
-  port: 63006
+  port: 62009
   server: 183.249.20.150
-  servername: b.cn-db.top
+  servername: d.db-link.in
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -108,63 +90,51 @@ proxies:
   ws-opts: {path: /db}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 04 @nodpai
+  name: 0923_0_中转 🇺🇸 United States 09 @nodpai
   network: ws
-  port: 443
-  server: vn3.4gspeed.me
+  port: 61091
+  server: 183.249.20.150
+  servername: e.cn-db.top
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn3.4gspeed.me}
-    path: /4gspeed.me
+  uuid: 9a0e6456-dc36-31f4-8b91-2cc8cff87390
+  ws-opts: {path: /db}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 05 @nodpai
+  name: 0923_0_中转 🇺🇸 United States 10 @nodpai
   network: ws
-  port: 80
-  server: vn3.4gspeed.me
+  port: 62001
+  server: 183.249.20.150
+  servername: b.db-link.in
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn3.4gspeed.me}
-    path: /4gspeed.me
+  uuid: 9a0e6456-dc36-31f4-8b91-2cc8cff87390
+  ws-opts: {path: /db}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 11 @nodpai, port: 50014,
+  server: 14.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 06 @nodpai
+  name: 0923_0_中转 🇺🇸 United States 12 @nodpai
   network: ws
-  port: 443
-  server: vn5.4gspeed.me
+  port: 61092
+  server: 183.249.20.150
+  servername: a.db-link.in
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
+  uuid: 9a0e6456-dc36-31f4-8b91-2cc8cff87390
+  ws-opts: {path: /db}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇬🇧 United Kingdom 01 @nodpai
+  name: 0923_0_中转 🇺🇸 United States 13 @nodpai
   network: ws
-  port: 8880
-  server: 54.38.79.75
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bf55f0b0-592c-11ee-b339-205c6d5f5d78
-  ws-opts: {path: /1904chgs}
-- alterId: 0
-  cipher: auto
-  name: 0923_0_中转 🇺🇸 United States 04 @nodpai
-  network: ws
-  port: 63004
+  port: 62082
   server: 183.249.20.150
   servername: e.db-link.in
   skip-cert-verify: true
@@ -175,71 +145,62 @@ proxies:
   ws-opts: {path: /db}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 07 @nodpai
+  name: 0923_0_🇳🇱 Netherlands 01 @nodpai
   network: ws
   port: 443
-  server: vn2.4gspeed.me
+  server: 104.17.69.9
+  servername: amsterdam.bobbykotick.rip
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn2.4gspeed.me}
-    path: /4gspeed.me
+  uuid: f3e36b53-e75e-48c0-b9f1-f918f397e996
+  ws-opts: {path: /speedtest}
+- {cipher: chacha20-ietf-poly1305, name: 0923_0_中转 🇸🇬 Singapore 01 @nodpai, password: dbefcef0-836b-4d58-aa05-146f7e63f06f,
+  port: 61020, server: api-a-asia-3.mcqqn.com, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇹🇼 Taiwan 02 @nodpai, port: 1302, server: zz.tw12.huojianbiu.cn,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 1837498a-bd38-337b-a123-f03dad7d15e9}
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 14 @nodpai, port: 50016,
+  server: 16.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
+- {name: 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
+  port: 41929, server: 14.18.108.108, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
+  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇻🇳 Viet Nam 08 @nodpai
+  name: 0923_0_🇳🇱 Netherlands 03 @nodpai
   network: ws
-  port: 80
-  server: vn2.4gspeed.me
+  port: 443
+  server: 104.18.141.98
+  servername: amsterdam.bobbykotick.rip
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
-  ws-opts:
-    headers: {Host: vn2.4gspeed.me}
-    path: /4gspeed.me
+  uuid: f3e36b53-e75e-48c0-b9f1-f918f397e996
+  ws-opts: {path: /speedtest}
+- {cipher: aes-256-cfb, name: 0923_0_🇯🇵 Japan 01 @nodpai, password: amazonskr05, port: 443,
+  server: 43.207.233.98, type: ss, udp: true}
+- {name: 0923_0_中转 🇳🇱 Netherlands 04 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
+  port: 41929, server: 14.18.106.137, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
+  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 0923_0_🇦🇺 Australia 01 @nodpai
+  name: 0923_0_🇮🇳 India 01 @nodpai
   network: ws
   port: 80
-  server: fd.shabijichang.com
+  server: mm.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
   uuid: 53701585-591f-48a3-9515-8831ed0524ac
   ws-opts:
-    headers: {Host: fd.shabijichang.com}
+    headers: {Host: mm.shabijichang.com}
     path: /
-- {name: 0923_0_中转 🇳🇱 Netherlands 01 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
-  port: 41929, server: 14.18.108.108, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
-  type: trojan, udp: true}
-- {name: 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
-  port: 41929, server: 14.18.106.137, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 0923_0_中转 🇭🇰 Hong Kong 03 @nodpai, port: 53300,
-  server: 120.226.50.94, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {cipher: chacha20-ietf-poly1305, name: 0923_0_中转 🇸🇬 Singapore 01 @nodpai, password: f149711f-19fd-4af5-92ea-524b1c4efcac,
-  port: 24962, server: free.node.kk-proxy.pro, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0923_0_🇺🇸 United States 05 @nodpai
-  network: ws
-  port: 80
-  server: cdn.anycast.eu.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    headers: {Host: cdn.anycast.eu.org}
-    path: /
+- {alterId: 0, cipher: auto, name: 0923_0_中转 🇺🇸 United States 15 @nodpai, port: 50020,
+  server: 20.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3814af1d-9358-46d5-824d-567d4532e66e}
 - alterId: 0
   cipher: auto
   name: 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1
@@ -5295,6 +5256,204 @@ proxies:
   ws-opts:
     headers: {host: 12.wyhkaa0.gq}
     path: /TG:@hkaa0
+- alterId: 0
+  cipher: auto
+  name: 0923_5_加拿大 179
+  network: ws
+  port: 8080
+  server: fx4-108.181.10.17.nip.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b2e93e40-5553-11ee-b033-205c6d5f5d78
+  ws-opts:
+    headers: {Host: fx4-108.181.10.17.nip.io}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0923_5_加拿大 180
+  network: ws
+  port: 2082
+  server: fx3-108.181.10.17.nip.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f37f7ce0-5550-11ee-b133-205c6d5f5d78
+  ws-opts:
+    headers: {Host: fx3-108.181.10.17.nip.io}
+    path: /v2rayyngvpn
+- alterId: 0
+  cipher: auto
+  name: 0923_5_越南 003
+  network: ws
+  port: 443
+  server: vn2.4gspeed.me
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
+  ws-opts:
+    headers: {Host: vn2.4gspeed.me}
+    path: /4gspeed.me
+- alterId: 0
+  cipher: auto
+  name: 0923_5_越南 004
+  network: ws
+  port: 80
+  server: vn2.4gspeed.me
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 896c0a8b-d3e5-476b-8d8d-f45cf232f577
+  ws-opts:
+    headers: {Host: vn2.4gspeed.me}
+    path: /4gspeed.me
+- alterId: 0
+  cipher: auto
+  name: 0923_5_加拿大 181
+  network: ws
+  port: 8080
+  server: us2.mianfenyun012.eu.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8966719-aeaf-4886-d202-72f75f845b83
+  ws-opts:
+    headers: {host: us2.mianfenyun012.eu.org}
+    path: /jdbp606
+- {alterId: 64, cipher: auto, name: 0923_5_美国 181, network: tcp, port: 51694, server: 45.199.138.205,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 20b30916-e203-412e-8ec0-900f3acd5128}
+- {alterId: 64, cipher: auto, name: 0923_5_荷兰 011, network: tcp, port: 41282, server: 154.85.1.243,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 182, network: tcp, port: 34987, server: 45.199.138.190,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 183, network: tcp, port: 55446, server: 45.199.138.152,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24}
+- alterId: 0
+  cipher: auto
+  name: 0923_5_韩国 005
+  network: ws
+  port: 80
+  server: 64.110.64.80
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7ca21098-691c-4c12-8aac-934b21635423
+  ws-opts:
+    headers: {host: 16.wyhkaa0.gq}
+    path: /TG:@hkaa0
+- alterId: 0
+  cipher: auto
+  name: 0923_5_荷兰 012
+  network: ws
+  port: 80
+  server: 188.114.98.119
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts:
+    headers: {host: ecc.vtcss.top}
+    path: /blue06
+- alterId: 64
+  cipher: auto
+  name: 0923_5_美国 184
+  network: ws
+  port: 443
+  server: 140.99.129.53
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {host: www.44945510.xyz}
+    path: /path/1693304091037
+- alterId: 0
+  cipher: auto
+  name: 0923_5_荷兰 013
+  network: ws
+  port: 80
+  server: 188.114.97.168
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts:
+    headers: {host: ecc.vtcss.top}
+    path: /blue06
+- alterId: 0
+  cipher: auto
+  name: 0923_5_美国 185
+  network: ws
+  port: 80
+  server: sls.shabijichang.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  ws-opts:
+    headers: {Host: sls.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0923_5_美国 186
+  network: ws
+  port: 443
+  server: 104.18.141.98
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  ws-opts:
+    headers: {Host: Amsterdam.bobbykotick.rip}
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 0923_5_加拿大 182
+  network: ws
+  port: 443
+  server: 104.16.91.78
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  ws-opts:
+    headers: {Host: Kansas.bobbykotick.rip}
+    path: /speedtest
+- alterId: 0
+  cipher: auto
+  name: 0923_5_美国 187
+  network: ws
+  port: 443
+  server: 104.17.69.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  ws-opts:
+    headers: {Host: Amsterdam.bobbykotick.rip}
+    path: /speedtest
+- {alterId: 64, cipher: auto, name: 0923_5_美国 188, network: tcp, port: 39223, server: 156.225.67.49,
+  skip-cert-verify: true, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b}
+- {alterId: 64, cipher: auto, name: 0923_5_荷兰 014, network: tcp, port: 42914, server: 156.245.8.144,
+  skip-cert-verify: true, type: vmess, uuid: 63b4b829-7f01-4e26-b037-f04b1f098765}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 189, network: tcp, port: 49951, server: 45.199.138.193,
+  skip-cert-verify: true, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 190, network: tcp, port: 44821, server: 45.199.138.135,
+  skip-cert-verify: true, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 191, network: tcp, port: 41831, server: 45.199.138.184,
+  skip-cert-verify: true, type: vmess, uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 192, network: tcp, port: 53535, server: 45.199.138.210,
+  skip-cert-verify: true, type: vmess, uuid: 6fa560d4-35c5-4968-adfc-812c52878b84}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 193, network: tcp, port: 49955, server: 45.199.138.158,
+  skip-cert-verify: true, type: vmess, uuid: f5250c4e-f855-4eff-b73c-a02226d42fe7}
+- {alterId: 64, cipher: auto, name: 0923_5_美国 194, network: tcp, port: 46900, server: 142.4.115.172,
+  skip-cert-verify: true, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 64, cipher: auto, name: 0923_5_荷兰 015, network: tcp, port: 46622, server: 46.182.107.22,
+  skip-cert-verify: true, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b}
 - {alterId: 2, cipher: auto, name: 0923_6_公益机场:https://bit.ly/3BPeo5G, port: 52286,
   server: sub.ssrsub.com, skip-cert-verify: true, tls: false, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51}
 - alterId: 0
@@ -5742,16 +5901,19 @@ proxies:
 proxy-groups:
 - name: 🔰 节点选择
   proxies: [♻️ 自动选择, 🎯 全球直连, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -5836,37 +5998,44 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - interval: 300
   name: ♻️ 自动选择
   proxies: [0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02', '0923_0_「eggtartcloud.shop
-      自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪 DE 01', 0923_0_🇺🇸 United States
-      01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai, 0923_0_🇻🇳 Viet Nam 01 @nodpai,
-    0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam 03 @nodpai, 0923_0_中转 🇺🇸 United
-      States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai, 0923_0_🇻🇳 Viet Nam 05 @nodpai,
-    0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United Kingdom 01 @nodpai, 0923_0_中转
-      🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam 07 @nodpai, 0923_0_🇻🇳 Viet Nam
-      08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 01 @nodpai,
-    0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰 Hong Kong 03 @nodpai, 0923_0_中转
-      🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States 05 @nodpai, 0923_1_🇭🇰 github.com/freefq
+      自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01', 0923_0_中转 🇺🇸 United States
+      01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai, 0923_0_中转 🇺🇸 United States 03
+      @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇺🇸 United States 05 @nodpai,
+    0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转 🇺🇸 United States 06 @nodpai, 0923_0_中转
+      🇺🇸 United States 07 @nodpai, 0923_0_中转 🇺🇸 United States 08 @nodpai, 0923_0_中转
+      🇺🇸 United States 09 @nodpai, 0923_0_中转 🇺🇸 United States 10 @nodpai, 0923_0_中转
+      🇺🇸 United States 11 @nodpai, 0923_0_中转 🇺🇸 United States 12 @nodpai, 0923_0_中转
+      🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇸🇬
+      Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan 02 @nodpai, 0923_0_中转 🇺🇸 United States
+      14 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai,
+    0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India
+      01 @nodpai, 0923_0_中转 🇺🇸 United States 15 @nodpai, 0923_1_🇭🇰 github.com/freefq
       - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳
       github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0923_1_🇨🇳 github.com/freefq
@@ -5951,7 +6120,12 @@ proxy-groups:
     0923_5_美国 172, 0923_5_加拿大 172, 0923_5_美国 173, 0923_5_美国 174, 0923_5_美国 175, 0923_5_加拿大
       173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国 176, 0923_5_荷兰 010, 0923_5_加拿大
       176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国 178, 0923_5_美国 179, 0923_5_加拿大
-      177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚 001, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+      177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚 001, 0923_5_加拿大 179, 0923_5_加拿大
+      180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大 181, 0923_5_美国 181, 0923_5_荷兰
+      011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005, 0923_5_荷兰 012, 0923_5_美国 184,
+    0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大 182, 0923_5_美国 187, 0923_5_美国
+      188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190, 0923_5_美国 191, 0923_5_美国 192,
+    0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
     0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
@@ -5973,16 +6147,19 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
   proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6067,24 +6244,28 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - name: ⛔️ 广告拦截
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
@@ -6094,16 +6275,19 @@ proxy-groups:
   type: select
 - name: 🌍 国外媒体
   proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6188,37 +6372,44 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - name: 🌏 国内媒体
   proxies: [🎯 全球直连, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02',
-    '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪 DE 01',
-    0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai, 0923_0_🇻🇳
-      Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam 03 @nodpai,
-    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai, 0923_0_🇻🇳
-      Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United Kingdom
-      01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam 07 @nodpai,
-    0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰 Hong Kong 03 @nodpai,
-    0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States 05 @nodpai, 0923_1_🇭🇰
-      github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+    '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷 KR 01',
+    0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai, 0923_0_中转
+      🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇺🇸
+      United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转 🇺🇸 United
+      States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转 🇺🇸 United
+      States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转 🇺🇸 United
+      States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转 🇺🇸 United
+      States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱 Netherlands
+      01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_🇳🇱
+      Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States 15 @nodpai,
+    0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 0923_1_🇨🇳 github.com/freefq
       - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, 0923_1_🇺🇸
@@ -6302,7 +6493,12 @@ proxy-groups:
     0923_5_美国 172, 0923_5_加拿大 172, 0923_5_美国 173, 0923_5_美国 174, 0923_5_美国 175, 0923_5_加拿大
       173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国 176, 0923_5_荷兰 010, 0923_5_加拿大
       176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国 178, 0923_5_美国 179, 0923_5_加拿大
-      177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚 001, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+      177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚 001, 0923_5_加拿大 179, 0923_5_加拿大
+      180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大 181, 0923_5_美国 181, 0923_5_荷兰
+      011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005, 0923_5_荷兰 012, 0923_5_美国 184,
+    0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大 182, 0923_5_美国 187, 0923_5_美国
+      188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190, 0923_5_美国 191, 0923_5_美国 192,
+    0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
     0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
@@ -6323,16 +6519,19 @@ proxy-groups:
   type: select
 - name: Ⓜ️ 微软服务
   proxies: [🎯 全球直连, 🔰 节点选择, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6417,37 +6616,44 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - name: 📲 电报信息
   proxies: [🔰 节点选择, 🎯 全球直连, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6532,37 +6738,44 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - name: 🍎 苹果服务
   proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6647,24 +6860,28 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 - name: 🎯 全球直连
   proxies: [DIRECT]
@@ -6674,16 +6891,19 @@ proxy-groups:
   type: select
 - name: 🐟 漏网之鱼
   proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0923_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0923_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '0923_0_「蛋挞云,超低价格,超高体验」🇩🇪
-      DE 01', 0923_0_🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
-    0923_0_🇻🇳 Viet Nam 01 @nodpai, 0923_0_🇻🇳 Viet Nam 02 @nodpai, 0923_0_🇻🇳 Viet Nam
-      03 @nodpai, 0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_🇻🇳 Viet Nam 04 @nodpai,
-    0923_0_🇻🇳 Viet Nam 05 @nodpai, 0923_0_🇻🇳 Viet Nam 06 @nodpai, 0923_0_🇬🇧 United
-      Kingdom 01 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai, 0923_0_🇻🇳 Viet Nam
-      07 @nodpai, 0923_0_🇻🇳 Viet Nam 08 @nodpai, 0923_0_🇦🇺 Australia 01 @nodpai, 0923_0_中转
-      🇳🇱 Netherlands 01 @nodpai, 0923_0_中转 🇳🇱 Netherlands 02 @nodpai, 0923_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_🇺🇸 United States
-      05 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
+      HK 02', '0923_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '0923_0_「蛋挞云,超低价格,超高体验」🇰🇷
+      KR 01', 0923_0_中转 🇺🇸 United States 01 @nodpai, 0923_0_🇺🇸 United States 02 @nodpai,
+    0923_0_中转 🇺🇸 United States 03 @nodpai, 0923_0_中转 🇺🇸 United States 04 @nodpai,
+    0923_0_🇺🇸 United States 05 @nodpai, 0923_0_中转 🇩🇪 Germany 01 @nodpai, 0923_0_中转
+      🇺🇸 United States 06 @nodpai, 0923_0_中转 🇺🇸 United States 07 @nodpai, 0923_0_中转
+      🇺🇸 United States 08 @nodpai, 0923_0_中转 🇺🇸 United States 09 @nodpai, 0923_0_中转
+      🇺🇸 United States 10 @nodpai, 0923_0_中转 🇺🇸 United States 11 @nodpai, 0923_0_中转
+      🇺🇸 United States 12 @nodpai, 0923_0_中转 🇺🇸 United States 13 @nodpai, 0923_0_🇳🇱
+      Netherlands 01 @nodpai, 0923_0_中转 🇸🇬 Singapore 01 @nodpai, 0923_0_中转 🇹🇼 Taiwan
+      02 @nodpai, 0923_0_中转 🇺🇸 United States 14 @nodpai, 0923_0_中转 🇳🇱 Netherlands
+      02 @nodpai, 0923_0_🇳🇱 Netherlands 03 @nodpai, 0923_0_🇯🇵 Japan 01 @nodpai, 0923_0_中转
+      🇳🇱 Netherlands 04 @nodpai, 0923_0_🇮🇳 India 01 @nodpai, 0923_0_中转 🇺🇸 United States
+      15 @nodpai, 0923_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 1, 0923_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 2, 0923_1_🇨🇳 github.com/freefq - 广东省广州市移动 3, 0923_1_🇺🇸
       github.com/freefq - 美国CloudFlare公司CDN节点 4, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       5, 0923_1_🇨🇳 github.com/freefq - 广东省深圳市移动 6, 0923_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -6768,24 +6988,28 @@ proxy-groups:
       174, 0923_5_美国 175, 0923_5_加拿大 173, 0923_5_加拿大 174, 0923_5_加拿大 175, 0923_5_美国
       176, 0923_5_荷兰 010, 0923_5_加拿大 176, 0923_5_美国 177, 0923_5_波兰 002, 0923_5_美国
       178, 0923_5_美国 179, 0923_5_加拿大 177, 0923_5_美国 180, 0923_5_加拿大 178, 0923_5_澳大利亚
-      001, 0923_6_公益机场:https://bit.ly/3BPeo5G, 0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub,
-    0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub,
-    0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
+      001, 0923_5_加拿大 179, 0923_5_加拿大 180, 0923_5_越南 003, 0923_5_越南 004, 0923_5_加拿大
+      181, 0923_5_美国 181, 0923_5_荷兰 011, 0923_5_美国 182, 0923_5_美国 183, 0923_5_韩国 005,
+    0923_5_荷兰 012, 0923_5_美国 184, 0923_5_荷兰 013, 0923_5_美国 185, 0923_5_美国 186, 0923_5_加拿大
+      182, 0923_5_美国 187, 0923_5_美国 188, 0923_5_荷兰 014, 0923_5_美国 189, 0923_5_美国 190,
+    0923_5_美国 191, 0923_5_美国 192, 0923_5_美国 193, 0923_5_美国 194, 0923_5_荷兰 015, 0923_6_公益机场:https://bit.ly/3BPeo5G,
+    0923_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V09-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V10-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V11-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V12-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V13-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V14-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V15-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V16-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V17-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V18-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V19-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V20-付费推荐:dlj.tf/ssrsub,
+    0923_6_@SSRSUB-V21-付费推荐:dlj.tf/ssrsub, 0923_6_@SSRSUB-V22-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V001--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V002--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V003--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V004--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V005--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V006--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V007--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V008--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V009--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V010--US-付费推荐:dlj.tf/ssrsub,
+    0923_6_🇺🇲 V011--US-付费推荐:dlj.tf/ssrsub, 0923_6_🇺🇲 V012--US-付费推荐:dlj.tf/ssrsub]
   type: select
 rules: ['DOMAIN-SUFFIX,local,🎯 全球直连', 'IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve',
   'IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve', 'IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve',
