@@ -4,33 +4,25 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {alterId: 0, cipher: auto, name: 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, port: 64010, server: 183.249.20.151,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {alterId: 0, cipher: auto, name: '0925_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01', port: 64098, server: 183.249.20.149,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
-- {alterId: 0, cipher: auto, name: '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02',
-  port: 64099, server: 120.241.46.222, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {alterId: 0, cipher: auto, name: '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 03', port: 64010,
-  server: 183.249.20.149, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, port: 64094, server: 183.249.20.151,
-  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
-- cipher: aes-256-gcm
-  name: 0925_0_🇭🇰 Hong Kong 04 @nodpai
-  password: c518266da98b
-  plugin: v2ray-plugin
-  plugin-opts: {host: yjy2.viynos.com, mode: websocket, mux: true, path: /mkqhgxflbhfk,
-    skip-cert-verify: true, tls: true}
-  port: 443
-  server: 123.254.108.243
-  type: ss
+- {alterId: 0, cipher: auto, name: 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, port: 64012, server: 183.249.20.151,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 1f3eb856-26ca-3480-872c-c911ea27cf65}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 01
+  network: ws
+  port: 19709
+  server: 123.249.101.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 64099,
-  server: 183.249.20.151, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
+  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02',
+  port: 64012, server: 120.241.46.222, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 1f3eb856-26ca-3480-872c-c911ea27cf65}
 - cipher: aes-256-gcm
-  name: 0925_0_🇭🇰 Hong Kong 06 @nodpai
+  name: 0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01
   password: 2c8b8e83c082
   plugin: v2ray-plugin
   plugin-opts: {host: yjy3.viynos.com, mode: websocket, mux: true, path: /bnftmarohnw,
@@ -39,66 +31,21 @@ proxies:
   server: 202.181.25.18
   type: ss
   udp: true
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 07 @nodpai, port: 64093,
-  server: 183.249.20.149, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇦🇺 Australia 01 @nodpai, port: 64003,
-  server: 183.249.20.151, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇦🇺 Australia 02 @nodpai, port: 64003,
-  server: 183.249.20.153, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇸🇬 Singapore 01 @nodpai, port: 64012,
-  server: 120.241.46.222, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 1f3eb856-26ca-3480-872c-c911ea27cf65}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, port: 64093,
-  server: 183.249.20.151, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 09 @nodpai
-  network: ws
-  port: 64004
-  server: 120.241.46.222
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, port: 64093,
-  server: 120.241.46.222, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 11 @nodpai
-  network: ws
-  port: 64082
-  server: 183.249.20.149
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇮🇳 India 01 @nodpai
-  network: ws
-  port: 64051
-  server: 183.249.20.153
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai, port: 64099,
-  server: 183.249.20.153, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
 - alterId: 0
   cipher: auto
   name: 0925_0_🇯🇵 Japan 01 @nodpai
+  network: ws
+  port: 80
+  server: 190.93.247.199
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56a8780c-2771-4a34-8197-df4ee947ea7d
+  ws-opts: {path: /?ed=2048}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇯🇵 Japan 02 @nodpai
   network: ws
   port: 8080
   server: 190.93.247.199
@@ -108,26 +55,11 @@ proxies:
   udp: true
   uuid: 56a8780c-2771-4a34-8197-df4ee947ea7d
   ws-opts: {path: /?ed=2048}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇦🇺 Australia 03 @nodpai, port: 64003,
-  server: 183.249.20.149, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇦🇺 Australia 01 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 5017, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   name: 0925_0_🇻🇳 Viet Nam 01 @nodpai
-  network: ws
-  port: 443
-  server: vn5.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 80c32b3b-d3bd-4535-a4ae-66a1924da2bc
-  ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 02 @nodpai
   network: ws
   port: 80
   server: 103.239.67.2
@@ -139,79 +71,10 @@ proxies:
   ws-opts: {path: /4gspeed.me}
 - alterId: 0
   cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 03 @nodpai
-  network: ws
-  port: 80
-  server: vn5.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 80c32b3b-d3bd-4535-a4ae-66a1924da2bc
-  ws-opts:
-    headers: {Host: vn5.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 13 @nodpai
-  network: ws
-  port: 64004
-  server: 183.249.20.149
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇮🇳 India 02 @nodpai
-  network: ws
-  port: 64051
-  server: 183.249.20.151
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇹🇼 Taiwan 03 @nodpai, port: 64094, server: 183.249.20.149,
-  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇺🇸 United States 01 @nodpai
+  name: 0925_0_🇻🇳 Viet Nam 02 @nodpai
   network: ws
   port: 443
-  server: 107.167.16.85
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7640a1e7-9701-428e-a4b2-19b3e7dd6f9f
-  ws-opts: {path: /path/080822272914}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇯🇵 Japan 02 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 40410, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇯🇵 Japan 03 @nodpai
-  network: ws
-  port: 80
-  server: 190.93.247.199
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 56a8780c-2771-4a34-8197-df4ee947ea7d
-  ws-opts: {path: /?ed=2048}
-- {alterId: 0, cipher: auto, name: 0925_0_🇳🇱 Netherlands 01 @nodpai, port: 42952,
-  server: 156.245.8.146, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 63b4b829-7f01-4e26-b037-f04b1f098765}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 04 @nodpai
-  network: ws
-  port: 80
-  server: 103.67.197.28
+  server: 103.239.67.11
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -220,44 +83,16 @@ proxies:
   ws-opts: {path: /4gspeed.me}
 - alterId: 0
   cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 05 @nodpai
+  name: 0925_0_🇺🇸 United States 01 @nodpai
   network: ws
-  port: 80
-  server: vn2.4gspeed.me
+  port: 443
+  server: 170.178.179.189
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 80c32b3b-d3bd-4535-a4ae-66a1924da2bc
-  ws-opts:
-    headers: {Host: vn2.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇮🇳 India 03 @nodpai
-  network: ws
-  port: 64051
-  server: 183.249.20.149
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇦🇺 Australia 04 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 5017, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇯🇵 Japan 04 @nodpai
-  network: ws
-  port: 64011
-  server: 183.249.20.151
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/031730091420}
 - alterId: 0
   cipher: auto
   name: 0925_0_🇮🇱 Israel 01 @nodpai
@@ -272,267 +107,33 @@ proxies:
   ws-opts:
     headers: {Host: ylsl.shabijichang.com}
     path: /
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇸🇬 Singapore 02 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 33719, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇯🇵 Japan 05 @nodpai
-  network: ws
-  port: 64011
-  server: 120.241.46.222
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇯🇵 Japan 06 @nodpai
-  network: ws
-  port: 64005
-  server: 183.249.20.151
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇯🇵 Japan 07 @nodpai
-  network: ws
-  port: 64011
-  server: 183.249.20.149
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇮🇪 Ireland 01 @nodpai
-  network: ws
-  port: 80
-  server: 104.18.40.89
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 58d7b6e3-2b74-4424-b459-8c3545652c9f
-  ws-opts: {path: /}
 - alterId: 0
   cipher: auto
   name: 0925_0_🇺🇸 United States 02 @nodpai
   network: ws
-  port: 80
-  server: fhc.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 70a93fcb-f8c0-4916-96b5-8c54f3394708
-  ws-opts:
-    headers: {Host: fhc.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai
-  network: ws
-  port: 64082
-  server: 120.241.46.222
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇺🇸 United States 03 @nodpai
-  network: ws
   port: 443
-  server: 198.2.204.40
+  server: 38.63.0.71
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /path/1695552397318}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, port: 64094, server: 183.249.20.153,
-  skip-cert-verify: true, tls: true, type: vmess, udp: true, uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
+  ws-opts: {path: /path/053133263111}
 - alterId: 0
   cipher: auto
-  name: 0925_0_🇩🇪 Germany 01 @nodpai
-  network: ws
-  port: 8080
-  server: yd1.992688.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cafbdf1c-5812-492f-92ac-330650c6ecf0
-  ws-opts:
-    headers: {Host: yd1.992688.xyz}
-    path: /?ed=2048
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, port: 64090,
-  server: 183.249.20.151, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: fa18fc1b-6160-3665-8345-6c6fcca4c521}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 16 @nodpai, port: 64090,
-  server: 183.249.20.153, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇮🇳 India 04 @nodpai
-  network: ws
-  port: 64051
-  server: 120.241.46.222
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇺🇸 United States 04 @nodpai
-  network: ws
-  port: 80
-  server: fhc.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 28645c6e-8ad9-44c0-8ecd-d76f8a285262
-  ws-opts:
-    headers: {Host: fhc.shabijichang.com}
-    path: /
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, port: 64096,
-  server: 183.249.20.153, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇯🇵 Japan 08 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 13408, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇸🇬 Singapore 03 @nodpai, port: 64012,
-  server: 183.249.20.151, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 1f3eb856-26ca-3480-872c-c911ea27cf65}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇪🇸 Spain 01 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 51817, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇸🇬 Singapore 04 @nodpai, port: 64012,
-  server: 183.249.20.153, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 1f3eb856-26ca-3480-872c-c911ea27cf65}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇳🇱 Netherlands 02 @nodpai
+  name: 0925_0_🇺🇸 United States 03 @nodpai
   network: ws
   port: 443
-  server: 156.245.8.170
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf
-  ws-opts: {path: /path/1695523810028}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇩🇪 Germany 02 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 42991, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, port: 64090,
-  server: 183.249.20.149, skip-cert-verify: true, tls: true, type: vmess, udp: true,
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai
-  network: ws
-  port: 64004
-  server: 183.249.20.153
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇺🇸 United States 05 @nodpai
-  network: ws
-  port: 443
-  server: 38.63.0.85
+  server: 38.63.0.72
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /path/1689935243027}
+  ws-opts: {path: /path/1694859605321}
 - alterId: 0
   cipher: auto
-  name: 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai
-  network: ws
-  port: 64082
-  server: 183.249.20.153
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e433833f-77e3-32d6-9613-32320f530e5e
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇦🇺 Australia 05 @nodpai
-  network: ws
-  port: 80
-  server: xn2.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
-  ws-opts:
-    headers: {Host: xn2.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇺🇸 United States 06 @nodpai
-  network: ws
-  port: 80
-  server: zjg.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 53701585-591f-48a3-9515-8831ed0524ac
-  ws-opts:
-    headers: {Host: zjg.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 06 @nodpai
-  network: ws
-  port: 80
-  server: vn4.4gspeed.me
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 80c32b3b-d3bd-4535-a4ae-66a1924da2bc
-  ws-opts:
-    headers: {Host: vn4.4gspeed.me}
-    path: /4gspeed.me
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇺🇸 United States 07 @nodpai
-  network: ws
-  port: 443
-  server: 192.74.236.142
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /path/1695552397318}
-- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇺🇸 United States 08 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
-  port: 62409, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 0925_0_🇻🇳 Viet Nam 07 @nodpai
+  name: 0925_0_🇻🇳 Viet Nam 03 @nodpai
   network: ws
   port: 443
   server: vn3.4gspeed.me
@@ -544,6 +145,187 @@ proxies:
   ws-opts:
     headers: {Host: vn3.4gspeed.me}
     path: /4gspeed.me
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇺🇸 United States 04 @nodpai
+  network: ws
+  port: 443
+  server: 38.63.0.85
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/1689935243027}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇮🇹 Italy 01 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 54948, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇯🇵 Japan 03 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 40410, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_中转 🇺🇸 United States 05 @nodpai
+  network: ws
+  port: 443
+  server: 198.2.204.40
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/1695552397318}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇺🇸 United States 06 @nodpai
+  network: ws
+  port: 443
+  server: 192.74.236.142
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /path/1695552397318}
+- {name: 0925_0_🇯🇵 Japan 04 @nodpai, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d,
+  port: 443, server: gsawshk1.aiopen.cfd, skip-cert-verify: true, sni: 20-212-60-88.nhost.00cdn.com,
+  type: trojan, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇺🇸 United States 07 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 62409, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0925_0_🇺🇸 United States 08 @nodpai, port: 41772,
+  server: 192.74.238.232, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇭🇰 Hong Kong 02 @nodpai
+  network: ws
+  port: 8088
+  server: 91.229.132.31
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3a3befc9-e26e-431a-a442-a6ed789df2e9
+  ws-opts: {path: /aa?ed=2048}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 32198, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇳🇱 Netherlands 01 @nodpai
+  network: ws
+  port: 80
+  server: amstd.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  ws-opts:
+    headers: {Host: amstd.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇺🇸 United States 09 @nodpai
+  network: ws
+  port: 443
+  server: 64.32.24.222
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: cff9d860-7330-4ee1-b072-7142ddf1571d
+  ws-opts: {path: /path/080822272914}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇩🇪 Germany 01 @nodpai
+  network: ws
+  port: 8080
+  server: yd1.992688.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d9a355ba-18f8-40db-892d-a481bbf777f9
+  ws-opts:
+    headers: {Host: yd1.992688.xyz}
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇳🇱 Netherlands 02 @nodpai
+  network: ws
+  port: 443
+  server: 156.225.67.38
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b
+  ws-opts: {path: /path/1692256902430}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇳🇱 Netherlands 03 @nodpai
+  network: ws
+  port: 443
+  server: 156.245.8.170
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3a3c8a9c-334e-4360-adb8-a80a57ddcbbf
+  ws-opts: {path: /path/1695523810028}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇩🇪 Germany 02 @nodpai
+  network: ws
+  port: 8080
+  server: dx1.992688.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fbe45fb6-7cf1-40f0-880d-fcb5b0bfbbf3
+  ws-opts:
+    headers: {Host: dx1.992688.xyz}
+    path: /?ed=2048
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇪🇸 Spain 01 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 51817, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_🇸🇬 Singapore 03 @nodpai, password: 1f3d67b4-6929-4598-90ca-84a841bf02e4,
+  port: 61675, server: sg2.lianpi.xyz, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇺🇸 United States 10 @nodpai
+  network: ws
+  port: 80
+  server: fhc.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 28645c6e-8ad9-44c0-8ecd-d76f8a285262
+  ws-opts:
+    headers: {Host: fhc.shabijichang.com}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇯🇵 Japan 05 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 13408, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 0925_0_🇳🇱 Netherlands 04 @nodpai, port: 45493,
+  server: 156.225.67.48, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b}
+- {alterId: 0, cipher: auto, name: 0925_0_🇯🇵 Japan 06 @nodpai, port: 23234, server: jp6.lianpi.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4}
+- alterId: 0
+  cipher: auto
+  name: 0925_0_🇻🇳 Viet Nam 04 @nodpai
+  network: ws
+  port: 443
+  server: vn5.4gspeed.me
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 80c32b3b-d3bd-4535-a4ae-66a1924da2bc
+  ws-opts:
+    headers: {Host: vn5.4gspeed.me}
+    path: /4gspeed.me
+- {cipher: chacha20-ietf-poly1305, name: 0925_0_中转 🇸🇬 Singapore 04 @nodpai, password: 64127552-5556-4c95-b4f0-50f8ec49fe52,
+  port: 33719, server: chu.xn--fiqr9egvchy8d.com, type: ss, udp: true}
 - {alterId: 64, cipher: auto, name: 0925_1_🇺🇸 github.com/freefq - 美国  1, port: 48813,
   server: 137.175.0.148, skip-cert-verify: false, tls: false, type: vmess, udp: true,
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
@@ -7745,35 +7527,23 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -7932,48 +7702,36 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01', '0925_0_「eggtartcloud.shop
-      自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 03', 0925_0_中转 🇹🇼 Taiwan 02
-      @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 07 @nodpai, 0925_0_中转 🇦🇺
-      Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 09 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 11 @nodpai, 0925_0_中转
-      🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai, 0925_0_🇯🇵 Japan 01 @nodpai,
-    0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 13 @nodpai,
-    0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼 Taiwan 03 @nodpai, 0925_0_🇺🇸 United
-      States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02 @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai,
-    0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai, 0925_0_中转 🇦🇺 Australia 04 @nodpai,
-    0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转
-      🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland 01 @nodpai, 0925_0_🇺🇸 United States 02
-      @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai, 0925_0_中转 🇺🇸 United States 03 @nodpai,
-    0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai,
-    0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转
-      🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬 Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01
-      @nodpai, 0925_0_中转 🇸🇬 Singapore 04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai,
-    0925_0_中转 🇩🇪 Germany 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸 United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 20 @nodpai, 0925_0_🇦🇺 Australia 05 @nodpai, 0925_0_🇺🇸 United States 06
-      @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai, 0925_0_🇺🇸 United States 07 @nodpai,
-    0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳 Viet Nam 07 @nodpai, 0925_1_🇺🇸
-      github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信 2, 0925_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦 github.com/freefq
-      - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq -
-      俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
-      - 香港  8, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0925_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州洛杉矶Sharktech数据中心 10, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心
-      11, 0925_1_🇯🇵 github.com/freefq - 日本  12, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG
-      TECH 13, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 0925_1_🇿🇦 github.com/freefq
-      - 南非  15, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16, 0925_1_🇿🇦 github.com/freefq
-      - 南非豪登省约翰内斯堡Cloudinnovation数据中心 17, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信
-      18, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 19, 0925_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 20, 0925_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0925_1_🇿🇦
-      github.com/freefq - 南非  22, 0925_1_🇭🇰 github.com/freefq - 香港  23, 0925_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 24, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
+  proxies: [0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 01', '0925_0_「eggtartcloud.shop
+      自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01', 0925_0_🇯🇵 Japan 01 @nodpai,
+    0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_🇻🇳 Viet
+      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai,
+    0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_🇺🇸 United
+      States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai, 0925_0_🇺🇸 United States 04
+      @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai, 0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转
+      🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇯🇵 Japan
+      04 @nodpai, 0925_0_中转 🇺🇸 United States 07 @nodpai, 0925_0_🇺🇸 United States 08
+      @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai, 0925_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸 United States 09 @nodpai, 0925_0_🇩🇪
+      Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_🇳🇱 Netherlands
+      03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬
+      Singapore 03 @nodpai, 0925_0_🇺🇸 United States 10 @nodpai, 0925_0_中转 🇯🇵 Japan
+      05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai, 0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳
+      Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore 04 @nodpai, 0925_1_🇺🇸 github.com/freefq
+      - 美国  1, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦 github.com/freefq - 南非  4, 0925_1_🇺🇸
+      github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰
+      github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq - 香港  8, 0925_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 9, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Sharktech数据中心
+      10, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶市SharkTech数据中心 11, 0925_1_🇯🇵 github.com/freefq
+      - 日本  12, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 13, 0925_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 14, 0925_1_🇿🇦 github.com/freefq - 南非  15, 0925_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 16, 0925_1_🇿🇦 github.com/freefq - 南非豪登省约翰内斯堡Cloudinnovation数据中心
+      17, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信 18, 0925_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州洛杉矶SharkTech数据中心 19, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      20, 0925_1_🇨🇳 github.com/freefq - 广东省广州市移动 21, 0925_1_🇿🇦 github.com/freefq -
+      南非  22, 0925_1_🇭🇰 github.com/freefq - 香港  23, 0925_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 24, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       25, 0925_1_github.com/freefq - 湖南省移动 26, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
       27, 0925_1_🇨🇳 github.com/freefq - 上海市电信 28, 0925_1_🇬🇧 github.com/freefq - 英国  29,
     0925_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 30, 0925_1_🇨🇳 github.com/freefq -
@@ -8119,35 +7877,23 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -8311,35 +8057,23 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -8497,36 +8231,24 @@ proxy-groups:
       52, 0925_7_美国(油管:破解资源君) 53, 0925_7_美国(油管:破解资源君) 54]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼 TW 01',
-    '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 03',
-    0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 07 @nodpai,
-    0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai, 0925_0_中转
-      🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 11
-      @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai, 0925_0_🇯🇵
-      Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai,
-    0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼 Taiwan 03 @nodpai,
-    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02 @nodpai, 0925_0_🇯🇵 Japan
-      03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai,
-    0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai, 0925_0_中转 🇦🇺 Australia
-      04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_中转
-      🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_中转 🇯🇵 Japan 06
-      @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland 01 @nodpai, 0925_0_🇺🇸
-      United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai, 0925_0_中转 🇺🇸 United
-      States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 16 @nodpai, 0925_0_中转
-      🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬 Singapore 03 @nodpai,
-    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore 04 @nodpai, 0925_0_🇳🇱 Netherlands
-      02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 18 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸 United States 05 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia 05 @nodpai, 0925_0_🇺🇸 United States
-      06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai, 0925_0_🇺🇸 United States 07 @nodpai,
-    0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳 Viet Nam 07 @nodpai, 0925_1_🇺🇸
-      github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信 2, 0925_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦 github.com/freefq
+  proxies: [🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 01',
+    '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 01',
+    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺 Australia
+      01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇺🇸
+      United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United States
+      02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
+    0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai, 0925_0_中转 🇯🇵
+      Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸 United States
+      06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States 07 @nodpai,
+    0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai, 0925_0_中转
+      🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸 United
+      States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai,
+    0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai, 0925_0_中转 🇪🇸 Spain
+      01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United States 10 @nodpai,
+    0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai, 0925_0_🇯🇵 Japan
+      06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore 04 @nodpai,
+    0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq - 台湾省台北市中华电信
+      2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦 github.com/freefq
       - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq -
       俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
       - 香港  8, 0925_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, 0925_1_🇺🇸 github.com/freefq
@@ -8683,35 +8405,23 @@ proxy-groups:
       52, 0925_7_美国(油管:破解资源君) 53, 0925_7_美国(油管:破解资源君) 54]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -8869,35 +8579,23 @@ proxy-groups:
       52, 0925_7_美国(油管:破解资源君) 53, 0925_7_美国(油管:破解资源君) 54]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -9055,35 +8753,23 @@ proxy-groups:
       52, 0925_7_美国(油管:破解资源君) 53, 0925_7_美国(油管:破解资源君) 54]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
@@ -9247,35 +8933,23 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0925_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '0925_0_「蛋挞云,流媒体全解锁」🇹🇼
-      TW 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
-      HK 03', 0925_0_中转 🇹🇼 Taiwan 02 @nodpai, 0925_0_🇭🇰 Hong Kong 04 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 0925_0_🇭🇰 Hong Kong 06 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 0925_0_中转 🇦🇺 Australia 01 @nodpai, 0925_0_中转 🇦🇺 Australia 02 @nodpai,
-    0925_0_中转 🇸🇬 Singapore 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 08 @nodpai, 0925_0_中转
-      🇭🇰 Hong Kong 09 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 10 @nodpai, 0925_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 0925_0_中转 🇮🇳 India 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 12 @nodpai,
-    0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_中转 🇦🇺 Australia 03 @nodpai, 0925_0_🇻🇳 Viet
-      Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai, 0925_0_🇻🇳 Viet Nam 03 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 13 @nodpai, 0925_0_中转 🇮🇳 India 02 @nodpai, 0925_0_中转 🇹🇼
-      Taiwan 03 @nodpai, 0925_0_🇺🇸 United States 01 @nodpai, 0925_0_中转 🇯🇵 Japan 02
-      @nodpai, 0925_0_🇯🇵 Japan 03 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇻🇳
-      Viet Nam 04 @nodpai, 0925_0_🇻🇳 Viet Nam 05 @nodpai, 0925_0_中转 🇮🇳 India 03 @nodpai,
-    0925_0_中转 🇦🇺 Australia 04 @nodpai, 0925_0_中转 🇯🇵 Japan 04 @nodpai, 0925_0_🇮🇱 Israel
-      01 @nodpai, 0925_0_中转 🇸🇬 Singapore 02 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai,
-    0925_0_中转 🇯🇵 Japan 06 @nodpai, 0925_0_中转 🇯🇵 Japan 07 @nodpai, 0925_0_🇮🇪 Ireland
-      01 @nodpai, 0925_0_🇺🇸 United States 02 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 14 @nodpai,
-    0925_0_中转 🇺🇸 United States 03 @nodpai, 0925_0_中转 🇹🇼 Taiwan 04 @nodpai, 0925_0_🇩🇪
-      Germany 01 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 15 @nodpai, 0925_0_中转 🇭🇰 Hong Kong
-      16 @nodpai, 0925_0_中转 🇮🇳 India 04 @nodpai, 0925_0_🇺🇸 United States 04 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 17 @nodpai, 0925_0_中转 🇯🇵 Japan 08 @nodpai, 0925_0_中转 🇸🇬
-      Singapore 03 @nodpai, 0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_中转 🇸🇬 Singapore
-      04 @nodpai, 0925_0_🇳🇱 Netherlands 02 @nodpai, 0925_0_中转 🇩🇪 Germany 02 @nodpai,
-    0925_0_中转 🇭🇰 Hong Kong 18 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 19 @nodpai, 0925_0_🇺🇸
-      United States 05 @nodpai, 0925_0_中转 🇭🇰 Hong Kong 20 @nodpai, 0925_0_🇦🇺 Australia
-      05 @nodpai, 0925_0_🇺🇸 United States 06 @nodpai, 0925_0_🇻🇳 Viet Nam 06 @nodpai,
-    0925_0_🇺🇸 United States 07 @nodpai, 0925_0_中转 🇺🇸 United States 08 @nodpai, 0925_0_🇻🇳
-      Viet Nam 07 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 0925_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '0925_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 01', '0925_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 02', '0925_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 01', 0925_0_🇯🇵 Japan 01 @nodpai, 0925_0_🇯🇵 Japan 02 @nodpai, 0925_0_中转 🇦🇺
+      Australia 01 @nodpai, 0925_0_🇻🇳 Viet Nam 01 @nodpai, 0925_0_🇻🇳 Viet Nam 02 @nodpai,
+    0925_0_🇺🇸 United States 01 @nodpai, 0925_0_🇮🇱 Israel 01 @nodpai, 0925_0_🇺🇸 United
+      States 02 @nodpai, 0925_0_🇺🇸 United States 03 @nodpai, 0925_0_🇻🇳 Viet Nam 03
+      @nodpai, 0925_0_🇺🇸 United States 04 @nodpai, 0925_0_中转 🇮🇹 Italy 01 @nodpai,
+    0925_0_中转 🇯🇵 Japan 03 @nodpai, 0925_0_中转 🇺🇸 United States 05 @nodpai, 0925_0_🇺🇸
+      United States 06 @nodpai, 0925_0_🇯🇵 Japan 04 @nodpai, 0925_0_中转 🇺🇸 United States
+      07 @nodpai, 0925_0_🇺🇸 United States 08 @nodpai, 0925_0_🇭🇰 Hong Kong 02 @nodpai,
+    0925_0_中转 🇬🇧 United Kingdom 01 @nodpai, 0925_0_🇳🇱 Netherlands 01 @nodpai, 0925_0_🇺🇸
+      United States 09 @nodpai, 0925_0_🇩🇪 Germany 01 @nodpai, 0925_0_🇳🇱 Netherlands
+      02 @nodpai, 0925_0_🇳🇱 Netherlands 03 @nodpai, 0925_0_🇩🇪 Germany 02 @nodpai,
+    0925_0_中转 🇪🇸 Spain 01 @nodpai, 0925_0_🇸🇬 Singapore 03 @nodpai, 0925_0_🇺🇸 United
+      States 10 @nodpai, 0925_0_中转 🇯🇵 Japan 05 @nodpai, 0925_0_🇳🇱 Netherlands 04 @nodpai,
+    0925_0_🇯🇵 Japan 06 @nodpai, 0925_0_🇻🇳 Viet Nam 04 @nodpai, 0925_0_中转 🇸🇬 Singapore
+      04 @nodpai, 0925_1_🇺🇸 github.com/freefq - 美国  1, 0925_1_🇨🇳 github.com/freefq
       - 台湾省台北市中华电信 2, 0925_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 3, 0925_1_🇿🇦
       github.com/freefq - 南非  4, 0925_1_🇺🇸 github.com/freefq - 美国  5, 0925_1_🇷🇺 github.com/freefq
       - 俄罗斯莫斯科JustHost 6, 0925_1_🇭🇰 github.com/freefq - 香港电讯盈科有限公司 7, 0925_1_🇭🇰 github.com/freefq
