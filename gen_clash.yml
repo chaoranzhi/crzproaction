@@ -4,57 +4,46 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
-  network: ws
-  port: 80
-  server: 36.150.27.31
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae9e3c21-9445-4271-b4dd-eec737f64df2
-  ws-opts: {path: /}
-- {name: '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
-  port: 10807, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+- {name: 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
+  port: 10802, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
-  port: 10810, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01', password: 7e8b8d6a-8fd2-4f72-9cb7-021dce5a6f8d,
-  port: 443, server: hk1.downloadvip.cfd, skip-cert-verify: true, sni: download.xn--mes358a9urctx.com,
-  type: trojan, udp: true}
-- {name: 1009_0_🇩🇪 Germany 01 @nodpai, password: 7e8b8d6a-8fd2-4f72-9cb7-021dce5a6f8d,
-  port: 443, server: 5.104.107.143, skip-cert-verify: true, sni: de1.xn--mes358a9urctx.com,
-  type: trojan, udp: true}
-- {name: 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
+- {name: '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02', password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
   port: 10804, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
+- {name: '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', password: 7e8b8d6a-8fd2-4f72-9cb7-021dce5a6f8d,
+  port: 443, server: jp1.downloadvip.cfd, skip-cert-verify: true, sni: download.xn--mes358a9urctx.com,
+  type: trojan, udp: true}
+- {name: '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01', password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
+  port: 10828, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {name: 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
+  port: 41929, server: 14.18.106.137, skip-cert-verify: true, sni: nl01.lovehjq.xyz,
+  type: trojan, udp: true}
+- {name: 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
+  port: 10808, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 1009_0_🇺🇸 United States 01 @nodpai, password: f5d95005-be14-40fc-bedc-e4a1133a5701,
+  port: 20800, server: usshs2.gophers.gay, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1009_0_🇺🇸 United States 02 @nodpai
+  network: ws
+  port: 443
+  server: 23.108.100.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /footers}
 - {name: 1009_0_中转 🇭🇰 Hong Kong 04 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
   port: 10801, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1009_0_🇸🇬 Singapore 01 @nodpai
-  network: ws
-  port: 51456
-  server: 146.190.96.165
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 69074afd-87ca-40e3-bd50-0e2214a27e82
-  ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: 1009_0_中转 🇹🇼 Taiwan 01 @nodpai, password: 2739ce85d3b9e145,
-  port: 41020, server: jscm01.celerlink.one, type: ss, udp: true}
-- {name: 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
-  port: 41929, server: nl01.lovehjq.xyz, skip-cert-verify: true, type: trojan, udp: true}
 - {name: 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
-  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  port: 10810, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
-  port: 10808, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+- {name: 1009_0_中转 🇸🇬 Singapore 02 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
+  port: 10834, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - alterId: 0
   cipher: auto
@@ -70,23 +59,6 @@ proxies:
   ws-opts:
     headers: {Host: fd.shabijichang.com}
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1009_0_🇦🇺 Australia 01 @nodpai
-  network: ws
-  port: 80
-  server: fd.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5e48a497-f4ae-4129-afd6-ba26d75b792a
-  ws-opts:
-    headers: {Host: fd.shabijichang.com}
-    path: /
-- {name: 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, password: d552cbf9-a389-479c-ba67-024d4eabc8c2,
-  port: 10809, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
 - {alterId: 0, cipher: auto, name: 1009_1_🇺🇸 github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心
     1, port: 13159, server: 23.94.43.207, skip-cert-verify: false, tls: false, type: vmess,
   udp: true, uuid: a8261424-d5ea-4c28-9253-7856c678f342}
@@ -8524,13 +8496,12 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -8706,13 +8677,12 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', '1009_0_「eggtartcloud.shop
-      自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01', 1009_0_🇩🇪 Germany 01
-      @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 04 @nodpai,
-    1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan 01 @nodpai, 1009_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心
+  proxies: [1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02', '1009_0_「eggtartcloud.shop
+      自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01', 1009_0_中转 🇳🇱 Netherlands
+      01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_🇺🇸 United States 01 @nodpai,
+    1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore 02 @nodpai, 1009_0_🇦🇪 United
+      Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq - 美国爱荷华州得梅因Microsoft数据中心
       1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 2, 1009_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5, 1009_1_🇨🇳 github.com/freefq
@@ -8888,13 +8858,12 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9075,13 +9044,12 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9256,13 +9224,12 @@ proxy-groups:
       10, 1009_7_亚洲(油管:破解资源君) 11, 1009_7_亚洲(油管:破解资源君) 12, 1009_7_亚洲(油管:破解资源君) 13]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01',
-    '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵 JP 01',
-    1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan 01
-      @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 02',
+    '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01',
+    1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_🇺🇸
+      United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转 🇭🇰 Hong
+      Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore 02
+      @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9437,13 +9404,12 @@ proxy-groups:
       10, 1009_7_亚洲(油管:破解资源君) 11, 1009_7_亚洲(油管:破解资源君) 12, 1009_7_亚洲(油管:破解资源君) 13]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9618,13 +9584,12 @@ proxy-groups:
       10, 1009_7_亚洲(油管:破解资源君) 11, 1009_7_亚洲(油管:破解资源君) 12, 1009_7_亚洲(油管:破解资源君) 13]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9799,13 +9764,12 @@ proxy-groups:
       10, 1009_7_亚洲(油管:破解资源君) 11, 1009_7_亚洲(油管:破解资源君) 12, 1009_7_亚洲(油管:破解资源君) 13]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
@@ -9986,13 +9950,12 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1009_0_「蛋挞云,超低价格,超高体验」🇯🇵
-      JP 01', 1009_0_🇩🇪 Germany 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1009_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1009_0_🇸🇬 Singapore 01 @nodpai, 1009_0_中转 🇹🇼 Taiwan
-      01 @nodpai, 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai,
-    1009_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai,
-    1009_0_🇦🇺 Australia 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1009_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1009_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1009_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 02', '1009_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1009_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1009_0_中转 🇳🇱 Netherlands 01 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 03 @nodpai,
+    1009_0_🇺🇸 United States 01 @nodpai, 1009_0_🇺🇸 United States 02 @nodpai, 1009_0_中转
+      🇭🇰 Hong Kong 04 @nodpai, 1009_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1009_0_中转 🇸🇬 Singapore
+      02 @nodpai, 1009_0_🇦🇪 United Arab Emirates 01 @nodpai, 1009_1_🇺🇸 github.com/freefq
       - 美国爱荷华州得梅因Microsoft数据中心 1, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress
       2, 1009_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 3, 1009_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 4, 1009_1_🇬🇧 github.com/freefq - 英国伦敦Oracle云计算数据中心 5,
