@@ -4,36 +4,18 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
-  network: ws
-  port: 80
-  server: 36.150.27.31
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ae9e3c21-9445-4271-b4dd-eec737f64df2
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1012_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02
-  network: ws
-  port: 19709
-  server: 123.249.101.15
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN
-    01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8, port: 27103, server: hefei.chiguayun.cc,
+- {cipher: chacha20-ietf-poly1305, name: 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
+  port: 27110, server: foshan.chiguayun.cc, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: '1012_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', port: 53737, server: 112.29.94.22,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {cipher: chacha20-ietf-poly1305, name: '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP
+    01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8, port: 27133, server: hefei.chiguayun.cc,
   type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01', password: 2739ce85d3b9e145,
+  port: 41026, server: jscm01.celerlink.one, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_0_「蛋挞云,超低价格,超高体验」🇱🇺 LU 01
+  name: 1012_0_🇱🇺 Luxembourg 01 @nodpai
   network: ws
   port: 2052
   server: 162.159.152.6
@@ -43,9 +25,25 @@ proxies:
   udp: true
   uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
   ws-opts: {path: /}
+- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇬🇷 Greece 01 @nodpai, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
+  port: 27134, server: hefei.chiguayun.cc, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_0_🇺🇸 United States 01 @nodpai
+  name: 1012_0_🇸🇦 Saudi Arabia 01 @nodpai
+  network: ws
+  port: 80
+  server: jd.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 53701585-591f-48a3-9515-8831ed0524ac
+  ws-opts:
+    headers: {Host: jd.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1012_0_🇺🇸 United States 02 @nodpai
   network: ws
   port: 443
   server: 67.21.90.5
@@ -55,77 +53,113 @@ proxies:
   udp: true
   uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
   ws-opts: {path: /path/1694429908748}
-- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇹🇷 Turkey 01 @nodpai, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
-  port: 27130, server: hefei.chiguayun.cc, type: ss, udp: true}
+- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48008, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
+  udp: true}
+- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48010, server: 2bgpfortworacc.20226899.xyz, skip-cert-verify: false, type: trojan,
+  udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_0_🇺🇸 United States 02 @nodpai
+  name: 1012_1_🇨🇳 github.com/freefq - 北京市移动 3
+  network: ws
+  port: 888
+  server: 36.134.173.71
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0ed2cc9b-0265-47cb-9bf2-ccfb22f2cbd8
+  ws-opts:
+    headers: {Host: 36.134.173.71}
+    path: /
+- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48014, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
+  udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+  network: ws
+  port: 2052
+  server: cf.yx.alue.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
+  ws-opts:
+    headers: {Host: us.wx.alue.link}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, password: Lam6mgI0ZnIqT459CTTOJR,
+  port: 19922, server: us01.shawbrothersstudio.com, type: ss, udp: true}
+- alterId: 64
+  cipher: auto
+  name: 1012_1_🇿🇦 github.com/freefq - 南非  7
+  network: ws
+  port: 30000
+  server: 156.225.67.104
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
+  ws-opts:
+    headers: {Host: www.41758112.xyz}
+    path: /path/1696944806961
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8,
+  password: d376f270-1807-4522-9f92-b499658a2678, port: 27126, server: foshan.chiguayun.cc,
+  type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 9, password: d376f270-1807-4522-9f92-b499658a2678,
+  port: 27124, server: hefei.chiguayun.cc, type: ss, udp: true}
+- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48013, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
+  udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+  network: ws
+  port: 2052
+  server: rn.992688.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5498157b-0dd4-4991-9708-4d58fe7ce79a
+  ws-opts:
+    headers: {Host: rn.992688.xyz}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12,
+  password: d376f270-1807-4522-9f92-b499658a2678, port: 27119, server: foshan.chiguayun.cc,
+  type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 13
+  network: ws
+  port: 80
+  server: www.speedtest.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
+  ws-opts:
+    headers: {Host: de1vm.cdn-03.live}
+    path: /@hopev2ray،@hopev2ray
+- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48001, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
+  udp: true}
+- alterId: 64
+  cipher: auto
+  name: 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 15
   network: ws
   port: 443
   server: 23.108.100.103
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /footers}
-- alterId: 0
-  cipher: auto
-  name: 1012_0_🇸🇬 Singapore 01 @nodpai
-  network: ws
-  port: 443
-  server: welfare.kk-proxy.pro
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3190f0de-ef9f-416d-89e7-502a0f276f91
-  ws-opts:
-    headers: {Host: welfare.kk-proxy.pro}
-    path: /ec3a017507e0/
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48011, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48007, server: 2bgpfortworacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48008, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 4, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48014, server: 2bgpfortworacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48010, server: 2bgpfortworacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省移动 6, password: 2e201a3c-e855-4414-a9c0-5d6e6fedca07,
-  port: 19531, server: cn2-1-nc.go001.buzz, type: ss, udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48026, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 8, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48004, server: 2bgpfortworacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48010, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 10, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48004, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {alterId: 64, cipher: auto, name: 1012_1_github.com/freefq - 广东省移动 11, port: 51904,
-  server: 183.238.202.173, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48009, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 13, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48027, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48015, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 15, password: d376f270-1807-4522-9f92-b499658a2678,
-  port: 27124, server: hefei.chiguayun.cc, type: ss, udp: true}
+  ws-opts: {path: /}
 - alterId: 0
   cipher: auto
   name: 1012_1_github.com/freefq - 乌克兰  16
@@ -140,170 +174,33 @@ proxies:
   ws-opts:
     headers: {Host: se1.xv2ray.net}
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1012_1_github.com/freefq - 乌克兰  17
-  network: ws
-  port: 16231
-  server: 31.129.105.239
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1012_1_🇨🇳 github.com/freefq - 北京市移动 18
-  network: ws
-  port: 888
-  server: 36.134.173.71
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0ed2cc9b-0265-47cb-9bf2-ccfb22f2cbd8
-  ws-opts:
-    headers: {Host: 36.134.173.71}
-    path: /
-- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48004, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
+- {alterId: 64, cipher: auto, name: 1012_1_github.com/freefq - 广东省移动 17, port: 51904,
+  server: 183.238.202.173, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48007, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
   udp: true}
-- alterId: 64
-  cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20
-  network: ws
-  port: 443
-  server: 23.108.100.103
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 21,
-  password: a6692a28fdebb4e5, port: 41026, server: jscm01.celerlink.one, type: ss,
-  udp: true}
-- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 22, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48013, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 64
-  cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23
-  network: ws
-  port: 443
-  server: www.75409854.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
-  ws-opts:
-    headers: {Host: www.75409854.xyz}
-    path: /path/1694429908748
-- alterId: 0
-  cipher: auto
-  name: 1012_1_🇯🇵 github.com/freefq - 日本  24
-  network: ws
-  port: 31235
-  server: kr-cdn-6273819.starnetcn.top
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
-  ws-opts:
-    headers: {Host: jxhoisldy718922.starnetcn.top}
-    path: /315d825893fc34aca0231ab967157986
-- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48007, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 64
-  cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 26
-  network: ws
-  port: 30000
-  server: 45.199.138.222
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  ws-opts:
-    headers: {Host: www.19229362.xyz}
-    path: /path/1696251693048
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 27, password: d376f270-1807-4522-9f92-b499658a2678,
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 19, password: d376f270-1807-4522-9f92-b499658a2678,
   port: 27130, server: hefei.chiguayun.cc, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 28
-  network: ws
-  port: 8080
-  server: ns1.v2-vip.fun
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
-  ws-opts:
-    headers: {Host: ssrsub.v001.ssrsub.com}
-    path: /api/v3/download.getFile
-- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 29, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48050, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
-  ws-opts:
-    headers: {Host: de1vm.cdn-03.live}
-    path: /@hopev2ray،@hopev2ray
-- {name: 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 31, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48005, server: bgpfororacc.20226899.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- alterId: 64
-  cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 32
+  name: 1012_1_🇺🇸 github.com/freefq - 美国  20
   network: ws
   port: 443
-  server: 67.21.90.5
+  server: cold-dawn-9246.fly.dev
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
   ws-opts:
-    headers: {Host: www.75409854.xyz}
-    path: /path/1694429908748
-- alterId: 64
-  cipher: auto
-  name: 1012_1_🇿🇦 github.com/freefq - 南非  33
-  network: ws
-  port: 30000
-  server: 156.225.67.104
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
-  ws-opts:
-    headers: {Host: www.41758112.xyz}
-    path: /path/1696944806961
-- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 34, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48009, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
-  udp: true}
-- {name: 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, password: 44c5578a7c, port: 443,
-  server: fi1.connecton.surf, skip-cert-verify: false, type: trojan, udp: true}
+    headers: {Host: cold-dawn-9246.fly.dev}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 21, password: d376f270-1807-4522-9f92-b499658a2678,
+  port: 27143, server: hefei.chiguayun.cc, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 36
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
   network: ws
   port: 80
   server: www.speedtest.net
@@ -315,20 +212,35 @@ proxies:
   ws-opts:
     headers: {Host: fi1.xv2ray.net}
     path: /
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_github.com/freefq - 安徽省亳州市移动 37, password: d376f270-1807-4522-9f92-b499658a2678,
-  port: 27143, server: hefei.chiguayun.cc, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 38,
-  password: d376f270-1807-4522-9f92-b499658a2678, port: 27119, server: foshan.chiguayun.cc,
-  type: ss, udp: true}
-- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
-  port: 48003, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
+- alterId: 0
+  cipher: auto
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 23
+  network: ws
+  port: 8080
+  server: ns1.v2-vip.fun
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
+  ws-opts:
+    headers: {Host: ssrsub.v001.ssrsub.com}
+    path: /api/v3/download.getFile
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 24,
+  password: a6692a28fdebb4e5, port: 41026, server: jscm01.celerlink.one, type: ss,
   udp: true}
-- {name: 1012_1_🇷🇺 github.com/freefq - 俄罗斯  40, password: 80788c96-dfbf-40a8-ab8f-de3a6357d190,
-  port: 64000, server: ru02.celerlink.one, skip-cert-verify: false, type: trojan,
+- {cipher: chacha20-ietf-poly1305, name: 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25,
+  password: a6692a28fdebb4e5, port: 41033, server: jscm01.celerlink.one, type: ss,
+  udp: true}
+- {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 26, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48004, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
+  udp: true}
+- {name: 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
+  port: 48060, server: bpg-nd-cc-ora.nbnodeyyds.xyz, skip-cert-verify: false, type: trojan,
   udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 28
   network: ws
   port: 80
   server: fd.shabijichang.com
@@ -342,7 +254,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 42
+  name: 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29
   network: ws
   port: 80
   server: mm.shabijichang.com
@@ -354,6 +266,9 @@ proxies:
   ws-opts:
     headers: {Host: mm.shabijichang.com}
     path: /
+- {name: 1012_1_🇷🇺 github.com/freefq - 俄罗斯  30, password: 80788c96-dfbf-40a8-ab8f-de3a6357d190,
+  port: 64000, server: ru02.celerlink.one, skip-cert-verify: false, type: trojan,
+  udp: true}
 - alterId: 0
   cipher: auto
   name: 1012_5_美国 001
@@ -9269,34 +9184,26 @@ proxies:
   port: 27124, server: hefei.chiguayun.cc, type: ss, udp: true}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -9472,33 +9379,26 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02', '1012_0_「eggtartcloud.shop
-      自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺 LU 01', 1012_0_🇺🇸 United States
-      01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai,
-    1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 4, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq
-      - 香港Amazon数据中心 9, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq
-      - 广东省移动 11, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', '1012_0_「eggtartcloud.shop
+      自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01', 1012_0_🇱🇺 Luxembourg
+      01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦 Saudi Arabia 01 @nodpai,
+    1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳
+      github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq - 北京市移动 3,
+    1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -9674,34 +9574,26 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -9882,34 +9774,26 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -10084,33 +9968,26 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02',
-    '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺 LU 01',
-    1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai, 1012_0_🇺🇸
-      United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01',
+    '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01',
+    1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦 Saudi
+      Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 4, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq
-      - 香港Amazon数据中心 9, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq
-      - 广东省移动 11, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -10285,34 +10162,26 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🎯 全球直连, 🔰 节点选择, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -10487,34 +10356,26 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🔰 节点选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -10689,34 +10550,26 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
@@ -10897,34 +10750,26 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇨🇳
-      CN 02', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇮🇳 IN 01', '1012_0_「蛋挞云,超低价格,超高体验」🇱🇺
-      LU 01', 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_中转 🇹🇷 Turkey 01 @nodpai,
-    1012_0_🇺🇸 United States 02 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      2, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 3, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)
-      4, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 5, 1012_1_github.com/freefq
-      - 安徽省移动 6, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 7, 1012_1_🇨🇳 github.com/freefq
-      - 台湾省中华电信(HiNet) 8, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 9, 1012_1_🇨🇳
-      github.com/freefq - 台湾省中华电信 10, 1012_1_github.com/freefq - 广东省移动 11, 1012_1_🇯🇵
-      github.com/freefq - 日本东京Amazon数据中心 12, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_github.com/freefq
-      - 安徽省亳州市移动 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
-      - 乌克兰  17, 1012_1_🇨🇳 github.com/freefq - 北京市移动 18, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 19, 1012_1_🇺🇸 github.com/freefq - 美国LeaseWeb数据中心 20, 1012_1_🇨🇳
-      github.com/freefq - 江苏省盐城市移动 21, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心
-      22, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 23, 1012_1_🇯🇵 github.com/freefq
-      - 日本  24, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 25, 1012_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 26, 1012_1_github.com/freefq - 安徽省亳州市移动 27, 1012_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 28, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      29, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 30, 1012_1_🇯🇵 github.com/freefq
-      - 日本东京Amazon数据中心 31, 1012_1_🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心
-      32, 1012_1_🇿🇦 github.com/freefq - 南非  33, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心
-      34, 1012_1_🇰🇬 github.com/freefq - 吉尔吉斯斯坦  35, 1012_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 36, 1012_1_github.com/freefq - 安徽省亳州市移动 37, 1012_1_🇨🇳 github.com/freefq
-      - 江苏省镇江市移动 38, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 39, 1012_1_🇷🇺 github.com/freefq
-      - 俄罗斯  40, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 41, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 42, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇻🇳 VN 01, '1012_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇸🇦
+      Saudi Arabia 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+      - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
+      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+      - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 13, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 14, 1012_1_🇺🇸
+      github.com/freefq - 美国LeaseWeb数据中心 15, 1012_1_github.com/freefq - 乌克兰  16, 1012_1_github.com/freefq
+      - 广东省移动 17, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 18, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 19, 1012_1_🇺🇸 github.com/freefq - 美国  20, 1012_1_github.com/freefq
+      - 安徽省亳州市移动 21, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, 1012_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 23, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动
+      24, 1012_1_🇨🇳 github.com/freefq - 江苏省盐城市移动 25, 1012_1_🇨🇳 github.com/freefq -
+      台湾省中华电信 26, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 27, 1012_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 28, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 29, 1012_1_🇷🇺
+      github.com/freefq - 俄罗斯  30, 1012_5_美国 001, 1012_5_美国 002, 1012_5_美国 003, 1012_5_美国
       004, 1012_5_美国 005, 1012_5_美国 006, 1012_5_美国 007, 1012_5_美国 008, 1012_5_美国 009,
     1012_5_美国 010, 1012_5_美国 011, 1012_5_美国 012, 1012_5_美国 013, 1012_5_美国 014, 1012_5_美国
       015, 1012_5_美国 016, 1012_5_美国 017, 1012_5_美国 018, 1012_5_美国 019, 1012_5_美国 020,
