@@ -4,9 +4,30 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
+- {alterId: 0, cipher: auto, name: 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, port: 53737, server: 112.29.94.22,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {cipher: chacha20-ietf-poly1305, name: '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
+  port: 27110, server: foshan.chiguayun.cc, type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP
+    01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8, port: 27133, server: hefei.chiguayun.cc,
+  type: ss, udp: true}
+- {cipher: chacha20-ietf-poly1305, name: '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷 TR 01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
+  port: 27130, server: hefei.chiguayun.cc, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
+  name: 1012_0_🇱🇺 Luxembourg 01 @nodpai
+  network: ws
+  port: 2052
+  server: 162.159.152.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 1012_0_中转 🇨🇳 China 01 @nodpai
   network: ws
   port: 80
   server: 36.150.27.31
@@ -16,22 +37,34 @@ proxies:
   udp: true
   uuid: ae9e3c21-9445-4271-b4dd-eec737f64df2
   ws-opts: {path: /}
-- {cipher: chacha20-ietf-poly1305, name: '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
-  port: 27110, server: foshan.chiguayun.cc, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01',
-  port: 40158, server: 183.240.232.82, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {cipher: chacha20-ietf-poly1305, name: '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳 IN 01', password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
+- alterId: 0
+  cipher: auto
+  name: 1012_0_🇸🇬 Singapore 01 @nodpai
+  network: ws
+  port: 443
+  server: welfare.kk-proxy.pro
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3190f0de-ef9f-416d-89e7-502a0f276f91
+  ws-opts:
+    headers: {Host: welfare.kk-proxy.pro}
+    path: /ec3a017507e0/
+- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇮🇳 India 01 @nodpai, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
   port: 27103, server: hefei.chiguayun.cc, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇳🇵 Nepal 01 @nodpai, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
-  port: 27133, server: hefei.chiguayun.cc, type: ss, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇺🇸 United States 01 @nodpai, password: 2739ce85d3b9e145,
-  port: 41027, server: jscm01.celerlink.one, type: ss, udp: true}
-- {name: 1012_0_中转 🇯🇵 Japan 01 @nodpai, password: ff0675b0-c665-3d69-800b-f7fc29e1ead8,
-  port: 40350, server: zz.chaosu999.com, skip-cert-verify: true, sni: chaosujp.ccoo520.xyz,
-  type: trojan, udp: true}
-- {cipher: chacha20-ietf-poly1305, name: 1012_0_中转 🇬🇷 Greece 01 @nodpai, password: 89805270-c3ab-4d75-9ad5-9448aff5d3c8,
-  port: 27134, server: hefei.chiguayun.cc, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1012_0_🇺🇸 United States 01 @nodpai
+  network: ws
+  port: 443
+  server: 23.108.100.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: {path: /footers}
 - alterId: 0
   cipher: auto
   name: 1012_0_🇺🇸 United States 02 @nodpai
@@ -44,9 +77,6 @@ proxies:
   udp: true
   uuid: 28dd6c26-05a5-4bba-8a5d-052b70ac13b2
   ws-opts: {path: /path/1694429908748}
-- {name: 1012_0_中转 🇯🇵 Japan 02 @nodpai, password: ff0675b0-c665-3d69-800b-f7fc29e1ead8,
-  port: 40350, server: 39.164.141.104, skip-cert-verify: true, sni: chaosujp.ccoo520.xyz,
-  type: trojan, udp: true}
 - {name: 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, password: ccbdc122-db63-4d56-b995-f3e27fcf4de9,
   port: 48008, server: bgptwtoora.uds-global.com, skip-cert-verify: false, type: trojan,
   udp: true}
@@ -9178,11 +9208,11 @@ proxies:
   port: 27124, server: hefei.chiguayun.cc, type: ss, udp: true}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -9374,11 +9404,11 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01', '1012_0_「eggtartcloud.shop
-      自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳 IN 01', 1012_0_中转 🇳🇵 Nepal 01
-      @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai, 1012_0_中转 🇯🇵 Japan 01 @nodpai,
-    1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_0_中转
-      🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq
+  proxies: [1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01', '1012_0_「eggtartcloud.shop
+      自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷 TR 01', 1012_0_🇱🇺 Luxembourg
+      01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬 Singapore 01 @nodpai, 1012_0_中转
+      🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States 01 @nodpai, 1012_0_🇺🇸 United States
+      02 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq
       - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 5, 1012_1_🇨🇳
       github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq - 南非  7, 1012_1_🇨🇳
@@ -9570,11 +9600,11 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -9771,11 +9801,11 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -9966,14 +9996,14 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01',
-    '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳 IN 01',
-    1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai, 1012_0_中转
-      🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United States
-      02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信
-      1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
-      - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
+  proxies: [🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳 VN 01',
+    '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷 TR 01',
+    1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬 Singapore
+      01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States 01 @nodpai,
+    1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信 1, 1012_1_🇨🇳
+      github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq - 北京市移动 3,
+    1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
       - 南非  7, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 8, 1012_1_github.com/freefq
       - 安徽省亳州市移动 9, 1012_1_🇭🇰 github.com/freefq - 香港Amazon数据中心 10, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 11, 1012_1_🇨🇳 github.com/freefq - 江苏省镇江市移动 12, 1012_1_🇺🇸 github.com/freefq
@@ -10161,11 +10191,11 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -10356,11 +10386,11 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -10551,11 +10581,11 @@ proxy-groups:
     1012_7_美国(油管:破解资源君) 36, 1012_7_美国(油管:破解资源君) 37]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
@@ -10752,11 +10782,11 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
-      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 01', '1012_0_「蛋挞云,超低价格,超高体验」🇮🇳
-      IN 01', 1012_0_中转 🇳🇵 Nepal 01 @nodpai, 1012_0_中转 🇺🇸 United States 01 @nodpai,
-    1012_0_中转 🇯🇵 Japan 01 @nodpai, 1012_0_中转 🇬🇷 Greece 01 @nodpai, 1012_0_🇺🇸 United
-      States 02 @nodpai, 1012_0_中转 🇯🇵 Japan 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1012_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1012_0_「蛋挞云,流媒体全解锁」🇻🇳
+      VN 01', '1012_0_「eggtartcloud.shop 自选入口,速度保证」🇳🇵 NP 01', '1012_0_「蛋挞云,超低价格,超高体验」🇹🇷
+      TR 01', 1012_0_🇱🇺 Luxembourg 01 @nodpai, 1012_0_中转 🇨🇳 China 01 @nodpai, 1012_0_🇸🇬
+      Singapore 01 @nodpai, 1012_0_中转 🇮🇳 India 01 @nodpai, 1012_0_🇺🇸 United States
+      01 @nodpai, 1012_0_🇺🇸 United States 02 @nodpai, 1012_1_🇨🇳 github.com/freefq
       - 台湾省中华电信 1, 1012_1_🇨🇳 github.com/freefq - 台湾省中华电信(HiNet) 2, 1012_1_🇨🇳 github.com/freefq
       - 北京市移动 3, 1012_1_🇯🇵 github.com/freefq - 日本东京Amazon数据中心 4, 1012_1_🇺🇸 github.com/freefq
       - 美国CloudFlare节点 5, 1012_1_🇨🇳 github.com/freefq - 北京市移动 6, 1012_1_🇿🇦 github.com/freefq
