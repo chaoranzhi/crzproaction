@@ -4,15 +4,41 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {cipher: aes-256-cfb, name: 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, password: amazonskr05,
-  port: 443, server: 18.139.217.205, type: ss, udp: true}
-- {cipher: aes-256-cfb, name: '1017_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 02', password: amazonskr05,
-  port: 443, server: 54.251.4.65, type: ss, udp: true}
-- {cipher: aes-256-gcm, name: '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', password: c871c4a4-119c-4569-8ae4-6e218724a612,
-  port: 37141, server: 120.241.47.4, type: ss, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1017_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 01
+  name: 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
+  network: ws
+  port: 20036
+  server: 222.187.238.9
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ee0a4b54-be8d-4f56-be4d-521bd1ae443d
+  ws-opts: {path: /}
+- alterId: 0
+  cipher: auto
+  name: 1017_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02
+  network: ws
+  port: 80
+  server: 124.220.57.75
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b3dd95b-f6dc-4f20-97aa-3b365358419c
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01',
+  port: 30055, server: 183.232.170.22, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: d7401dfd-371f-4b95-a50d-f2dd4a598e83}
+- {cipher: aes-256-gcm, name: '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01', password: c871c4a4-119c-4569-8ae4-6e218724a612,
+  port: 37141, server: 120.241.47.4, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, port: 30014,
+  server: 183.232.170.22, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: d7401dfd-371f-4b95-a50d-f2dd4a598e83}
+- alterId: 0
+  cipher: auto
+  name: 1017_0_中转 🇨🇳 China 03 @nodpai
   network: ws
   port: 19709
   server: 123.249.101.15
@@ -22,15 +48,55 @@ proxies:
   udp: true
   uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
   ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 11003,
+- alterId: 0
+  cipher: auto
+  name: 1017_0_中转 🇨🇳 China 04 @nodpai
+  network: ws
+  port: 80
+  server: 1.117.69.235
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ee0a4b54-be8d-4f56-be4d-521bd1ae443d
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 01 @nodpai, port: 50040,
+  server: 40.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 02 @nodpai, port: 25006,
+  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 03 @nodpai, port: 11028,
+  server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 25001,
+  server: a.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- {name: 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, password: 9af5d599-a28a-4753-8e15-49fb8e7a963c,
+  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇩🇪 Germany 01 @nodpai, port: 50041, server: 41.kccic2pa.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, port: 11003,
   server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
   udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 04 @nodpai, port: 11027,
+  server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
+- {name: 1017_0_中转 🇺🇸 United States 05 @nodpai, password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
+  port: 11031, server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d5.52vpn.eu.org,
+  type: trojan, udp: true}
+- {name: 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
+  port: 11006, server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d4.52vpn.eu.org,
+  type: trojan, udp: true}
+- {cipher: aes-256-cfb, name: 1017_0_🇰🇷 South Korea 01 @nodpai, password: amazonskr05,
+  port: 443, server: 43.201.6.242, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path: [/]
-  name: 1017_0_🇺🇸 United States 01 @nodpai
+  name: 1017_0_🇺🇸 United States 06 @nodpai
   network: http
   port: 2083
   server: 5.78.78.68
@@ -39,34 +105,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 90e968f5-58a5-42ce-a2de-c81894054563
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 02 @nodpai, port: 11028,
-  server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, port: 25002,
-  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 03 @nodpai, port: 11027,
-  server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, port: 25001,
-  server: a.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {name: 1017_0_中转 🇺🇸 United States 04 @nodpai, password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
-  port: 11031, server: tg_mfbpn_d5.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d5.52vpn.eu.org,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇺🇸 United States 05 @nodpai, port: 50040,
-  server: 40.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb}
-- {name: 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
-  port: 11006, server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d4.52vpn.eu.org,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇩🇪 Germany 01 @nodpai, port: 50041, server: 41.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 5c3d60c1-ec2b-41f4-bd22-b7336d7e37bb}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 11002,
-  server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, port: 25010, server: b.baozinet.top,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
 - alterId: 0
   cipher: auto
   name: 1017_0_🇩🇪 Germany 02 @nodpai
@@ -79,24 +117,9 @@ proxies:
   udp: true
   uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
   ws-opts: {path: /}
-- {name: 1017_0_中转 🇹🇼 Taiwan 02 @nodpai, password: 114d930b-6e1e-491c-9d8f-dbc146c888c2,
-  port: 10835, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1017_0_中转 🇨🇳 China 02 @nodpai
-  network: ws
-  port: 80
-  server: 1.117.69.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ee0a4b54-be8d-4f56-be4d-521bd1ae443d
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇰🇷 South Korea 01 @nodpai
+  name: 1017_0_🇰🇷 South Korea 02 @nodpai
   network: ws
   port: 443
   server: 199.15.76.35
@@ -106,6 +129,23 @@ proxies:
   udp: true
   uuid: a783230b-cd66-4492-9517-7f6cf569e1c9
   ws-opts: {path: /vm?ed=2048}
+- {cipher: chacha20-ietf-poly1305, name: 1017_0_中转 🇸🇬 Singapore 02 @nodpai, password: 3525588ee14ea924,
+  port: 41039, server: jscm01.celerlink.one, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1017_0_🇺🇸 United States 07 @nodpai
+  network: ws
+  port: 443
+  server: 172.99.190.109
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts: {path: linkvws}
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 11002,
+  server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
 - alterId: 0
   cipher: auto
   name: 1017_0_🇦🇪 United Arab Emirates 01 @nodpai
@@ -120,52 +160,20 @@ proxies:
   ws-opts:
     headers: {Host: db5.shabijichang.com}
     path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_0_🇰🇷 South Korea 03 @nodpai
+  network: ws
+  port: 80
+  server: 45.131.133.134
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a783230b-cd66-4492-9517-7f6cf569e1c9
+  ws-opts: {path: /vm?ed=2048}
 - {name: 1017_0_中转 🇳🇱 Netherlands 01 @nodpai, password: 09833a6f-4d46-426e-87fe-7793a5489f84,
   port: 41929, server: nl01.lovehjq.xyz, skip-cert-verify: true, type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇿🇦 South Africa 01 @nodpai
-  network: ws
-  port: 80
-  server: yhnsb3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers: {Host: yhnsb3.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇸🇬 Singapore 04 @nodpai
-  network: ws
-  port: 80
-  server: xjp3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c
-  ws-opts:
-    headers: {Host: xjp3.shabijichang.com}
-    path: /
-- {cipher: chacha20-ietf-poly1305, name: 1017_0_中转 🇸🇬 Singapore 05 @nodpai, password: 3525588ee14ea924,
-  port: 41039, server: jscm01.celerlink.one, type: ss, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇮🇹 Italy 01 @nodpai
-  network: ws
-  port: 80
-  server: ml3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers: {Host: ml3.shabijichang.com}
-    path: /
 - alterId: 0
   cipher: auto
   name: 1017_0_🇦🇺 Australia 01 @nodpai
@@ -180,54 +188,22 @@ proxies:
   ws-opts:
     headers: {Host: xn3.shabijichang.com}
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇨🇦 Canada 01 @nodpai
-  network: ws
-  port: 28391
-  server: kr-cdn-6273819.starnetcn.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: aes-256-gcm
+  name: 1017_0_🇭🇰 Hong Kong 06 @nodpai
+  password: cf79ef65c44a
+  plugin: v2ray-plugin
+  plugin-opts: {host: yjy4.viynos.com, mode: websocket, mux: true, path: /quykewbbt,
+    skip-cert-verify: true, tls: true}
+  port: 443
+  server: 103.231.15.146
+  type: ss
   udp: true
-  uuid: 8e73f50a-35cd-4235-9c18-a3e061e7bc9f
-  ws-opts:
-    headers: {Host: kr-cdn-6273819.starnetcn.top}
-    path: /315d825893fc34aca0231ab967157986
-- {name: 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai, password: 114d930b-6e1e-491c-9d8f-dbc146c888c2,
-  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+- {name: 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, password: 114d930b-6e1e-491c-9d8f-dbc146c888c2,
+  port: 10804, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1017_0_🇦🇺 Australia 02 @nodpai
-  network: ws
-  port: 80
-  server: xn3.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers: {Host: xn3.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇰🇷 South Korea 02 @nodpai
-  network: ws
-  port: 80
-  server: se4.shabijichang.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers: {Host: se4.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1017_0_🇰🇷 South Korea 03 @nodpai
+  name: 1017_0_🇰🇷 South Korea 04 @nodpai
   network: ws
   port: 80
   server: se5.shabijichang.com
@@ -239,15 +215,12 @@ proxies:
   ws-opts:
     headers: {Host: se5.shabijichang.com}
     path: /
-- {alterId: 0, cipher: auto, name: 1017_0_中转 🇸🇬 Singapore 06 @nodpai, port: 26022,
+- {alterId: 0, cipher: auto, name: 1017_0_中转 🇸🇬 Singapore 03 @nodpai, port: 26022,
   server: 120.233.43.51, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: d40d976d-d569-3e7d-9396-132dea60cf28}
-- {name: 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, password: 9af5d599-a28a-4753-8e15-49fb8e7a963c,
-  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
-  name: 1017_0_🇰🇷 South Korea 04 @nodpai
+  name: 1017_0_🇰🇷 South Korea 05 @nodpai
   network: ws
   port: 80
   server: se4.shabijichang.com
@@ -258,6 +231,220 @@ proxies:
   uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c
   ws-opts:
     headers: {Host: se4.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_0_🇰🇷 South Korea 06 @nodpai
+  network: ws
+  port: 80
+  server: se4.shabijichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers: {Host: se4.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_0_🇭🇰 Hong Kong 08 @nodpai
+  network: ws
+  port: 8080
+  server: 203.147.229.77
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1bcccbe6-7372-415c-c8d2-56aecc41ee05
+  ws-opts: {path: /}
+- alterId: 64
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 1
+  network: ws
+  port: 30000
+  server: 154.85.1.244
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
+  ws-opts:
+    headers: {Host: www.28115361.xyz}
+    path: /path/1696944806961
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+  network: ws
+  port: 443
+  server: 104.16.91.78
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  ws-opts:
+    headers: {Host: Kansas.bobbykotick.rip}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+  network: ws
+  port: 2052
+  server: 162.159.140.6
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
+  ws-opts:
+    headers: {Host: lu.wx.alue.link}
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 1017_1_🇿🇦 github.com/freefq - 南非  4
+  network: ws
+  port: 30000
+  server: 156.225.67.104
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
+  ws-opts:
+    headers: {Host: www.41758112.xyz}
+    path: /path/1696944806961
+- alterId: 64
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5
+  network: ws
+  port: 30000
+  server: 142.4.110.142
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3
+  ws-opts:
+    headers: {Host: www.28251658.xyz}
+    path: /path/1697376782879
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+  network: ws
+  port: 443
+  server: v26.jsvpn.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ee5d4ca4-cb15-4201-ba4f-4709b5a833d4
+  ws-opts:
+    headers: {Host: v26.jsvpn.xyz}
+    path: /dfdfddfdf
+- alterId: 64
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7
+  network: ws
+  port: 30000
+  server: 45.199.138.186
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
+  ws-opts:
+    headers: {Host: www.19229362.xyz}
+    path: /path/1697376782879
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
+  network: ws
+  port: 80
+  server: jd2.shabijichang.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
+  ws-opts:
+    headers: {Host: jd2.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 9
+  network: ws
+  port: 80
+  server: mm2.shabijichang.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c
+  ws-opts:
+    headers: {Host: mm2.shabijichang.com}
+    path: /
+- {alterId: 64, cipher: auto, name: 1017_1_github.com/freefq - 广东省移动 10, port: 51904,
+  server: 183.238.202.173, skip-cert-verify: false, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA) 11
+  network: ws
+  port: 31235
+  server: kr-cdn-6273819.starnetcn.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e73f50a-35cd-4235-9c18-a3e061e7bc9f
+  ws-opts:
+    headers: {Host: jxhoisldy718922.starnetcn.top}
+    path: /315d825893fc34aca0231ab967157986
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+  network: ws
+  port: 2053
+  server: 104.31.16.196
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  ws-opts:
+    headers: {Host: b5.iraniancp.click}
+    path: /
+- {cipher: chacha20-ietf-poly1305, name: 1017_1_🇨🇳 github.com/freefq - 广东省深圳市移动 13,
+  password: 3525588ee14ea924, port: 41040, server: gzcm01.celerlink.one, type: ss,
+  udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+  network: ws
+  port: 80
+  server: cc3.shabijichang.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers: {Host: cc3.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
+  network: ws
+  port: 8080
+  server: ns1.v2-vip.fun
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
+  ws-opts:
+    headers: {Host: ssrsub.v005.ssrsub.com}
     path: /
 - alterId: 0
   cipher: auto
@@ -6670,29 +6857,38 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -6805,46 +7001,55 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 02', '1017_0_「eggtartcloud.shop
-      自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 01', 1017_0_中转 🇭🇰 Hong Kong
-      01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United States 02
-      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai,
-    1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai, 1017_0_中转
-      🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪
-      Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01
-      @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转 🇹🇼 Taiwan 02 @nodpai, 1017_0_中转
-      🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01 @nodpai, 1017_0_🇦🇪 United Arab
-      Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands 01 @nodpai, 1017_0_🇿🇦 South Africa
-      01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai, 1017_0_中转 🇸🇬 Singapore 05 @nodpai,
-    1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇨🇦 Canada 01
-      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1017_0_🇦🇺 Australia 02 @nodpai,
-    1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South
-      Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国 003, 1017_5_美国 004,
-    1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008, 1017_5_美国 009, 1017_5_美国
-      010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国 014, 1017_5_美国 015,
-    1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019, 1017_5_美国 020, 1017_5_美国
-      021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国 025, 1017_5_美国 026,
-    1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030, 1017_5_美国 031, 1017_5_美国
-      032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国 036, 1017_5_美国 037,
-    1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大 003, 1017_5_加拿大 004,
-    1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国 001, 1017_5_美国 039,
-    1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大 011, 1017_5_加拿大 012,
-    1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大 015, 1017_5_加拿大 016,
-    1017_5_香港 001, 1017_5_加拿大 017, 1017_5_加拿大 018, 1017_5_加拿大 019, 1017_5_美国 041,
-    1017_5_香港 002, 1017_5_加拿大 020, 1017_5_加拿大 021, 1017_5_加拿大 022, 1017_5_加拿大 023,
-    1017_5_加拿大 024, 1017_5_加拿大 025, 1017_5_加拿大 026, 1017_5_加拿大 027, 1017_5_加拿大 028,
-    1017_5_美国 042, 1017_5_香港 003, 1017_5_加拿大 029, 1017_5_香港 004, 1017_5_加拿大 030, 1017_5_加拿大
-      031, 1017_5_加拿大 032, 1017_5_香港 005, 1017_5_加拿大 033, 1017_5_加拿大 034, 1017_5_加拿大
-      035, 1017_5_美国 043, 1017_5_美国 044, 1017_5_美国 045, 1017_5_加拿大 036, 1017_5_加拿大
-      037, 1017_5_荷兰 001, 1017_5_加拿大 038, 1017_5_香港 006, 1017_5_美国 046, 1017_5_美国
-      047, 1017_5_荷兰 002, 1017_5_荷兰 003, 1017_5_波兰 001, 1017_5_法国 002, 1017_5_法国 003,
-    1017_5_加拿大 039, 1017_5_美国 048, 1017_5_香港 007, 1017_5_加拿大 040, 1017_5_加拿大 041,
-    1017_5_加拿大 042, 1017_5_加拿大 043, 1017_5_加拿大 044, 1017_5_加拿大 045, 1017_5_加拿大 046,
-    1017_5_加拿大 047, 1017_5_加拿大 048, 1017_5_加拿大 049, 1017_5_加拿大 050, 1017_5_美国 049,
-    1017_5_加拿大 051, 1017_5_加拿大 052, 1017_5_加拿大 053, 1017_5_香港 008, 1017_5_美国 050,
-    1017_5_加拿大 054, 1017_5_加拿大 055, 1017_5_加拿大 056, 1017_5_加拿大 057, 1017_5_美国 051,
-    1017_5_美国 052, 1017_5_香港 009, 1017_5_美国 053, 1017_5_香港 010, 1017_5_荷兰 004, 1017_5_加拿大
+  proxies: [1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02', '1017_0_「eggtartcloud.shop
+      自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01', 1017_0_中转 🇲🇾 Malaysia
+      01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转 🇨🇳 China 04 @nodpai, 1017_0_中转
+      🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转
+      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_中转 🇭🇰
+      Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
+      03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai, 1017_0_中转 🇺🇸 United States
+      05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷 South Korea 01 @nodpai,
+    1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_🇰🇷 South
+      Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai, 1017_0_🇺🇸 United States
+      07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪 United Arab Emirates
+      01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转 🇳🇱 Netherlands 01 @nodpai,
+    1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong 06 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_0_中转 🇸🇬 Singapore 03
+      @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷 South Korea 06 @nodpai,
+    1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心
+      1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq - 南非  4, 1017_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1017_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 9, 1017_1_github.com/freefq
+      - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA) 11, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq - 广东省深圳市移动 13, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005,
+    1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国
+      011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016,
+    1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国
+      022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027,
+    1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国
+      033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038,
+    1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大 003, 1017_5_加拿大 004, 1017_5_加拿大 005,
+    1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国 001, 1017_5_美国 039, 1017_5_加拿大 008,
+    1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大 011, 1017_5_加拿大 012, 1017_5_加拿大 013,
+    1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大 015, 1017_5_加拿大 016, 1017_5_香港 001,
+    1017_5_加拿大 017, 1017_5_加拿大 018, 1017_5_加拿大 019, 1017_5_美国 041, 1017_5_香港 002,
+    1017_5_加拿大 020, 1017_5_加拿大 021, 1017_5_加拿大 022, 1017_5_加拿大 023, 1017_5_加拿大 024,
+    1017_5_加拿大 025, 1017_5_加拿大 026, 1017_5_加拿大 027, 1017_5_加拿大 028, 1017_5_美国 042,
+    1017_5_香港 003, 1017_5_加拿大 029, 1017_5_香港 004, 1017_5_加拿大 030, 1017_5_加拿大 031,
+    1017_5_加拿大 032, 1017_5_香港 005, 1017_5_加拿大 033, 1017_5_加拿大 034, 1017_5_加拿大 035,
+    1017_5_美国 043, 1017_5_美国 044, 1017_5_美国 045, 1017_5_加拿大 036, 1017_5_加拿大 037, 1017_5_荷兰
+      001, 1017_5_加拿大 038, 1017_5_香港 006, 1017_5_美国 046, 1017_5_美国 047, 1017_5_荷兰
+      002, 1017_5_荷兰 003, 1017_5_波兰 001, 1017_5_法国 002, 1017_5_法国 003, 1017_5_加拿大
+      039, 1017_5_美国 048, 1017_5_香港 007, 1017_5_加拿大 040, 1017_5_加拿大 041, 1017_5_加拿大
+      042, 1017_5_加拿大 043, 1017_5_加拿大 044, 1017_5_加拿大 045, 1017_5_加拿大 046, 1017_5_加拿大
+      047, 1017_5_加拿大 048, 1017_5_加拿大 049, 1017_5_加拿大 050, 1017_5_美国 049, 1017_5_加拿大
+      051, 1017_5_加拿大 052, 1017_5_加拿大 053, 1017_5_香港 008, 1017_5_美国 050, 1017_5_加拿大
+      054, 1017_5_加拿大 055, 1017_5_加拿大 056, 1017_5_加拿大 057, 1017_5_美国 051, 1017_5_美国
+      052, 1017_5_香港 009, 1017_5_美国 053, 1017_5_香港 010, 1017_5_荷兰 004, 1017_5_加拿大
       058, 1017_5_美国 054, 1017_5_加拿大 059, 1017_5_美国 055, 1017_5_美国 056, 1017_5_美国
       057, 1017_5_加拿大 060, 1017_5_加拿大 061, 1017_5_加拿大 062, 1017_5_美国 058, 1017_5_加拿大
       063, 1017_5_加拿大 064, 1017_5_加拿大 065, 1017_5_加拿大 066, 1017_5_加拿大 067, 1017_5_加拿大
@@ -6939,29 +7144,38 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7079,29 +7293,38 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7213,29 +7436,38 @@ proxy-groups:
     1017_7_美国(油管:破解资源君) 72]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 02',
-    '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 01',
-    1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai, 1017_0_中转
-      🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇺🇸
-      United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United
-      States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong
-      Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05
-      @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02',
+    '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬 SG 01',
+    1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转 🇨🇳
+      China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7347,29 +7579,38 @@ proxy-groups:
     1017_7_美国(油管:破解资源君) 72]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🎯 全球直连, 🔰 节点选择, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7481,29 +7722,38 @@ proxy-groups:
     1017_7_美国(油管:破解资源君) 72]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🔰 节点选择, 🎯 全球直连, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7615,29 +7865,38 @@ proxy-groups:
     1017_7_美国(油管:破解资源君) 72]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
@@ -7755,29 +8014,38 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1017_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1017_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇸🇬 SG 03', '1017_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 01', 1017_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1017_0_🇺🇸 United States 01 @nodpai,
-    1017_0_中转 🇺🇸 United States 02 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转
-      🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸
-      United States 04 @nodpai, 1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1017_0_中转 🇩🇪 Germany 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      05 @nodpai, 1017_0_中转 🇹🇼 Taiwan 01 @nodpai, 1017_0_🇩🇪 Germany 02 @nodpai, 1017_0_中转
-      🇹🇼 Taiwan 02 @nodpai, 1017_0_中转 🇨🇳 China 02 @nodpai, 1017_0_🇰🇷 South Korea 01
-      @nodpai, 1017_0_🇦🇪 United Arab Emirates 01 @nodpai, 1017_0_中转 🇳🇱 Netherlands
-      01 @nodpai, 1017_0_🇿🇦 South Africa 01 @nodpai, 1017_0_🇸🇬 Singapore 04 @nodpai,
-    1017_0_中转 🇸🇬 Singapore 05 @nodpai, 1017_0_🇮🇹 Italy 01 @nodpai, 1017_0_🇦🇺 Australia
-      01 @nodpai, 1017_0_🇨🇦 Canada 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 06 @nodpai,
-    1017_0_🇦🇺 Australia 02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_🇰🇷 South
-      Korea 03 @nodpai, 1017_0_中转 🇸🇬 Singapore 06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong
-      07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai, 1017_5_美国 001, 1017_5_美国 002,
-    1017_5_美国 003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国
-      008, 1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013,
-    1017_5_美国 014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国
-      019, 1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024,
-    1017_5_美国 025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国
-      030, 1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035,
-    1017_5_美国 036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1017_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1017_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1017_0_「eggtartcloud.shop 自选入口,速度保证」🇹🇼 TW 01', '1017_0_「蛋挞云,超低价格,超高体验」🇸🇬
+      SG 01', 1017_0_中转 🇲🇾 Malaysia 01 @nodpai, 1017_0_中转 🇨🇳 China 03 @nodpai, 1017_0_中转
+      🇨🇳 China 04 @nodpai, 1017_0_中转 🇺🇸 United States 01 @nodpai, 1017_0_中转 🇺🇸 United
+      States 02 @nodpai, 1017_0_中转 🇺🇸 United States 03 @nodpai, 1017_0_中转 🇭🇰 Hong
+      Kong 01 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1017_0_中转 🇩🇪 Germany 01
+      @nodpai, 1017_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1017_0_中转 🇺🇸 United States 04 @nodpai,
+    1017_0_中转 🇺🇸 United States 05 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1017_0_🇰🇷
+      South Korea 01 @nodpai, 1017_0_🇺🇸 United States 06 @nodpai, 1017_0_🇩🇪 Germany
+      02 @nodpai, 1017_0_🇰🇷 South Korea 02 @nodpai, 1017_0_中转 🇸🇬 Singapore 02 @nodpai,
+    1017_0_🇺🇸 United States 07 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1017_0_🇦🇪
+      United Arab Emirates 01 @nodpai, 1017_0_🇰🇷 South Korea 03 @nodpai, 1017_0_中转
+      🇳🇱 Netherlands 01 @nodpai, 1017_0_🇦🇺 Australia 01 @nodpai, 1017_0_🇭🇰 Hong Kong
+      06 @nodpai, 1017_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1017_0_🇰🇷 South Korea 04 @nodpai,
+    1017_0_中转 🇸🇬 Singapore 03 @nodpai, 1017_0_🇰🇷 South Korea 05 @nodpai, 1017_0_🇰🇷
+      South Korea 06 @nodpai, 1017_0_🇭🇰 Hong Kong 08 @nodpai, 1017_1_🇺🇸 github.com/freefq
+      - 美国Cloudinnovation数据中心 1, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      2, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 3, 1017_1_🇿🇦 github.com/freefq
+      - 南非  4, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 5, 1017_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 6, 1017_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 7, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 8, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare节点
+      9, 1017_1_github.com/freefq - 广东省移动 10, 1017_1_🇫🇷 github.com/freefq - 法国国际航空电讯集团公司(SITA)
+      11, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, 1017_1_🇨🇳 github.com/freefq
+      - 广东省深圳市移动 13, 1017_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, 1017_1_🇺🇸
+      github.com/freefq - 美国CloudFlare节点 15, 1017_5_美国 001, 1017_5_美国 002, 1017_5_美国
+      003, 1017_5_美国 004, 1017_5_美国 005, 1017_5_美国 006, 1017_5_美国 007, 1017_5_美国 008,
+    1017_5_美国 009, 1017_5_美国 010, 1017_5_美国 011, 1017_5_美国 012, 1017_5_美国 013, 1017_5_美国
+      014, 1017_5_美国 015, 1017_5_美国 016, 1017_5_美国 017, 1017_5_美国 018, 1017_5_美国 019,
+    1017_5_美国 020, 1017_5_美国 021, 1017_5_美国 022, 1017_5_美国 023, 1017_5_美国 024, 1017_5_美国
+      025, 1017_5_美国 026, 1017_5_美国 027, 1017_5_美国 028, 1017_5_美国 029, 1017_5_美国 030,
+    1017_5_美国 031, 1017_5_美国 032, 1017_5_美国 033, 1017_5_美国 034, 1017_5_美国 035, 1017_5_美国
+      036, 1017_5_美国 037, 1017_5_美国 038, 1017_5_加拿大 001, 1017_5_加拿大 002, 1017_5_加拿大
       003, 1017_5_加拿大 004, 1017_5_加拿大 005, 1017_5_加拿大 006, 1017_5_加拿大 007, 1017_5_法国
       001, 1017_5_美国 039, 1017_5_加拿大 008, 1017_5_加拿大 009, 1017_5_加拿大 010, 1017_5_加拿大
       011, 1017_5_加拿大 012, 1017_5_加拿大 013, 1017_5_美国 040, 1017_5_加拿大 014, 1017_5_加拿大
