@@ -4,23 +4,60 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
+- {cipher: aes-256-cfb, name: 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, password: amazonskr05,
+  port: 443, server: 54.251.4.65, type: ss, udp: true}
+- {name: '1019_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
+  port: 11009, server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d4.52vpn.eu.org,
+  type: trojan, udp: true}
+- {cipher: aes-256-cfb, name: '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', password: amazonskr05,
+  port: 443, server: 18.183.77.13, type: ss, udp: true}
+- {alterId: 0, cipher: auto, name: '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 02', port: 25002,
+  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 01 @nodpai, port: 50004,
+  server: 04.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 02 @nodpai, port: 50002,
+  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 03 @nodpai, port: 50003,
+  server: 03.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇦🇹 Austria 01 @nodpai, port: 50007, server: 07.kccic2pa.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
 - alterId: 0
   cipher: auto
-  name: 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
+  grpc-opts: {grpc-service-name: douk.looooooongnet.lol}
+  name: 1019_0_🇬🇧 United Kingdom 01 @nodpai
+  network: grpc
+  port: 443
+  server: douk.looooooongnet.lol
+  servername: douk.looooooongnet.lol
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 664108d6-9879-419f-9bfe-ab8c4583d717
+- alterId: 0
+  cipher: auto
+  name: 1019_0_🇮🇹 Italy 01 @nodpai
   network: ws
-  port: 19709
-  server: 123.249.101.15
+  port: 80
+  server: ml2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
-  ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: '1019_0_「蛋挞云,流媒体全解锁」🇺🇸 US 01', port: 50004, server: 04.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+  uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c
+  ws-opts:
+    headers: {Host: ml2.shabijichang.com}
+    path: /
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 04 @nodpai, port: 50012,
+  server: 12.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
 - alterId: 0
   cipher: auto
-  name: 1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02
+  name: 1019_0_🇺🇸 United States 05 @nodpai
   network: ws
   port: 80
   server: 104.20.231.210
@@ -30,45 +67,6 @@ proxies:
   udp: true
   uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848
   ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1019_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 03
-  network: ws
-  port: 80
-  server: 104.17.27.2
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848
-  ws-opts: {path: /}
-- {name: 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10835, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10801, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 04 @nodpai, port: 50005,
-  server: 05.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
-- {name: 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10802, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇭🇰 Hong Kong 03 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10808, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 05 @nodpai, port: 50002,
-  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
-- {name: 1019_0_中转 🇯🇵 Japan 01 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10812, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇸🇬 Singapore 01 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10833, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇯🇵 Japan 02 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10813, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
   grpc-opts: {grpc-service-name: dous.looooooongnet.lol}
@@ -82,272 +80,27 @@ proxies:
   type: vmess
   udp: true
   uuid: 664108d6-9879-419f-9bfe-ab8c4583d717
-- {name: 1019_0_中转 🇺🇸 United States 07 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10820, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇭🇰 Hong Kong 04 @nodpai, password: 14538fc3-08d1-36b5-8fa2-d5557efe01ce,
-  port: 11007, server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: true, sni: tg_mfbpn_d4.52vpn.eu.org,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, password: 52a68d5a-a02b-4343-a321-9bee99602561,
-  port: 16213, server: north.steamdownload.top, skip-cert-verify: true, sni: north.steamdownload.top,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1019_0_中转 🇭🇰 Hong Kong 05 @nodpai, port: 25001,
-  server: a.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {alterId: 0, cipher: auto, name: 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, port: 50009,
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 07 @nodpai, port: 50017,
+  server: 17.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇬🇧 United Kingdom 02 @nodpai, port: 50009,
   server: 09.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
-- {name: 1019_0_中转 🇭🇰 Hong Kong 06 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10806, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1019_0_中转 🇦🇹 Austria 01 @nodpai, port: 50007, server: 07.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: a4c0faae-46f8-4038-a297-559d2c83c2e9}
+- {alterId: 0, cipher: auto, name: 1019_0_中转 🇺🇸 United States 08 @nodpai, port: 25006,
+  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
 - alterId: 0
   cipher: auto
-  name: 1019_0_🇰🇷 South Korea 01 @nodpai
+  name: 1019_0_🇺🇸 United States 09 @nodpai
   network: ws
   port: 80
-  server: se5.shabijichang.com
+  server: 104.17.27.2
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: c458695d-6908-45c3-9512-e0c46418454c
-  ws-opts:
-    headers: {Host: se5.shabijichang.com}
-    path: /
-- {name: 1019_0_中转 🇸🇬 Singapore 02 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10830, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1019_0_中转 🇺🇸 United States 08 @nodpai, password: c0f274e2-dce1-4a07-bd19-0a7eab456458,
-  port: 10822, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇯🇵 github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1
-  network: ws
-  port: 18443
-  server: 103.140.137.11
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9d6fd014-095e-45ca-b61f-01618eb51016
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
-  network: ws
-  port: 80
-  server: 104.17.27.2
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
   uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848
-  ws-opts:
-    headers: {Host: my2.gamedaylion.buzz}
-    path: /
-- {alterId: 0, cipher: auto, name: 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, port: 11715,
-  server: 5.42.77.221, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: fa5c55a5-e50a-427d-b57e-aab199f4cb84}
-- {alterId: 64, cipher: auto, name: 1019_1_github.com/freefq - 安徽省合肥市移动 4, port: 53300,
-  server: 112.29.94.22, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 64, cipher: auto, name: 1019_1_github.com/freefq - 广东省移动 5, port: 51904,
-  server: 183.238.202.173, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- alterId: 64
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 6
-  network: ws
-  port: 30000
-  server: 142.4.110.142
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 68d238ce-3ca1-46dc-b833-a0916c829ad3
-  ws-opts:
-    headers: {Host: www.28251658.xyz}
-    path: /path/1697184716677
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-  network: ws
-  port: 2052
-  server: 162.159.152.6
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
-  ws-opts:
-    headers: {Host: lu.wx.alue.link}
-    path: /
-- {alterId: 0, cipher: auto, name: 1019_1_🇺🇸 github.com/freefq - 美国Alabanza 8, port: 49017,
-  server: 65.109.191.22, skip-cert-verify: false, tls: false, type: vmess, udp: true,
-  uuid: 11053029-cc94-46b2-bff4-8019a1efaeba}
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-  network: ws
-  port: 80
-  server: 104.18.202.232
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6bf1b342-2bf0-4608-b288-8ee515e2d594
-  ws-opts:
-    headers: {Host: de1vm.cdn-03.live}
-    path: /@hopev2ray،@hopev2ray
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10
-  network: ws
-  port: 2052
-  server: yd1.992688.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6963920a-8bb3-4f87-b231-56ccb9f9b3a7
-  ws-opts:
-    headers: {Host: vceu3.vpn66.eu.org}
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 1019_1_🇿🇦 github.com/freefq - 南非  11
-  network: ws
-  port: 30000
-  server: 156.225.67.104
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f
-  ws-opts:
-    headers: {Host: www.41758112.xyz}
-    path: /path/1696944806961
-- alterId: 64
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12
-  network: ws
-  port: 30000
-  server: 154.85.1.244
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7
-  ws-opts:
-    headers: {Host: www.28115361.xyz}
-    path: /path/1696944806961
-- alterId: 64
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13
-  network: ws
-  port: 30000
-  server: 45.199.138.186
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf
-  ws-opts:
-    headers: {Host: www.19229362.xyz}
-    path: /path/1697376782879
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
-  network: ws
-  port: 80
-  server: 104.17.18.26
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5180444a-4756-43b4-960b-49eb9052e4e8
-  ws-opts:
-    headers: {Host: a.109420.xyz}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15
-  network: ws
-  port: 80
-  server: xn3.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c
-  ws-opts:
-    headers: {Host: xn3.shabijichang.com}
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国  16
-  network: ws
-  port: 80
-  server: de1-vmess.greenssh.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 12612b4e-e426-4b7c-84bd-4a02850abb1e
-  ws-opts:
-    headers: {Host: de1-vmess.greenssh.xyz}
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-  network: ws
-  port: 80
-  server: xn3.shabijichang.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
-  ws-opts:
-    headers: {Host: xn3.shabijichang.com}
-    path: /
-- {alterId: 0, cipher: auto, name: 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network
-    18, port: 41916, server: 195.123.240.170, skip-cert-verify: false, tls: false,
-  type: vmess, udp: true, uuid: 12772df9-485f-413c-edbf-3f562d61de4e}
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 19
-  network: ws
-  port: 2052
-  server: lt1.992688.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: fa5fc74f-0f0b-4221-82ba-dc7cd24e24e5
-  ws-opts:
-    headers: {Host: vcus2.vpn66.eu.org}
-    path: /
-- {alterId: 0, cipher: auto, name: 1019_1_github.com/freefq - 广东省移动 20, port: 11002,
-  server: tg_mfbpn_d4.52vpn.eu.org, skip-cert-verify: false, tls: false, type: vmess,
-  udp: true, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce}
-- alterId: 0
-  cipher: auto
-  name: 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 21
-  network: ws
-  port: 8080
-  server: singapore.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
-  ws-opts:
-    headers: {Host: ssrsub.v005.ssrsub.com}
-    path: /api/v3/download.getFile
+  ws-opts: {path: /}
 - alterId: 0
   cipher: auto
   name: 1019_5_美国 001
@@ -5313,6 +5066,254 @@ proxies:
   ws-opts:
     headers: {Host: se4.shabijichang.com}
     path: /
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 217
+  network: ws
+  port: 2052
+  server: 162.159.152.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb
+  ws-opts:
+    headers: {host: lu.wx.alue.link}
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 1019_5_美国 148
+  network: ws
+  port: 443
+  server: 198.2.204.40
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {host: www.75575729.xyz}
+    path: /path/1695724315810
+- alterId: 64
+  cipher: auto
+  name: 1019_5_美国 149
+  network: ws
+  port: 443
+  server: 137.175.22.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {host: www.82078541.xyz}
+    path: /path/1695724315810
+- alterId: 64
+  cipher: auto
+  name: 1019_5_美国 150
+  network: ws
+  port: 443
+  server: 142.0.128.105
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {host: www.63084332.xyz}
+    path: /path/1695724315810
+- {alterId: 64, cipher: auto, name: 1019_5_荷兰 011, network: tcp, port: 42952, server: 156.245.8.144,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 63b4b829-7f01-4e26-b037-f04b1f098765}
+- {alterId: 64, cipher: auto, name: 1019_5_美国 151, network: tcp, port: 43900, server: 107.167.30.132,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d}
+- {alterId: 64, cipher: auto, name: 1019_5_美国 152, network: tcp, port: 48944, server: 45.199.138.164,
+  skip-cert-verify: true, tls: false, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79}
+- alterId: 64
+  cipher: auto
+  name: 1019_5_美国 153
+  network: ws
+  port: 30000
+  server: 38.26.135.24
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers: {Host: www.39838266.xyz}
+    path: /path/1696339269262
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 218
+  network: ws
+  port: 2053
+  server: v15.583182.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 95be64e0-c28c-42c4-8ffd-ced9b092d996
+  ws-opts:
+    headers: {Host: v15.583181.xyz}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 219
+  network: ws
+  port: 443
+  server: jnd1.531131.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d63bc139-e309-4a65-bb9e-c27c34d24b72
+  ws-opts:
+    headers: {Host: jnd1.531131.xyz}
+    path: /jnd1?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1019_5_英国 002
+  network: ws
+  port: 80
+  server: gb-one.1234585.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: edafa6df-6dbe-4b29-adc4-53e633a4a6a8
+  ws-opts:
+    headers: {Host: gb-one.1234585.xyz}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1019_5_澳大利亞 001
+  network: ws
+  port: 443
+  server: cf.13d7s.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d63bc139-e309-4a65-bb9e-c27c34d24b72
+  ws-opts:
+    headers: {Host: us1.cou.gay}
+    path: /us1?ed=2048
+- {alterId: 0, cipher: auto, name: 1019_5_伊朗 001, network: tcp, port: 58696, server: 193.176.242.202,
+  skip-cert-verify: true, type: vmess, uuid: 468dab33-a1e0-4e1e-a364-aa0f369988ed}
+- {alterId: 0, cipher: auto, name: 1019_5_德国 005, network: tcp, port: 34733, server: 91.107.181.42,
+  skip-cert-verify: true, type: vmess, uuid: 56a3e3f9-3295-4d7a-9236-4b77b147cb83}
+- alterId: 1
+  cipher: auto
+  name: 1019_5_加拿大 220
+  network: ws
+  port: 443
+  server: 104.16.67.38
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers: {Host: alvvin.click}
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 221
+  network: ws
+  port: 443
+  server: 104.21.75.246
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers: {Host: cf.tonyluk.link}
+    path: /ophelia.mom:443/linkvws
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 222
+  network: ws
+  port: 8443
+  server: 104.31.16.120
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42
+  ws-opts:
+    headers: {Host: cloudconebbb.gorgorchicken.one}
+    path: /cloudconebbb
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 223
+  network: ws
+  port: 80
+  server: db4.shabijichang.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590
+  ws-opts:
+    headers: {Host: db4.shabijichang.com}
+    path: /
+- {alterId: 0, cipher: auto, name: 1019_5_美国 154, network: tcp, port: 3456, server: sw-89.116.38.184.nip.io,
+  skip-cert-verify: true, type: vmess, uuid: 32e49539-f569-403d-b4b6-a8978c040d5d}
+- alterId: 0
+  cipher: auto
+  name: 1019_5_荷兰 012
+  network: ws
+  port: 443
+  server: 188.114.96.249
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1f4460b3-745c-4527-cc17-9072b295fea1
+  ws-opts:
+    headers: {Host: gus.turbo021.link}
+    path: /1f4460b3-745c-4527-cc17-9072b295fea1
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 224
+  network: ws
+  port: 80
+  server: yhnsb3.shabijichang.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers: {Host: yhnsb3.shabijichang.com}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 225
+  network: ws
+  port: 2096
+  server: 104.25.254.162
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 12009e57-6fd8-46d6-94af-539514a7e7c7
+  ws-opts:
+    headers: {Host: s1.shargh.shop}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1019_5_美国 155
+  network: ws
+  port: 443
+  server: share.relay.wiki
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3b651a5b-546f-4ae1-83eb-34fd403dca80
+  ws-opts:
+    headers: {Host: share.relay.wiki}
+    path: /3b651a5b-546f-4ae1-83eb-34fd403dca80
+- alterId: 0
+  cipher: auto
+  name: 1019_5_加拿大 226
+  network: ws
+  port: 8880
+  server: 104.17.84.82
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  ws-opts:
+    headers: {Host: poland.yj2022.gq}
+    path: /XQ2WCa29jfDM25GBcbnQ
 - {alterId: 2, cipher: auto, name: 1019_6_公益机场:sub.ssrsub.com, port: 52286, server: sub.ssrsub.com,
   skip-cert-verify: true, tls: false, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51}
 - alterId: 64
@@ -6979,83 +6980,68 @@ proxies:
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 11053029-cc94-46b2-bff4-8019a1efaeba}
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -7083,7 +7069,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7136,54 +7127,39 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸 US 01', '1019_0_「eggtartcloud.shop
-      自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 03', 1019_0_中转 🇹🇼 Taiwan 01
-      @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转 🇺🇸 United States 04 @nodpai,
-    1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1019_0_中转
-      🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan 01 @nodpai, 1019_0_中转 🇸🇬 Singapore
-      01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai, 1019_0_🇺🇸 United States 06 @nodpai,
-    1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转
-      🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1019_0_中转 🇬🇧 United
-      Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1019_0_中转 🇦🇹 Austria
-      01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai, 1019_0_中转 🇸🇬 Singapore 02 @nodpai,
-    1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵 github.com/freefq - 日本东京rixCloud(TYO02)边缘节点
-      1, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq
-      - 俄罗斯  3, 1019_1_github.com/freefq - 安徽省合肥市移动 4, 1019_1_github.com/freefq -
-      广东省移动 5, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 7, 1019_1_🇺🇸 github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦
-      github.com/freefq - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心
-      12, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
+  proxies: [1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', '1019_0_「eggtartcloud.shop
+      自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 02', 1019_0_中转 🇺🇸 United States
+      01 @nodpai, 1019_0_中转 🇺🇸 United States 02 @nodpai, 1019_0_中转 🇺🇸 United States
+      03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇬🇧 United Kingdom 01 @nodpai,
+    1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸 United States 04 @nodpai, 1019_0_🇺🇸 United
+      States 05 @nodpai, 1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States
+      07 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States
+      08 @nodpai, 1019_0_🇺🇸 United States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002,
+    1019_5_美国 003, 1019_5_美国 004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国
+      008, 1019_5_美国 009, 1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013,
+    1019_5_美国 014, 1019_5_美国 015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国
+      019, 1019_5_美国 020, 1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024,
+    1019_5_美国 025, 1019_5_美国 026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国
+      030, 1019_5_美国 031, 1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035,
+    1019_5_美国 036, 1019_5_美国 037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大
+      003, 1019_5_加拿大 004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国
+      001, 1019_5_美国 039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大
+      011, 1019_5_加拿大 012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大
+      015, 1019_5_加拿大 016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大
+      019, 1019_5_美国 041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大
+      022, 1019_5_加拿大 023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大
+      027, 1019_5_加拿大 028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港
+      004, 1019_5_加拿大 030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大
+      033, 1019_5_加拿大 034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国
+      045, 1019_5_加拿大 036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港
+      006, 1019_5_美国 046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001,
+    1019_5_法国 002, 1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大
+      040, 1019_5_加拿大 041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大
+      045, 1019_5_加拿大 046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大
+      050, 1019_5_美国 049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港
+      008, 1019_5_美国 050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国
+      051, 1019_5_美国 052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004,
+    1019_5_加拿大 057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
       057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
       062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
       067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
@@ -7239,7 +7215,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7292,83 +7273,68 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -7396,7 +7362,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7454,83 +7425,68 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -7558,7 +7514,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7610,83 +7571,68 @@ proxy-groups:
     1019_7_美国(油管:破解资源君) 78, 1019_7_美国(油管:破解资源君) 79, 1019_7_美国(油管:破解资源君) 80]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸 US 01',
-    '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 03',
-    1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转 🇺🇸
-      United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan 01
-      @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai, 1019_0_🇺🇸
-      United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01',
+    '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰 HK 02',
+    1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02 @nodpai,
+    1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇬🇧
+      United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸 United States
+      04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United States 06 @nodpai,
+    1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 02 @nodpai,
+    1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United States 09 @nodpai, 1019_5_美国
+      001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004, 1019_5_美国 005, 1019_5_美国 006,
+    1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国 010, 1019_5_美国 011, 1019_5_美国
+      012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015, 1019_5_美国 016, 1019_5_美国 017,
+    1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国 021, 1019_5_美国 022, 1019_5_美国
+      023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026, 1019_5_美国 027, 1019_5_美国 028,
+    1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国 032, 1019_5_美国 033, 1019_5_美国
+      034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037, 1019_5_美国 038, 1019_5_加拿大
+      001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004, 1019_5_加拿大 005, 1019_5_加拿大
+      006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039, 1019_5_加拿大 008, 1019_5_加拿大
+      009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012, 1019_5_加拿大 013, 1019_5_美国
+      040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016, 1019_5_香港 001, 1019_5_加拿大
+      017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041, 1019_5_香港 002, 1019_5_加拿大
+      020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023, 1019_5_加拿大 024, 1019_5_加拿大
+      025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028, 1019_5_美国 042, 1019_5_香港
+      003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大 031, 1019_5_加拿大
+      032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大 035, 1019_5_美国
+      043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大 037, 1019_5_荷兰
+      001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国 047, 1019_5_荷兰
+      002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003, 1019_5_加拿大
+      039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041, 1019_5_加拿大
+      042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046, 1019_5_加拿大
+      047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049, 1019_5_加拿大
+      051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050, 1019_5_加拿大
+      054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052, 1019_5_香港
+      009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -7714,7 +7660,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7766,83 +7717,68 @@ proxy-groups:
     1019_7_美国(油管:破解资源君) 78, 1019_7_美国(油管:破解资源君) 79, 1019_7_美国(油管:破解资源君) 80]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🎯 全球直连, 🔰 节点选择, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -7870,7 +7806,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -7922,83 +7863,68 @@ proxy-groups:
     1019_7_美国(油管:破解资源君) 78, 1019_7_美国(油管:破解资源君) 79, 1019_7_美国(油管:破解资源君) 80]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🔰 节点选择, 🎯 全球直连, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -8026,7 +7952,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -8078,83 +8009,68 @@ proxy-groups:
     1019_7_美国(油管:破解资源君) 78, 1019_7_美国(油管:破解资源君) 79, 1019_7_美国(油管:破解资源君) 80]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -8182,7 +8098,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
@@ -8240,83 +8161,68 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1019_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1019_0_「蛋挞云,流媒体全解锁」🇺🇸
-      US 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇺🇸 US 02', '1019_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 03', 1019_0_中转 🇹🇼 Taiwan 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1019_0_中转
-      🇺🇸 United States 04 @nodpai, 1019_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1019_0_中转 🇭🇰
-      Hong Kong 03 @nodpai, 1019_0_中转 🇺🇸 United States 05 @nodpai, 1019_0_中转 🇯🇵 Japan
-      01 @nodpai, 1019_0_中转 🇸🇬 Singapore 01 @nodpai, 1019_0_中转 🇯🇵 Japan 02 @nodpai,
-    1019_0_🇺🇸 United States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转
-      🇭🇰 Hong Kong 04 @nodpai, 1019_0_中转 🇨🇭 Switzerland 01 @nodpai, 1019_0_中转 🇭🇰 Hong
-      Kong 05 @nodpai, 1019_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1019_0_中转 🇭🇰 Hong Kong
-      06 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai, 1019_0_🇰🇷 South Korea 01 @nodpai,
-    1019_0_中转 🇸🇬 Singapore 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_1_🇯🇵
-      github.com/freefq - 日本东京rixCloud(TYO02)边缘节点 1, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 2, 1019_1_🇷🇺 github.com/freefq - 俄罗斯  3, 1019_1_github.com/freefq
-      - 安徽省合肥市移动 4, 1019_1_github.com/freefq - 广东省移动 5, 1019_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞PEG TECH 6, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 7, 1019_1_🇺🇸
-      github.com/freefq - 美国Alabanza 8, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      9, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 10, 1019_1_🇿🇦 github.com/freefq
-      - 南非  11, 1019_1_🇺🇸 github.com/freefq - 美国Cloudinnovation数据中心 12, 1019_1_🇺🇸
-      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 13, 1019_1_🇺🇸 github.com/freefq -
-      美国CloudFlare公司CDN节点 14, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 15, 1019_1_🇺🇸
-      github.com/freefq - 美国  16, 1019_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      17, 1019_1_🇺🇸 github.com/freefq - 美国加利福尼亚洛杉矶ITLDC Network 18, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 19, 1019_1_github.com/freefq - 广东省移动 20, 1019_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare公司CDN节点 21, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国
-      004, 1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009,
-    1019_5_美国 010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国
-      015, 1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020,
-    1019_5_美国 021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国
-      026, 1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031,
-    1019_5_美国 032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国
-      037, 1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大
-      004, 1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国
-      039, 1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大
-      012, 1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大
-      016, 1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国
-      041, 1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大
-      023, 1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大
-      028, 1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大
-      030, 1019_5_加拿大 031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大
-      034, 1019_5_加拿大 035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大
-      036, 1019_5_加拿大 037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国
-      046, 1019_5_美国 047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002,
-    1019_5_法国 003, 1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大
-      041, 1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大
-      046, 1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国
-      049, 1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国
-      050, 1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国
-      052, 1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大
-      057, 1019_5_美国 054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国
-      057, 1019_5_加拿大 059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大
-      062, 1019_5_加拿大 063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大
-      067, 1019_5_加拿大 068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大
-      072, 1019_5_哥斯达黎加 001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大
-      075, 1019_5_加拿大 076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国
-      060, 1019_5_美国 061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大
-      083, 1019_5_加拿大 084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大
-      088, 1019_5_捷克 001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国
-      063, 1019_5_加拿大 091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大
-      095, 1019_5_加拿大 096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国
-      065, 1019_5_加拿大 099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国
-      067, 1019_5_美国 068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国
-      071, 1019_5_美国 072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001,
-    1019_5_美国 074, 1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国
-      078, 1019_5_美国 079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083,
-    1019_5_加拿大 102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106,
-    1019_5_美国 084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109,
-    1019_5_加拿大 110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113,
-    1019_5_加拿大 114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117,
-    1019_5_加拿大 118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088,
-    1019_5_加拿大 121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123,
-    1019_5_加拿大 124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089,
-    1019_5_加拿大 128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132,
-    1019_5_加拿大 133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136,
-    1019_5_加拿大 137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001,
-    1019_5_加拿大 141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144,
-    1019_5_加拿大 145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091,
-    1019_5_美国 092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1019_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1019_0_「蛋挞云,流媒体全解锁」🇭🇰
+      HK 01', '1019_0_「eggtartcloud.shop 自选入口,速度保证」🇯🇵 JP 01', '1019_0_「蛋挞云,超低价格,超高体验」🇭🇰
+      HK 02', 1019_0_中转 🇺🇸 United States 01 @nodpai, 1019_0_中转 🇺🇸 United States 02
+      @nodpai, 1019_0_中转 🇺🇸 United States 03 @nodpai, 1019_0_中转 🇦🇹 Austria 01 @nodpai,
+    1019_0_🇬🇧 United Kingdom 01 @nodpai, 1019_0_🇮🇹 Italy 01 @nodpai, 1019_0_中转 🇺🇸
+      United States 04 @nodpai, 1019_0_🇺🇸 United States 05 @nodpai, 1019_0_🇺🇸 United
+      States 06 @nodpai, 1019_0_中转 🇺🇸 United States 07 @nodpai, 1019_0_中转 🇬🇧 United
+      Kingdom 02 @nodpai, 1019_0_中转 🇺🇸 United States 08 @nodpai, 1019_0_🇺🇸 United
+      States 09 @nodpai, 1019_5_美国 001, 1019_5_美国 002, 1019_5_美国 003, 1019_5_美国 004,
+    1019_5_美国 005, 1019_5_美国 006, 1019_5_美国 007, 1019_5_美国 008, 1019_5_美国 009, 1019_5_美国
+      010, 1019_5_美国 011, 1019_5_美国 012, 1019_5_美国 013, 1019_5_美国 014, 1019_5_美国 015,
+    1019_5_美国 016, 1019_5_美国 017, 1019_5_美国 018, 1019_5_美国 019, 1019_5_美国 020, 1019_5_美国
+      021, 1019_5_美国 022, 1019_5_美国 023, 1019_5_美国 024, 1019_5_美国 025, 1019_5_美国 026,
+    1019_5_美国 027, 1019_5_美国 028, 1019_5_美国 029, 1019_5_美国 030, 1019_5_美国 031, 1019_5_美国
+      032, 1019_5_美国 033, 1019_5_美国 034, 1019_5_美国 035, 1019_5_美国 036, 1019_5_美国 037,
+    1019_5_美国 038, 1019_5_加拿大 001, 1019_5_加拿大 002, 1019_5_加拿大 003, 1019_5_加拿大 004,
+    1019_5_加拿大 005, 1019_5_加拿大 006, 1019_5_加拿大 007, 1019_5_法国 001, 1019_5_美国 039,
+    1019_5_加拿大 008, 1019_5_加拿大 009, 1019_5_加拿大 010, 1019_5_加拿大 011, 1019_5_加拿大 012,
+    1019_5_加拿大 013, 1019_5_美国 040, 1019_5_加拿大 014, 1019_5_加拿大 015, 1019_5_加拿大 016,
+    1019_5_香港 001, 1019_5_加拿大 017, 1019_5_加拿大 018, 1019_5_加拿大 019, 1019_5_美国 041,
+    1019_5_香港 002, 1019_5_加拿大 020, 1019_5_加拿大 021, 1019_5_加拿大 022, 1019_5_加拿大 023,
+    1019_5_加拿大 024, 1019_5_加拿大 025, 1019_5_加拿大 026, 1019_5_加拿大 027, 1019_5_加拿大 028,
+    1019_5_美国 042, 1019_5_香港 003, 1019_5_加拿大 029, 1019_5_香港 004, 1019_5_加拿大 030, 1019_5_加拿大
+      031, 1019_5_加拿大 032, 1019_5_香港 005, 1019_5_加拿大 033, 1019_5_加拿大 034, 1019_5_加拿大
+      035, 1019_5_美国 043, 1019_5_美国 044, 1019_5_美国 045, 1019_5_加拿大 036, 1019_5_加拿大
+      037, 1019_5_荷兰 001, 1019_5_加拿大 038, 1019_5_香港 006, 1019_5_美国 046, 1019_5_美国
+      047, 1019_5_荷兰 002, 1019_5_荷兰 003, 1019_5_波兰 001, 1019_5_法国 002, 1019_5_法国 003,
+    1019_5_加拿大 039, 1019_5_美国 048, 1019_5_香港 007, 1019_5_加拿大 040, 1019_5_加拿大 041,
+    1019_5_加拿大 042, 1019_5_加拿大 043, 1019_5_加拿大 044, 1019_5_加拿大 045, 1019_5_加拿大 046,
+    1019_5_加拿大 047, 1019_5_加拿大 048, 1019_5_加拿大 049, 1019_5_加拿大 050, 1019_5_美国 049,
+    1019_5_加拿大 051, 1019_5_加拿大 052, 1019_5_加拿大 053, 1019_5_香港 008, 1019_5_美国 050,
+    1019_5_加拿大 054, 1019_5_加拿大 055, 1019_5_加拿大 056, 1019_5_美国 051, 1019_5_美国 052,
+    1019_5_香港 009, 1019_5_美国 053, 1019_5_香港 010, 1019_5_荷兰 004, 1019_5_加拿大 057, 1019_5_美国
+      054, 1019_5_加拿大 058, 1019_5_美国 055, 1019_5_美国 056, 1019_5_美国 057, 1019_5_加拿大
+      059, 1019_5_加拿大 060, 1019_5_加拿大 061, 1019_5_美国 058, 1019_5_加拿大 062, 1019_5_加拿大
+      063, 1019_5_加拿大 064, 1019_5_加拿大 065, 1019_5_加拿大 066, 1019_5_加拿大 067, 1019_5_加拿大
+      068, 1019_5_加拿大 069, 1019_5_加拿大 070, 1019_5_加拿大 071, 1019_5_加拿大 072, 1019_5_哥斯达黎加
+      001, 1019_5_美国 059, 1019_5_加拿大 073, 1019_5_加拿大 074, 1019_5_加拿大 075, 1019_5_加拿大
+      076, 1019_5_加拿大 077, 1019_5_加拿大 078, 1019_5_加拿大 079, 1019_5_美国 060, 1019_5_美国
+      061, 1019_5_加拿大 080, 1019_5_加拿大 081, 1019_5_加拿大 082, 1019_5_加拿大 083, 1019_5_加拿大
+      084, 1019_5_加拿大 085, 1019_5_加拿大 086, 1019_5_加拿大 087, 1019_5_加拿大 088, 1019_5_捷克
+      001, 1019_5_加拿大 089, 1019_5_美国 062, 1019_5_加拿大 090, 1019_5_美国 063, 1019_5_加拿大
+      091, 1019_5_加拿大 092, 1019_5_加拿大 093, 1019_5_加拿大 094, 1019_5_加拿大 095, 1019_5_加拿大
+      096, 1019_5_加拿大 097, 1019_5_美国 064, 1019_5_加拿大 098, 1019_5_美国 065, 1019_5_加拿大
+      099, 1019_5_荷兰 005, 1019_5_加拿大 100, 1019_5_美国 066, 1019_5_美国 067, 1019_5_美国
+      068, 1019_5_加拿大 101, 1019_5_美国 069, 1019_5_美国 070, 1019_5_美国 071, 1019_5_美国
+      072, 1019_5_美国 073, 1019_5_越南 001, 1019_5_台湾 001, 1019_5_日本 001, 1019_5_美国 074,
+    1019_5_美国 075, 1019_5_新加坡 001, 1019_5_美国 076, 1019_5_美国 077, 1019_5_美国 078, 1019_5_美国
+      079, 1019_5_美国 080, 1019_5_美国 081, 1019_5_美国 082, 1019_5_美国 083, 1019_5_加拿大
+      102, 1019_5_加拿大 103, 1019_5_加拿大 104, 1019_5_加拿大 105, 1019_5_加拿大 106, 1019_5_美国
+      084, 1019_5_加拿大 107, 1019_5_加拿大 108, 1019_5_荷兰 006, 1019_5_加拿大 109, 1019_5_加拿大
+      110, 1019_5_加拿大 111, 1019_5_美国 085, 1019_5_加拿大 112, 1019_5_加拿大 113, 1019_5_加拿大
+      114, 1019_5_美国 086, 1019_5_加拿大 115, 1019_5_加拿大 116, 1019_5_加拿大 117, 1019_5_加拿大
+      118, 1019_5_加拿大 119, 1019_5_美国 087, 1019_5_加拿大 120, 1019_5_美国 088, 1019_5_加拿大
+      121, 1019_5_亚太地区 001, 1019_5_日本 002, 1019_5_加拿大 122, 1019_5_加拿大 123, 1019_5_加拿大
+      124, 1019_5_加拿大 125, 1019_5_加拿大 126, 1019_5_加拿大 127, 1019_5_美国 089, 1019_5_加拿大
+      128, 1019_5_加拿大 129, 1019_5_加拿大 130, 1019_5_加拿大 131, 1019_5_加拿大 132, 1019_5_加拿大
+      133, 1019_5_加拿大 134, 1019_5_美国 090, 1019_5_加拿大 135, 1019_5_加拿大 136, 1019_5_加拿大
+      137, 1019_5_加拿大 138, 1019_5_加拿大 139, 1019_5_加拿大 140, 1019_5_芬兰 001, 1019_5_加拿大
+      141, 1019_5_加拿大 142, 1019_5_加拿大 143, 1019_5_瑞典 001, 1019_5_加拿大 144, 1019_5_加拿大
+      145, 1019_5_加拿大 146, 1019_5_加拿大 147, 1019_5_加拿大 148, 1019_5_美国 091, 1019_5_美国
+      092, 1019_5_加拿大 149, 1019_5_美国 093, 1019_5_加拿大 150, 1019_5_香港 011, 1019_5_捷克
       002, 1019_5_加拿大 151, 1019_5_美国 094, 1019_5_加拿大 152, 1019_5_加拿大 153, 1019_5_塞浦路斯
       001, 1019_5_美国 095, 1019_5_美国 096, 1019_5_加拿大 154, 1019_5_加拿大 155, 1019_5_加拿大
       156, 1019_5_荷兰 007, 1019_5_荷兰 008, 1019_5_荷兰 009, 1019_5_美国 097, 1019_5_加拿大
@@ -8344,7 +8250,12 @@ proxy-groups:
       210, 1019_5_香港 012, 1019_5_美国 143, 1019_5_香港 013, 1019_5_德国 003, 1019_5_美国 144,
     1019_5_加拿大 211, 1019_5_加拿大 212, 1019_5_加拿大 213, 1019_5_加拿大 214, 1019_5_美国 145,
     1019_5_德国 004, 1019_5_美国 146, 1019_5_加拿大 215, 1019_5_美国 147, 1019_5_土耳其 001, 1019_5_加拿大
-      216, 1019_6_公益机场:sub.ssrsub.com, 1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
+      216, 1019_5_加拿大 217, 1019_5_美国 148, 1019_5_美国 149, 1019_5_美国 150, 1019_5_荷兰
+      011, 1019_5_美国 151, 1019_5_美国 152, 1019_5_美国 153, 1019_5_加拿大 218, 1019_5_加拿大
+      219, 1019_5_英国 002, 1019_5_澳大利亞 001, 1019_5_伊朗 001, 1019_5_德国 005, 1019_5_加拿大
+      220, 1019_5_加拿大 221, 1019_5_加拿大 222, 1019_5_加拿大 223, 1019_5_美国 154, 1019_5_荷兰
+      012, 1019_5_加拿大 224, 1019_5_加拿大 225, 1019_5_美国 155, 1019_5_加拿大 226, 1019_6_公益机场:sub.ssrsub.com,
+    1019_6_@SSRSUB-V01-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V02-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V03-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V04-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V05-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V06-付费推荐:dlj.tf/ssrsub,
     1019_6_@SSRSUB-V07-付费推荐:dlj.tf/ssrsub, 1019_6_@SSRSUB-V08-付费推荐:dlj.tf/ssrsub,
