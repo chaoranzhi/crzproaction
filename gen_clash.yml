@@ -4,12 +4,23 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {alterId: 0, cipher: auto, name: 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, port: 25003, server: a.baozinet.top,
+- {alterId: 0, cipher: auto, name: 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, port: 25001, server: a.baozinet.top,
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {alterId: 0, cipher: auto, name: '1021_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', port: 25001, server: a.baozinet.top,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {cipher: aes-256-cfb, name: '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', password: amazonskr05,
-  port: 443, server: 43.201.85.174, type: ss, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1021_0_「蛋挞云,流媒体全解锁」🇮🇳 IN 01
+  network: ws
+  port: 8080
+  server: 20.244.51.99
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 256fe3c4-8fda-4a45-a80d-68ca33f50087
+  ws-opts: {path: /}
+- {name: '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10802, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
 - alterId: 0
   cipher: auto
   grpc-opts: {grpc-service-name: dous.looooooongnet.lol}
@@ -23,141 +34,86 @@ proxies:
   type: vmess
   udp: true
   uuid: ba3fb912-8b6c-4682-ae84-5585e67036f9
-- {name: 1021_0_中转 🇸🇬 Singapore 02 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10828, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: sg.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 03 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10833, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_🇸🇬 Singapore 04 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10834, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: sg.kunlun-ppg.com,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1021_0_🇮🇳 India 01 @nodpai
-  network: ws
-  port: 8080
-  server: 20.244.51.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 256fe3c4-8fda-4a45-a80d-68ca33f50087
-  ws-opts: {path: /}
-- alterId: 0
-  cipher: auto
-  name: 1021_0_🇭🇰 Hong Kong 02 @nodpai
-  network: ws
-  port: 80
-  server: hktddns.aikunapp.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1e63f999-7553-46c0-93eb-65b6553e1bde
-  ws-opts:
-    headers: {Host: hktddns.aikunapp.com}
-    path: /hkbn
-- {cipher: aes-256-cfb, name: 1021_0_🇰🇷 South Korea 02 @nodpai, password: amazonskr05,
-  port: 443, server: 13.125.176.168, type: ss, udp: true}
-- {name: 1021_0_🇭🇰 Hong Kong 03 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10810, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+- {name: 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10807, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - {name: 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10802, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 05 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10827, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 06 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10830, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: sg.kunlun-ppg.com,
+  port: 10801, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - {name: 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10805, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  port: 10808, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - {name: 1021_0_中转 🇯🇵 Japan 01 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10815, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: jp.kunlun-ppg.com,
+  port: 10812, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: jp.kunlun-ppg.com,
+  type: trojan, udp: true}
+- alterId: 0
+  cipher: auto
+  name: 1021_0_中转 🇨🇳 China 01 @nodpai
+  network: ws
+  port: 19709
+  server: 123.249.101.15
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
+  ws-opts: {path: /}
+- {alterId: 0, cipher: auto, name: 1021_0_中转 🇺🇸 United States 02 @nodpai, port: 25006,
+  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- {name: 1021_0_中转 🇭🇰 Hong Kong 06 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10804, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {name: 1021_0_中转 🇺🇸 United States 03 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+  port: 10826, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: us.kunlun-ppg.com,
+  type: trojan, udp: true}
+- {name: 1021_0_中转 🇹🇼 Taiwan 01 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+  port: 10835, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: other.kunlun-ppg.com,
+  type: trojan, udp: true}
+- {name: 1021_0_🇫🇷 France 01 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+  port: 10838, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: other.kunlun-ppg.com,
+  type: trojan, udp: true}
+- {name: 1021_0_🇺🇦 Ukraine 01 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10845, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {name: 1021_0_中转 🇸🇬 Singapore 01 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10833, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+  type: trojan, udp: true}
+- {name: 1021_0_🇹🇷 Turkey 01 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+  port: 10846, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: other.kunlun-ppg.com,
+  type: trojan, udp: true}
+- {name: 1021_0_🇩🇪 Germany 01 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+  port: 10839, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: other.kunlun-ppg.com,
+  type: trojan, udp: true}
+- {name: 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10810, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - {name: 1021_0_中转 🇯🇵 Japan 02 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
   port: 10811, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: jp.kunlun-ppg.com,
   type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  grpc-opts: {grpc-service-name: douk.looooooongnet.lol}
-  name: 1021_0_🇬🇧 United Kingdom 01 @nodpai
-  network: grpc
-  port: 443
-  server: douk.looooooongnet.lol
-  servername: douk.looooooongnet.lol
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ba3fb912-8b6c-4682-ae84-5585e67036f9
-- {name: 1021_0_中转 🇸🇬 Singapore 07 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10833, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: sg.kunlun-ppg.com,
+- {name: 1021_0_🇸🇬 Singapore 02 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10827, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 08 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10831, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: sg.kunlun-ppg.com,
+- {name: 1021_0_中转 🇯🇵 Japan 03 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10818, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 06 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10806, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
+- {name: 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10806, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10805, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10807, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10801, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_🇺🇸 United States 02 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+- {name: 1021_0_中转 🇺🇸 United States 04 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
   port: 10821, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10841, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
+- {name: 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10850, server: other.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇯🇵 Japan 03 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10812, server: jp.kunlun-ppg.com, skip-cert-verify: true, sni: jp.kunlun-ppg.com,
+- {name: 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10809, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 09 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10828, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇺🇸 United States 03 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10823, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: us.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇺🇸 United States 04 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10822, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: us.kunlun-ppg.com,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10807, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- {name: 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
+- {name: 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
   port: 10804, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
   type: trojan, udp: true}
-- {name: 1021_0_中转 🇸🇬 Singapore 10 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
-  port: 10829, server: sg.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
-  type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1021_0_🇸🇬 Singapore 11 @nodpai
-  network: ws
-  port: 443
-  server: auto.ccccdn.tk
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 65da50e6-89c0-4d10-b7cf-16404dae0879
-  ws-opts:
-    headers: {Host: auto.ccccdn.tk}
-    path: /wo.img
-- {name: 1021_0_中转 🇭🇰 Hong Kong 13 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
-  port: 10803, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: hk.kunlun-ppg.com,
+- {name: 1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, password: 82594e27-42be-4de5-946d-905a9cf72eac,
+  port: 10809, server: hk.kunlun-ppg.com, skip-cert-verify: true, sni: alibaba-node.cn,
   type: trojan, udp: true}
 - {name: 1021_0_中转 🇺🇸 United States 05 @nodpai, password: d6a29d2d-8cd0-490d-a260-654e0390508b,
   port: 10821, server: us.kunlun-ppg.com, skip-cert-verify: true, sni: us.kunlun-ppg.com,
@@ -7316,23 +7272,19 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -7473,33 +7425,29 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01', '1021_0_「eggtartcloud.shop
-      自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01', 1021_0_中转 🇸🇬 Singapore
-      02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai, 1021_0_🇸🇬 Singapore 04 @nodpai,
-    1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong 02 @nodpai, 1021_0_🇰🇷 South Korea
-      02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转 🇸🇬 Singapore 06 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇯🇵 Japan 02
-      @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai, 1021_0_中转 🇸🇬 Singapore 07 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 09 @nodpai, 1021_0_🇺🇸 United States 02 @nodpai, 1021_0_中转 🇦🇪 United Arab
-      Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10
-      @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai,
-    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转 🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore
-      11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 13 @nodpai, 1021_0_中转 🇺🇸 United States 05
-      @nodpai, 1021_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq
-      - 香港城市电讯有限公司 2, 1021_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 4, 1021_1_🇿🇦 github.com/freefq - 南非  5,
-    1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 1021_5_美国 001, 1021_5_美国
-      002, 1021_5_美国 003, 1021_5_美国 004, 1021_5_美国 005, 1021_5_美国 006, 1021_5_美国 007,
-    1021_5_美国 008, 1021_5_美国 009, 1021_5_美国 010, 1021_5_美国 011, 1021_5_美国 012, 1021_5_美国
-      013, 1021_5_美国 014, 1021_5_美国 015, 1021_5_美国 016, 1021_5_美国 017, 1021_5_美国 018,
-    1021_5_美国 019, 1021_5_美国 020, 1021_5_美国 021, 1021_5_美国 022, 1021_5_美国 023, 1021_5_美国
-      024, 1021_5_美国 025, 1021_5_美国 026, 1021_5_美国 027, 1021_5_美国 028, 1021_5_美国 029,
-    1021_5_美国 030, 1021_5_美国 031, 1021_5_美国 032, 1021_5_美国 033, 1021_5_美国 034, 1021_5_美国
-      035, 1021_5_美国 036, 1021_5_美国 037, 1021_5_美国 038, 1021_5_加拿大 001, 1021_5_加拿大
+  proxies: [1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳 IN 01', '1021_0_「eggtartcloud.shop
+      自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01', 1021_0_中转 🇭🇰 Hong Kong
+      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai,
+    1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳 China 01 @nodpai, 1021_0_中转 🇺🇸 United
+      States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇺🇸 United States
+      03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai, 1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦
+      Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore 01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai,
+    1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵
+      Japan 02 @nodpai, 1021_0_🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 08 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转
+      🇬🇧 United Kingdom 01 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰
+      Hong Kong 10 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United
+      States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰
+      github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
+      3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, 1021_1_🇿🇦 github.com/freefq
+      - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 1021_5_美国 001,
+    1021_5_美国 002, 1021_5_美国 003, 1021_5_美国 004, 1021_5_美国 005, 1021_5_美国 006, 1021_5_美国
+      007, 1021_5_美国 008, 1021_5_美国 009, 1021_5_美国 010, 1021_5_美国 011, 1021_5_美国 012,
+    1021_5_美国 013, 1021_5_美国 014, 1021_5_美国 015, 1021_5_美国 016, 1021_5_美国 017, 1021_5_美国
+      018, 1021_5_美国 019, 1021_5_美国 020, 1021_5_美国 021, 1021_5_美国 022, 1021_5_美国 023,
+    1021_5_美国 024, 1021_5_美国 025, 1021_5_美国 026, 1021_5_美国 027, 1021_5_美国 028, 1021_5_美国
+      029, 1021_5_美国 030, 1021_5_美国 031, 1021_5_美国 032, 1021_5_美国 033, 1021_5_美国 034,
+    1021_5_美国 035, 1021_5_美国 036, 1021_5_美国 037, 1021_5_美国 038, 1021_5_加拿大 001, 1021_5_加拿大
       002, 1021_5_加拿大 003, 1021_5_加拿大 004, 1021_5_加拿大 005, 1021_5_加拿大 006, 1021_5_加拿大
       007, 1021_5_法国 001, 1021_5_美国 039, 1021_5_加拿大 008, 1021_5_加拿大 009, 1021_5_加拿大
       010, 1021_5_加拿大 011, 1021_5_加拿大 012, 1021_5_加拿大 013, 1021_5_美国 040, 1021_5_加拿大
@@ -7629,23 +7577,19 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -7791,23 +7735,19 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -7947,26 +7887,22 @@ proxy-groups:
     1021_7_美国(油管:破解资源君) 64, 1021_7_美国(油管:破解资源君) 65, 1021_7_美国(油管:破解资源君) 66]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰 HK 01',
-    '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01',
-    1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai, 1021_0_🇸🇬
-      Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong 02 @nodpai,
-    1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰
-      Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转 🇸🇬 Singapore
-      06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai,
-    1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08
-      @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States 02 @nodpai,
-    1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai, 1021_0_中转 🇺🇸 United
-      States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转 🇸🇬 Singapore 10
-      @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 13 @nodpai,
-    1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
-      1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸 github.com/freefq -
-      美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4,
-    1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+  proxies: [🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳 IN 01',
+    '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸 US 01',
+    1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳 China 01
+      @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 06 @nodpai,
+    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai, 1021_0_🇫🇷
+      France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore 01 @nodpai,
+    1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore 02 @nodpai, 1021_0_中转
+      🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai, 1021_0_中转 🇺🇸 United
+      States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1021_0_中转 🇭🇰 Hong
+      Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 11
+      @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+      - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
+      github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
+      4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1021_5_美国 001, 1021_5_美国 002, 1021_5_美国 003, 1021_5_美国 004, 1021_5_美国 005,
     1021_5_美国 006, 1021_5_美国 007, 1021_5_美国 008, 1021_5_美国 009, 1021_5_美国 010, 1021_5_美国
       011, 1021_5_美国 012, 1021_5_美国 013, 1021_5_美国 014, 1021_5_美国 015, 1021_5_美国 016,
@@ -8103,23 +8039,19 @@ proxy-groups:
     1021_7_美国(油管:破解资源君) 64, 1021_7_美国(油管:破解资源君) 65, 1021_7_美国(油管:破解资源君) 66]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -8259,23 +8191,19 @@ proxy-groups:
     1021_7_美国(油管:破解资源君) 64, 1021_7_美国(油管:破解资源君) 65, 1021_7_美国(油管:破解资源君) 66]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -8415,23 +8343,19 @@ proxy-groups:
     1021_7_美国(油管:破解资源君) 64, 1021_7_美国(油管:破解资源君) 65, 1021_7_美国(油管:破解资源君) 66]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
@@ -8577,23 +8501,19 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1021_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, '1021_0_「蛋挞云,流媒体全解锁」🇭🇰
-      HK 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇰🇷 KR 01', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
-      US 01', 1021_0_中转 🇸🇬 Singapore 02 @nodpai, 1021_0_中转 🇸🇬 Singapore 03 @nodpai,
-    1021_0_🇸🇬 Singapore 04 @nodpai, 1021_0_🇮🇳 India 01 @nodpai, 1021_0_🇭🇰 Hong Kong
-      02 @nodpai, 1021_0_🇰🇷 South Korea 02 @nodpai, 1021_0_🇭🇰 Hong Kong 03 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 04 @nodpai, 1021_0_中转 🇸🇬 Singapore 05 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan
-      01 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇬🇧 United Kingdom 01 @nodpai,
-    1021_0_中转 🇸🇬 Singapore 07 @nodpai, 1021_0_中转 🇸🇬 Singapore 08 @nodpai, 1021_0_中转
-      🇭🇰 Hong Kong 06 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇭🇰 Hong
-      Kong 08 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_🇺🇸 United States
-      02 @nodpai, 1021_0_中转 🇦🇪 United Arab Emirates 01 @nodpai, 1021_0_中转 🇯🇵 Japan
-      03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转 🇸🇬 Singapore 09 @nodpai,
-    1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇺🇸 United States 04 @nodpai,
-    1021_0_中转 🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 12 @nodpai, 1021_0_中转
-      🇸🇬 Singapore 10 @nodpai, 1021_0_🇸🇬 Singapore 11 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
-      13 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1021_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, '1021_0_「蛋挞云,流媒体全解锁」🇮🇳
+      IN 01', '1021_0_「eggtartcloud.shop 自选入口,速度保证」🇭🇰 HK 02', '1021_0_「蛋挞云,超低价格,超高体验」🇺🇸
+      US 01', 1021_0_中转 🇭🇰 Hong Kong 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 04 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 05 @nodpai, 1021_0_中转 🇯🇵 Japan 01 @nodpai, 1021_0_中转 🇨🇳
+      China 01 @nodpai, 1021_0_中转 🇺🇸 United States 02 @nodpai, 1021_0_中转 🇭🇰 Hong Kong
+      06 @nodpai, 1021_0_中转 🇺🇸 United States 03 @nodpai, 1021_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1021_0_🇫🇷 France 01 @nodpai, 1021_0_🇺🇦 Ukraine 01 @nodpai, 1021_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1021_0_🇹🇷 Turkey 01 @nodpai, 1021_0_🇩🇪 Germany 01 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 07 @nodpai, 1021_0_中转 🇯🇵 Japan 02 @nodpai, 1021_0_🇸🇬 Singapore
+      02 @nodpai, 1021_0_中转 🇯🇵 Japan 03 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 08 @nodpai,
+    1021_0_中转 🇺🇸 United States 04 @nodpai, 1021_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1021_0_中转 🇭🇰 Hong Kong 09 @nodpai, 1021_0_中转 🇭🇰 Hong Kong 10 @nodpai, 1021_0_中转
+      🇭🇰 Hong Kong 11 @nodpai, 1021_0_中转 🇺🇸 United States 05 @nodpai, 1021_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 1, 1021_1_🇭🇰 github.com/freefq - 香港城市电讯有限公司 2, 1021_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       4, 1021_1_🇿🇦 github.com/freefq - 南非  5, 1021_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
