@@ -4,9 +4,21 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
+- {alterId: 0, cipher: auto, name: 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, port: 50002, server: 175.27.154.61,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: '1022_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02', port: 56002, server: 39.103.165.178,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03',
+  port: 50002, server: 111.230.252.149, skip-cert-verify: true, tls: false, type: vmess,
+  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 04', port: 50002,
+  server: 114.117.234.12, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
+- {alterId: 0, cipher: auto, name: 1022_0_🇸🇬 Singapore 01 @nodpai, port: 25003, server: a.baozinet.top,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
 - alterId: 0
   cipher: auto
-  name: 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01
+  name: 1022_0_中转 🇨🇳 China 05 @nodpai
   network: ws
   port: 19709
   server: 123.249.101.15
@@ -16,27 +28,40 @@ proxies:
   udp: true
   uuid: 2f278a45-940a-46c1-c886-77f3b2d33987
   ws-opts: {path: /}
-- {alterId: 0, cipher: auto, name: '1022_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01', port: 25003, server: a.baozinet.top,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {alterId: 0, cipher: auto, name: '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02',
-  port: 56002, server: 39.103.165.178, skip-cert-verify: true, tls: false, type: vmess,
-  udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 03', port: 50002,
-  server: 175.27.154.61, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇨🇳 China 04 @nodpai, port: 50002, server: 114.117.234.12,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇨🇳 China 05 @nodpai, port: 50002, server: 111.230.252.149,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 25001,
-  server: a.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, port: 25002,
-  server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
 - {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 01 @nodpai, port: 25006,
   server: b.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path: [/]
+  name: 1022_0_🇺🇸 United States 02 @nodpai
+  network: http
+  port: 443
+  server: 5.161.159.21
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3d1fab6e-3bd6-472b-8d9c-9934c04eaf40
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇭🇰 Hong Kong 01 @nodpai, port: 25001,
+  server: a.baozinet.top, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e}
+- alterId: 0
+  cipher: auto
+  name: 1022_0_🇭🇰 Hong Kong 02 @nodpai
+  network: ws
+  port: 443
+  server: 154.16.248.177
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e
+  ws-opts: {path: /dabai.in}
+- {cipher: aes-256-cfb, name: 1022_0_🇰🇷 South Korea 01 @nodpai, password: amazonskr05,
+  port: 443, server: 13.125.176.168, type: ss, udp: true}
 - alterId: 0
   cipher: auto
   name: 1022_0_🇭🇰 Hong Kong 03 @nodpai
@@ -50,33 +75,8 @@ proxies:
   uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
   ws-opts: {path: /myblog}
 - {name: 1022_0_中转 🇯🇵 Japan 01 @nodpai, password: ff0675b0-c665-3d69-800b-f7fc29e1ead8,
-  port: 40350, server: zz.chaosu999.com, skip-cert-verify: true, sni: chaosujp.ccoo520.xyz,
+  port: 40350, server: 39.164.141.104, skip-cert-verify: true, sni: chaosujp.ccoo520.xyz,
   type: trojan, udp: true}
-- alterId: 0
-  cipher: auto
-  name: 1022_0_🇭🇰 Hong Kong 04 @nodpai
-  network: ws
-  port: 443
-  server: 154.16.248.177
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e
-  ws-opts: {path: /dabai.in}
-- alterId: 0
-  cipher: auto
-  name: 1022_0_中转 🇺🇸 United States 02 @nodpai
-  network: ws
-  port: 52095
-  server: 120.233.42.181
-  servername: b.cn-db.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e
-  ws-opts: {path: /dabai.in}
 - {cipher: aes-256-gcm, name: 1022_1_🇸🇪 github.com/freefq - 瑞典  1, password: Y6R9pAtvxxzmGC,
   port: 5000, server: 167.88.61.175, type: ss, udp: true}
 - {alterId: 0, cipher: auto, name: 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, port: 25002,
@@ -7356,12 +7356,12 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -7506,13 +7506,13 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01', '1022_0_「eggtartcloud.shop
-      自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 03', 1022_0_中转 🇨🇳 China 04
-      @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United States 01 @nodpai, 1022_0_🇭🇰 Hong
-      Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_0_🇭🇰 Hong Kong 04 @nodpai,
-    1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪 github.com/freefq - 瑞典  1, 1022_1_🇨🇳
-      github.com/freefq - 北京市移动 2, 1022_1_🇿🇦 github.com/freefq - 南非  3, 1022_1_🇺🇸
+  proxies: [1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02', '1022_0_「eggtartcloud.shop
+      自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 04', 1022_0_🇸🇬 Singapore 01
+      @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转 🇺🇸 United States 01 @nodpai,
+    1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 01 @nodpai, 1022_0_🇭🇰
+      Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea 01 @nodpai, 1022_0_🇭🇰 Hong Kong
+      03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪 github.com/freefq - 瑞典  1,
+    1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦 github.com/freefq - 南非  3, 1022_1_🇺🇸
       github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1022_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 7, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 8, 1022_5_美国
@@ -7656,12 +7656,12 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -7811,12 +7811,12 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -7960,12 +7960,12 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬 SG 01',
-    '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 03',
-    1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转 🇭🇰 Hong
-      Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United States
-      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_0_🇭🇰
-      Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪 github.com/freefq
+  proxies: [🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳 CN 02',
+    '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳 CN 04',
+    1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转 🇺🇸 United
+      States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰 Hong Kong
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea 01 @nodpai,
+    1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪 github.com/freefq
       - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦 github.com/freefq
       - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 4, 1022_1_🇺🇸 github.com/freefq
       - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 6, 1022_1_🇺🇸
@@ -8109,12 +8109,12 @@ proxy-groups:
       67]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🎯 全球直连, 🔰 节点选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -8258,12 +8258,12 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🔰 节点选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -8407,12 +8407,12 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
@@ -8562,12 +8562,12 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇸🇬
-      SG 01', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 02', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
-      CN 03', 1022_0_中转 🇨🇳 China 04 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
-      🇭🇰 Hong Kong 01 @nodpai, 1022_0_中转 🇭🇰 Hong Kong 02 @nodpai, 1022_0_中转 🇺🇸 United
-      States 01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai,
-    1022_0_🇭🇰 Hong Kong 04 @nodpai, 1022_0_中转 🇺🇸 United States 02 @nodpai, 1022_1_🇸🇪
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇨🇳 CN 01, '1022_0_「蛋挞云,流媒体全解锁」🇨🇳
+      CN 02', '1022_0_「eggtartcloud.shop 自选入口,速度保证」🇨🇳 CN 03', '1022_0_「蛋挞云,超低价格,超高体验」🇨🇳
+      CN 04', 1022_0_🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇨🇳 China 05 @nodpai, 1022_0_中转
+      🇺🇸 United States 01 @nodpai, 1022_0_🇺🇸 United States 02 @nodpai, 1022_0_中转 🇭🇰
+      Hong Kong 01 @nodpai, 1022_0_🇭🇰 Hong Kong 02 @nodpai, 1022_0_🇰🇷 South Korea
+      01 @nodpai, 1022_0_🇭🇰 Hong Kong 03 @nodpai, 1022_0_中转 🇯🇵 Japan 01 @nodpai, 1022_1_🇸🇪
       github.com/freefq - 瑞典  1, 1022_1_🇨🇳 github.com/freefq - 北京市移动 2, 1022_1_🇿🇦
       github.com/freefq - 南非  3, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
       4, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 5, 1022_1_🇺🇸 github.com/freefq
