@@ -4,36 +4,60 @@ log-level: info
 mode: Rule
 port: 7890
 proxies:
-- {alterId: 0, cipher: auto, name: 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, port: 50029, server: 29.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_「starnet，老牌公益机场」🇭🇰 HK 01, port: 50010, server: 10.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, port: 50005,
-  server: 05.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {name: 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸 US 02, password: a3f221f8-43d6-4363-8624-ce62d3db0202,
-  port: 443, server: us1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen,
-  skip-cert-verify: true, sni: 13-231-155-134.nhost.00cdn.com, type: trojan, udp: true}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 03 @nodpai, port: 50002,
-  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 04 @nodpai, port: 50004,
+- alterId: 0
+  cipher: auto
+  name: 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01
+  network: ws
+  port: 443
+  server: 47.242.109.138
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9dc41e4b-53a8-a442-e911-4bc5f490f2cd
+  ws-opts: {path: /myblog}
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path: [/]
+  name: 1022_0_「starnet，老牌公益机场」🇺🇸 US 01
+  network: http
+  port: 443
+  server: 5.161.159.21
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3d1fab6e-3bd6-472b-8d9c-9934c04eaf40
+- {alterId: 0, cipher: auto, name: 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, port: 50004,
   server: 04.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 05 @nodpai, port: 50003,
+- {name: 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸 US 03, password: a3f221f8-43d6-4363-8624-ce62d3db0202,
+  port: 443, server: us1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen,
+  skip-cert-verify: true, sni: 13-231-155-134.nhost.00cdn.com, type: trojan, udp: true}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇦🇹 Austria 01 @nodpai, port: 50007, server: 07.kccic2pa.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 04 @nodpai, port: 50012,
+  server: 12.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 05 @nodpai, port: 50005,
+  server: 05.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 06 @nodpai, port: 50003,
   server: 03.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {cipher: aes-256-cfb, name: 1022_0_🇰🇷 South Korea 01 @nodpai, password: amazonskr05,
-  port: 443, server: 43.200.7.213, type: ss, udp: true}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 06 @nodpai, port: 50014,
-  server: 14.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 07 @nodpai, port: 50002,
+  server: 02.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, port: 50009,
-  server: 09.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇹🇼 Taiwan 01 @nodpai, port: 50008, server: 08.kccic2pa.xyz,
+  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 08 @nodpai, port: 50016,
+  server: 16.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
 - alterId: 0
   cipher: auto
-  name: 1022_0_中转 🇺🇸 United States 07 @nodpai
+  name: 1022_0_中转 🇺🇸 United States 09 @nodpai
   network: ws
   port: 443
   server: 198.2.203.153
@@ -43,12 +67,12 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts: {path: /path/1691837402073}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 08 @nodpai, port: 50016,
-  server: 16.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, port: 50009,
+  server: 09.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
 - alterId: 0
   cipher: auto
-  name: 1022_0_中转 🇺🇸 United States 09 @nodpai
+  name: 1022_0_中转 🇺🇸 United States 10 @nodpai
   network: ws
   port: 443
   server: 198.2.203.152
@@ -58,35 +82,49 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts: {path: /path/1691750259012}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 10 @nodpai, port: 50017,
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 11 @nodpai, port: 50017,
   server: 17.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 11 @nodpai, port: 50012,
-  server: 12.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 12 @nodpai, port: 50001,
+  server: 01.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
   uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇦🇹 Austria 01 @nodpai, port: 50007, server: 07.kccic2pa.xyz,
-  skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 13 @nodpai, port: 50014,
+  server: 14.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path: [/]
-  name: 1022_0_🇺🇸 United States 12 @nodpai
-  network: http
-  port: 443
-  server: 5.161.159.21
+  grpc-opts: {grpc-service-name: fffffffstrrrrryyyyhhhhsnnnkakkkkdllllssasdf}
+  name: 1022_0_🇩🇪 Germany 01 @nodpai
+  network: grpc
+  port: 2087
+  server: 104.31.16.3
+  servername: ttttyyynnnnnnsnsnsnsnsnnsjssjsjjsjsjsjsjsjsksosowowosmsnsn2222919jjajjaja.akdmaksdmaskldmasdmfmosadmfsfdsdfsdfsdfsdfbcvbcvbcvbsdfsdfsqweq.fun
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98bd45bd-ad4a-4480-87b2-84f81c09aaa8
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇸🇬 Singapore 01 @nodpai, port: 50029,
+  server: 29.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 14 @nodpai, port: 50006,
+  server: 06.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
+  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
+- alterId: 0
+  cipher: auto
+  name: 1022_0_🇮🇳 India 01 @nodpai
+  network: ws
+  port: 80
+  server: hdlb2.shabijichang.com
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 3d1fab6e-3bd6-472b-8d9c-9934c04eaf40
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 13 @nodpai, port: 50006,
-  server: 06.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇺🇸 United States 14 @nodpai, port: 50001,
-  server: 01.kccic2pa.xyz, skip-cert-verify: true, tls: false, type: vmess, udp: true,
-  uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
-- {alterId: 0, cipher: auto, name: 1022_0_中转 🇩🇪 Germany 01 @nodpai, port: 50041, server: 41.kccic2pa.xyz,
+  uuid: c458695d-6908-45c3-9512-e0c46418454c
+  ws-opts:
+    headers: {Host: hdlb2.shabijichang.com}
+    path: /
+- {alterId: 0, cipher: auto, name: 1022_0_中转 🇩🇪 Germany 02 @nodpai, port: 50041, server: 41.kccic2pa.xyz,
   skip-cert-verify: true, tls: false, type: vmess, udp: true, uuid: ce84b69c-b202-4ef2-82a0-5a8190bd4169}
 - alterId: 64
   cipher: auto
@@ -7449,17 +7487,18 @@ proxies:
   ws-path: /
 proxy-groups:
 - name: 🔰 节点选择
-  proxies: [♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -7603,19 +7642,20 @@ proxy-groups:
   type: select
 - interval: 300
   name: ♻️ 自动选择
-  proxies: [1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰 HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸
-      US 01, 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United
-      States 03 @nodpai, 1022_0_中转 🇺🇸 United States 04 @nodpai, 1022_0_中转 🇺🇸 United
-      States 05 @nodpai, 1022_0_🇰🇷 South Korea 01 @nodpai, 1022_0_中转 🇺🇸 United States
-      06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States
-      07 @nodpai, 1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States
-      09 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai, 1022_0_中转 🇺🇸 United States
-      11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_🇺🇸 United States 12 @nodpai,
-    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai,
-    1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1, 1022_1_🇺🇸
-      github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
-      3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸 github.com/freefq
-      - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 1022_5_美国
+  proxies: [1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸 US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸
+      US 02, 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria
+      01 @nodpai, 1022_0_中转 🇺🇸 United States 04 @nodpai, 1022_0_中转 🇺🇸 United States
+      05 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇺🇸 United States
+      07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai, 1022_0_中转 🇺🇸 United States 08 @nodpai,
+    1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇬🇧 United Kingdom 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai,
+    1022_0_中转 🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai,
+    1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转 🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸
+      United States 14 @nodpai, 1022_0_🇮🇳 India 01 @nodpai, 1022_0_中转 🇩🇪 Germany 02
+      @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1, 1022_1_🇺🇸 github.com/freefq -
+      美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房 3,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸 github.com/freefq -
+      美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 1022_5_美国
       001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005, 1022_5_美国 006,
     1022_5_美国 007, 1022_5_美国 008, 1022_5_美国 009, 1022_5_美国 010, 1022_5_美国 011, 1022_5_美国
       012, 1022_5_美国 013, 1022_5_美国 014, 1022_5_美国 015, 1022_5_美国 016, 1022_5_美国 017,
@@ -7757,17 +7797,18 @@ proxy-groups:
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 🎥 NETFLIX
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -7916,17 +7957,18 @@ proxy-groups:
   proxies: [🛑 全球拦截, 🎯 全球直连, 🔰 节点选择]
   type: select
 - name: 🌍 国外媒体
-  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, ♻️ 自动选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -8069,36 +8111,37 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 🌏 国内媒体
-  proxies: [🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰 HK
-      01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸
-      US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United States 04
-      @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea 01 @nodpai,
-    1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom 01 @nodpai,
-    1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States 08 @nodpai,
-    1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
-    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_🇺🇸
-      United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转 🇺🇸
-      United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
-      - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
-      github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
-      6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
-    1022_5_美国 006, 1022_5_美国 007, 1022_5_美国 008, 1022_5_美国 009, 1022_5_美国 010, 1022_5_美国
-      011, 1022_5_美国 012, 1022_5_美国 013, 1022_5_美国 014, 1022_5_美国 015, 1022_5_美国 016,
-    1022_5_美国 017, 1022_5_美国 018, 1022_5_美国 019, 1022_5_美国 020, 1022_5_美国 021, 1022_5_美国
-      022, 1022_5_美国 023, 1022_5_美国 024, 1022_5_美国 025, 1022_5_美国 026, 1022_5_美国 027,
-    1022_5_美国 028, 1022_5_美国 029, 1022_5_美国 030, 1022_5_美国 031, 1022_5_美国 032, 1022_5_美国
-      033, 1022_5_美国 034, 1022_5_美国 035, 1022_5_美国 036, 1022_5_美国 037, 1022_5_美国 038,
-    1022_5_加拿大 001, 1022_5_加拿大 002, 1022_5_加拿大 003, 1022_5_加拿大 004, 1022_5_加拿大 005,
-    1022_5_加拿大 006, 1022_5_加拿大 007, 1022_5_法国 001, 1022_5_美国 039, 1022_5_加拿大 008,
-    1022_5_加拿大 009, 1022_5_加拿大 010, 1022_5_加拿大 011, 1022_5_加拿大 012, 1022_5_加拿大 013,
-    1022_5_美国 040, 1022_5_加拿大 014, 1022_5_加拿大 015, 1022_5_加拿大 016, 1022_5_香港 001,
-    1022_5_加拿大 017, 1022_5_加拿大 018, 1022_5_加拿大 019, 1022_5_美国 041, 1022_5_香港 002,
-    1022_5_加拿大 020, 1022_5_加拿大 021, 1022_5_加拿大 022, 1022_5_加拿大 023, 1022_5_加拿大 024,
-    1022_5_加拿大 025, 1022_5_加拿大 026, 1022_5_加拿大 027, 1022_5_加拿大 028, 1022_5_美国 042,
-    1022_5_香港 003, 1022_5_加拿大 029, 1022_5_香港 004, 1022_5_加拿大 030, 1022_5_加拿大 031,
-    1022_5_加拿大 032, 1022_5_香港 005, 1022_5_加拿大 033, 1022_5_加拿大 034, 1022_5_加拿大 035,
-    1022_5_美国 043, 1022_5_美国 044, 1022_5_美国 045, 1022_5_加拿大 036, 1022_5_加拿大 037, 1022_5_荷兰
+  proxies: [🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸 US
+      01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折 不定期抽USDT红包」🇺🇸
+      US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States 04 @nodpai,
+    1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai,
+    1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai, 1022_0_中转
+      🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转
+      🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai, 1022_0_中转
+      🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai, 1022_0_中转
+      🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转 🇸🇬 Singapore
+      01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India 01 @nodpai,
+    1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1, 1022_1_🇺🇸
+      github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq - 美国加利福尼亚州圣何塞MULTACOM机房
+      3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸 github.com/freefq
+      - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 6, 1022_5_美国
+      001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005, 1022_5_美国 006,
+    1022_5_美国 007, 1022_5_美国 008, 1022_5_美国 009, 1022_5_美国 010, 1022_5_美国 011, 1022_5_美国
+      012, 1022_5_美国 013, 1022_5_美国 014, 1022_5_美国 015, 1022_5_美国 016, 1022_5_美国 017,
+    1022_5_美国 018, 1022_5_美国 019, 1022_5_美国 020, 1022_5_美国 021, 1022_5_美国 022, 1022_5_美国
+      023, 1022_5_美国 024, 1022_5_美国 025, 1022_5_美国 026, 1022_5_美国 027, 1022_5_美国 028,
+    1022_5_美国 029, 1022_5_美国 030, 1022_5_美国 031, 1022_5_美国 032, 1022_5_美国 033, 1022_5_美国
+      034, 1022_5_美国 035, 1022_5_美国 036, 1022_5_美国 037, 1022_5_美国 038, 1022_5_加拿大
+      001, 1022_5_加拿大 002, 1022_5_加拿大 003, 1022_5_加拿大 004, 1022_5_加拿大 005, 1022_5_加拿大
+      006, 1022_5_加拿大 007, 1022_5_法国 001, 1022_5_美国 039, 1022_5_加拿大 008, 1022_5_加拿大
+      009, 1022_5_加拿大 010, 1022_5_加拿大 011, 1022_5_加拿大 012, 1022_5_加拿大 013, 1022_5_美国
+      040, 1022_5_加拿大 014, 1022_5_加拿大 015, 1022_5_加拿大 016, 1022_5_香港 001, 1022_5_加拿大
+      017, 1022_5_加拿大 018, 1022_5_加拿大 019, 1022_5_美国 041, 1022_5_香港 002, 1022_5_加拿大
+      020, 1022_5_加拿大 021, 1022_5_加拿大 022, 1022_5_加拿大 023, 1022_5_加拿大 024, 1022_5_加拿大
+      025, 1022_5_加拿大 026, 1022_5_加拿大 027, 1022_5_加拿大 028, 1022_5_美国 042, 1022_5_香港
+      003, 1022_5_加拿大 029, 1022_5_香港 004, 1022_5_加拿大 030, 1022_5_加拿大 031, 1022_5_加拿大
+      032, 1022_5_香港 005, 1022_5_加拿大 033, 1022_5_加拿大 034, 1022_5_加拿大 035, 1022_5_美国
+      043, 1022_5_美国 044, 1022_5_美国 045, 1022_5_加拿大 036, 1022_5_加拿大 037, 1022_5_荷兰
       001, 1022_5_加拿大 038, 1022_5_香港 006, 1022_5_美国 046, 1022_5_美国 047, 1022_5_荷兰
       002, 1022_5_荷兰 003, 1022_5_波兰 001, 1022_5_法国 002, 1022_5_法国 003, 1022_5_加拿大
       039, 1022_5_美国 048, 1022_5_香港 007, 1022_5_加拿大 040, 1022_5_加拿大 041, 1022_5_加拿大
@@ -8222,17 +8265,18 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: Ⓜ️ 微软服务
-  proxies: [🎯 全球直连, 🔰 节点选择, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🎯 全球直连, 🔰 节点选择, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -8375,17 +8419,18 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 📲 电报信息
-  proxies: [🔰 节点选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -8528,17 +8573,18 @@ proxy-groups:
     1022_7_美国(油管:破解资源君) 66, 1022_7_美国(油管:破解资源君) 67]
   type: select
 - name: 🍎 苹果服务
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
@@ -8687,17 +8733,18 @@ proxy-groups:
   proxies: [REJECT, DIRECT]
   type: select
 - name: 🐟 漏网之鱼
-  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇸🇬 SG 01, 1022_0_「starnet，老牌公益机场」🇭🇰
-      HK 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 01, 1022_0_「www.starnetcn.com 年付85折
-      不定期抽USDT红包」🇺🇸 US 02, 1022_0_中转 🇺🇸 United States 03 @nodpai, 1022_0_中转 🇺🇸 United
-      States 04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_🇰🇷 South Korea
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 06 @nodpai, 1022_0_中转 🇬🇧 United Kingdom
-      01 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇺🇸 United States
-      08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai, 1022_0_中转 🇺🇸 United States
-      10 @nodpai, 1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇦🇹 Austria 01 @nodpai,
-    1022_0_🇺🇸 United States 12 @nodpai, 1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_中转
-      🇺🇸 United States 14 @nodpai, 1022_0_中转 🇩🇪 Germany 01 @nodpai, 1022_1_🇿🇦 github.com/freefq
-      - 南非  1, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
+  proxies: [🔰 节点选择, 🎯 全球直连, ♻️ 自动选择, 1022_0_「节点冠名招商 @nodpai」🇭🇰 HK 01, 1022_0_「starnet，老牌公益机场」🇺🇸
+      US 01, 1022_0_「线路包含IEPL，中转，覆盖冷门地区」🇺🇸 US 02, 1022_0_「www.starnetcn.com 年付85折
+      不定期抽USDT红包」🇺🇸 US 03, 1022_0_中转 🇦🇹 Austria 01 @nodpai, 1022_0_中转 🇺🇸 United States
+      04 @nodpai, 1022_0_中转 🇺🇸 United States 05 @nodpai, 1022_0_中转 🇺🇸 United States
+      06 @nodpai, 1022_0_中转 🇺🇸 United States 07 @nodpai, 1022_0_中转 🇹🇼 Taiwan 01 @nodpai,
+    1022_0_中转 🇺🇸 United States 08 @nodpai, 1022_0_中转 🇺🇸 United States 09 @nodpai,
+    1022_0_中转 🇬🇧 United Kingdom 01 @nodpai, 1022_0_中转 🇺🇸 United States 10 @nodpai,
+    1022_0_中转 🇺🇸 United States 11 @nodpai, 1022_0_中转 🇺🇸 United States 12 @nodpai,
+    1022_0_中转 🇺🇸 United States 13 @nodpai, 1022_0_🇩🇪 Germany 01 @nodpai, 1022_0_中转
+      🇸🇬 Singapore 01 @nodpai, 1022_0_中转 🇺🇸 United States 14 @nodpai, 1022_0_🇮🇳 India
+      01 @nodpai, 1022_0_中转 🇩🇪 Germany 02 @nodpai, 1022_1_🇿🇦 github.com/freefq - 南非  1,
+    1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, 1022_1_🇺🇸 github.com/freefq
       - 美国加利福尼亚州圣何塞MULTACOM机房 3, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare节点 4, 1022_1_🇺🇸
       github.com/freefq - 美国CloudFlare节点 5, 1022_1_🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点
       6, 1022_5_美国 001, 1022_5_美国 002, 1022_5_美国 003, 1022_5_美国 004, 1022_5_美国 005,
